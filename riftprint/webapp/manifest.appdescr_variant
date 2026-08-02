@@ -1,0 +1,96 @@
+{
+  "fileName": "manifest",
+  "layer": "CUSTOMER_BASE",
+  "fileType": "appdescr_variant",
+  "reference": "i2d.eam.orderandoperation.monitors1",
+  "id": "customer.riftprint",
+  "namespace": "apps/i2d.eam.orderandoperation.monitors1/appVariants/customer.riftprint/",
+  "version": "0.1.0",
+  "content": [
+    {
+      "changeType": "appdescr_ui5_addNewModelEnhanceWith",
+      "content": {
+        "modelId": "i18n"
+      },
+      "texts": {
+        "i18n": "i18n/i18n.properties"
+      }
+    },
+    {
+      "changeType": "appdescr_ui5_addNewModelEnhanceWith",
+      "content": {
+        "modelId": "@i18n"
+      },
+      "texts": {
+        "i18n": "i18n/i18n.properties"
+      }
+    },
+    {
+      "changeType": "appdescr_ui5_addNewModelEnhanceWith",
+      "content": {
+        "modelId": "i18n|sap.suite.ui.generic.template.ListReport|C_ObjPgMaintOrderAndOperation"
+      },
+      "texts": {
+        "i18n": "i18n/ListReport/C_ObjPgMaintOrderAndOperation/i18n.properties"
+      }
+    },
+    {
+      "changeType": "appdescr_ui5_addNewModelEnhanceWith",
+      "content": {
+        "modelId": "i18n|sap.suite.ui.generic.template.ObjectPage|C_ObjPgMaintOrderAndOperation"
+      },
+      "texts": {
+        "i18n": "i18n/ObjectPage/C_ObjPgMaintOrderAndOperation/i18n.properties"
+      }
+    },
+    {
+      "changeType": "appdescr_ui5_setMinUI5Version",
+      "content": {
+        "minUI5Version": "1.120.23"
+      }
+    },
+    {
+      "changeType": "appdescr_app_setTitle",
+      "content": {},
+      "texts": {
+        "i18n": "i18n/i18n.properties"
+      }
+    },
+
+    {
+        "changeType": "appdescr_ui5_addNewModel",
+        "content": {
+            "dataSource": {
+                "customer.riftprint.EListOutputSet": {
+                    "uri": "/sap/opu/odata/SAP/ZPM_RIFT_PRINT_FIORI_SRV_04/",
+                    "type": "OData",
+                    "settings": {
+                        "odataVersion": "2.0"
+                    }
+                }
+            },
+            "model": {
+                "customer.riftprint.EListOutput": {
+                    "dataSource": "customer.riftprint.EListOutputSet",
+                    "settings": {}
+                }
+            }
+        }
+     },
+     {
+  "changeType": "appdescr_app_addNewInbound",
+  "content": {
+    "inbound": {
+      "customer.display": {
+        "semanticObject": "ZPM_RIFT_PRINT",
+        "action": "display",
+        "signature": {
+          "parameters": {},
+          "additionalParameters": "allowed"
+        }
+      }
+     }
+    }
+  }
+  ]
+}

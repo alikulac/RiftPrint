@@ -1,0 +1,29 @@
+{
+  "changeType": "propertyChange",
+  "reference": "customer.riftprint",
+  "namespace": "apps/customer.riftprint/changes/",
+  "creation": "2026-04-13T09:58:13.999Z",
+  "projectId": "customer.riftprint",
+  "packageName": "$TMP",
+  "support": {
+    "generator": "@sap-ux/control-property-editor",
+    "sapui5Version": "1.120.23",
+    "command": "property"
+  },
+  "originalLanguage": "EN",
+  "layer": "CUSTOMER_BASE",
+  "fileType": "change",
+  "fileName": "id_1776074246771_211_propertyChange",
+  "content": {
+    "property": "visible",
+    "newValue": false
+  },
+  "texts": {},
+  "selector": {
+    "id": "i2d.eam.orderandoperation.monitors1::sap.suite.ui.generic.template.ListReport.view.ListReport::C_ObjPgMaintOrderAndOperation--template::AddCardtoInsights",
+    "type": "sap.m.Button",
+    "idIsLocal": false
+  },
+  "dependentSelector": {},
+  "jsOnly": false
+}

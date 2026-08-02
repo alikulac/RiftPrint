@@ -1,0 +1,29 @@
+{
+  "changeType": "propertyChange",
+  "reference": "customer.riftprint",
+  "namespace": "apps/customer.riftprint/changes/",
+  "creation": "2026-02-10T23:16:16.588Z",
+  "projectId": "customer.riftprint",
+  "packageName": "$TMP",
+  "support": {
+    "generator": "@sap-ux/control-property-editor",
+    "sapui5Version": "1.120.23",
+    "command": "property"
+  },
+  "originalLanguage": "EN",
+  "layer": "CUSTOMER_BASE",
+  "fileType": "change",
+  "fileName": "id_1770765195312_195_propertyChange",
+  "content": {
+    "property": "visible",
+    "newValue": true
+  },
+  "texts": {},
+  "selector": {
+    "id": "i2d.eam.orderandoperation.monitors1::sap.suite.ui.generic.template.ListReport.view.ListReport::C_ObjPgMaintOrderAndOperation--MassEdit",
+    "type": "sap.m.Button",
+    "idIsLocal": false
+  },
+  "dependentSelector": {},
+  "jsOnly": false
+}
