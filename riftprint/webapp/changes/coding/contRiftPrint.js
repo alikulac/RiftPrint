@@ -1,33 +1,30 @@
 sap.ui.define(
     [
         'sap/ui/core/mvc/ControllerExtension',
-        'sap/m/MessageBox'
+        'sap/m/MessageToast'
         // ,'sap/ui/core/mvc/OverrideExecution'
     ],
     function (
-        ControllerExtension
+        ControllerExtension,
+        MessageToast
         // ,OverrideExecution
     ) {
         'use strict';
         return ControllerExtension.extend("customer.riftprint.contRiftPrint", {
             onPress: function () {
-    /*           
-                var oCrossAppNavigator = sap.ushell.Container.getService("CrossApplicationNavigation");
+                var oExtensionAPI = this.base.getExtensionAPI();
+                var aSelectedContexts = oExtensionAPI.getSelectedContexts();
 
-                oCrossAppNavigator.toExternal({
-                    target: {
-                        semanticObject: "ZPM_RIFT_PRINT",
-                        action: "display"
-                    },
+                if (!aSelectedContexts || aSelectedContexts.length === 0) {
+                    MessageToast.show("No selected work orders found");
+                    return;
+                }
+
+                var aOrderNumbers = aSelectedContexts.map(function (oContext) {
+                    return oContext.getProperty("MaintenanceOrder");
                 });
-         */       
 
-                // var sUrl = "https://eldca-s4de5.sap.eldoradogold.com/sap/bc/ui2/flp?sap-client=020&sap-language=EN&saml2=disabled#ZPM_RIFT_PRINT-display?sap-ui-tech-hint=GUI";
-                var sUrl = "https://www.google.com";
-                var encodeUrl = encodeURI(sUrl);
-	            sap.m.URLHelper.redirect(encodeUrl, true);             //redirect(sURL, bNewWindow?)
-
-
+                MessageToast.show("Selected orders: " + aOrderNumbers.join(", "));
             },
             empDialogClose: function () {
                 var that = this;
