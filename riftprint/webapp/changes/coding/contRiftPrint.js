@@ -22,8 +22,8 @@ sap.ui.define(
                 });
          */       
 
-                var sUrl = "https://eldca-s4de5.sap.eldoradogold.com/sap/bc/ui2/flp?sap-client=020&sap-language=EN&saml2=disabled#ZPM_RIFT_PRINT-display?sap-ui-tech-hint=GUI";
-                // var sUrl = "https://www.google.com";
+                // var sUrl = "https://eldca-s4de5.sap.eldoradogold.com/sap/bc/ui2/flp?sap-client=020&sap-language=EN&saml2=disabled#ZPM_RIFT_PRINT-display?sap-ui-tech-hint=GUI";
+                var sUrl = "https://www.google.com";
                 var encodeUrl = encodeURI(sUrl);
 	            sap.m.URLHelper.redirect(encodeUrl, true);             //redirect(sURL, bNewWindow?)
 
