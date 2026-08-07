@@ -12,8 +12,17 @@ sap.ui.define(
         'use strict';
         return ControllerExtension.extend("customer.riftprint.contRiftPrint", {
             onPress: function () {
-                var oExtensionAPI = this.base.getExtensionAPI();
-                var aSelectedContexts = oExtensionAPI.getSelectedContexts();
+                var oSmartTable = this.base.getView().byId("listReport");
+                var oInnerTable = oSmartTable.getTable();
+
+                var aSelectedContexts;
+                if (oInnerTable.isA("sap.m.ListBase")) {
+                    aSelectedContexts = oInnerTable.getSelectedContexts();
+                } else {
+                    aSelectedContexts = oInnerTable.getSelectedIndices().map(function (iIndex) {
+                        return oInnerTable.getContextByIndex(iIndex);
+                    }).filter(Boolean);
+                }
 
                 if (!aSelectedContexts || aSelectedContexts.length === 0) {
                     MessageToast.show("No selected work orders found");
