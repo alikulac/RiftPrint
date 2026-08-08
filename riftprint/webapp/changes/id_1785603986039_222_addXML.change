@@ -16,8 +16,8 @@
   "fileType": "change",
   "fileName": "id_1785603986039_222_addXML",
   "content": {
-    "targetAggregation": "navigationActions",
-    "index": 5,
+    "targetAggregation": "expandedHeading",
+    "index": 1,
     "fragmentPath": "fragments/headerlogo.fragment.xml"
   },
   "texts": {},
