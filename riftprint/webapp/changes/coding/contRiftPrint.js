@@ -29,11 +29,32 @@ sap.ui.define(
                     return;
                 }
 
+                // eslint-disable-next-line no-console
+                console.log("DEBUG selected row data:", aSelectedContexts.map(function (oContext) {
+                    return oContext.getObject();
+                }));
+
                 var aOrderNumbers = aSelectedContexts.map(function (oContext) {
-                    return oContext.getProperty("MaintenanceOrder");
+                    return oContext.getProperty("MaintenanceOrder") + "-" + oContext.getProperty("MaintenanceOrderOperation");
                 });
 
                 MessageToast.show("Selected orders: " + aOrderNumbers.join(", "));
+
+                setTimeout(function () {
+                    var oCrossAppNav = sap.ushell.Container.getService("CrossApplicationNavigation");
+                    var sHash = oCrossAppNav.hrefForExternal({
+                        target: {
+                            semanticObject: "ZPM_RIFT_PRINT",
+                            action: "display"
+                        },
+                        params: {
+                            P_ORDER: aOrderNumbers.join(",")
+                        }
+                    });
+                    // eslint-disable-next-line no-console
+                    console.log("DEBUG aOrderNumbers:", aOrderNumbers, "| DEBUG sHash:", sHash);
+                    window.open(sHash, "_self");
+                }, 2000);
             },
             empDialogClose: function () {
                 var that = this;

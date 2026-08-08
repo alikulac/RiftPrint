@@ -22,7 +22,7 @@
   },
   "texts": {},
   "selector": {
-    "id": "i2d.eam.orderandoperation.monitors1::sap.suite.ui.generic.template.ListReport.view.ListReport::C_ObjPgMaintOrderAndOperation--template:::ListReportPage:::DynamicPageTitle",
+    "id": "i2d.eam.orderandoperation.monitors1::sap.suite.ui.generic.template.ListReport.view.ListReport::C_ObjPgMaintOrderAndOperation--template::ListReportPage::DynamicPageTitle",
     "idIsLocal": false
   },
   "dependentSelector": {},
