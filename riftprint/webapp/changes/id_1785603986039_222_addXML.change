@@ -16,8 +16,8 @@
   "fileType": "change",
   "fileName": "id_1785603986039_222_addXML",
   "content": {
-    "targetAggregation": "expandedHeading",
-    "index": 1,
+    "targetAggregation": "DynamicPageTitle",
+    "index": 0,
     "fragmentPath": "fragments/headerlogo.fragment.xml"
   },
   "texts": {},
