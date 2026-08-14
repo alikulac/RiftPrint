@@ -1,0 +1,77 @@
+{
+  "changeType": "splitMenuButton",
+  "reference": "customer.riftprintorder",
+  "namespace": "apps/customer.riftprintorder/changes/",
+  "creation": "2026-08-12T19:15:37.148Z",
+  "projectId": "customer.riftprintorder",
+  "packageName": "$TMP",
+  "support": {
+    "generator": "@sap-ux/control-property-editor",
+    "sapui5Version": "1.120.23",
+    "command": "split"
+  },
+  "originalLanguage": "EN",
+  "layer": "CUSTOMER_BASE",
+  "fileType": "change",
+  "fileName": "id_1786561586890_203_splitMenuButton",
+  "content": {
+    "sourceSelector": {
+      "id": "id-1523392732995-362",
+      "idIsLocal": true
+    },
+    "newElementIds": [
+      {
+        "id": "i2d.eam.order.manages1::sap.suite.ui.generic.template.ListReport.view.ListReport::C_ObjPgMaintOrder--id-1786561586889-193",
+        "idIsLocal": false
+      },
+      {
+        "id": "i2d.eam.order.manages1::sap.suite.ui.generic.template.ListReport.view.ListReport::C_ObjPgMaintOrder--id-1786561586889-194",
+        "idIsLocal": false
+      },
+      {
+        "id": "i2d.eam.order.manages1::sap.suite.ui.generic.template.ListReport.view.ListReport::C_ObjPgMaintOrder--id-1786561586889-195",
+        "idIsLocal": false
+      },
+      {
+        "id": "i2d.eam.order.manages1::sap.suite.ui.generic.template.ListReport.view.ListReport::C_ObjPgMaintOrder--id-1786561586889-196",
+        "idIsLocal": false
+      },
+      {
+        "id": "i2d.eam.order.manages1::sap.suite.ui.generic.template.ListReport.view.ListReport::C_ObjPgMaintOrder--id-1786561586889-197",
+        "idIsLocal": false
+      },
+      {
+        "id": "i2d.eam.order.manages1::sap.suite.ui.generic.template.ListReport.view.ListReport::C_ObjPgMaintOrder--id-1786561586889-198",
+        "idIsLocal": false
+      },
+      {
+        "id": "i2d.eam.order.manages1::sap.suite.ui.generic.template.ListReport.view.ListReport::C_ObjPgMaintOrder--id-1786561586889-199",
+        "idIsLocal": false
+      },
+      {
+        "id": "i2d.eam.order.manages1::sap.suite.ui.generic.template.ListReport.view.ListReport::C_ObjPgMaintOrder--id-1786561586889-200",
+        "idIsLocal": false
+      },
+      {
+        "id": "i2d.eam.order.manages1::sap.suite.ui.generic.template.ListReport.view.ListReport::C_ObjPgMaintOrder--id-1786561586889-201",
+        "idIsLocal": false
+      },
+      {
+        "id": "i2d.eam.order.manages1::sap.suite.ui.generic.template.ListReport.view.ListReport::C_ObjPgMaintOrder--id-1786561586889-202",
+        "idIsLocal": false
+      }
+    ]
+  },
+  "texts": {},
+  "selector": {
+    "id": "i2d.eam.order.manages1::sap.suite.ui.generic.template.ListReport.view.ListReport::C_ObjPgMaintOrder--template::ListReport::TableToolbar",
+    "idIsLocal": false
+  },
+  "dependentSelector": {
+    "sourceControl": {
+      "id": "id-1523392732995-362",
+      "idIsLocal": true
+    }
+  },
+  "jsOnly": false
+}

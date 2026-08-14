@@ -1,0 +1,23 @@
+{
+  "changeType": "codeExt",
+  "reference": "customer.riftprintorder",
+  "namespace": "apps/customer.riftprintorder/changes/",
+  "creation": "2026-08-12T19:15:37.162Z",
+  "projectId": "customer.riftprintorder",
+  "moduleName": "customer/riftprintorder/changes/coding/contRiftPrint",
+  "support": {
+    "generator": "@sap-ux/control-property-editor",
+    "sapui5Version": "1.120.23"
+  },
+  "originalLanguage": "EN",
+  "layer": "CUSTOMER_BASE",
+  "fileType": "change",
+  "fileName": "id_1786561796338_254_codeExt",
+  "content": {
+    "codeRef": "coding/contRiftPrint.js"
+  },
+  "texts": {},
+  "selector": {
+    "controllerName": "sap.suite.ui.generic.template.ListReport.view.ListReport"
+  }
+}

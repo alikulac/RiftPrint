@@ -3,5 +3,5 @@
     <!-- viewName: sap.suite.ui.generic.template.ListReport.view.ListReport -->
     <!-- controlType: sap.f.DynamicPageTitle -->
     <!-- targetAggregation: expandedHeading -->
-    <Image src="images/riftprint.png" width="32px" alt="RiftPrint Logo" />
+    <Image src="images/riftprint2.png" width="5px" alt="RiftPrint Logo" />
 </core:FragmentDefinition>

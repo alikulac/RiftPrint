@@ -1,0 +1,26 @@
+{
+  "changeType": "hideControl",
+  "reference": "customer.riftprintorder",
+  "namespace": "apps/customer.riftprintorder/changes/",
+  "creation": "2026-08-12T19:15:37.149Z",
+  "projectId": "customer.riftprintorder",
+  "packageName": "$TMP",
+  "support": {
+    "generator": "@sap-ux/control-property-editor",
+    "sapui5Version": "1.120.23",
+    "compositeCommand": "id_1786561591200_215_composite",
+    "command": "remove"
+  },
+  "originalLanguage": "EN",
+  "layer": "CUSTOMER_BASE",
+  "fileType": "change",
+  "fileName": "id_1786561591199_214_hideControl",
+  "content": {},
+  "texts": {},
+  "selector": {
+    "id": "i2d.eam.order.manages1::sap.suite.ui.generic.template.ListReport.view.ListReport::C_ObjPgMaintOrder--id-1786561586889-193",
+    "idIsLocal": false
+  },
+  "dependentSelector": {},
+  "jsOnly": false
+}

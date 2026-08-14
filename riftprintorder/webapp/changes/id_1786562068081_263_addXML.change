@@ -1,0 +1,30 @@
+{
+  "changeType": "addXML",
+  "reference": "customer.riftprintorder",
+  "namespace": "apps/customer.riftprintorder/changes/",
+  "creation": "2026-08-12T19:15:37.163Z",
+  "projectId": "customer.riftprintorder",
+  "packageName": "$TMP",
+  "moduleName": "customer/riftprintorder/changes/fragments/RiftPrint.fragment.xml",
+  "support": {
+    "generator": "@sap-ux/control-property-editor",
+    "sapui5Version": "1.120.23",
+    "command": "addXML"
+  },
+  "originalLanguage": "EN",
+  "layer": "CUSTOMER_BASE",
+  "fileType": "change",
+  "fileName": "id_1786562068081_263_addXML",
+  "content": {
+    "targetAggregation": "content",
+    "index": 29,
+    "fragmentPath": "fragments/RiftPrint.fragment.xml"
+  },
+  "texts": {},
+  "selector": {
+    "id": "i2d.eam.order.manages1::sap.suite.ui.generic.template.ListReport.view.ListReport::C_ObjPgMaintOrder--template::ListReport::TableToolbar",
+    "idIsLocal": false
+  },
+  "dependentSelector": {},
+  "jsOnly": false
+}

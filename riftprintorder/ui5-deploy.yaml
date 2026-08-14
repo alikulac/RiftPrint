@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "3.1"
+metadata:
+  name: riftprintorder
+type: application
+resources:
+  configuration:
+    propertiesFileSourceEncoding: UTF-8
+customConfiguration:
+  adp:
+    support:
+      id: '@sap/generator-adaptation-project'
+      version: NO_VERSION_FOUND
+      toolsId: 1f6174f5-5dd0-461c-92cb-c353b9dcbede
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          destination: DE5_RISE_BAS
+          url: http://eldca-de5.sap.eldoradogold.com:8000
+        app:
+          name: ZPM_RIFTPRINTOR  
+          package: ZPM
+          transport: DE5K902178
+        exclude:
+          - /test/
+          - /localService/
+        lrep: apps/i2d.eam.order.manages1/appVariants/customer.riftprintorder/
