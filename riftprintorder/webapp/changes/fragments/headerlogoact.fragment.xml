@@ -2,6 +2,8 @@
 <core:FragmentDefinition xmlns:core='sap.ui.core' xmlns='sap.m'>
     <!-- viewName: sap.suite.ui.generic.template.ListReport.view.ListReport -->
     <!-- controlType: sap.f.DynamicPageTitle -->
-    <!-- targetAggregation: expandedHeading -->
-    <Image src="images/riftprint2.png" width="5px" alt="RiftPrint Logo" />
+    <!-- targetAggregation: actions --> 
+    <!-- add your xml here -->
+    <!-- <Button text="New Button"  id="btn-a8c1c923"></Button> -->
+<Image id="image1" src="/images/riftprint.png" width="180px" height="50px" decorative="false" />         
 </core:FragmentDefinition>

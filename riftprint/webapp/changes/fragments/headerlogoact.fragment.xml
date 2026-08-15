@@ -1,0 +1,10 @@
+<!-- Use stable and unique IDs!-->
+<core:FragmentDefinition xmlns:core='sap.ui.core' xmlns='sap.m'>
+    <!-- viewName: sap.suite.ui.generic.template.ListReport.view.ListReport -->
+    <!-- controlType: sap.f.DynamicPageTitle -->
+    <!-- targetAggregation: actions --> 
+    <!-- add your xml here -->
+    <!--<Button text="New Button"  id="btn-4969c767"></Button>  -->
+    <!-- <Text id="Text7" text="Rift Print7" /> -->
+    <Image id="image1" src="/images/riftprint.png" width="180px" height="50px" decorative="false" />     
+</core:FragmentDefinition>
