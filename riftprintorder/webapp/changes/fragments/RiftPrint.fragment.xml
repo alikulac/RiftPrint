@@ -4,5 +4,5 @@
     <!-- controlType: sap.m.OverflowToolbar -->
     <!-- targetAggregation: content --> 
     <!-- add your xml here -->
-    <Button text="Rift Print"  id="btn-46342ffc"  press=".extension.customer.riftprintorder.contRiftPrint.onPress"></Button>
+    <Button type="Emphasized" text="Rift Print" icon="sap-icon://print" iconFirst="false" id="btn-46342ffc"  press=".extension.customer.riftprintorder.contRiftPrint.onPress"></Button>
 </core:FragmentDefinition>

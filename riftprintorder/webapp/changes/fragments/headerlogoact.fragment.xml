@@ -5,5 +5,5 @@
     <!-- targetAggregation: actions --> 
     <!-- add your xml here -->
     <!-- <Button text="New Button"  id="btn-a8c1c923"></Button> -->
-<Image id="image1" src="/images/riftprint.png" width="180px" height="50px" decorative="false" />         
+<Image id="image1" src="/sap/bc/bsp/sap/zpm_riftprintor/images/riftprint.png" width="180px" height="50px" decorative="false" />         
 </core:FragmentDefinition>

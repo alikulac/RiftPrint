@@ -2,7 +2,7 @@
   "changeType": "propertyChange",
   "reference": "customer.riftprint",
   "namespace": "apps/customer.riftprint/changes/",
-  "creation": "2026-02-12T16:54:05.840Z",
+  "creation": "2026-08-16T13:26:21.922Z",
   "projectId": "customer.riftprint",
   "packageName": "$TMP",
   "support": {
@@ -13,10 +13,10 @@
   "originalLanguage": "EN",
   "layer": "CUSTOMER_BASE",
   "fileType": "change",
-  "fileName": "id_1770915044947_195_propertyChange",
+  "fileName": "id_1786886728471_199_propertyChange",
   "content": {
     "property": "header",
-    "newValue": "Operations"
+    "newValue": "Maintenance Operations"
   },
   "texts": {},
   "selector": {
