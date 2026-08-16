@@ -1,0 +1,22 @@
+{
+  "changeType": "codeExt",
+  "reference": "customer.riftprintorders",
+  "namespace": "apps/customer.riftprintorders/changes/",
+  "projectId": "customer.riftprintorders",
+  "moduleName": "customer/riftprintorders/changes/coding/contRiftPrint",
+  "support": {
+    "generator": "rta.service.ControllerExtension"
+  },
+  "originalLanguage": "EN",
+  "layer": "CUSTOMER_BASE",
+  "fileType": "change",
+  "fileName": "id_1786912488170_195_codeExt",
+  "content": {
+    "codeRef": "coding/contRiftPrint.js"
+  },
+  "texts": {},
+  "selector": {
+    "controllerName": "sap.fe.templates.ListReport.ListReportController"
+  },
+  "creation": "2026-08-16T20:34:48.171Z"
+}

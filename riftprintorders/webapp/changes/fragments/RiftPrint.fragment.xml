@@ -1,0 +1,8 @@
+<core:FragmentDefinition  xmlns:core='sap.ui.core' xmlns='sap.m'>
+    <!-- viewName: sap.fe.templates.ListReport.ListReport -->
+    <!-- controlType: sap.ui.mdc.Table -->
+    <!-- targetAggregation: actions --> 
+    <!-- <actiontoolbar:ActionToolbarAction xmlns:actiontoolbar="sap.ui.mdc..actiontoolbar" id="toolbarAction-89cd35d4" > -->
+        <Button xmlns:m="sap.m" id="btn-89cd35d4" visible="true" type="Emphasized" text="Rift Print" icon="sap-icon://print" iconFirst="false" />
+    <!-- </actiontoolbar:ActionToolbarAction>  -->
+</core:FragmentDefinition>
