@@ -53,7 +53,7 @@ sap.ui.define(
                     });
                     // eslint-disable-next-line no-console
                     // console.log("DEBUG aOrderNumbers:", aOrderNumbers, "| DEBUG sHash:", sHash);
-                    // window.open(sHash, "_self");
+                     window.open(sHash, "_self");
                 }, 1500);
             },
             empDialogClose: function () {

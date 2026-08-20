@@ -30,9 +30,9 @@ sap.ui.define(
                 }
 
                 // eslint-disable-next-line no-console
-                console.log("DEBUG selected row data:", aSelectedContexts.map(function (oContext) {
-                    return oContext.getObject();
-                }));
+                // console.log("DEBUG selected row data:", aSelectedContexts.map(function (oContext) {
+                //    return oContext.getObject();
+                // }));
 
                 var aOrderNumbers = aSelectedContexts.map(function (oContext) {
                     return oContext.getProperty("MaintenanceOrder");
@@ -52,7 +52,7 @@ sap.ui.define(
                         }
                     });
                     // eslint-disable-next-line no-console
-                    console.log("DEBUG aOrderNumbers:", aOrderNumbers, "| DEBUG sHash:", sHash);
+                    // console.log("DEBUG aOrderNumbers:", aOrderNumbers, "| DEBUG sHash:", sHash);
                     window.open(sHash, "_self");
                 }, 1500);
             },
