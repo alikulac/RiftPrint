@@ -1,8 +1,0 @@
-<!-- Use stable and unique IDs!-->
-<core:FragmentDefinition xmlns:core='sap.ui.core' xmlns='sap.m'>
-    <!-- viewName: sap.suite.ui.generic.template.ListReport.view.ListReport -->
-    <!-- controlType: sap.m.OverflowToolbar -->
-    <!-- targetAggregation: content --> 
-    <!-- add your xml here -->
-    <Button type="Emphasized" text="Rift Print" icon="sap-icon://print" iconFirst="false" id="btn-74f807af"  press=".extension.customer.riftprint.contRiftPrint.onPress"></Button>
-</core:FragmentDefinition>
