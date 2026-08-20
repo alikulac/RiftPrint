@@ -1,0 +1,26 @@
+{
+  "changeType": "hideControl",
+  "reference": "customer.riftprintoperation",
+  "namespace": "apps/customer.riftprintoperation/changes/",
+  "creation": "2026-08-19T18:20:35.467Z",
+  "projectId": "customer.riftprintoperation",
+  "packageName": "$TMP",
+  "support": {
+    "generator": "@sap-ux/control-property-editor",
+    "sapui5Version": "1.120.23",
+    "compositeCommand": "id_1787163444099_214_composite",
+    "command": "remove"
+  },
+  "originalLanguage": "EN",
+  "layer": "CUSTOMER_BASE",
+  "fileType": "change",
+  "fileName": "id_1787163444099_213_hideControl",
+  "content": {},
+  "texts": {},
+  "selector": {
+    "id": "id-1638444355774-377",
+    "idIsLocal": true
+  },
+  "dependentSelector": {},
+  "jsOnly": false
+}

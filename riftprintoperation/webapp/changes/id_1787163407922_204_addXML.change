@@ -1,0 +1,30 @@
+{
+  "changeType": "addXML",
+  "reference": "customer.riftprintoperation",
+  "namespace": "apps/customer.riftprintoperation/changes/",
+  "creation": "2026-08-19T18:20:35.462Z",
+  "projectId": "customer.riftprintoperation",
+  "packageName": "$TMP",
+  "moduleName": "customer/riftprintoperation/changes/fragments/headerLogoAct.fragment.xml",
+  "support": {
+    "generator": "@sap-ux/control-property-editor",
+    "sapui5Version": "1.120.23",
+    "command": "addXML"
+  },
+  "originalLanguage": "EN",
+  "layer": "CUSTOMER_BASE",
+  "fileType": "change",
+  "fileName": "id_1787163407922_204_addXML",
+  "content": {
+    "targetAggregation": "actions",
+    "index": 4,
+    "fragmentPath": "fragments/headerLogoAct.fragment.xml"
+  },
+  "texts": {},
+  "selector": {
+    "id": "i2d.eam.orderandoperation.monitors1::sap.suite.ui.generic.template.ListReport.view.ListReport::C_ObjPgMaintOrderAndOperation--template:::ListReportPage:::DynamicPageTitle",
+    "idIsLocal": false
+  },
+  "dependentSelector": {},
+  "jsOnly": false
+}

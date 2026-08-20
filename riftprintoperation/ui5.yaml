@@ -2,7 +2,7 @@
 
 specVersion: "3.1"
 metadata:
-  name: riftprintorder
+  name: riftprintoperation
 type: application
 resources:
   configuration:
@@ -12,7 +12,7 @@ customConfiguration:
     support:
       id: '@sap/generator-adaptation-project'
       version: NO_VERSION_FOUND
-      toolsId: 1f6174f5-5dd0-461c-92cb-c353b9dcbede
+      toolsId: 0354e937-7645-470e-b3e2-7ab4cf6ba4db
 server:
   customMiddleware:
     - name: fiori-tools-appreload
@@ -33,13 +33,13 @@ server:
       configuration:
         ignoreCertErrors: true # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
         backend:
-          - path: /sap 
+          - path: /sap
             destination: DE5_RISE_BAS
             url: http://vhegpde5ci.sap.eldoradogold.com:8000
             client: '010'
         ui5:
           path:
-            - /resourcesz
+            - /resources
             - /test-resources
           url: https://ui5.sap.com
           version: 1.120.23
