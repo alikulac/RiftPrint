@@ -1,0 +1,34 @@
+{
+	"aSortColumn": {
+		"id": "idWCColumn",
+		"sortOrder": "Descending",
+		"sortProperty": "MainWorkCenter"
+	},
+	"aVisibleColumns": [
+		{
+			"columnBindingName": "MaintenanceOrder",
+			"id": "idOrderDescColumn",
+			"width": "201px"
+		},
+		{
+			"columnBindingName": "MainWorkCenter",
+			"id": "idWCColumn",
+			"width": "20%"
+		},
+		{
+			"columnBindingName": "OrderEndDateTime",
+			"id": "idPlannedEndDateTimeColumn",
+			"width": "40%"
+		},
+		{
+			"columnBindingName": "FunctionalLocationName",
+			"id": "idFunctionalLocationColumn",
+			"width": "20%"
+		},
+		{
+			"columnBindingName": "OperationControlKey",
+			"id": "idOperationControlKey",
+			"width": "20%"
+		}
+	]
+}

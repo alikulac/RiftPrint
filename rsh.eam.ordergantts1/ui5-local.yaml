@@ -1,0 +1,45 @@
+specVersion: "4.0"
+metadata:
+  name: rsh.eam.ordergantts1
+type: application
+framework:
+  name: SAPUI5
+  version: 1.79.0
+  libraries:
+    - name: sap.collaboration
+    - name: sap.gantt
+    - name: sap.m
+    - name: sap.ui.comp
+    - name: sap.ui.core
+    - name: sap.ui.generic.app
+    - name: sap.ui.layout
+    - name: sap.ui.table
+    - name: sap.ushell
+    - name: sap.tnt
+    - name: sap.uxap
+    - name: sap.f
+    - name: themelib_sap_belize
+    - name: themelib_sap_bluecrystal
+    - name: themelib_sap_fiori_3
+server:
+  customMiddleware:
+    - name: fiori-tools-proxy
+      afterMiddleware: compression
+      configuration:
+        ignoreCertErrors: false
+        backend:
+          - path: /sap
+            url: http://vhegpde5ci.sap.eldoradogold.com:8000
+            client: "010"
+            destination: DE5_RISE_BAS
+    - name: fiori-tools-appreload
+      afterMiddleware: compression
+      configuration:
+        port: 35729
+        path: webapp
+        delay: 300
+    - name: fiori-tools-preview
+      afterMiddleware: fiori-tools-appreload
+      configuration:
+        component: rsh.eam.ordergantts1
+        ui5Theme: sap_fiori_3

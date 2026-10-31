@@ -1,0 +1,126 @@
+{
+	"d": {
+		"results": [
+			{
+				"__metadata": {
+					"id": "C_RSHPersonDetailSet(P_StartDate=datetime'2022-06-26T00%3A00%3A00',P_EndDate=datetime'2023-06-27T00%3A00%3A00',MaintWorkCenterPersonID='50116575')",
+					"uri": "C_RSHPersonDetailSet(P_StartDate=datetime'2022-06-26T00%3A00%3A00',P_EndDate=datetime'2023-06-27T00%3A00%3A00',MaintWorkCenterPersonID='50116575')",
+					"type": "cds_ui_rshperson.C_RSHPersonDetailType"
+				},
+				"P_StartDate": "/Date(1656201600000)/",
+				"P_EndDate": "/Date(1687824000000)/",
+				"MaintWorkCenterPersonID": "50116575",
+				"RespyMgmtTeamID": "50113725",
+				"RespyMgmtGlobalTeamID": "RSH_TEAM",
+				"RespyMgmtTeamName": "RSH_RR_01",
+				"RespyMgmtTeamDescription": "RSH Team RR",
+				"RespyMgmtTeamFuncnlAssgmtID": "0",
+				"RespyMgmtFunction": "M_REPAIR",
+				"RespyMgmtFunctionDescription": "Repairs",
+				"OrganizationObjType": "",
+				"OperationWorkCenterInternalID": "10000429",
+				"MaintenanceWorkCenter": "RSH_CK01",
+				"MaintenanceWorkCenterPlant": "0001",
+				"MaintenanceWorkCenterText": "MOCK_WC",
+				"BusinessPartner": "183752",
+				"MaintWorkCenterPersonName": "Patrick Johnson",
+				"UserID": "",
+				"Parameters": {
+					"__deferred": {
+						"uri": "C_RSHPersonDetailSet(P_StartDate=datetime'2022-06-26T00%3A00%3A00',P_EndDate=datetime'2023-06-27T00%3A00%3A00',MaintWorkCenterPersonID='50116575')/Parameters"
+					}
+				}
+			},
+			{
+				"__metadata": {
+					"id": "C_RSHPersonDetailSet(P_StartDate=datetime'2022-06-26T00%3A00%3A00',P_EndDate=datetime'2023-06-27T00%3A00%3A00',MaintWorkCenterPersonID='50116600')",
+					"uri": "C_RSHPersonDetailSet(P_StartDate=datetime'2022-06-26T00%3A00%3A00',P_EndDate=datetime'2023-06-27T00%3A00%3A00',MaintWorkCenterPersonID='50116600')",
+					"type": "cds_ui_rshperson.C_RSHPersonDetailType"
+				},
+				"P_StartDate": "/Date(1656201600000)/",
+				"P_EndDate": "/Date(1687824000000)/",
+				"MaintWorkCenterPersonID": "50116600",
+				"RespyMgmtTeamID": "50113725",
+				"RespyMgmtGlobalTeamID": "RSH_TEAM",
+				"RespyMgmtTeamName": "RSH_RR_01",
+				"RespyMgmtTeamDescription": "RSH Team RR",
+				"RespyMgmtTeamFuncnlAssgmtID": "0",
+				"RespyMgmtFunction": "M_ELEC",
+				"RespyMgmtFunctionDescription": "Electrician",
+				"OrganizationObjType": "",
+				"OperationWorkCenterInternalID": "10000429",
+				"MaintenanceWorkCenter": "RSH_CK01",
+				"MaintenanceWorkCenterPlant": "0001",
+				"MaintenanceWorkCenterText": "MOCK_WC",
+				"BusinessPartner": "183716",
+				"MaintWorkCenterPersonName": "Claudia Klaus",
+				"UserID": "",
+				"Parameters": {
+					"__deferred": {
+						"uri": "C_RSHPersonDetailSet(P_StartDate=datetime'2022-06-26T00%3A00%3A00',P_EndDate=datetime'2023-06-27T00%3A00%3A00',MaintWorkCenterPersonID='50116600')/Parameters"
+					}
+				}
+			},
+			{
+				"__metadata": {
+					"id": "C_RSHPersonDetailSet(P_StartDate=datetime'2022-06-26T00%3A00%3A00',P_EndDate=datetime'2023-06-27T00%3A00%3A00',MaintWorkCenterPersonID='50116575')",
+					"uri": "C_RSHPersonDetailSet(P_StartDate=datetime'2022-06-26T00%3A00%3A00',P_EndDate=datetime'2023-06-27T00%3A00%3A00',MaintWorkCenterPersonID='50116575')",
+					"type": "cds_ui_rshperson.C_RSHPersonDetailType"
+				},
+				"P_StartDate": "/Date(1656201600000)/",
+				"P_EndDate": "/Date(1687824000000)/",
+				"MaintWorkCenterPersonID": "50116583",
+				"RespyMgmtTeamID": "50113725",
+				"RespyMgmtGlobalTeamID": "RSH_TEAM",
+				"RespyMgmtTeamName": "RSH_RR_01",
+				"RespyMgmtTeamDescription": "RSH Team RR",
+				"RespyMgmtTeamFuncnlAssgmtID": "0",
+				"RespyMgmtFunction": "M_VOLT",
+				"RespyMgmtFunctionDescription": "Voltage",
+				"OrganizationObjType": "",
+				"OperationWorkCenterInternalID": "10000429",
+				"MaintenanceWorkCenter": "RSH_CK01",
+				"MaintenanceWorkCenterPlant": "0001",
+				"MaintenanceWorkCenterText": "MOCK_WC",
+				"BusinessPartner": "183759",
+				"MaintWorkCenterPersonName": "Rose Chen",
+				"UserID": "",
+				"Parameters": {
+					"__deferred": {
+						"uri": "C_RSHPersonDetailSet(P_StartDate=datetime'2022-06-26T00%3A00%3A00',P_EndDate=datetime'2023-06-27T00%3A00%3A00',MaintWorkCenterPersonID='50116575')/Parameters"
+					}
+				}
+			},
+			{
+				"__metadata": {
+					"id": "C_RSHPersonDetailSet(P_StartDate=datetime'2022-06-26T00%3A00%3A00',P_EndDate=datetime'2023-06-27T00%3A00%3A00',MaintWorkCenterPersonID='50116600')",
+					"uri": "C_RSHPersonDetailSet(P_StartDate=datetime'2022-06-26T00%3A00%3A00',P_EndDate=datetime'2023-06-27T00%3A00%3A00',MaintWorkCenterPersonID='50116600')",
+					"type": "cds_ui_rshperson.C_RSHPersonDetailType"
+				},
+				"P_StartDate": "/Date(1656201600000)/",
+				"P_EndDate": "/Date(1687824000000)/",
+				"MaintWorkCenterPersonID": "50116666",
+				"RespyMgmtTeamID": "50113725",
+				"RespyMgmtGlobalTeamID": "RSH_TEAM",
+				"RespyMgmtTeamName": "RSH_RR_01",
+				"RespyMgmtTeamDescription": "RSH Team RR",
+				"RespyMgmtTeamFuncnlAssgmtID": "0",
+				"RespyMgmtFunction": "M_PRESS",
+				"RespyMgmtFunctionDescription": "High Pressure",
+				"OrganizationObjType": "",
+				"OperationWorkCenterInternalID": "10000429",
+				"MaintenanceWorkCenter": "RSH_CK01",
+				"MaintenanceWorkCenterPlant": "0001",
+				"MaintenanceWorkCenterText": "MOCK_WC",
+				"BusinessPartner": "183700",
+				"MaintWorkCenterPersonName": "Florian Kruse",
+				"UserID": "",
+				"Parameters": {
+					"__deferred": {
+						"uri": "C_RSHPersonDetailSet(P_StartDate=datetime'2022-06-26T00%3A00%3A00',P_EndDate=datetime'2023-06-27T00%3A00%3A00',MaintWorkCenterPersonID='50116600')/Parameters"
+					}
+				}
+			}
+		]
+	}
+}

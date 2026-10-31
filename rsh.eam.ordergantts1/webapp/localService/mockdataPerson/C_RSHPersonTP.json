@@ -1,0 +1,267 @@
+{
+	"d": {
+		"__count": "4",
+		"results": [
+			{
+				"__metadata": {
+					"id": "C_RSHPersonTP('50116575')",
+					"uri": "C_RSHPersonTP('50116575')",
+					"type": "cds_ui_rshperson.C_RSHPersonTPType"
+				},
+				"Delete_mc": true,
+				"Update_mc": true,
+				"to_Assignment_oc": true,
+				"MaintWorkCenterPersonID": "50116575",
+				"StartDate": "/Date(1640995200000)/",
+				"EndDate": "/Date(253402214400000)/",
+				"BusinessPartner": "183752",
+				"MaintWorkCenterPersonName": "Patrick Johnson",
+				"RequestedStartDate": "/Date(1609459200000)/",
+				"RequestedEndDate": "/Date(1609459200000)/",
+				"OperationEarliestStartDate": "/Date(1578009600000)/",
+				"OperationEarliestEndDate": "/Date(1577836800000)/",
+				"MaintWorkCenterPersonRowLevel": 0,
+				"EmployeeAvailabilityInHours": 100,
+				"EmployeeUtilizationInHours": 20,
+				"EmployeeUtilization": 20,
+				"RespyMgmtTeamName": "RSH_RR_01",
+				"RespyMgmtTeamDescription": "RSH Team RR",
+				"RespyMgmtFunctionDescription": "Repairs",
+				"MaintenanceWorkCenter": "RSH_CK01",
+				"MaintenanceWorkCenterPlant": "0001",
+				"to_Assignment": {
+					"results": [
+						{
+							"__metadata": {
+								"id": "C_RSHPersonAssignmentTP(CapacityRequirement='10000258301',CapacityRequirementItem='2',CapacityRqmtItemCapacity='513')",
+								"uri": "C_RSHPersonAssignmentTP(CapacityRequirement='10000258301',CapacityRequirementItem='2',CapacityRqmtItemCapacity='513')",
+								"type": "cds_ui_rshperson.C_RSHPersonAssignmentTPType"
+							},
+							"Delete_mc": true,
+							"Update_mc": true,
+							"CapacityRequirement": "10000258301",
+							"CapacityRequirementItem": "2",
+							"CapacityRqmtItemCapacity": "513",
+							"MaintOrderRoutingNumber": "1000044724",
+							"MaintOrderOperationCounter": "1",
+							"MaintenanceOrder": "4036020",
+							"MaintenanceOrderOperation": "0010",
+							"AssignedMaintOpSplitNumber": 1,
+							"MaintWorkCenterPersonID": "1",
+							"OperationEarliestStartDate": "/Date(1529884800000)/",
+							"OperationEarliestStartTime": "PT08H00M00S",
+							"OperationEarliestEndDate": "/Date(1529884800000)/",
+							"OperationEarliestEndTime": "PT09H00M00S",
+							"AssignedMaintOpStartDateTime": "/Date(1613980800000+0000)/",
+							"AssignedMaintOpEndDateTime": "/Date(1613991600000+0000)/",
+							"AssignedMaintOpWork": "1.0",
+							"AssignedMaintOpWorkUnit": "H",
+							"AssignedMaintOpDuration": "1.0",
+							"AssignedMaintOpDurationUnit": "H",
+							"to_Person": {
+								"__deferred": {
+									"uri": "C_RSHPersonAssignmentTP(CapacityRequirement='10000258301',CapacityRequirementItem='2',CapacityRqmtItemCapacity='513')/to_Person"
+								}
+							}
+						}
+					]
+				}
+			},
+			{
+				"__metadata": {
+					"id": "C_RSHPersonTP('50116600')",
+					"uri": "C_RSHPersonTP('50116600')",
+					"type": "cds_ui_rshperson.C_RSHPersonTPType"
+				},
+				"Delete_mc": true,
+				"Update_mc": true,
+				"to_Assignment_oc": true,
+				"MaintWorkCenterPersonID": "50116600",
+				"StartDate": "/Date(1640995200000)/",
+				"EndDate": "/Date(253402214400000)/",
+				"BusinessPartner": "183716",
+				"MaintWorkCenterPersonName": "Claudia Klaus",
+				"RequestedStartDate": "/Date(1609459200000)/",
+				"RequestedEndDate": "/Date(1609459200000)/",
+				"OperationEarliestStartDate": "/Date(1578009600000)/",
+				"OperationEarliestEndDate": "/Date(1577836800000)/",
+				"MaintWorkCenterPersonRowLevel": 0,
+				"EmployeeAvailabilityInHours": 100,
+				"EmployeeUtilizationInHours": 20,
+				"EmployeeUtilization": 20,
+				"RespyMgmtTeamName": "RSH_RR_01",
+				"RespyMgmtTeamDescription": "RSH Team RR",
+				"RespyMgmtFunctionDescription": "Electrician",
+				"MaintenanceWorkCenter": "RSH_CK01",
+				"MaintenanceWorkCenterPlant": "0001",
+				"to_Assignment": {
+					"results": [
+						{
+							"__metadata": {
+								"id": "C_RSHPersonAssignmentTP(CapacityRequirement='10000258303',CapacityRequirementItem='2',CapacityRqmtItemCapacity='513')",
+								"uri": "C_RSHPersonAssignmentTP(CapacityRequirement='10000258303',CapacityRequirementItem='2',CapacityRqmtItemCapacity='513')",
+								"type": "cds_ui_rshperson.C_RSHPersonAssignmentTPType"
+							},
+							"Delete_mc": true,
+							"Update_mc": true,
+							"CapacityRequirement": "10000258301",
+							"CapacityRequirementItem": "2",
+							"CapacityRqmtItemCapacity": "513",
+							"MaintOrderRoutingNumber": "1000044724",
+							"MaintOrderOperationCounter": "1",
+							"MaintenanceOrder": "4036020",
+							"MaintenanceOrderOperation": "0010",
+							"AssignedMaintOpSplitNumber": 1,
+							"MaintWorkCenterPersonID": "1",
+							"OperationEarliestStartDate": "/Date(1529884800000)/",
+							"OperationEarliestStartTime": "PT08H00M00S",
+							"OperationEarliestEndDate": "/Date(1529884800000)/",
+							"OperationEarliestEndTime": "PT09H00M00S",
+							"AssignedMaintOpStartDateTime": "/Date(1614013200000+0000)/",
+							"AssignedMaintOpEndDateTime": "/Date(1614016800000+0000)/",
+							"AssignedMaintOpWork": "1.0",
+							"AssignedMaintOpWorkUnit": "H",
+							"AssignedMaintOpDuration": "1.0",
+							"AssignedMaintOpDurationUnit": "H",
+							"to_Person": {
+								"__deferred": {
+									"uri": "C_RSHPersonAssignmentTP(CapacityRequirement='10000258303',CapacityRequirementItem='2',CapacityRqmtItemCapacity='513')/to_Person"
+								}
+							}
+						}
+					]
+				}
+			},
+			{
+				"__metadata": {
+					"id": "C_RSHPersonTP('50116583')",
+					"uri": "C_RSHPersonTP('50116583')",
+					"type": "cds_ui_rshperson.C_RSHPersonTPType"
+				},
+				"Delete_mc": true,
+				"Update_mc": true,
+				"to_Assignment_oc": true,
+				"MaintWorkCenterPersonID": "50116583",
+				"StartDate": "/Date(1640995200000)/",
+				"EndDate": "/Date(253402214400000)/",
+				"BusinessPartner": "183759",
+				"MaintWorkCenterPersonName": "Rose Chen",
+				"RequestedStartDate": "/Date(1609459200000)/",
+				"RequestedEndDate": "/Date(1609459200000)/",
+				"OperationEarliestStartDate": "/Date(1578009600000)/",
+				"OperationEarliestEndDate": "/Date(1577836800000)/",
+				"MaintWorkCenterPersonRowLevel": 0,
+				"EmployeeAvailabilityInHours": 100,
+				"EmployeeUtilizationInHours": 20,
+				"EmployeeUtilization": 20,
+				"RespyMgmtTeamName": "RSH_RR_01",
+				"RespyMgmtTeamDescription": "RSH Team RR",
+				"RespyMgmtFunctionDescription": "Voltage",
+				"MaintenanceWorkCenter": "RSH_CK01",
+				"MaintenanceWorkCenterPlant": "0001",
+				"to_Assignment": {
+					"results": [
+						{
+							"__metadata": {
+								"id": "C_RSHPersonAssignmentTP(CapacityRequirement='10000218304',CapacityRequirementItem='2',CapacityRqmtItemCapacity='513')",
+								"uri": "C_RSHPersonAssignmentTP(CapacityRequirement='10000218304',CapacityRequirementItem='2',CapacityRqmtItemCapacity='513')",
+								"type": "cds_ui_rshperson.C_RSHPersonAssignmentTPType"
+							},
+							"Delete_mc": true,
+							"Update_mc": true,
+							"CapacityRequirement": "10000258301",
+							"CapacityRequirementItem": "2",
+							"CapacityRqmtItemCapacity": "513",
+							"MaintOrderRoutingNumber": "1000044724",
+							"MaintOrderOperationCounter": "1",
+							"MaintenanceOrder": "4036020",
+							"MaintenanceOrderOperation": "0010",
+							"AssignedMaintOpSplitNumber": 1,
+							"MaintWorkCenterPersonID": "1",
+							"OperationEarliestStartDate": "/Date(1529884800000)/",
+							"OperationEarliestStartTime": "PT08H00M00S",
+							"OperationEarliestEndDate": "/Date(1529884800000)/",
+							"OperationEarliestEndTime": "PT09H00M00S",
+							"AssignedMaintOpStartDateTime": "/Date(1614013200000+0000)/",
+							"AssignedMaintOpEndDateTime": "/Date(1614020400000+0000)/",
+							"AssignedMaintOpWork": "1.0",
+							"AssignedMaintOpWorkUnit": "H",
+							"AssignedMaintOpDuration": "1.0",
+							"AssignedMaintOpDurationUnit": "H",
+							"to_Person": {
+								"__deferred": {
+									"uri": "C_RSHPersonAssignmentTP(CapacityRequirement='10000258304',CapacityRequirementItem='2',CapacityRqmtItemCapacity='513')/to_Person"
+								}
+							}
+						}
+					]
+				}
+			},
+			{
+				"__metadata": {
+					"id": "C_RSHPersonTP('50116666')",
+					"uri": "C_RSHPersonTP('50116666')",
+					"type": "cds_ui_rshperson.C_RSHPersonTPType"
+				},
+				"Delete_mc": true,
+				"Update_mc": true,
+				"to_Assignment_oc": true,
+				"MaintWorkCenterPersonID": "50116666",
+				"StartDate": "/Date(1640995200000)/",
+				"EndDate": "/Date(253402214400000)/",
+				"BusinessPartner": "183700",
+				"MaintWorkCenterPersonName": "Florian Kruse",
+				"RequestedStartDate": "/Date(1609459200000)/",
+				"RequestedEndDate": "/Date(1609459200000)/",
+				"OperationEarliestStartDate": "/Date(1578009600000)/",
+				"OperationEarliestEndDate": "/Date(1577836800000)/",
+				"MaintWorkCenterPersonRowLevel": 0,
+				"EmployeeAvailabilityInHours": 100,
+				"EmployeeUtilizationInHours": 20,
+				"EmployeeUtilization": 20,
+				"RespyMgmtTeamName": "RSH_RR_01",
+				"RespyMgmtTeamDescription": "RSH Team RR",
+				"RespyMgmtFunctionDescription": "High Pressure",
+				"MaintenanceWorkCenter": "RSH_CK01",
+				"MaintenanceWorkCenterPlant": "0001",
+				"to_Assignment": {
+					"results": [
+						{
+							"__metadata": {
+								"id": "C_RSHPersonAssignmentTP(CapacityRequirement='10000258304',CapacityRequirementItem='2',CapacityRqmtItemCapacity='513')",
+								"uri": "C_RSHPersonAssignmentTP(CapacityRequirement='10000258304',CapacityRequirementItem='2',CapacityRqmtItemCapacity='513')",
+								"type": "cds_ui_rshperson.C_RSHPersonAssignmentTPType"
+							},
+							"Delete_mc": true,
+							"Update_mc": true,
+							"CapacityRequirement": "10000258301",
+							"CapacityRequirementItem": "2",
+							"CapacityRqmtItemCapacity": "513",
+							"MaintOrderRoutingNumber": "1000044724",
+							"MaintOrderOperationCounter": "1",
+							"MaintenanceOrder": "4036020",
+							"MaintenanceOrderOperation": "0010",
+							"AssignedMaintOpSplitNumber": 1,
+							"MaintWorkCenterPersonID": "1",
+							"OperationEarliestStartDate": "/Date(1529884800000)/",
+							"OperationEarliestStartTime": "PT08H00M00S",
+							"OperationEarliestEndDate": "/Date(1529884800000)/",
+							"OperationEarliestEndTime": "PT09H00M00S",
+							"AssignedMaintOpStartDateTime": "/Date(1613977200000+0000)/",
+							"AssignedMaintOpEndDateTime": "/Date(1613980800000+0000)/",
+							"AssignedMaintOpWork": "1.0",
+							"AssignedMaintOpWorkUnit": "H",
+							"AssignedMaintOpDuration": "1.0",
+							"AssignedMaintOpDurationUnit": "H",
+							"to_Person": {
+								"__deferred": {
+									"uri": "C_RSHPersonAssignmentTP(CapacityRequirement='10000258304',CapacityRequirementItem='2',CapacityRqmtItemCapacity='513')/to_Person"
+								}
+							}
+						}
+					]
+				}
+			}
+		]
+	}
+}

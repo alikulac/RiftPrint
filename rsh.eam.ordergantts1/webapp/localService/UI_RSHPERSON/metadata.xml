@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="UTF-8"?><edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+<!--
+
+    Copyright (C) 2009-2023 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+    <edmx:Reference Uri="./iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_AGGREGATION',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Alias="Aggregation" Namespace="Org.OData.Aggregation.V1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="./iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ANALYTICS',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Alias="Analytics" Namespace="com.sap.vocabularies.Analytics.v1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="./iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CAPABILITIES',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Alias="Capabilities" Namespace="Org.OData.Capabilities.V1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="./iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CODELIST',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Alias="SAP__CodeList" Namespace="com.sap.vocabularies.CodeList.v1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="./iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+        <edmx:Include Alias="SAP__common" Namespace="com.sap.vocabularies.Common.v1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="./iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Alias="Communication" Namespace="com.sap.vocabularies.Communication.v1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="./iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CORE',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Alias="SAP__core" Namespace="Org.OData.Core.V1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="./iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_MEASURES',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Alias="Measures" Namespace="Org.OData.Measures.V1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="./iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PDF',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Alias="SAP__PDF" Namespace="com.sap.vocabularies.PDF.v1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="./iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PERSONALDATA',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Alias="PersonalData" Namespace="com.sap.vocabularies.PersonalData.v1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="./iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="./iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_VALIDATION',Version='0001',SAP__Origin='LOCAL')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Alias="Validation" Namespace="Org.OData.Validation.V1"/>
+    </edmx:Reference>
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="cds_ui_rshperson" sap:schema-version="1" xml:lang="en">
+            <EntityType Name="C_RSHOperationAssignmentType" sap:content-version="1" sap:label="Maintenance Order Operation Assignment">
+                <Key>
+                    <PropertyRef Name="CapacityRequirement"/>
+                    <PropertyRef Name="CapacityRequirementItem"/>
+                    <PropertyRef Name="CapacityRqmtItemCapacity"/>
+                </Key>
+                <Property MaxLength="12" Name="CapacityRequirement" Nullable="false" Type="Edm.String" sap:display-format="NonNegative" sap:label="Capacity Requirement" sap:quickinfo="ID of the Capacity Requirements Record"/>
+                <Property MaxLength="8" Name="CapacityRequirementItem" Nullable="false" Type="Edm.String" sap:display-format="NonNegative" sap:label="Capacity Requirement Item"/>
+                <Property MaxLength="4" Name="CapacityRqmtItemCapacity" Nullable="false" Type="Edm.String" sap:display-format="NonNegative" sap:label="Capacity Requirement Item Capacity" sap:quickinfo="Individual Capacity of a Capacity Requirement Item"/>
+                <Property MaxLength="12" Name="MaintenanceOrder" Type="Edm.String" sap:display-format="UpperCase" sap:label="Order" sap:quickinfo="Order Number"/>
+                <Property MaxLength="4" Name="MaintenanceOrderOperation" Type="Edm.String" sap:display-format="UpperCase" sap:label="Operation" sap:quickinfo="Maintenance Order Operation"/>
+                <Property MaxLength="4" Name="MaintenanceOrderSubOperation" Type="Edm.String" sap:display-format="UpperCase" sap:label="Operation or Phase" sap:quickinfo="Operation or Phase Number"/>
+                <Property MaxLength="10" Name="MaintOrderRoutingNumber" Type="Edm.String" sap:display-format="NonNegative" sap:label="Order Internal ID"/>
+                <Property MaxLength="8" Name="MaintOrderOperationCounter" Type="Edm.String" sap:display-format="NonNegative" sap:label="Operation Internal ID" sap:quickinfo="Internal Identifier of an Operation or Activity"/>
+                <Property MaxLength="8" Name="PersonnelNumber" Type="Edm.String" sap:display-format="NonNegative" sap:label="Personnel Number"/>
+                <Property Name="AssignedMaintOpStartDate" Precision="0" Type="Edm.DateTime" sap:display-format="Date" sap:label="Earliest Start Date"/>
+                <Property Name="AssignedMaintOpStartTime" Precision="0" Type="Edm.Time" sap:label="Earliest Start Time"/>
+                <Property Name="AssignedMaintOpEndDate" Precision="0" Type="Edm.DateTime" sap:display-format="Date" sap:label="Earliest End Date"/>
+                <Property Name="AssignedMaintOpEndTime" Precision="0" Type="Edm.Time" sap:label="Earliest End Time"/>
+                <Property Name="AssignedMaintOpStartDateTime" Precision="0" Type="Edm.DateTimeOffset" sap:label="Time Stamp" sap:quickinfo="UTC Time Stamp in Short Form (YYYYMMDDhhmmss)"/>
+                <Property Name="AssignedMaintOpEndDateTime" Precision="0" Type="Edm.DateTimeOffset" sap:label="Time Stamp" sap:quickinfo="UTC Time Stamp in Short Form (YYYYMMDDhhmmss)"/>
+            </EntityType>
+            <EntityType Name="C_RSHPersonAssignmentTPType" sap:content-version="1" sap:label="Projection for Person Assignment TP">
+                <Key>
+                    <PropertyRef Name="CapacityRequirement"/>
+                    <PropertyRef Name="CapacityRequirementItem"/>
+                    <PropertyRef Name="CapacityRqmtItemCapacity"/>
+                </Key>
+                <Property Name="Delete_mc" Type="Edm.Boolean" sap:creatable="false" sap:filterable="false" sap:label="Dyn. Method Control" sap:sortable="false" sap:updatable="false"/>
+                <Property Name="Update_mc" Type="Edm.Boolean" sap:creatable="false" sap:filterable="false" sap:label="Dyn. Method Control" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="12" Name="CapacityRequirement" Nullable="false" Type="Edm.String" sap:creatable="false" sap:display-format="NonNegative" sap:label="Capacity Requirement" sap:quickinfo="ID of the Capacity Requirements Record" sap:updatable="false"/>
+                <Property MaxLength="8" Name="CapacityRequirementItem" Nullable="false" Type="Edm.String" sap:creatable="false" sap:display-format="NonNegative" sap:label="Counter" sap:quickinfo="Internal counter" sap:updatable="false"/>
+                <Property MaxLength="4" Name="CapacityRqmtItemCapacity" Nullable="false" Type="Edm.String" sap:creatable="false" sap:display-format="NonNegative" sap:label="Counter" sap:quickinfo="Counters for cap. rqmts. records (various caps. + indiv.caps" sap:updatable="false"/>
+                <Property MaxLength="10" Name="MaintOrderRoutingNumber" Type="Edm.String" sap:display-format="NonNegative" sap:label="Opertn task list no." sap:quickinfo="Routing Number of Operations in Order"/>
+                <Property MaxLength="8" Name="MaintOrderOperationCounter" Type="Edm.String" sap:display-format="NonNegative" sap:label="Counter" sap:quickinfo="General counter for order"/>
+                <Property MaxLength="12" Name="MaintenanceOrder" Type="Edm.String" sap:display-format="UpperCase" sap:label="Order" sap:quickinfo="Order Number"/>
+                <Property MaxLength="4" Name="MaintenanceOrderOperation" Type="Edm.String" sap:display-format="UpperCase" sap:label="Operation" sap:quickinfo="Maintenance Order Operation"/>
+                <Property MaxLength="4" Name="MaintenanceOrderSubOperation" Type="Edm.String" sap:display-format="UpperCase" sap:label="Operation or Phase" sap:quickinfo="Operation or Phase Number"/>
+                <Property Name="AssignedMaintOpSplitNumber" Type="Edm.Byte" sap:label="Split number"/>
+                <Property MaxLength="8" Name="MaintWorkCenterPersonID" Type="Edm.String" sap:creatable="false" sap:display-format="NonNegative" sap:label="Personnel Number" sap:updatable="false"/>
+                <Property Name="AssignedMaintOpStartDate" Precision="0" Type="Edm.DateTime" sap:display-format="Date" sap:label="Earliest Start Date"/>
+                <Property Name="AssignedMaintOpStartTime" Precision="0" Type="Edm.Time" sap:label="Earliest Start Time"/>
+                <Property Name="AssignedMaintOpEndDate" Precision="0" Type="Edm.DateTime" sap:display-format="Date" sap:label="Earliest End Date"/>
+                <Property Name="AssignedMaintOpEndTime" Precision="0" Type="Edm.Time" sap:label="Earliest End Time"/>
+                <Property Name="AssignedMaintOpStartDateTime" Precision="0" Type="Edm.DateTimeOffset" sap:creatable="false" sap:label="Time Stamp" sap:quickinfo="UTC Time Stamp in Short Form (YYYYMMDDhhmmss)" sap:updatable="false"/>
+                <Property Name="AssignedMaintOpEndDateTime" Precision="0" Type="Edm.DateTimeOffset" sap:creatable="false" sap:label="Time Stamp" sap:quickinfo="UTC Time Stamp in Short Form (YYYYMMDDhhmmss)" sap:updatable="false"/>
+                <Property Name="AssignedMaintOpWork" Precision="7" Scale="1" Type="Edm.Decimal" sap:label="Work" sap:quickinfo="Work involved in the activity"/>
+                <Property MaxLength="3" Name="AssignedMaintOpWorkUnit" Type="Edm.String" sap:label="Unit for Work" sap:semantics="unit-of-measure"/>
+                <Property Name="AssignedMaintOpDuration" Precision="5" Scale="1" Type="Edm.Decimal" sap:label="Normal Duration" sap:quickinfo="Normal Duration of Activity"/>
+                <Property MaxLength="3" Name="AssignedMaintOpDurationUnit" Type="Edm.String" sap:label="Normal Duration Unit" sap:quickinfo="Normal Duration/Unit" sap:semantics="unit-of-measure"/>
+                <NavigationProperty FromRole="ToRole_assoc_1BA5B3D14CDD131FD0DCD1F921C3A2C8" Name="to_Person" Relationship="cds_ui_rshperson.assoc_1BA5B3D14CDD131FD0DCD1F921C3A2C8" ToRole="FromRole_assoc_1BA5B3D14CDD131FD0DCD1F921C3A2C8"/>
+            </EntityType>
+            <EntityType Name="C_RSHPersonBasicNonAvailType" sap:content-version="1" sap:label="Person Non-Availability in RSH EAM">
+                <Key>
+                    <PropertyRef Name="MaintWorkCenterPersonID"/>
+                    <PropertyRef Name="NonAvailabilityTimeStartDteTme"/>
+                </Key>
+                <Property MaxLength="8" Name="MaintWorkCenterPersonID" Nullable="false" Type="Edm.String" sap:display-format="NonNegative" sap:label="WorkForce Assgmt ID" sap:quickinfo="WorkForce Assignment ID"/>
+                <Property Name="NonAvailabilityTimeStartDteTme" Nullable="false" Precision="0" Type="Edm.DateTimeOffset" sap:label="Short Time Stamp" sap:quickinfo="UTC Time Stamp in Short Form (YYYYMMDDhhmmss)"/>
+                <Property Name="NonAvailabilityTimeEndDteTme" Precision="0" Type="Edm.DateTimeOffset" sap:label="Short Time Stamp" sap:quickinfo="UTC Time Stamp in Short Form (YYYYMMDDhhmmss)"/>
+            </EntityType>
+            <EntityType Name="C_RSHPersonCalendarType" sap:content-version="1" sap:label="Calendar for a Person in RSH EAM">
+                <Key>
+                    <PropertyRef Name="MaintWorkCenterPersonID"/>
+                </Key>
+                <Property MaxLength="8" Name="MaintWorkCenterPersonID" Nullable="false" Type="Edm.String" sap:display-format="NonNegative" sap:label="WorkForce Assgmt ID" sap:quickinfo="WorkForce Assignment ID"/>
+                <Property Name="RequestedStartDate" Precision="0" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="RequestedEndDate" Precision="0" Type="Edm.DateTime" sap:display-format="Date"/>
+                <NavigationProperty FromRole="FromRole_assoc_FADEEB18AC99C9C7E87CF5B0B995DCAC" Name="to_BasicNonAvailability" Relationship="cds_ui_rshperson.assoc_FADEEB18AC99C9C7E87CF5B0B995DCAC" ToRole="ToRole_assoc_FADEEB18AC99C9C7E87CF5B0B995DCAC"/>
+            </EntityType>
+            <EntityType Name="C_RSHPersonConflictType" sap:content-version="1" sap:label="Conflicts of a Work Center Person">
+                <Key>
+                    <PropertyRef Name="MaintWorkCenterPersonID"/>
+                    <PropertyRef Name="ConflictStartDateTime"/>
+                </Key>
+                <Property MaxLength="8" Name="MaintWorkCenterPersonID" Nullable="false" Type="Edm.String" sap:display-format="NonNegative" sap:label="WorkForce Assgmt ID" sap:quickinfo="WorkForce Assignment ID"/>
+                <Property Name="ConflictStartDateTime" Nullable="false" Precision="0" Type="Edm.DateTimeOffset" sap:label="Short Time Stamp" sap:quickinfo="UTC Time Stamp in Short Form (YYYYMMDDhhmmss)"/>
+                <Property Name="ConflictEndDateTime" Precision="0" Type="Edm.DateTimeOffset" sap:label="Short Time Stamp" sap:quickinfo="UTC Time Stamp in Short Form (YYYYMMDDhhmmss)"/>
+            </EntityType>
+            <EntityType Name="C_RSHPersonDetailType" sap:content-version="1" sap:label="Details for a Person in RSH EAM">
+                <Key>
+                    <PropertyRef Name="MaintWorkCenterPersonID"/>
+                </Key>
+                <Property MaxLength="8" Name="MaintWorkCenterPersonID" Nullable="false" Type="Edm.String" sap:display-format="NonNegative" sap:label="WorkForce Assgmt ID" sap:quickinfo="WorkForce Assignment ID"/>
+                <Property Name="RequestedStartDate" Precision="0" Type="Edm.DateTime" sap:display-format="Date" sap:label="Date"/>
+                <Property Name="RequestedEndDate" Precision="0" Type="Edm.DateTime" sap:display-format="Date" sap:label="Date"/>
+                <Property MaxLength="8" Name="RespyMgmtTeamID" Type="Edm.String" sap:display-format="NonNegative" sap:label="Object ID"/>
+                <Property MaxLength="40" Name="RespyMgmtGlobalTeamID" Type="Edm.String" sap:display-format="UpperCase" sap:label="Global Team ID" sap:quickinfo="Global Team ID in Responsibility Mgmt."/>
+                <Property MaxLength="40" Name="RespyMgmtTeamName" Type="Edm.String" sap:display-format="UpperCase" sap:label="Team Name"/>
+                <Property MaxLength="50" Name="RespyMgmtTeamDescription" Type="Edm.String" sap:label="Team Description"/>
+                <Property MaxLength="8" Name="RespyMgmtTeamFuncnlAssgmtID" Type="Edm.String" sap:display-format="NonNegative" sap:label="Object ID"/>
+                <Property MaxLength="10" Name="RespyMgmtFunction" Type="Edm.String" sap:display-format="UpperCase" sap:label="Function"/>
+                <Property MaxLength="50" Name="RespyMgmtFunctionDescription" Type="Edm.String" sap:label="Function Description"/>
+                <Property MaxLength="2" Name="OrganizationObjType" Type="Edm.String" sap:display-format="UpperCase" sap:label="Object Type"/>
+                <Property MaxLength="8" Name="OperationWorkCenterInternalID" Type="Edm.String" sap:display-format="NonNegative" sap:label="Object ID" sap:quickinfo="Object ID of the resource"/>
+                <Property MaxLength="8" Name="MaintenanceWorkCenter" Type="Edm.String" sap:display-format="UpperCase" sap:label="Work Center"/>
+                <Property MaxLength="4" Name="MaintenanceWorkCenterPlant" Type="Edm.String" sap:display-format="UpperCase" sap:label="Plant"/>
+                <Property MaxLength="40" Name="MaintenanceWorkCenterText" Type="Edm.String" sap:label="Description" sap:quickinfo="Short description"/>
+                <Property MaxLength="10" Name="BusinessPartner" Type="Edm.String" sap:display-format="UpperCase" sap:label="Business Partner" sap:quickinfo="Business Partner Number"/>
+                <Property MaxLength="80" Name="MaintWorkCenterPersonName" Type="Edm.String" sap:label="Full Name"/>
+                <Property MaxLength="12" Name="UserID" Type="Edm.String" sap:display-format="UpperCase" sap:label="User" sap:quickinfo="User Name in User Master Record"/>
+            </EntityType>
+            <EntityType Name="C_RSHPersonTPType" sap:content-version="1" sap:label="Projection for Person TP">
+                <Key>
+                    <PropertyRef Name="MaintWorkCenterPersonID"/>
+                </Key>
+                <Property Name="to_Assignment_oc" Type="Edm.Boolean" sap:creatable="false" sap:filterable="false" sap:label="Dynamic CbA-Control" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="8" Name="MaintWorkCenterPersonID" Nullable="false" Type="Edm.String" sap:creatable="false" sap:display-format="NonNegative" sap:label="WorkForce Assgmt ID" sap:quickinfo="WorkForce Assignment ID" sap:updatable="false"/>
+                <Property MaxLength="10" Name="BusinessPartner" Type="Edm.String" sap:display-format="UpperCase" sap:label="Business Partner" sap:quickinfo="Business Partner Number"/>
+                <Property MaxLength="80" Name="MaintWorkCenterPersonName" Type="Edm.String" sap:creatable="false" sap:label="Full Name" sap:updatable="false"/>
+                <Property Name="RequestedStartDate" Precision="0" Type="Edm.DateTime" sap:creatable="false" sap:display-format="Date" sap:updatable="false"/>
+                <Property Name="RequestedEndDate" Precision="0" Type="Edm.DateTime" sap:creatable="false" sap:display-format="Date" sap:updatable="false"/>
+                <Property Name="OperationEarliestStartDate" Precision="0" Type="Edm.DateTime" sap:creatable="false" sap:display-format="Date" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property Name="OperationEarliestEndDate" Precision="0" Type="Edm.DateTime" sap:creatable="false" sap:display-format="Date" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property Name="MaintWorkCenterPersonRowLevel" Type="Edm.Byte" sap:creatable="false" sap:updatable="false"/>
+                <Property MaxLength="30" Name="RespyMgmtTeamName" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="50" Name="RespyMgmtTeamDescription" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="500" Name="RespyMgmtFunctionDescription" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="8" Name="MaintenanceWorkCenter" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="4" Name="MaintenanceWorkCenterPlant" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="1000" Name="EmployeeImageURL" Type="Edm.String" sap:label="Empl Image URL" sap:quickinfo="EMPLOYEE_IMAGE_URL"/>
+                <Property MaxLength="4" Name="AuthorizationGroup" Type="Edm.String" sap:display-format="UpperCase" sap:label="Authorization Group"/>
+                <Property Name="IsBusinessPurposeCompleted" Type="Edm.Boolean" sap:label="Purpose Completed" sap:quickinfo="Business Purpose Completed Flag"/>
+                <Property Name="IsBlocked" Type="Edm.Boolean" sap:label="Blocked Indicator"/>
+                <NavigationProperty FromRole="FromRole_assoc_1BA5B3D14CDD131FD0DCD1F921C3A2C8" Name="to_Assignment" Relationship="cds_ui_rshperson.assoc_1BA5B3D14CDD131FD0DCD1F921C3A2C8" ToRole="ToRole_assoc_1BA5B3D14CDD131FD0DCD1F921C3A2C8"/>
+                <NavigationProperty FromRole="FromRole_assoc_D59314BD69E1439682D17B0BF32A937D" Name="to_Conflicts" Relationship="cds_ui_rshperson.assoc_D59314BD69E1439682D17B0BF32A937D" ToRole="ToRole_assoc_D59314BD69E1439682D17B0BF32A937D"/>
+            </EntityType>
+            <EntityType Name="R_RSHPersonAssignmentTPType" sap:content-version="1" sap:label="Maint Order Op assigned to Person TP">
+                <Key>
+                    <PropertyRef Name="CapacityRequirement"/>
+                    <PropertyRef Name="CapacityRequirementItem"/>
+                    <PropertyRef Name="CapacityRqmtItemCapacity"/>
+                </Key>
+                <Property Name="Delete_mc" Type="Edm.Boolean" sap:creatable="false" sap:filterable="false" sap:label="Dyn. Method Control" sap:sortable="false" sap:updatable="false"/>
+                <Property Name="Update_mc" Type="Edm.Boolean" sap:creatable="false" sap:filterable="false" sap:label="Dyn. Method Control" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="12" Name="CapacityRequirement" Nullable="false" Type="Edm.String" sap:creatable="false" sap:display-format="NonNegative" sap:label="Capacity Requirement" sap:quickinfo="ID of the Capacity Requirements Record" sap:updatable="false"/>
+                <Property MaxLength="8" Name="CapacityRequirementItem" Nullable="false" Type="Edm.String" sap:creatable="false" sap:display-format="NonNegative" sap:label="Counter" sap:quickinfo="Internal counter" sap:updatable="false"/>
+                <Property MaxLength="4" Name="CapacityRqmtItemCapacity" Nullable="false" Type="Edm.String" sap:creatable="false" sap:display-format="NonNegative" sap:label="Counter" sap:quickinfo="Counters for cap. rqmts. records (various caps. + indiv.caps" sap:updatable="false"/>
+                <Property MaxLength="10" Name="MaintOrderRoutingNumber" Type="Edm.String" sap:display-format="NonNegative" sap:label="Opertn task list no." sap:quickinfo="Routing Number of Operations in Order"/>
+                <Property MaxLength="8" Name="MaintOrderOperationCounter" Type="Edm.String" sap:display-format="NonNegative" sap:label="Counter" sap:quickinfo="General counter for order"/>
+                <Property MaxLength="12" Name="MaintenanceOrder" Type="Edm.String" sap:display-format="UpperCase" sap:label="Order" sap:quickinfo="Order Number"/>
+                <Property MaxLength="4" Name="MaintenanceOrderOperation" Type="Edm.String" sap:display-format="UpperCase" sap:label="Operation" sap:quickinfo="Maintenance Order Operation"/>
+                <Property MaxLength="4" Name="MaintenanceOrderSubOperation" Type="Edm.String" sap:display-format="UpperCase" sap:label="Operation or Phase" sap:quickinfo="Operation or Phase Number"/>
+                <Property Name="AssignedMaintOpSplitNumber" Type="Edm.Byte" sap:label="Split number"/>
+                <Property MaxLength="8" Name="MaintWorkCenterPersonID" Type="Edm.String" sap:creatable="false" sap:display-format="NonNegative" sap:label="Personnel Number" sap:updatable="false"/>
+                <Property Name="AssignedMaintOpStartDate" Precision="0" Type="Edm.DateTime" sap:display-format="Date" sap:label="Earliest Start Date"/>
+                <Property Name="AssignedMaintOpStartTime" Precision="0" Type="Edm.Time" sap:label="Earliest Start Time"/>
+                <Property Name="AssignedMaintOpEndDate" Precision="0" Type="Edm.DateTime" sap:display-format="Date" sap:label="Earliest End Date"/>
+                <Property Name="AssignedMaintOpEndTime" Precision="0" Type="Edm.Time" sap:label="Earliest End Time"/>
+                <Property Name="AssignedMaintOpStartDateTime" Precision="0" Type="Edm.DateTimeOffset" sap:creatable="false" sap:label="Time Stamp" sap:quickinfo="UTC Time Stamp in Short Form (YYYYMMDDhhmmss)" sap:updatable="false"/>
+                <Property Name="AssignedMaintOpEndDateTime" Precision="0" Type="Edm.DateTimeOffset" sap:creatable="false" sap:label="Time Stamp" sap:quickinfo="UTC Time Stamp in Short Form (YYYYMMDDhhmmss)" sap:updatable="false"/>
+                <Property Name="AssignedMaintOpWork" Precision="7" Scale="1" Type="Edm.Decimal" sap:label="Work" sap:quickinfo="Work involved in the activity"/>
+                <Property MaxLength="3" Name="AssignedMaintOpWorkUnit" Type="Edm.String" sap:label="Unit for Work" sap:semantics="unit-of-measure"/>
+                <Property Name="AssignedMaintOpDuration" Precision="5" Scale="1" Type="Edm.Decimal" sap:label="Normal Duration" sap:quickinfo="Normal Duration of Activity"/>
+                <Property MaxLength="3" Name="AssignedMaintOpDurationUnit" Type="Edm.String" sap:label="Normal Duration Unit" sap:quickinfo="Normal Duration/Unit" sap:semantics="unit-of-measure"/>
+                <NavigationProperty FromRole="ToRole_assoc_3D5538F2B827CB9242D29F7EDA454477" Name="to_Person" Relationship="cds_ui_rshperson.assoc_3D5538F2B827CB9242D29F7EDA454477" ToRole="FromRole_assoc_3D5538F2B827CB9242D29F7EDA454477"/>
+            </EntityType>
+            <EntityType Name="R_RSHPersonTPType" sap:content-version="1" sap:label="Person in RSH EAM TP">
+                <Key>
+                    <PropertyRef Name="MaintWorkCenterPersonID"/>
+                </Key>
+                <Property Name="to_Assignment_oc" Type="Edm.Boolean" sap:creatable="false" sap:filterable="false" sap:label="Dynamic CbA-Control" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="8" Name="MaintWorkCenterPersonID" Nullable="false" Type="Edm.String" sap:creatable="false" sap:display-format="NonNegative" sap:label="WorkForce Assgmt ID" sap:quickinfo="WorkForce Assignment ID" sap:updatable="false"/>
+                <Property MaxLength="10" Name="BusinessPartner" Type="Edm.String" sap:display-format="UpperCase" sap:label="Business Partner" sap:quickinfo="Business Partner Number"/>
+                <Property MaxLength="80" Name="MaintWorkCenterPersonName" Type="Edm.String" sap:creatable="false" sap:label="Full Name" sap:updatable="false"/>
+                <Property MaxLength="4" Name="AuthorizationGroup" Type="Edm.String" sap:display-format="UpperCase" sap:label="Authorization Group"/>
+                <Property Name="IsBusinessPurposeCompleted" Type="Edm.Boolean" sap:label="Purpose Completed" sap:quickinfo="Business Purpose Completed Flag"/>
+                <Property Name="IsBlocked" Type="Edm.Boolean" sap:label="Blocked Indicator"/>
+                <Property Name="RequestedStartDate" Precision="0" Type="Edm.DateTime" sap:creatable="false" sap:display-format="Date" sap:updatable="false"/>
+                <Property Name="RequestedEndDate" Precision="0" Type="Edm.DateTime" sap:creatable="false" sap:display-format="Date" sap:updatable="false"/>
+                <Property Name="OperationEarliestStartDate" Precision="0" Type="Edm.DateTime" sap:creatable="false" sap:display-format="Date" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property Name="OperationEarliestEndDate" Precision="0" Type="Edm.DateTime" sap:creatable="false" sap:display-format="Date" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property Name="MaintWorkCenterPersonRowLevel" Type="Edm.Byte" sap:creatable="false" sap:updatable="false"/>
+                <Property MaxLength="30" Name="RespyMgmtTeamName" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="50" Name="RespyMgmtTeamDescription" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="500" Name="RespyMgmtFunctionDescription" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="8" Name="MaintenanceWorkCenter" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="4" Name="MaintenanceWorkCenterPlant" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="1000" Name="EmployeeImageURL" Type="Edm.String" sap:label="Empl Image URL" sap:quickinfo="EMPLOYEE_IMAGE_URL"/>
+                <NavigationProperty FromRole="FromRole_assoc_3D5538F2B827CB9242D29F7EDA454477" Name="to_Assignment" Relationship="cds_ui_rshperson.assoc_3D5538F2B827CB9242D29F7EDA454477" ToRole="ToRole_assoc_3D5538F2B827CB9242D29F7EDA454477"/>
+                <NavigationProperty FromRole="FromRole_assoc_AB4A26E0929A84E18698147CFDCBACEE" Name="to_Conflicts" Relationship="cds_ui_rshperson.assoc_AB4A26E0929A84E18698147CFDCBACEE" ToRole="ToRole_assoc_AB4A26E0929A84E18698147CFDCBACEE"/>
+            </EntityType>
+            <EntityType Name="SAP__Currency" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="CurrencyCode"/>
+                </Key>
+                <Property MaxLength="5" Name="CurrencyCode" Nullable="false" Type="Edm.String" sap:label="Currency" sap:semantics="currency-code"/>
+                <Property MaxLength="3" Name="ISOCode" Nullable="false" Type="Edm.String" sap:label="ISO Code"/>
+                <Property MaxLength="15" Name="Text" Nullable="false" Type="Edm.String" sap:label="Short Text"/>
+                <Property Name="DecimalPlaces" Nullable="false" Type="Edm.Byte" sap:label="Decimals"/>
+            </EntityType>
+            <EntityType Name="SAP__UnitOfMeasure" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="UnitCode"/>
+                </Key>
+                <Property MaxLength="3" Name="UnitCode" Nullable="false" Type="Edm.String" sap:label="Internal UoM" sap:semantics="unit-of-measure"/>
+                <Property MaxLength="3" Name="ISOCode" Nullable="false" Type="Edm.String" sap:label="ISO Code"/>
+                <Property MaxLength="3" Name="ExternalCode" Nullable="false" Type="Edm.String" sap:label="Commercial"/>
+                <Property MaxLength="30" Name="Text" Nullable="false" Type="Edm.String" sap:label="Meas. Unit Text"/>
+                <Property Name="DecimalPlaces" Type="Edm.Int16" sap:label="Decimal Places"/>
+            </EntityType>
+            <EntityType Name="SAP__DocumentDescription" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Id"/>
+                </Key>
+                <Property Name="Id" Nullable="false" Type="Edm.Guid" sap:label="UUID"/>
+                <Property MaxLength="12" Name="CreatedBy" Nullable="false" Type="Edm.String"/>
+                <Property Name="CreatedAt" Nullable="false" Precision="0" Type="Edm.DateTime" sap:label="Time Stamp"/>
+                <Property MaxLength="256" Name="FileName" Nullable="false" Type="Edm.String"/>
+                <Property MaxLength="256" Name="Title" Nullable="false" Type="Edm.String"/>
+                <NavigationProperty FromRole="FromRole_to_format" Name="Format" Relationship="cds_ui_rshperson.to_format" ToRole="ToRole_to_format"/>
+                <NavigationProperty FromRole="FromRole_to_tablecolumns" Name="TableColumns" Relationship="cds_ui_rshperson.to_tablecolumns" ToRole="ToRole_to_tablecolumns"/>
+                <NavigationProperty FromRole="FromRole_to_coverpage" Name="CoverPage" Relationship="cds_ui_rshperson.to_coverpage" ToRole="ToRole_to_coverpage"/>
+                <NavigationProperty FromRole="FromRole_to_signature" Name="Signature" Relationship="cds_ui_rshperson.to_signature" ToRole="ToRole_to_signature"/>
+                <NavigationProperty FromRole="FromRole_to_pdfstandard" Name="PDFStandard" Relationship="cds_ui_rshperson.to_pdfstandard" ToRole="ToRole_to_pdfstandard"/>
+                <NavigationProperty FromRole="FromRole_to_Hierarchy" Name="Hierarchy" Relationship="cds_ui_rshperson.to_Hierarchy" ToRole="ToRole_to_Hierarchy"/>
+                <NavigationProperty FromRole="FromRole_to_header" Name="Header" Relationship="cds_ui_rshperson.to_header" ToRole="ToRole_to_header"/>
+                <NavigationProperty FromRole="FromRole_to_Footer" Name="Footer" Relationship="cds_ui_rshperson.to_Footer" ToRole="ToRole_to_Footer"/>
+            </EntityType>
+            <EntityType Name="SAP__Format" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Id"/>
+                </Key>
+                <Property Name="FitToPage" Nullable="false" Type="cds_ui_rshperson.SAP__FitToPage"/>
+                <Property Name="Id" Nullable="false" Type="Edm.Guid" sap:creatable="false" sap:filterable="false" sap:label="UUID" sap:sortable="false" sap:updatable="false"/>
+                <Property Name="FontSize" Nullable="false" Type="Edm.Int32" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="10" Name="Orientation" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="10" Name="PaperSize" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property Name="BorderSize" Nullable="false" Type="Edm.Int32" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property Name="MarginSize" Nullable="false" Type="Edm.Int32" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="255" Name="FontName" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Font Name" sap:sortable="false" sap:updatable="false"/>
+                <Property Name="Padding" Nullable="false" Type="Edm.Int32" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+            </EntityType>
+            <EntityType Name="SAP__PDFStandard" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Id"/>
+                </Key>
+                <Property Name="Id" Nullable="false" Type="Edm.Guid" sap:creatable="false" sap:filterable="false" sap:label="UUID" sap:sortable="false" sap:updatable="false"/>
+                <Property Name="UsePDFAConformance" Nullable="false" Type="Edm.Boolean" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property Name="DoEnableAccessibility" Nullable="false" Type="Edm.Boolean" sap:creatable="false" sap:filterable="false" sap:label="Indicator" sap:sortable="false" sap:updatable="false"/>
+            </EntityType>
+            <EntityType Name="SAP__TableColumns" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Id"/>
+                    <PropertyRef Name="Name"/>
+                    <PropertyRef Name="Header"/>
+                </Key>
+                <Property Name="Id" Nullable="false" Type="Edm.Guid" sap:creatable="false" sap:filterable="false" sap:label="UUID" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="256" Name="Name" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="256" Name="Header" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="10" Name="HorizontalAlignment" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+            </EntityType>
+            <EntityType Name="SAP__CoverPage" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Title"/>
+                    <PropertyRef Name="Id"/>
+                    <PropertyRef Name="Name"/>
+                </Key>
+                <Property MaxLength="256" Name="Title" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property Name="Id" Nullable="false" Type="Edm.Guid" sap:creatable="false" sap:filterable="false" sap:label="UUID" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="256" Name="Name" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="256" Name="Value" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+            </EntityType>
+            <EntityType Name="SAP__Signature" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Id"/>
+                </Key>
+                <Property Name="Id" Nullable="false" Type="Edm.Guid" sap:creatable="false" sap:filterable="false" sap:label="UUID" sap:sortable="false" sap:updatable="false"/>
+                <Property Name="DoSign" Nullable="false" Type="Edm.Boolean" sap:creatable="false" sap:filterable="false" sap:label="Indicator" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="256" Name="Reason" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+            </EntityType>
+            <EntityType Name="SAP__Hierarchy" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Id"/>
+                </Key>
+                <Property Name="Id" Nullable="false" Type="Edm.Guid" sap:creatable="false" sap:filterable="false" sap:label="UUID" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="256" Name="DistanceFromRootElement" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property MaxLength="256" Name="DrillStateElement" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+            </EntityType>
+            <EntityType Name="SAP__PDFHeader" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Id"/>
+                </Key>
+                <Property Name="Right" Nullable="false" Type="cds_ui_rshperson.SAP__HeaderFooterField"/>
+                <Property Name="Left" Nullable="false" Type="cds_ui_rshperson.SAP__HeaderFooterField"/>
+                <Property Name="Center" Nullable="false" Type="cds_ui_rshperson.SAP__HeaderFooterField"/>
+                <Property Name="Id" Nullable="false" Type="Edm.Guid" sap:creatable="false" sap:filterable="false" sap:label="UUID" sap:sortable="false" sap:updatable="false"/>
+            </EntityType>
+            <EntityType Name="SAP__PDFFooter" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Id"/>
+                </Key>
+                <Property Name="Right" Nullable="false" Type="cds_ui_rshperson.SAP__HeaderFooterField"/>
+                <Property Name="Left" Nullable="false" Type="cds_ui_rshperson.SAP__HeaderFooterField"/>
+                <Property Name="Center" Nullable="false" Type="cds_ui_rshperson.SAP__HeaderFooterField"/>
+                <Property Name="Id" Nullable="false" Type="Edm.Guid" sap:creatable="false" sap:filterable="false" sap:label="UUID" sap:sortable="false" sap:updatable="false"/>
+            </EntityType>
+            <EntityType Name="SAP__ValueHelp" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="VALUEHELP"/>
+                </Key>
+                <Property Name="VALUEHELP" Nullable="false" Type="Edm.String"/>
+                <Property MaxLength="10" Name="FIELD_VALUE" Nullable="false" Type="Edm.String"/>
+                <Property Name="DESCRIPTION" Type="Edm.String"/>
+            </EntityType>
+            <ComplexType Name="SAP__FitToPage">
+                <Property MaxLength="8" Name="ErrorRecoveryBehavior" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Error behavior" sap:sortable="false" sap:updatable="false"/>
+                <Property Name="IsEnabled" Nullable="false" Type="Edm.Boolean" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+                <Property Name="MinimumFontSize" Nullable="false" Type="Edm.Int32" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+            </ComplexType>
+            <ComplexType Name="SAP__HeaderFooterField">
+                <Property MaxLength="256" Name="Type" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:sortable="false" sap:updatable="false"/>
+            </ComplexType>
+            <Association Name="to_format" sap:content-version="1">
+                <End Multiplicity="1" Role="FromRole_to_format" Type="cds_ui_rshperson.SAP__DocumentDescription"/>
+                <End Multiplicity="1" Role="ToRole_to_format" Type="cds_ui_rshperson.SAP__Format"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_to_format">
+                        <PropertyRef Name="Id"/>
+                    </Principal>
+                    <Dependent Role="ToRole_to_format">
+                        <PropertyRef Name="Id"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="to_tablecolumns" sap:content-version="1">
+                <End Multiplicity="1" Role="FromRole_to_tablecolumns" Type="cds_ui_rshperson.SAP__DocumentDescription"/>
+                <End Multiplicity="*" Role="ToRole_to_tablecolumns" Type="cds_ui_rshperson.SAP__TableColumns"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_to_tablecolumns">
+                        <PropertyRef Name="Id"/>
+                    </Principal>
+                    <Dependent Role="ToRole_to_tablecolumns">
+                        <PropertyRef Name="Id"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="to_coverpage" sap:content-version="1">
+                <End Multiplicity="1" Role="FromRole_to_coverpage" Type="cds_ui_rshperson.SAP__DocumentDescription"/>
+                <End Multiplicity="*" Role="ToRole_to_coverpage" Type="cds_ui_rshperson.SAP__CoverPage"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_to_coverpage">
+                        <PropertyRef Name="Id"/>
+                    </Principal>
+                    <Dependent Role="ToRole_to_coverpage">
+                        <PropertyRef Name="Id"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="to_signature" sap:content-version="1">
+                <End Multiplicity="1" Role="FromRole_to_signature" Type="cds_ui_rshperson.SAP__DocumentDescription"/>
+                <End Multiplicity="1" Role="ToRole_to_signature" Type="cds_ui_rshperson.SAP__Signature"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_to_signature">
+                        <PropertyRef Name="Id"/>
+                    </Principal>
+                    <Dependent Role="ToRole_to_signature">
+                        <PropertyRef Name="Id"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="to_pdfstandard" sap:content-version="1">
+                <End Multiplicity="1" Role="FromRole_to_pdfstandard" Type="cds_ui_rshperson.SAP__DocumentDescription"/>
+                <End Multiplicity="1" Role="ToRole_to_pdfstandard" Type="cds_ui_rshperson.SAP__PDFStandard"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_to_pdfstandard">
+                        <PropertyRef Name="Id"/>
+                    </Principal>
+                    <Dependent Role="ToRole_to_pdfstandard">
+                        <PropertyRef Name="Id"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="to_Hierarchy" sap:content-version="1">
+                <End Multiplicity="1" Role="FromRole_to_Hierarchy" Type="cds_ui_rshperson.SAP__DocumentDescription"/>
+                <End Multiplicity="1" Role="ToRole_to_Hierarchy" Type="cds_ui_rshperson.SAP__Hierarchy"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_to_Hierarchy">
+                        <PropertyRef Name="Id"/>
+                    </Principal>
+                    <Dependent Role="ToRole_to_Hierarchy">
+                        <PropertyRef Name="Id"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="to_header" sap:content-version="1">
+                <End Multiplicity="1" Role="FromRole_to_header" Type="cds_ui_rshperson.SAP__DocumentDescription"/>
+                <End Multiplicity="1" Role="ToRole_to_header" Type="cds_ui_rshperson.SAP__PDFHeader"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_to_header">
+                        <PropertyRef Name="Id"/>
+                    </Principal>
+                    <Dependent Role="ToRole_to_header">
+                        <PropertyRef Name="Id"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="to_Footer" sap:content-version="1">
+                <End Multiplicity="1" Role="FromRole_to_Footer" Type="cds_ui_rshperson.SAP__DocumentDescription"/>
+                <End Multiplicity="1" Role="ToRole_to_Footer" Type="cds_ui_rshperson.SAP__PDFFooter"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_to_Footer">
+                        <PropertyRef Name="Id"/>
+                    </Principal>
+                    <Dependent Role="ToRole_to_Footer">
+                        <PropertyRef Name="Id"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="assoc_FADEEB18AC99C9C7E87CF5B0B995DCAC" sap:content-version="1">
+                <End Multiplicity="1" Role="FromRole_assoc_FADEEB18AC99C9C7E87CF5B0B995DCAC" Type="cds_ui_rshperson.C_RSHPersonCalendarType"/>
+                <End Multiplicity="*" Role="ToRole_assoc_FADEEB18AC99C9C7E87CF5B0B995DCAC" Type="cds_ui_rshperson.C_RSHPersonBasicNonAvailType"/>
+            </Association>
+            <Association Name="assoc_1BA5B3D14CDD131FD0DCD1F921C3A2C8" sap:content-version="1">
+                <End Multiplicity="1" Role="FromRole_assoc_1BA5B3D14CDD131FD0DCD1F921C3A2C8" Type="cds_ui_rshperson.C_RSHPersonTPType">
+                    <OnDelete Action="Cascade"/>
+                </End>
+                <End Multiplicity="*" Role="ToRole_assoc_1BA5B3D14CDD131FD0DCD1F921C3A2C8" Type="cds_ui_rshperson.C_RSHPersonAssignmentTPType"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_assoc_1BA5B3D14CDD131FD0DCD1F921C3A2C8">
+                        <PropertyRef Name="MaintWorkCenterPersonID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_assoc_1BA5B3D14CDD131FD0DCD1F921C3A2C8">
+                        <PropertyRef Name="MaintWorkCenterPersonID"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="assoc_D59314BD69E1439682D17B0BF32A937D" sap:content-version="1">
+                <End Multiplicity="1" Role="FromRole_assoc_D59314BD69E1439682D17B0BF32A937D" Type="cds_ui_rshperson.C_RSHPersonTPType"/>
+                <End Multiplicity="*" Role="ToRole_assoc_D59314BD69E1439682D17B0BF32A937D" Type="cds_ui_rshperson.C_RSHPersonConflictType"/>
+            </Association>
+            <Association Name="assoc_3D5538F2B827CB9242D29F7EDA454477" sap:content-version="1">
+                <End Multiplicity="1" Role="FromRole_assoc_3D5538F2B827CB9242D29F7EDA454477" Type="cds_ui_rshperson.R_RSHPersonTPType">
+                    <OnDelete Action="Cascade"/>
+                </End>
+                <End Multiplicity="*" Role="ToRole_assoc_3D5538F2B827CB9242D29F7EDA454477" Type="cds_ui_rshperson.R_RSHPersonAssignmentTPType"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_assoc_3D5538F2B827CB9242D29F7EDA454477">
+                        <PropertyRef Name="MaintWorkCenterPersonID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_assoc_3D5538F2B827CB9242D29F7EDA454477">
+                        <PropertyRef Name="MaintWorkCenterPersonID"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="assoc_AB4A26E0929A84E18698147CFDCBACEE" sap:content-version="1">
+                <End Multiplicity="1" Role="FromRole_assoc_AB4A26E0929A84E18698147CFDCBACEE" Type="cds_ui_rshperson.R_RSHPersonTPType"/>
+                <End Multiplicity="*" Role="ToRole_assoc_AB4A26E0929A84E18698147CFDCBACEE" Type="cds_ui_rshperson.C_RSHPersonConflictType"/>
+            </Association>
+            <EntityContainer Name="cds_ui_rshperson_Entities" m:IsDefaultEntityContainer="true" sap:message-scope-supported="true" sap:supported-formats="atom json xlsx pdf">
+                <EntitySet EntityType="cds_ui_rshperson.SAP__Currency" Name="SAP__Currencies" sap:content-version="1"/>
+                <EntitySet EntityType="cds_ui_rshperson.SAP__UnitOfMeasure" Name="SAP__UnitsOfMeasure" sap:content-version="1"/>
+                <EntitySet EntityType="cds_ui_rshperson.SAP__DocumentDescription" Name="SAP__MyDocumentDescriptions" sap:content-version="1"/>
+                <EntitySet EntityType="cds_ui_rshperson.SAP__Format" Name="SAP__FormatSet" sap:addressable="false" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:pageable="false" sap:updatable="false"/>
+                <EntitySet EntityType="cds_ui_rshperson.SAP__PDFStandard" Name="SAP__PDFStandardSet" sap:addressable="false" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:pageable="false" sap:updatable="false"/>
+                <EntitySet EntityType="cds_ui_rshperson.SAP__TableColumns" Name="SAP__TableColumnsSet" sap:addressable="false" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:pageable="false" sap:updatable="false"/>
+                <EntitySet EntityType="cds_ui_rshperson.SAP__CoverPage" Name="SAP__CoverPageSet" sap:addressable="false" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:pageable="false" sap:updatable="false"/>
+                <EntitySet EntityType="cds_ui_rshperson.SAP__Signature" Name="SAP__SignatureSet" sap:addressable="false" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:pageable="false" sap:updatable="false"/>
+                <EntitySet EntityType="cds_ui_rshperson.SAP__Hierarchy" Name="SAP__HierarchySet" sap:addressable="false" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:pageable="false" sap:updatable="false"/>
+                <EntitySet EntityType="cds_ui_rshperson.SAP__PDFHeader" Name="SAP__PDFHeaderSet" sap:addressable="false" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:pageable="false" sap:updatable="false"/>
+                <EntitySet EntityType="cds_ui_rshperson.SAP__PDFFooter" Name="SAP__PDFFooterSet" sap:addressable="false" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:pageable="false" sap:updatable="false"/>
+                <EntitySet EntityType="cds_ui_rshperson.SAP__ValueHelp" Name="SAP__ValueHelpSet" sap:content-version="1"/>
+                <EntitySet EntityType="cds_ui_rshperson.C_RSHOperationAssignmentType" Name="C_RSHOperationAssignment" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:updatable="false"/>
+                <EntitySet EntityType="cds_ui_rshperson.C_RSHPersonAssignmentTPType" Name="C_RSHPersonAssignmentTP" sap:content-version="1" sap:deletable-path="Delete_mc" sap:updatable-path="Update_mc"/>
+                <EntitySet EntityType="cds_ui_rshperson.C_RSHPersonBasicNonAvailType" Name="C_RSHPersonBasicNonAvail" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:updatable="false"/>
+                <EntitySet EntityType="cds_ui_rshperson.C_RSHPersonCalendarType" Name="C_RSHPersonCalendar" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:updatable="false"/>
+                <EntitySet EntityType="cds_ui_rshperson.C_RSHPersonConflictType" Name="C_RSHPersonConflict" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:updatable="false"/>
+                <EntitySet EntityType="cds_ui_rshperson.C_RSHPersonDetailType" Name="C_RSHPersonDetail" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:updatable="false"/>
+                <EntitySet EntityType="cds_ui_rshperson.C_RSHPersonTPType" Name="C_RSHPersonTP" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:updatable="false"/>
+                <EntitySet EntityType="cds_ui_rshperson.R_RSHPersonAssignmentTPType" Name="R_RSHPersonAssignmentTP" sap:content-version="1" sap:deletable-path="Delete_mc" sap:updatable-path="Update_mc"/>
+                <EntitySet EntityType="cds_ui_rshperson.R_RSHPersonTPType" Name="R_RSHPersonTP" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:updatable="false"/>
+                <AssociationSet Association="cds_ui_rshperson.assoc_1BA5B3D14CDD131FD0DCD1F921C3A2C8" Name="assoc_1BA5B3D14CDD131FD0DCD1F921C3A2C8" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:updatable="false">
+                    <End EntitySet="C_RSHPersonTP" Role="FromRole_assoc_1BA5B3D14CDD131FD0DCD1F921C3A2C8"/>
+                    <End EntitySet="C_RSHPersonAssignmentTP" Role="ToRole_assoc_1BA5B3D14CDD131FD0DCD1F921C3A2C8"/>
+                </AssociationSet>
+                <AssociationSet Association="cds_ui_rshperson.to_Footer" Name="to_FooterSet" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:updatable="false">
+                    <End EntitySet="SAP__MyDocumentDescriptions" Role="FromRole_to_Footer"/>
+                    <End EntitySet="SAP__PDFFooterSet" Role="ToRole_to_Footer"/>
+                </AssociationSet>
+                <AssociationSet Association="cds_ui_rshperson.to_header" Name="to_headerSet" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:updatable="false">
+                    <End EntitySet="SAP__MyDocumentDescriptions" Role="FromRole_to_header"/>
+                    <End EntitySet="SAP__PDFHeaderSet" Role="ToRole_to_header"/>
+                </AssociationSet>
+                <AssociationSet Association="cds_ui_rshperson.to_format" Name="to_formatSet" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:updatable="false">
+                    <End EntitySet="SAP__MyDocumentDescriptions" Role="FromRole_to_format"/>
+                    <End EntitySet="SAP__FormatSet" Role="ToRole_to_format"/>
+                </AssociationSet>
+                <AssociationSet Association="cds_ui_rshperson.assoc_FADEEB18AC99C9C7E87CF5B0B995DCAC" Name="assoc_FADEEB18AC99C9C7E87CF5B0B995DCAC" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:updatable="false">
+                    <End EntitySet="C_RSHPersonCalendar" Role="FromRole_assoc_FADEEB18AC99C9C7E87CF5B0B995DCAC"/>
+                    <End EntitySet="C_RSHPersonBasicNonAvail" Role="ToRole_assoc_FADEEB18AC99C9C7E87CF5B0B995DCAC"/>
+                </AssociationSet>
+                <AssociationSet Association="cds_ui_rshperson.to_pdfstandard" Name="to_pdfstandardSet" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:updatable="false">
+                    <End EntitySet="SAP__MyDocumentDescriptions" Role="FromRole_to_pdfstandard"/>
+                    <End EntitySet="SAP__PDFStandardSet" Role="ToRole_to_pdfstandard"/>
+                </AssociationSet>
+                <AssociationSet Association="cds_ui_rshperson.assoc_3D5538F2B827CB9242D29F7EDA454477" Name="assoc_3D5538F2B827CB9242D29F7EDA454477" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:updatable="false">
+                    <End EntitySet="R_RSHPersonTP" Role="FromRole_assoc_3D5538F2B827CB9242D29F7EDA454477"/>
+                    <End EntitySet="R_RSHPersonAssignmentTP" Role="ToRole_assoc_3D5538F2B827CB9242D29F7EDA454477"/>
+                </AssociationSet>
+                <AssociationSet Association="cds_ui_rshperson.assoc_AB4A26E0929A84E18698147CFDCBACEE" Name="assoc_AB4A26E0929A84E18698147CFDCBACEE" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:updatable="false">
+                    <End EntitySet="R_RSHPersonTP" Role="FromRole_assoc_AB4A26E0929A84E18698147CFDCBACEE"/>
+                    <End EntitySet="C_RSHPersonConflict" Role="ToRole_assoc_AB4A26E0929A84E18698147CFDCBACEE"/>
+                </AssociationSet>
+                <AssociationSet Association="cds_ui_rshperson.to_tablecolumns" Name="to_tablecolumnsSet" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:updatable="false">
+                    <End EntitySet="SAP__MyDocumentDescriptions" Role="FromRole_to_tablecolumns"/>
+                    <End EntitySet="SAP__TableColumnsSet" Role="ToRole_to_tablecolumns"/>
+                </AssociationSet>
+                <AssociationSet Association="cds_ui_rshperson.to_signature" Name="to_signatureSet" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:updatable="false">
+                    <End EntitySet="SAP__MyDocumentDescriptions" Role="FromRole_to_signature"/>
+                    <End EntitySet="SAP__SignatureSet" Role="ToRole_to_signature"/>
+                </AssociationSet>
+                <AssociationSet Association="cds_ui_rshperson.to_coverpage" Name="to_coverpageSet" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:updatable="false">
+                    <End EntitySet="SAP__MyDocumentDescriptions" Role="FromRole_to_coverpage"/>
+                    <End EntitySet="SAP__CoverPageSet" Role="ToRole_to_coverpage"/>
+                </AssociationSet>
+                <AssociationSet Association="cds_ui_rshperson.to_Hierarchy" Name="to_HierarchySet" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:updatable="false">
+                    <End EntitySet="SAP__MyDocumentDescriptions" Role="FromRole_to_Hierarchy"/>
+                    <End EntitySet="SAP__HierarchySet" Role="ToRole_to_Hierarchy"/>
+                </AssociationSet>
+                <AssociationSet Association="cds_ui_rshperson.assoc_D59314BD69E1439682D17B0BF32A937D" Name="assoc_D59314BD69E1439682D17B0BF32A937D" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:updatable="false">
+                    <End EntitySet="C_RSHPersonTP" Role="FromRole_assoc_D59314BD69E1439682D17B0BF32A937D"/>
+                    <End EntitySet="C_RSHPersonConflict" Role="ToRole_assoc_D59314BD69E1439682D17B0BF32A937D"/>
+                </AssociationSet>
+            </EntityContainer>
+            <Annotation String="1.0.0" Term="Core.SchemaVersion"/>
+            <Annotations Target="cds_ui_rshperson.cds_ui_rshperson_Entities">
+                <Annotation Bool="true" Term="Common.ApplyMultiUnitBehaviorForSortingAndFiltering"/>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.C_RSHPersonTPType/to_Assignment">
+                <Annotation Term="Common.Composition"/>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.R_RSHPersonTPType/to_Assignment">
+                <Annotation Term="Common.Composition"/>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.C_RSHPersonAssignmentTPType/MaintenanceOrder">
+                <Annotation EnumMember="Common.FieldControlType/Mandatory" Term="Common.FieldControl"/>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.C_RSHPersonAssignmentTPType/MaintenanceOrderOperation">
+                <Annotation EnumMember="Common.FieldControlType/Mandatory" Term="Common.FieldControl"/>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.R_RSHPersonAssignmentTPType/MaintenanceOrder">
+                <Annotation EnumMember="Common.FieldControlType/Mandatory" Term="Common.FieldControl"/>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.R_RSHPersonAssignmentTPType/MaintenanceOrderOperation">
+                <Annotation EnumMember="Common.FieldControlType/Mandatory" Term="Common.FieldControl"/>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.cds_ui_rshperson_Entities/C_RSHPersonAssignmentTP">
+                <Annotation Term="Capabilities.FilterRestrictions">
+                    <Record>
+                        <PropertyValue Property="NonFilterableProperties">
+                            <Collection>
+                                <PropertyPath>Delete_mc</PropertyPath>
+                                <PropertyPath>Update_mc</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.NavigationRestrictions">
+                    <Record>
+                        <PropertyValue Property="RestrictedProperties">
+                            <Collection>
+                                <Record>
+                                    <PropertyValue NavigationPropertyPath="to_Person" Property="NavigationProperty"/>
+                                    <PropertyValue Property="InsertRestrictions">
+                                        <Record>
+                                            <PropertyValue Bool="false" Property="Insertable"/>
+                                        </Record>
+                                    </PropertyValue>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__core.OptimisticConcurrency">
+                    <Collection/>
+                </Annotation>
+                <Annotation Term="Capabilities.SortRestrictions">
+                    <Record>
+                        <PropertyValue Property="NonSortableProperties">
+                            <Collection>
+                                <PropertyPath>Delete_mc</PropertyPath>
+                                <PropertyPath>Update_mc</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.cds_ui_rshperson_Entities/C_RSHPersonTP">
+                <Annotation Term="Capabilities.FilterRestrictions">
+                    <Record>
+                        <PropertyValue Property="NonFilterableProperties">
+                            <Collection>
+                                <PropertyPath>to_Assignment_oc</PropertyPath>
+                                <PropertyPath>OperationEarliestStartDate</PropertyPath>
+                                <PropertyPath>OperationEarliestEndDate</PropertyPath>
+                                <PropertyPath>RespyMgmtTeamName</PropertyPath>
+                                <PropertyPath>RespyMgmtTeamDescription</PropertyPath>
+                                <PropertyPath>RespyMgmtFunctionDescription</PropertyPath>
+                                <PropertyPath>MaintenanceWorkCenter</PropertyPath>
+                                <PropertyPath>MaintenanceWorkCenterPlant</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.NavigationRestrictions">
+                    <Record>
+                        <PropertyValue Property="RestrictedProperties">
+                            <Collection>
+                                <Record>
+                                    <PropertyValue NavigationPropertyPath="to_Assignment" Property="NavigationProperty"/>
+                                    <PropertyValue Property="InsertRestrictions">
+                                        <Record>
+                                            <PropertyValue Path="to_Assignment_oc" Property="Insertable"/>
+                                        </Record>
+                                    </PropertyValue>
+                                </Record>
+                                <Record>
+                                    <PropertyValue NavigationPropertyPath="to_Conflicts" Property="NavigationProperty"/>
+                                    <PropertyValue Property="InsertRestrictions">
+                                        <Record>
+                                            <PropertyValue Bool="false" Property="Insertable"/>
+                                        </Record>
+                                    </PropertyValue>
+                                    <PropertyValue Property="FilterRestrictions">
+                                        <Record>
+                                            <PropertyValue Bool="false" Property="Filterable"/>
+                                        </Record>
+                                    </PropertyValue>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__core.OptimisticConcurrency">
+                    <Collection/>
+                </Annotation>
+                <Annotation Term="Capabilities.SortRestrictions">
+                    <Record>
+                        <PropertyValue Property="NonSortableProperties">
+                            <Collection>
+                                <PropertyPath>to_Assignment_oc</PropertyPath>
+                                <PropertyPath>OperationEarliestStartDate</PropertyPath>
+                                <PropertyPath>OperationEarliestEndDate</PropertyPath>
+                                <PropertyPath>RespyMgmtTeamName</PropertyPath>
+                                <PropertyPath>RespyMgmtTeamDescription</PropertyPath>
+                                <PropertyPath>RespyMgmtFunctionDescription</PropertyPath>
+                                <PropertyPath>MaintenanceWorkCenter</PropertyPath>
+                                <PropertyPath>MaintenanceWorkCenterPlant</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.cds_ui_rshperson_Entities/R_RSHPersonAssignmentTP">
+                <Annotation Term="Capabilities.FilterRestrictions">
+                    <Record>
+                        <PropertyValue Property="NonFilterableProperties">
+                            <Collection>
+                                <PropertyPath>Delete_mc</PropertyPath>
+                                <PropertyPath>Update_mc</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.NavigationRestrictions">
+                    <Record>
+                        <PropertyValue Property="RestrictedProperties">
+                            <Collection>
+                                <Record>
+                                    <PropertyValue NavigationPropertyPath="to_Person" Property="NavigationProperty"/>
+                                    <PropertyValue Property="InsertRestrictions">
+                                        <Record>
+                                            <PropertyValue Bool="false" Property="Insertable"/>
+                                        </Record>
+                                    </PropertyValue>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__core.OptimisticConcurrency">
+                    <Collection/>
+                </Annotation>
+                <Annotation Term="Capabilities.SortRestrictions">
+                    <Record>
+                        <PropertyValue Property="NonSortableProperties">
+                            <Collection>
+                                <PropertyPath>Delete_mc</PropertyPath>
+                                <PropertyPath>Update_mc</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.cds_ui_rshperson_Entities/R_RSHPersonTP">
+                <Annotation Term="Capabilities.FilterRestrictions">
+                    <Record>
+                        <PropertyValue Property="NonFilterableProperties">
+                            <Collection>
+                                <PropertyPath>to_Assignment_oc</PropertyPath>
+                                <PropertyPath>OperationEarliestStartDate</PropertyPath>
+                                <PropertyPath>OperationEarliestEndDate</PropertyPath>
+                                <PropertyPath>RespyMgmtTeamName</PropertyPath>
+                                <PropertyPath>RespyMgmtTeamDescription</PropertyPath>
+                                <PropertyPath>RespyMgmtFunctionDescription</PropertyPath>
+                                <PropertyPath>MaintenanceWorkCenter</PropertyPath>
+                                <PropertyPath>MaintenanceWorkCenterPlant</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="Capabilities.NavigationRestrictions">
+                    <Record>
+                        <PropertyValue Property="RestrictedProperties">
+                            <Collection>
+                                <Record>
+                                    <PropertyValue NavigationPropertyPath="to_Assignment" Property="NavigationProperty"/>
+                                    <PropertyValue Property="InsertRestrictions">
+                                        <Record>
+                                            <PropertyValue Path="to_Assignment_oc" Property="Insertable"/>
+                                        </Record>
+                                    </PropertyValue>
+                                </Record>
+                                <Record>
+                                    <PropertyValue NavigationPropertyPath="to_Conflicts" Property="NavigationProperty"/>
+                                    <PropertyValue Property="InsertRestrictions">
+                                        <Record>
+                                            <PropertyValue Bool="false" Property="Insertable"/>
+                                        </Record>
+                                    </PropertyValue>
+                                    <PropertyValue Property="FilterRestrictions">
+                                        <Record>
+                                            <PropertyValue Bool="false" Property="Filterable"/>
+                                        </Record>
+                                    </PropertyValue>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__core.OptimisticConcurrency">
+                    <Collection/>
+                </Annotation>
+                <Annotation Term="Capabilities.SortRestrictions">
+                    <Record>
+                        <PropertyValue Property="NonSortableProperties">
+                            <Collection>
+                                <PropertyPath>to_Assignment_oc</PropertyPath>
+                                <PropertyPath>OperationEarliestStartDate</PropertyPath>
+                                <PropertyPath>OperationEarliestEndDate</PropertyPath>
+                                <PropertyPath>RespyMgmtTeamName</PropertyPath>
+                                <PropertyPath>RespyMgmtTeamDescription</PropertyPath>
+                                <PropertyPath>RespyMgmtFunctionDescription</PropertyPath>
+                                <PropertyPath>MaintenanceWorkCenter</PropertyPath>
+                                <PropertyPath>MaintenanceWorkCenterPlant</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.cds_ui_rshperson_Entities/C_RSHPersonCalendar">
+                <Annotation Term="Capabilities.NavigationRestrictions">
+                    <Record>
+                        <PropertyValue Property="RestrictedProperties">
+                            <Collection>
+                                <Record>
+                                    <PropertyValue NavigationPropertyPath="to_BasicNonAvailability" Property="NavigationProperty"/>
+                                    <PropertyValue Property="InsertRestrictions">
+                                        <Record>
+                                            <PropertyValue Bool="false" Property="Insertable"/>
+                                        </Record>
+                                    </PropertyValue>
+                                    <PropertyValue Property="FilterRestrictions">
+                                        <Record>
+                                            <PropertyValue Bool="false" Property="Filterable"/>
+                                        </Record>
+                                    </PropertyValue>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.R_RSHPersonTPType">
+                <Annotation Term="Common.SAPObjectNodeType">
+                    <Record>
+                        <PropertyValue Property="Name" String="MaintenanceWorkCenterPerson"/>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.cds_ui_rshperson_Entities">
+                <Annotation Term="Org.OData.Capabilities.V1.BatchSupport">
+                    <Record Type="Org.OData.Capabilities.V1.BatchSupportType">
+                        <PropertyValue Bool="true" Property="ReferencesAcrossChangeSetsSupported"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__CodeList.CurrencyCodes">
+                    <Record>
+                        <PropertyValue Property="Url" String="./$metadata"/>
+                        <PropertyValue Property="CollectionPath" String="SAP__Currencies"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__CodeList.UnitsOfMeasure">
+                    <Record>
+                        <PropertyValue Property="Url" String="./$metadata"/>
+                        <PropertyValue Property="CollectionPath" String="SAP__UnitsOfMeasure"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__PDF.Features">
+                    <Record>
+                        <PropertyValue Property="DocumentDescriptionReference" String="./$metadata"/>
+                        <PropertyValue Property="DocumentDescriptionCollection" String="SAP__MyDocumentDescriptions"/>
+                        <PropertyValue Bool="true" Property="ArchiveFormat"/>
+                        <PropertyValue Bool="true" Property="CoverPage"/>
+                        <PropertyValue Bool="true" Property="Signature"/>
+                        <PropertyValue Bool="true" Property="FitToPage"/>
+                        <PropertyValue Bool="true" Property="FontName"/>
+                        <PropertyValue Bool="true" Property="FontSize"/>
+                        <PropertyValue Bool="true" Property="Margin"/>
+                        <PropertyValue Bool="true" Property="Border"/>
+                        <PropertyValue Bool="true" Property="Padding"/>
+                        <PropertyValue Bool="true" Property="HeaderFooter"/>
+                        <PropertyValue Int="20000" Property="ResultSizeDefault"/>
+                        <PropertyValue Int="20000" Property="ResultSizeMaximum"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__CodeList.SAP__DocumentDescription">
+                    <Record>
+                        <PropertyValue Property="Url" String="./$metadata"/>
+                        <PropertyValue Property="CollectionPath" String="SAP__MyDocumentDescriptions"/>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.SAP__Currency/CurrencyCode">
+                <Annotation Path="Text" Term="SAP__common.Text"/>
+                <Annotation Path="DecimalPlaces" Term="SAP__common.UnitSpecificScale"/>
+                <Annotation Path="ISOCode" Term="SAP__CodeList.StandardCode"/>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.SAP__UnitOfMeasure/UnitCode">
+                <Annotation Path="Text" Term="SAP__common.Text"/>
+                <Annotation Path="DecimalPlaces" Term="SAP__common.UnitSpecificScale"/>
+                <Annotation Path="ISOCode" Term="SAP__CodeList.StandardCode"/>
+                <Annotation Path="ExternalCode" Term="SAP__CodeList.ExternalCode"/>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.SAP__UnitOfMeasure">
+                <Annotation Term="SAP__core.AlternateKeys">
+                    <Collection>
+                        <Record>
+                            <PropertyValue Property="Key">
+                                <Collection>
+                                    <Record>
+                                        <PropertyValue Path="ExternalCode" Property="Name"/>
+                                        <PropertyValue Property="Alias" String="ExternalCode"/>
+                                    </Record>
+                                </Collection>
+                            </PropertyValue>
+                        </Record>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.SAP__DocumentDescription/CreatedBy">
+                <Annotation Term="SAP__core.Computed"/>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.SAP__DocumentDescription/CreatedAt">
+                <Annotation Term="SAP__core.Computed"/>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.SAP__DocumentDescription">
+                <Annotation Term="SAP__capabilties.InsertRestrictions">
+                    <Record>
+                        <PropertyValue Bool="false" Property="Insertable"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__capabilties.UpdateRestrictions">
+                    <Record>
+                        <PropertyValue Bool="false" Property="Updatable"/>
+                        <PropertyValue Property="QueryOptions">
+                            <Record>
+                                <PropertyValue Bool="true" Property="SelectSupported"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__capabilties.DeleteRestrictions">
+                    <Record>
+                        <PropertyValue Bool="false" Property="Deletable"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__capabilties.FilterRestrictions">
+                    <Record>
+                        <PropertyValue Property="FilterExpressionRestrictions">
+                            <Collection>
+                                <Record>
+                                    <PropertyValue Property="Property" PropertyPath="Format/Orientation"/>
+                                    <PropertyValue Property="AllowedExpressions" String="Multivalue"/>
+                                </Record>
+                                <Record>
+                                    <PropertyValue Property="Property" PropertyPath="Format/PaperSize"/>
+                                    <PropertyValue Property="AllowedExpressions" String="Multivalue"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.SAP__Format/FitToPage/ErrorRecoveryBehavior">
+                <Annotation Term="SAP__common.ValueListReferences">
+                    <Record>
+                        <PropertyValue Property="Url" String="./$metadata"/>
+                        <PropertyValue Property="CollectionPath" String="../../../../SAP__ValueHelpSet?$filter=VALUEHELP%20eq%20%27ErrorRecoveryBehaviour%27"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__common.ValueListWithFixedValues"/>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.SAP__Format/FontName">
+                <Annotation Term="SAP__common.ValueListReferences">
+                    <Record>
+                        <PropertyValue Property="Url" String="./$metadata"/>
+                        <PropertyValue Property="CollectionPath" String="SAP__ValueHelpSet?$filter=VALUEHELP%20eq%20%27FontName%27"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__common.ValueListWithFixedValues"/>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.SAP__Format/PaperSize">
+                <Annotation Term="SAP__common.ValueListReferences">
+                    <Record>
+                        <PropertyValue Property="Url" String="./$metadata"/>
+                        <PropertyValue Property="CollectionPath" String="SAP__ValueHelpSet?$filter=VALUEHELP%20eq%20%27PaperSize%27"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__common.ValueListWithFixedValues"/>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.SAP__PDFHeader/Left">
+                <Annotation Term="SAP__common.ValueListReferences">
+                    <Record>
+                        <PropertyValue Property="Url" String="./$metadata"/>
+                        <PropertyValue Property="CollectionPath" String="SAP__ValueHelpSet?$filter=VALUEHELP%20eq%20%27HeaderFooter%27"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__common.ValueListWithFixedValues"/>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.SAP__PDFHeader/Right">
+                <Annotation Term="SAP__common.ValueListReferences">
+                    <Record>
+                        <PropertyValue Property="Url" String="./$metadata"/>
+                        <PropertyValue Property="CollectionPath" String="SAP__ValueHelpSet?$filter=VALUEHELP%20eq%20%27HeaderFooter%27"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__common.ValueListWithFixedValues"/>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.SAP__PDFHeader/Center">
+                <Annotation Term="SAP__common.ValueListReferences">
+                    <Record>
+                        <PropertyValue Property="Url" String="./$metadata"/>
+                        <PropertyValue Property="CollectionPath" String="SAP__ValueHelpSet?$filter=VALUEHELP%20eq%20%27HeaderFooter%27"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__common.ValueListWithFixedValues"/>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.SAP__PDFFooter/Left">
+                <Annotation Term="SAP__common.ValueListReferences">
+                    <Record>
+                        <PropertyValue Property="Url" String="./$metadata"/>
+                        <PropertyValue Property="CollectionPath" String="SAP__ValueHelpSet?$filter=VALUEHELP%20eq%20%27HeaderFooter%27"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__common.ValueListWithFixedValues"/>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.SAP__PDFFooter/Right">
+                <Annotation Term="SAP__common.ValueListReferences">
+                    <Record>
+                        <PropertyValue Property="Url" String="./$metadata"/>
+                        <PropertyValue Property="CollectionPath" String="SAP__ValueHelpSet?$filter=VALUEHELP%20eq%20%27HeaderFooter%27"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__common.ValueListWithFixedValues"/>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.SAP__PDFFooter/Center">
+                <Annotation Term="SAP__common.ValueListReferences">
+                    <Record>
+                        <PropertyValue Property="Url" String="./$metadata"/>
+                        <PropertyValue Property="CollectionPath" String="SAP__ValueHelpSet?$filter=VALUEHELP%20eq%20%27HeaderFooter%27"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__common.ValueListWithFixedValues"/>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.SAP__Format/Orientation">
+                <Annotation Term="SAP__common.ValueListReferences">
+                    <Record>
+                        <PropertyValue Property="Url" String="./$metadata"/>
+                        <PropertyValue Property="CollectionPath" String="SAP__ValueHelpSet?$filter=VALUEHELP%20eq%20%27FontName%27"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__common.ValueListWithFixedValues"/>
+            </Annotations>
+            <Annotations Target="cds_ui_rshperson.SAP__TableColumns/HorizontalAlignment">
+                <Annotation Term="SAP__common.ValueListReferences">
+                    <Record>
+                        <PropertyValue Property="Url" String="./$metadata"/>
+                        <PropertyValue Property="CollectionPath" String="SAP__ValueHelpSet?$filter=VALUEHELP%20eq%20%27HorizontalAlignment%27"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__common.ValueListWithFixedValues"/>
+            </Annotations>
+            <atom:link href="./sap/UI_RSHPERSON/$metadata" rel="self" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link href="./sap/UI_RSHPERSON/$metadata" rel="latest-version" xmlns:atom="http://www.w3.org/2005/Atom"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

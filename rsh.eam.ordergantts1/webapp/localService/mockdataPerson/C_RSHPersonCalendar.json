@@ -1,0 +1,95 @@
+{
+	"d": {
+		"__count": "4",
+		"results": [
+			{
+				"__metadata": {
+					"id": "C_RSHPersonCalendar('50116575')",
+					"uri": "C_RSHPersonCalendar('50116575')",
+					"type": "cds_ui_rshperson.C_RSHPersonCalendarType"
+				},
+				"MaintWorkCenterPersonID": "50116575",
+				"to_BasicNonAvailability": {
+					"results": [
+						{
+							"__metadata": {
+								"id": "C_RSHPersonBasicNonAvail(MaintWorkCenterPersonID='50116575',NonAvailabilityTimeStartDteTme=)",
+								"uri": "C_RSHPersonBasicNonAvail(MaintWorkCenterPersonID='50116575',NonAvailabilityTimeStartDteTme=)",
+								"type": "cds_ui_rshperson.C_RSHPersonBasicNonAvailType"
+							},
+							"MaintWorkCenterPersonID": "50116575",
+							"NonAvailabilityTimeStartDteTme": "/Date(1613952000000+0000)/",
+							"NonAvailabilityTimeEndDteTme": "/Date(1613973600000+0000)/"
+						}
+					]
+				}
+			},
+			{
+				"__metadata": {
+					"id": "C_RSHPersonCalendar('50116600')",
+					"uri": "C_RSHPersonCalendar('50116600')",
+					"type": "cds_ui_rshperson.C_RSHPersonCalendarType"
+				},
+				"MaintWorkCenterPersonID": "50116600",
+				"to_BasicNonAvailability": {
+					"results": [
+						{
+							"__metadata": {
+								"id": "C_RSHPersonBasicNonAvail(MaintWorkCenterPersonID='50116600',NonAvailabilityTimeStartDteTme=)",
+								"uri": "C_RSHPersonBasicNonAvail(MaintWorkCenterPersonID='50116600',NonAvailabilityTimeStartDteTme=)",
+								"type": "cds_ui_rshperson.C_RSHPersonBasicNonAvailType"
+							},
+							"MaintWorkCenterPersonID": "50116600",
+							"NonAvailabilityTimeStartDteTme": "/Date(1613952000000+0000)/",
+							"NonAvailabilityTimeEndDteTme": "/Date(1613973600000+0000)/"
+						}
+					]
+				}
+			},
+			{
+				"__metadata": {
+					"id": "C_RSHPersonCalendar('50116583')",
+					"uri": "C_RSHPersonCalendar('50116583')",
+					"type": "cds_ui_rshperson.C_RSHPersonCalendarType"
+				},
+				"MaintWorkCenterPersonID": "50116583",
+				"to_BasicNonAvailability": {
+					"results": [
+						{
+							"__metadata": {
+								"id": "C_RSHPersonBasicNonAvail(MaintWorkCenterPersonID='50116583',NonAvailabilityTimeStartDteTme=datetimeoffset'2021-02-21T11%3A00%3A00Z')",
+								"uri": "C_RSHPersonBasicNonAvail(MaintWorkCenterPersonID='50116583',NonAvailabilityTimeStartDteTme=datetimeoffset'2021-02-21T11%3A00%3A00Z')",
+								"type": "cds_ui_rshperson.C_RSHPersonBasicNonAvailType"
+							},
+							"MaintWorkCenterPersonID": "50116583",
+							"NonAvailabilityTimeStartDteTme": "/Date(1613952000000+0000)/",
+							"NonAvailabilityTimeEndDteTme": "/Date(1613973600000+0000)/"
+						}
+					]
+				}
+			},
+			{
+				"__metadata": {
+					"id": "C_RSHPersonCalendar('50116666')",
+					"uri": "C_RSHPersonCalendar('50116666')",
+					"type": "cds_ui_rshperson.C_RSHPersonCalendarType"
+				},
+				"MaintWorkCenterPersonID": "50116666",
+				"to_BasicNonAvailability": {
+					"results": [
+						{
+							"__metadata": {
+								"id": "C_RSHPersonBasicNonAvail(MaintWorkCenterPersonID='50116666',NonAvailabilityTimeStartDteTme=)",
+								"uri": "C_RSHPersonBasicNonAvail(MaintWorkCenterPersonID='50116666',NonAvailabilityTimeStartDteTme=)",
+								"type": "cds_ui_rshperson.C_RSHPersonBasicNonAvailType"
+							},
+							"MaintWorkCenterPersonID": "50116583",
+							"NonAvailabilityTimeStartDteTme": "/Date(1613952000000+0000)/",
+							"NonAvailabilityTimeEndDteTme": "/Date(1613973600000+0000)/"
+						}
+					]
+				}
+			}
+		]
+	}
+}

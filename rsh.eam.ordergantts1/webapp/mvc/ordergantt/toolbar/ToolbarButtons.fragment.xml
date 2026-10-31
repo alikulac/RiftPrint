@@ -1,0 +1,35 @@
+<!--
+
+    Copyright (C) 2009-2023 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<core:FragmentDefinition id="idFragOrderToolBarButtons" xmlns:m="sap.m" xmlns:core="sap.ui.core">
+	<m:MenuButton id="idAssignMenuButton" text="{i18n>AssignButtonText}" buttonMode="Regular"
+		type="Transparent" enabled="false">
+		<m:menu>
+			<m:Menu id="idAssignMenu">
+				<m:MenuItem id="idAssignPeopleButton" text="{i18n>AssignPeopleButtonText}" press="onPressAssignPeopleButton"/>
+				<m:MenuItem id="idUnassignPeopleButton" text="{i18n>UnassignPeopleButtonText}" press="onPressUnassignPeopleButton"/>
+			</m:Menu>
+		</m:menu>
+	</m:MenuButton>		
+	<m:Button id="idScheduleOrder" text="{i18n>ScheduleOrderButtonText}" press="onPressScheduleOrderButton" type="Transparent" enabled="false"></m:Button>
+	<m:Button id="idButtonChange" text="{i18n>ChangeOperationButtonText}" press="pressChangeOperationsButton" type="Transparent" enabled="false"></m:Button>
+	<m:Button id="idButtonDispatch" text="{i18n>DispatchButtonText}" press="onPressDispatchButton" type="Transparent" enabled="false"></m:Button>
+	<m:Button id="idButtonCancDispatch" text="{i18n>CancelDispatchButtonText}" press="onPressCancelDispatchButton" type="Transparent"
+		enabled="false"></m:Button>
+	<m:Button id="idRemoveConstraints" text="{i18n>RemoveConstraintsButtonText}" press="onPressRemoveConstraintsButton" type="Transparent"
+		enabled="false"></m:Button>
+	<m:ToggleButton id="idShowHideLabels" icon="sap-icon://SAP-icons-TNT/note" visible="{= ${UIModel>/bAtleastOneLabelIsActive}}"
+		pressed="{= ${UIModel>/bLabelsToggleBtnOn}}"
+		tooltip="{parts: ['UIModel>/bLabelsToggleBtnOn', 'i18n>HideLabelsforBars', 'i18n>ShowLabelsforBars'], formatter: '.ganttUtils.getTooltipForToggleBtn'}"
+		press="onShowHideButtonPress"></m:ToggleButton>
+	<m:ToggleButton id="idShowHideRelationships" icon="sap-icon://SAP-icons-TNT/references"
+		visible="{= ${UIModel>/showImpRel} || ${UIModel>/showExpRel} ? true : false}" pressed="{= ${UIModel>/bRelationshipsToggleBtnOn}}"
+		tooltip="{parts: ['UIModel>/bRelationshipsToggleBtnOn', 'i18n>HideRelationships', 'i18n>ShowRelationships'], formatter: '.ganttUtils.getTooltipForToggleBtn'}"
+		press="onShowHideButtonPress"></m:ToggleButton>
+	<m:ToggleButton id="idShowHideUtilization" icon="sap-icon://BusinessSuiteInAppSymbols/icon-line-bar-chart"
+		visible="{= ${UIModel>/showUtilizationIndicator}}" pressed="{= ${UIModel>/bUtilizationsToggleBtnOn}}"
+		tooltip="{parts: ['UIModel>/bUtilizationsToggleBtnOn', 'i18n>HideWorkCenterUtilization', 'i18n>ShowWorkCenterUtilization'], formatter: '.ganttUtils.getTooltipForToggleBtn'}"
+		press="onShowHideButtonPress"></m:ToggleButton>
+</core:FragmentDefinition>

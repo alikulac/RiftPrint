@@ -1,0 +1,95 @@
+<!--
+
+    Copyright (C) 2009-2023 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<mvc:View
+	id="idOrderGanttView"
+	controllerName="rsh.eam.ordergantts1.mvc.SchedulingBoard"
+	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	xmlns="sap.gantt.simple"
+	xmlns:m="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.f"
+	xmlns:core="sap.ui.core"
+	xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
+	xmlns:smartVariantManagement="sap.ui.comp.smartvariants"
+	xmlns:customControl="rsh.eam.ordergantts1.customControl"
+	xmlns:commonVariant="sap.rsh.eam.lib.common.variant" >
+	<f:DynamicPage id="GanttPageId" showFooter="true" fitContent="true">
+		<f:title>
+			<f:DynamicPageTitle id="idOrdGanttDynPgTitle">
+				<f:heading>
+					<smartVariantManagement:SmartVariantManagement id="idGanttPgVarMgmt" persistencyKey="rsh.eam.ordergantts1.svmpkey"
+																   showExecuteOnSelection="true"/>
+				</f:heading>
+				<f:snappedContent>
+					<m:Text id="statusText"/>
+				</f:snappedContent>
+				<f:actions>
+					<m:ToolbarSpacer id="idActionsTBSpacer"/>
+					<m:Button id="idChangeWorkCenterCapButton" text="{i18n>ChangeWorkCenterCapText}" press="onChangeWorkCenterCapacity" type="Transparent"/>
+					<m:Button id="FilterButton" text="{i18n>OperationsFilterButtonText}" press="onAssignWorkCenters" type="Transparent"/>
+				</f:actions>
+			</f:DynamicPageTitle>
+		</f:title>
+		<f:header>
+			<f:DynamicPageHeader id="idOrderGanttDynPgHeader" pinnable="true">
+				<f:content>
+					<smartFilterBar:SmartFilterBar id="idOrderGanttSmartFilterBar" entitySet="C_RSHOrdersAndOperations"
+												   search="onFilterBarSearch" assignedFiltersChanged="onAssignedFiltersChanged" showRestoreOnFB="true" useToolbar="false"
+												   afterVariantLoad="onAfterVariantLoad" initialized="onSmartFilterInitialized" persistencyKey="rsh.eam.ordergantts1.filterpkey"
+												   smartVariant="idGanttPgVarMgmt" useDateRangeType="true">
+						<smartFilterBar:controlConfiguration id="_sMartFilterConfig">
+							<smartFilterBar:ControlConfiguration index="0" key="PeriodType" id="idPeriodTypeCC" visibleInAdvancedArea="true"
+																 conditionType="{module: 'rsh.eam.ordergantts1.mvc.filterbar.DateRangeType', ignoreTime: true, operations: { filter: {path: 'category', contains: ['MONTH','WEEK','YEAR','TO','TODAY','DAYS','QUARTER'], exclude:true}}}"
+																 mandatory="mandatory"></smartFilterBar:ControlConfiguration>
+							<smartFilterBar:ControlConfiguration id="idWorkCenterCC" index="1" key="WorkCenter" visibleInAdvancedArea="true"/>
+							<smartFilterBar:ControlConfiguration id="idMaintPrioCC" index="2" key="MaintPriority" visibleInAdvancedArea="true"/>
+							<smartFilterBar:ControlConfiguration id="idOrderTypCC" index="3" key="OrderType" visibleInAdvancedArea="true"/>
+							<smartFilterBar:ControlConfiguration id="idProcStatusCC" index="4" key="ProcessingStatus" visibleInAdvancedArea="true"/>
+							<smartFilterBar:ControlConfiguration id="idFinalDueDateCC" index="5" key="LatestAcceptableCompletionDate" visibleInAdvancedArea="false"
+																 conditionType="sap.ui.comp.config.condition.DateRangeType"/>
+						</smartFilterBar:controlConfiguration>
+					</smartFilterBar:SmartFilterBar>
+				</f:content>
+			</f:DynamicPageHeader>
+		</f:header>
+		<f:content>
+			<GanttChartContainer id="idOrderGanttContainer" enableTimeScrollSync="true" customSettingChange="onCustomSettingChange"
+								 ganttSearchSidePanelList="onSearchSidePanelRender" enableVariantManagement="true" variantApplied="onGanttVariantApplied"
+								 customGanttSearchResult="onSearchResultsCompute" blocked="{UIModel>/bDataOutdated}">
+				<toolbar>
+					<ContainerToolbar id="idGanttContainerToolbar" design="Auto" showLegendButton="true" alignCustomContentToRight="false"
+									  showSettingButton="false" ganttSidePanel="onGanttSidePanel" showSearchButton="{= ${FeatureToggle>/searchInGantt} }">
+						<core:InvisibleText id="idInvisibleTextForViewSwitch" text="{i18n>showGanttCharts}"></core:InvisibleText>
+						<m:Select id="idGanttViewSwitchOptions" selectedKey="Orders" change="onChangeGanttViewState"
+								  ariaLabelledBy="idInvisibleTextForViewSwitch">
+							<core:Item id="idItemOrder" key="Orders" text="{i18n>ordersText}"></core:Item>
+							<core:Item id="idItemOrderAndResource" key="OrdersAndResources" text="{i18n>ordersAndResourcesText}"></core:Item>
+						</m:Select>
+						<m:Button id="idFindAndSelectSearchButton" icon="sap-icon://search" press="onFindShapes" type="Transparent" visible="{= ${FeatureToggle>/searchInGantt} }"/>
+						<m:ToolbarSpacer id="idToolbarSpCT"/>
+						<legendContainer>
+							<core:Fragment fragmentName="rsh.eam.ordergantts1.mvc.gantt.GanttLegend" type="XML"/>
+						</legendContainer>
+						<m:Button id="idCustomGanttSettingBtn" icon="sap-icon://customize" press="onCustomGanttSettingPress" type="Transparent"
+								  tooltip="{i18n>settings}"/>
+					</ContainerToolbar>
+				</toolbar>
+				<variantHandler>
+					<commonVariant:CustomVariantHandler id="variantHandler" applyChange="onCustomVariantApplyChange" revertChange="onCustomVariantRevertChange" />
+				</variantHandler>
+				<core:Fragment fragmentName="rsh.eam.ordergantts1.mvc.ordergantt.OrderGantt" type="XML"/>
+			</GanttChartContainer>
+		</f:content>
+		<f:footer id="GanttFooter">
+			<m:Toolbar id="GanttFooterToolBar">
+				<core:InvisibleText id="idMessageInvisibleButton" text="{i18n>ViewMessages}"/>
+				<m:Button id="idMainViewMessagePopOver" icon="{MessagePopoverButtonModel>/severityIcon}" type="{MessagePopoverButtonModel>/severityType}"
+						  text="{MessagePopoverButtonModel>/severityCount}" press="onMessagePopoverPress" visible="{MessagePopoverButtonModel>/visible}"
+						  tooltip="{i18n>messagePopoverToolTip}" ariaLabelledBy="idMessageInvisibleButton"/>
+			</m:Toolbar>
+		</f:footer>
+	</f:DynamicPage>
+</mvc:View>
