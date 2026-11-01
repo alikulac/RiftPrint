@@ -39,7 +39,7 @@ server:
             client: '010'
         ui5:
           path:
-            - /resourcesz
+            - /resources
             - /test-resources
           url: https://ui5.sap.com
           version: 1.120.23
