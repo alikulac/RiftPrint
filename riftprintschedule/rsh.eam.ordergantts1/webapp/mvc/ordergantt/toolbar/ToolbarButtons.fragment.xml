@@ -13,6 +13,8 @@
 			</m:Menu>
 		</m:menu>
 	</m:MenuButton>		
+	<m:Button id="idRiftPrintButton" text="{i18n>RiftPrintButtonText}" icon="sap-icon://print" iconFirst="false" type="Emphasized"
+		press="onPressRiftPrintButton"></m:Button>
 	<m:Button id="idScheduleOrder" text="{i18n>ScheduleOrderButtonText}" press="onPressScheduleOrderButton" type="Transparent" enabled="false"></m:Button>
 	<m:Button id="idButtonChange" text="{i18n>ChangeOperationButtonText}" press="pressChangeOperationsButton" type="Transparent" enabled="false"></m:Button>
 	<m:Button id="idButtonDispatch" text="{i18n>DispatchButtonText}" press="onPressDispatchButton" type="Transparent" enabled="false"></m:Button>

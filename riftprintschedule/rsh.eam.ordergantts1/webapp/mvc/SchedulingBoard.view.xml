@@ -30,6 +30,7 @@
 					<m:ToolbarSpacer id="idActionsTBSpacer"/>
 					<m:Button id="idChangeWorkCenterCapButton" text="{i18n>ChangeWorkCenterCapText}" press="onChangeWorkCenterCapacity" type="Transparent"/>
 					<m:Button id="FilterButton" text="{i18n>OperationsFilterButtonText}" press="onAssignWorkCenters" type="Transparent"/>
+					<m:Image id="idRiftPrintLogo" width="180px" height="50px" decorative="false" alt="Rift Print"/>
 				</f:actions>
 			</f:DynamicPageTitle>
 		</f:title>
