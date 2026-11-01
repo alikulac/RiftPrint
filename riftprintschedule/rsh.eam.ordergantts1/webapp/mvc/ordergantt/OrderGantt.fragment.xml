@@ -34,12 +34,6 @@
 					<m:OverflowToolbar id="idToolbarOrderGanttTT">
 						<m:Title id="idTitleOrderGanttTT" text="{parts: ['i18n>maintenanceOrdersItems', 'UIModel>/rowCount'],formatter: 'jQuery.sap.formatMessage'}"/>
 						<m:ToolbarSpacer id="idToolbarSpTT"/>
-						<m:Button id="idRiftPrintButton" text="{i18n>RiftPrintButtonText}" icon="sap-icon://print" iconFirst="false" type="Emphasized"
-								  press="onPressRiftPrintButton">
-							<m:layoutData>
-								<m:OverflowToolbarLayoutData id="idRiftPrintButtonLayout" priority="NeverOverflow"/>
-							</m:layoutData>
-						</m:Button>
 						<m:Button id="idExpandBt" icon="sap-icon://expand" press="onExpandSelectedOrders" tooltip="{i18n>expand}" type="Transparent"></m:Button>
 						<m:Button id="idCollapseBt" icon="sap-icon://collapse" press="onCollapseSelectedOrders" tooltip="{i18n>collapse}" type="Transparent"></m:Button>
 						<m:Button id="idColumnSettingsBtn" icon="sap-icon://action-settings" press=".onColumnSettingsPress" tooltip="{i18nLib>ColumnSettings}"

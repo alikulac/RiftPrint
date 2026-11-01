@@ -70,7 +70,15 @@
 							<core:Item id="idItemOrderAndResource" key="OrdersAndResources" text="{i18n>ordersAndResourcesText}"></core:Item>
 						</m:Select>
 						<m:Button id="idFindAndSelectSearchButton" icon="sap-icon://search" press="onFindShapes" type="Transparent" visible="{= ${FeatureToggle>/searchInGantt} }"/>
-						<m:ToolbarSpacer id="idToolbarSpCT"/>
+						<ContainerToolbarPlaceholder id="idSpacerPlaceholderCT" type="Spacer"/>
+						<ContainerToolbarPlaceholder id="idTimeZoomPlaceholderCT" type="TimeZoomControl"/>
+						<m:Button id="idRiftPrintButton" text="{i18n>RiftPrintButtonText}" icon="sap-icon://print" iconFirst="false" type="Emphasized"
+								  press="onPressRiftPrintButton">
+							<m:layoutData>
+								<m:OverflowToolbarLayoutData id="idRiftPrintButtonLayout" priority="NeverOverflow"/>
+							</m:layoutData>
+						</m:Button>
+						<ContainerToolbarPlaceholder id="idLegendPlaceholderCT" type="LegendButton"/>
 						<legendContainer>
 							<core:Fragment fragmentName="zrsh.eam.ordergantts1.mvc.gantt.GanttLegend" type="XML"/>
 						</legendContainer>
