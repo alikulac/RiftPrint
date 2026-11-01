@@ -7,8 +7,8 @@
 		"applicationVersion": {
 			"version": "12.0.16"
 		},
-		"title": "{{Rift Print Schedule}}",
-		"description": "{{Rift Print Schedule Board}}",
+		"title": "Rift Print Schedule",
+		"description": "Rift Print Schedule Board",
 		"resources": "resources.json",
 		"ach": "CA-RSH-EAM",
 		"sourceTemplate": {
