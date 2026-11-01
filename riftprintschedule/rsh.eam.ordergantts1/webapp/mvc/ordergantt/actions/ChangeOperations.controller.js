@@ -11,7 +11,7 @@ sap.ui.define(
 	function (BaseViewChildController, ChangeOperations, Constants, StatusCommon) {
 		"use strict";
 
-		return BaseViewChildController.extend("rsh.eam.ordergantts1.mvc.ordergantt.actions.ChangeOperations.controller", {
+		return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.actions.ChangeOperations.controller", {
 			onInitMembers: function () {
 				this.oChangeOperationsDelegate = undefined;
 				this.oStatusCommon = new StatusCommon(Constants.sAfterStatusChangesFinalizedGanttApp);

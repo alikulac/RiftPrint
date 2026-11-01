@@ -2,7 +2,7 @@
 
 specVersion: "4.0"
 metadata:
-  name: rsh.eam.ordergantts1
+  name: zrsh.eam.ordergantts1
 type: application
 builder:
   resources:

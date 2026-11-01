@@ -11,7 +11,7 @@ sap.ui.define(
 	function (BaseViewChildController, AppPersContainer, Constants, Utils) {
 		"use strict";
 
-		return BaseViewChildController.extend("rsh.eam.ordergantts1.mvc.gantt.PersGanttSettings.controller", {
+		return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.gantt.PersGanttSettings.controller", {
 			// before cleanup: SchedulingBoard._setupSettings
 			onInit: function () {
 				BaseViewChildController.prototype.onInit.apply(this, arguments);

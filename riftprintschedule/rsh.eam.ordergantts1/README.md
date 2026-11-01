@@ -8,7 +8,7 @@
 |**Template Used**<br>unknown|
 |**Service Type**<br>|
 |**Service URL**<br>http://vhegpde5ci.sap.eldoradogold.com:8000|
-|**Module Name**<br>rsh.eam.ordergantts1|
+|**Module Name**<br>zrsh.eam.ordergantts1|
 |**Application Title**<br>{{appTitle}}|
 |**Namespace**<br>rsh.eam|
 |**UI5 Theme**<br>sap_fiori_3|
@@ -16,7 +16,7 @@
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|
 
-## rsh.eam.ordergantts1
+## zrsh.eam.ordergantts1
 
 This application was downloaded from an SAP ABAP repository.
 

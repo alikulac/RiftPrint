@@ -4,9 +4,9 @@
 sap.ui.define(
 	[
 		"sap/ui/core/util/MockServer",
-		"rsh/eam/ordergantts1/localService/customMockRequests",
-		"rsh/eam/ordergantts1/localService/customMockRequestsForMaintenanceOrder",
-		"rsh/eam/ordergantts1/localService/customPersonMockRequests",
+		"zrsh/eam/ordergantts1/localService/customMockRequests",
+		"zrsh/eam/ordergantts1/localService/customMockRequestsForMaintenanceOrder",
+		"zrsh/eam/ordergantts1/localService/customPersonMockRequests",
 		"sap/base/Log"
 	],
 	function (MockServer, CustomizedMockRequests, customMockReqMaintOrd, customPersonMockRequests, Log) {
@@ -16,7 +16,7 @@ sap.ui.define(
 			oMockServerMaintenanceOrder,
 			oFeatureToggleMockServer,
 			oMockServerPeople,
-			_sAppModulePath = "rsh/eam/ordergantts1/",
+			_sAppModulePath = "zrsh/eam/ordergantts1/",
 			_sJsonFilesModulePath = _sAppModulePath + "localService/mockdata",
 			_sJsonFilesModulePathMaintenanceOrder = _sAppModulePath + "localService/mockdataMaintenanceOrder",
 			_sJsonFilesModulePathPeople = _sAppModulePath + "localService/mockdataPerson",

@@ -6,7 +6,7 @@ sap.ui.define(
 	function (ColumnSettingsController, Utils, Constants) {
 		"use strict";
 
-		return ColumnSettingsController.extend("rsh.eam.ordergantts1.mvc.ordergantt.ColumnSettings.controller", {
+		return ColumnSettingsController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.ColumnSettings.controller", {
 			onInit: function () {
 				ColumnSettingsController.prototype.onInit.apply(this, arguments);
 				this.oModel.attachBatchRequestCompleted(this._onBatchRequestComplete, this);

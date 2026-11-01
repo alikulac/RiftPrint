@@ -6,12 +6,12 @@ sap.ui.define(
 	function (BaseFragmentController, Constants, Utils) {
 		"use strict";
 
-		return BaseFragmentController.extend("rsh.eam.ordergantts1.mvc.ordergantt.menu.OperationActionSheet.controller", {
+		return BaseFragmentController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.menu.OperationActionSheet.controller", {
 			constructor: function (oComponent, oView, oGanttChart) {
 				BaseFragmentController.call(this, {
 					component: oComponent,
 					dependent: oView,
-					fragmentName: "rsh.eam.ordergantts1.mvc.ordergantt.menu.OperationActionSheet",
+					fragmentName: "zrsh.eam.ordergantts1.mvc.ordergantt.menu.OperationActionSheet",
 					fragmentId: oView.getId(),
 					ganttChart: oGanttChart
 				});

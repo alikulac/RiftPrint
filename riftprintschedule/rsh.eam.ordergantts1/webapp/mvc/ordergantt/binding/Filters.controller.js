@@ -10,7 +10,7 @@ sap.ui.define(
 	function (BaseViewChildController, Filter, Utils) {
 		"use strict";
 
-		return BaseViewChildController.extend("rsh.eam.ordergantts1.mvc.ordergantt.binding.Filters.controller", {
+		return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.binding.Filters.controller", {
 			onInitMembers: function () {
 				this._oFilterBar = this.byId("idOrderGanttSmartFilterBar");
 			},

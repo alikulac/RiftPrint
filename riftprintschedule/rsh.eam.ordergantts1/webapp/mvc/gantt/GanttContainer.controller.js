@@ -6,7 +6,7 @@ sap.ui.define(
 	function (BaseViewChildController, GanttUtils) {
 		"use strict";
 
-		return BaseViewChildController.extend("rsh.eam.ordergantts1.mvc.gantt.GanttContainer.controller", {
+		return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.gantt.GanttContainer.controller", {
 			onInit: function () {
 				BaseViewChildController.prototype.onInit.apply(this, arguments);
 				GanttUtils.setStatusBarDateTimeFormat(this.oGanttContainer);

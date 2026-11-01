@@ -5,7 +5,7 @@
 -->
 <mvc:View id="idOrderGanttAppView"
 	xmlns:mvc="sap.ui.core.mvc"
-	controllerName="rsh.eam.ordergantts1.mvc.App"
+	controllerName="zrsh.eam.ordergantts1.mvc.App"
 	displayBlock="true"
 	xmlns="sap.m">
 

@@ -24,7 +24,7 @@ sap.ui.define(
 	) {
 		"use strict";
 
-		return BaseViewChildController.extend("rsh.eam.ordergantts1.mvc.ordergantt.actions.OpenLinks.controller", {
+		return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.actions.OpenLinks.controller", {
 			onInitMembers: function () {
 				this._sOrderAdditionalFields =
 					"FunctionalLocationName,FunctionalLocation,EquipmentName,Equipment,MaterialStatusKey,MaterialStatusText,to_OrderActiveStatus,to_OrderDetails";

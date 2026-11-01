@@ -17,7 +17,7 @@ sap.ui.define(
 		 * Follows the standard code sample from Fiori End-2-End guide
 		 * (NavigationBetweenApps - StandardizedNavigation)
 		 */
-		return BaseViewChildController.extend("rsh.eam.ordergantts1.mvc.Navigation.controller", {
+		return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.Navigation.controller", {
 			onInit: function () {
 				BaseViewChildController.prototype.onInit.apply(this, arguments);
 				this._oFilterBar.suspendSelection(); // will be resumed after the app state is initialized

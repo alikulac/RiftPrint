@@ -4,7 +4,7 @@
 sap.ui.define(["sap/ui/model/json/JSONModel"], function (JSONModel) {
 	"use strict";
 
-	return JSONModel.extend("rsh.eam.ordergantts1.mvc.UIModel", {
+	return JSONModel.extend("zrsh.eam.ordergantts1.mvc.UIModel", {
 		// previously SchedulingBoard.onInit
 		constructor: function () {
 			var oData = {

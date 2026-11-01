@@ -4,7 +4,7 @@
 sap.ui.define(["sap/rsh/eam/lib/common/base/BaseViewChild.controller"], function (BaseViewChildController) {
 	"use strict";
 
-	return BaseViewChildController.extend("rsh.eam.ordergantts1.mvc.DeltaRefreshController", {
+	return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.DeltaRefreshController", {
 		// before cleanup: SchedulingBoard.prepareTargetForRefreshGantt
 		refresh: function (oTargetParams) {
 			var bActionFromMenu = this.controllers.ordergantt.operationActionSheet.isActionFromMenu();

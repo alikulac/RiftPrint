@@ -6,7 +6,7 @@ sap.ui.define(
 	function (BaseViewChildController, Utils, Constants) {
 		"use strict";
 
-		return BaseViewChildController.extend("rsh.eam.ordergantts1.mvc.ordergantt.Messages.controller", {
+		return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.Messages.controller", {
 			onInitMembers: function () {
 				this.oTreeTable = this.byId("idOrderTreeTable");
 				this.oMessageManager = sap.ui.getCore().getMessageManager();

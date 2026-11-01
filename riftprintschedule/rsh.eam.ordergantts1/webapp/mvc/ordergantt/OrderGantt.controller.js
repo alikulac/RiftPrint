@@ -4,7 +4,7 @@
 sap.ui.define(["sap/rsh/eam/lib/common/controller/GanttChartAdapter.controller"], function (GanttChartAdapterController) {
 	"use strict";
 
-	return GanttChartAdapterController.extend("rsh.eam.ordergantts1.mvc.ordergantt.OrderGantt.controller", {
+	return GanttChartAdapterController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.OrderGantt.controller", {
 		onInit: function () {
 			GanttChartAdapterController.prototype.onInit.apply(this, arguments);
 

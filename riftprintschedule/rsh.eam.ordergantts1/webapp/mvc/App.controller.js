@@ -4,7 +4,7 @@
 sap.ui.define(["sap/rsh/eam/lib/common/base/BaseView.controller", "sap/ui/model/json/JSONModel"], function (BaseController, JSONModel) {
 	"use strict";
 
-	return BaseController.extend("rsh.eam.ordergantts1.mvc.App", {
+	return BaseController.extend("zrsh.eam.ordergantts1.mvc.App", {
 		onInit: function () {
 			var oViewModel,
 				fnSetAppNotBusy,

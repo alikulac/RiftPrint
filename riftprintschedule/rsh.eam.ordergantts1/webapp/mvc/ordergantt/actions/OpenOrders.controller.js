@@ -11,7 +11,7 @@ sap.ui.define(
 	function (BaseViewChildController, Constants, GanttUtility, Utils) {
 		"use strict";
 
-		return BaseViewChildController.extend("rsh.eam.ordergantts1.mvc.ordergantt.actions.OpenOrders.controller", {
+		return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.actions.OpenOrders.controller", {
 			onInitMembers: function () {
 				this.oOrderGantt = this.byId("idOrderGanttChartWithTable");
 				this._oCrossAppNav = sap.ushell && sap.ushell.Container && sap.ushell.Container.getService("CrossApplicationNavigation");

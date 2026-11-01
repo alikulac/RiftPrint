@@ -4,7 +4,7 @@
 sap.ui.define(["sap/rsh/eam/lib/common/controller/FilterBar.controller"], function (FilterBarController) {
 	"use strict";
 
-	return FilterBarController.extend("rsh.eam.ordergantts1.mvc.filterbar.FilterBar.controller", {
+	return FilterBarController.extend("zrsh.eam.ordergantts1.mvc.filterbar.FilterBar.controller", {
 		_getFilterBar: function () {
 			return this.byId("idOrderGanttSmartFilterBar");
 		},

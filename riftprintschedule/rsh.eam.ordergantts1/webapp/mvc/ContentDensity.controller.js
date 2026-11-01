@@ -4,7 +4,7 @@
 sap.ui.define(["sap/rsh/eam/lib/common/base/BaseViewChild.controller", "sap/ui/Device"], function (BaseViewChildController, Device) {
 	"use strict";
 
-	return BaseViewChildController.extend("rsh.eam.ordergantts1.mvc.ContentDensity.controller", {
+	return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ContentDensity.controller", {
 		onInit: function () {
 			BaseViewChildController.prototype.onInit.apply(this, arguments);
 			this._applyToAppView();

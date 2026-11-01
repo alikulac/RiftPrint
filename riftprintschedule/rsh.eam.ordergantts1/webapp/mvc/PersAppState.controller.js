@@ -12,7 +12,7 @@ sap.ui.define(
 	function (PersAppStateController, AppPersContainer, Utils, Constants, FilterInformationDialogUtil) {
 		"use strict";
 
-		return PersAppStateController.extend("rsh.eam.ordergantts1.mvc.PersAppState.controller", {
+		return PersAppStateController.extend("zrsh.eam.ordergantts1.mvc.PersAppState.controller", {
 			onInit: function () {
 				PersAppStateController.prototype.onInit.apply(this, arguments);
 				var oPersContainer = AppPersContainer.getInstance();

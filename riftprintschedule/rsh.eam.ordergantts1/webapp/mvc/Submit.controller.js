@@ -4,7 +4,7 @@
 sap.ui.define(["sap/rsh/eam/lib/common/base/BaseViewChild.controller"], function (BaseViewChildController) {
 	"use strict";
 
-	return BaseViewChildController.extend("rsh.eam.ordergantts1.mvc.Submit.controller", {
+	return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.Submit.controller", {
 		// combines the POST call and subsequent GET calls into a single batch request by using a common GroupId
 		submitAndRefresh: function (sGroupId, oTargetParams) {
 			// refresh
