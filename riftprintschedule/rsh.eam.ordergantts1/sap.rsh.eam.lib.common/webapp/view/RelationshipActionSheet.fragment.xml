@@ -1,0 +1,16 @@
+<!--
+
+    Copyright (C) 2009-2023 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<core:FragmentDefinition id="idPopoverFragRel" xmlns="sap.m" xmlns:core="sap.ui.core">
+	<!--DO NOT replace Responsive Popover with action sheet as only action sheet has right click issue in reuse scenario-->
+	<ResponsivePopover id="idRelMenuPopover" showHeader="false" placement="PreferredBottomOrFlip" afterClose="onPopoverClose">
+		<VBox id="idHBoxRelationShipConteyt" class="sapUiTinyMargin">
+			<Button id="idAddOffsetbtn" text="{i18nLib>AddOffset}" type="Transparent" press="onEditOffsetPress"/>
+			<Button id="idEditOffsetbtn" text="{i18nLib>EditOffset}" type="Transparent" press="onEditOffsetPress"/>
+			<Button id="idDeleteOffsetbtn" text="{i18nLib>DeleteOffset}" type="Transparent" press="onDeleteOffsetPress"/>
+			<Button id="idDeletebtn" text="{i18nLib>deleteRelationship}" type="Transparent" press="onDelete"/>
+		</VBox>
+	</ResponsivePopover>
+</core:FragmentDefinition>

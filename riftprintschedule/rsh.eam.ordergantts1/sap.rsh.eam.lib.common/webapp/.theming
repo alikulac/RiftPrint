@@ -1,0 +1,6 @@
+{
+  "sEntity": "Library",
+  "sId": "sap/rsh/eam/lib/common",
+  "sVersion": "12.0.22",
+  "bIgnore": true
+}

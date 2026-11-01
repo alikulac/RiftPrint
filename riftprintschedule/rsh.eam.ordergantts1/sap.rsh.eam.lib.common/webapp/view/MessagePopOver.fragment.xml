@@ -1,0 +1,13 @@
+<!--
+
+    Copyright (C) 2009-2023 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<core:FragmentDefinition id="idMessagePopoverFragDef" xmlns="sap.m" xmlns:core="sap.ui.core">
+	<MessagePopover items="{/}">
+		<items>
+			<MessageItem type="{type}" title="{message}" subtitle="{additionalText}" counter="{SystemMessageNumber}" description="{description}"
+				longtextUrl="{descriptionUrl}"/>
+		</items>
+	</MessagePopover>
+</core:FragmentDefinition>

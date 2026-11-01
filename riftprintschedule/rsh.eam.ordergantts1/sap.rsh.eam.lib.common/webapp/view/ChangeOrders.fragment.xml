@@ -1,0 +1,93 @@
+<!--
+
+    Copyright (C) 2009-2023 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+	xmlns:smartField="sap.ui.comp.smartfield" id="idChangeOrdFragDef">
+<!-- commented to increase code coverage	<Dialog id="massChangeOrderDialog" title="{i18n>ChangeMaintainanceOrder}" resizable="true" draggable="true" contentWidth="900px"
+		contentHeight="700px">
+		<content>
+			<f:Form editable="true" id="idChangeOrdFragForm">
+				<f:layout>
+					<f:ResponsiveGridLayout labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0"
+						emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="2" columnsM="2" id="idChangeOrderFragRespGridLayout"/>
+				</f:layout>
+				<f:formContainers>
+					<f:FormContainer id="idChangeOrd01FormContainer">
+						<f:formElements>
+							<f:FormElement id="idBasicStDtFormEle" label="{i18n>BasicStartDate}">
+								<f:fields>
+									<DatePicker id="idStartDatePicker" change="validateMustStartDate" required="true"/>
+								</f:fields>
+							</f:FormElement>
+						</f:formElements>
+					</f:FormContainer>
+					<f:FormContainer id="idChangeOrd02FormContainer">
+						<f:formElements>
+							<f:FormElement id="idBasicEndDtFormEle" label="{i18n>BasicEndDate}">
+								<f:fields>
+									<DatePicker id="idEndDatePicker" change="validateMustEndDate" required="true"/>
+								</f:fields>
+							</f:FormElement>
+						</f:formElements>
+					</f:FormContainer>
+					<f:FormContainer id="idChangeOrd03FormContainer">
+						<f:formElements>
+							<f:FormElement id="idRestrcFormEle">
+								<f:fields>
+									<CheckBox id="idHasSchRestrCheckBox" text="{i18n>RemoveRestrictions}" enabled="{selectedItemsModel>/HasScheduleRestriction}"/>
+								</f:fields>
+							</f:FormElement>
+						</f:formElements>
+					</f:FormContainer>
+				</f:formContainers>
+			</f:Form>
+			<Table id="idSelectedItemsTable" inset="true" items="{selectedItemsModel>/}" mode="Delete" delete="deleteMassChangeRowsOrders">
+				<headerToolbar>
+					<Toolbar id="idTableHeaderToolbar" visible='false'>
+						<Title id="idHeaderToolbarTitle" text="{i18n>ChangeMaintainanceOrderOperation}"/>
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column id="idMaintOrderColumn" minScreenWidth="Large" demandPopin="true" width="12%">
+						<Text id="idMaintOrderText" text="{/#C_RSHOrdersType/MaintenanceOrder/@sap:label}"/>
+					</Column>
+					<Column id="idWorkCenterColumn" minScreenWidth="Large" demandPopin="true">
+						<Text id="idWorkCenterText" text="{/#C_RSHOrdersType/WorkCenter/@sap:label}"/>
+					</Column>
+					<Column id="idHasSchRestrColumn" minScreenWidth="Large" demandPopin="true" width="20%">
+						<Text id="idHasSchRestrText" text="{/#C_RSHOrdersType/HasScheduleRestriction/@sap:label}"/>
+					</Column>
+					<Column id="idSchTypeColumn" minScreenWidth="Large" demandPopin="true" hAlign="Center">
+						<Text id="idSchTypeText" text="{/#C_RSHOrdersType/SchedulingType/@sap:label}"/>
+					</Column>
+					<Column id="idBasicStDtColumn" hAlign="Right" minScreenWidth="Large" demandPopin="true">
+						<Text id="idBasicStDtText" text="{/#C_RSHOrdersType/MaintOrdBasicStartDate/@sap:label}"/>
+					</Column>
+					<Column id="idBasicEndDtColumn" hAlign="Right" minScreenWidth="Large" demandPopin="true">
+						<Text id="idBasicEndDtText" text="{/#C_RSHOrdersType/MaintOrdBasicEndDate/@sap:label}"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem id="idSelectedItemsColumnList">
+						<cells>
+							<ObjectIdentifier id="idMaintOrdOI" title="{selectedItemsModel>MaintenanceOrder}" text="{selectedItemsModel>OrderDescription}"/>
+							<Text id="idSIWorkCenterText" text="{selectedItemsModel>WorkCenter}"/>
+							<Text id="idSIHasSchRestrText" text="{selectedItemsModel>HasScheduleRestriction}"/>
+							<Text id="idSISchTypeText" text="{selectedItemsModel>SchedulingType}"/>
+							<Text id="idSIOrdBasicStDtText" text="{path: 'selectedItemsModel>MaintOrdBasicStartDate' , type: 'sap.ui.model.type.Date'}"/>
+							<Text id="idSIOrdBasicEndDtText" text="{path : 'selectedItemsModel>MaintOrdBasicEndDate' , type: 'sap.ui.model.type.Date'}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+		<buttons>
+			<Button id="idChangeButton" text="{i18n>Change}" type="Default" press="onMassChange" enabled="false"/>
+			<Button id="idResetButton" text="{i18n>Reset}" press="onResetMassChangeOrders"/>
+			<Button id="idCloseButton" text="{i18n>Cancel}" press="onCloseDialog"/>
+		</buttons>
+	</Dialog>-->
+</core:FragmentDefinition>

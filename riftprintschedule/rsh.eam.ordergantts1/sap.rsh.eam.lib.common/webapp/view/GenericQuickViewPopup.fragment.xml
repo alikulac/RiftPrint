@@ -1,0 +1,16 @@
+<!--
+
+    Copyright (C) 2009-2023 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" id="idGenQuickViewFragDef">
+	<QuickView id="genericQuickViewPopup" pages="{ path : '/pages', templateShareable : 'true'}" navigate=".onNavigate">
+		<QuickViewPage id="idGenQuickViewPage" pageId="{pageId}" header="{header}" title="{title}" titleUrl="{titleUrl}" description="{description}"
+			groups="{ path : 'groups', templateShareable : 'true'}">
+			<QuickViewGroup id="idGenQuickViewGroup" heading="{heading}" elements="{ path : 'elements', templateShareable : 'true'}">
+				<QuickViewGroupElement id="idGenQuickViewGroupEle" label="{label}" value="{value}" url="{url}" type="{elementType}"
+					pageLinkId="{pageLinkId}" emailSubject="{emailSubject}" target="{target}"></QuickViewGroupElement>
+			</QuickViewGroup>
+		</QuickViewPage>
+	</QuickView>
+</core:FragmentDefinition>

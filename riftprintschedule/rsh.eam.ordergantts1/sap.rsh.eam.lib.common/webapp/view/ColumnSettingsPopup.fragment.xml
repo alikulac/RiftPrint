@@ -1,0 +1,14 @@
+<!--
+
+    Copyright (C) 2009-2023 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<core:FragmentDefinition height="100%" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m.p13n" xmlns:core="sap.ui.core" class="sapUiContentPadding"
+	id="idColumnSettingsPopupFragment">
+	<Popup id="idColumnSettingsPopup" title="{i18nLib>ColumnSettings}" close="onClose" warningText="{i18nLib>ResetWarningText}" reset=".onReset">
+		<panels>
+			<SelectionPanel title="{i18nLib>Columns}" enableCount="true" enableReorder="false" showHeader="true" change="onColSettingChange"/>
+			<SortPanel id="idSortPanel" title="{i18nLib>Sort}" enableReorder="false" change="onSortSettingsChange" queryLimit="1"/>
+		</panels>
+	</Popup>
+</core:FragmentDefinition>

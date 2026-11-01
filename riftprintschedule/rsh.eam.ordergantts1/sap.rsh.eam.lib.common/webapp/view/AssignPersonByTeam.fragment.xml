@@ -1,0 +1,49 @@
+<!--
+
+    Copyright (C) 2009-2023 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<core:FragmentDefinition id="idAsgRespPopoverFragDef" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
+	<Dialog id="idAsgRespDialog" title="{i18nLib>AssignPersonResponsible}" draggable="true" resizable="true" contentWidth="40rem"
+		contentHeight="40rem">
+		<subHeader>
+			<Toolbar id="idAssignDialogToolbar">
+				<SearchField id="idAssignPersSearchField" placeholder="{i18nLib>SearchFieldPlaceholderText}" width="100%" search="onSearch"
+					ariaDescribedBy="idHeaderTextForResourceList idInvisibleTextForSearchField"/>
+				<core:InvisibleText id="idInvisibleTextForSearchField" text="{AssignDialogDataModel>/noDataText}"></core:InvisibleText>
+				<Button id="idFilterByWorkCenterButton" tooltip="{i18nLib>ClearFilterTooltip}" type="Transparent" press="onFilterPress"
+					icon="sap-icon://clear-filter" visible="true"/>
+			</Toolbar>
+		</subHeader>
+		<content>
+			<OverflowToolbar id="infoToolbar" active="true" design="Info" press="onClearFilter">
+				<Text id="idWorkCenterFilterText"/>
+				<ToolbarSpacer id="idInfoToolbarSpacer"/>
+				<core:Icon id="idCloseIconInInfoBar" src="sap-icon://decline" press="onClearFilter" tooltip="{i18nLib>ClearFilterTooltip}"/>
+			</OverflowToolbar>
+			<Label id="idHeaderTextForResourceList" design="Bold" wrapping="true" class="sapUiTinyMarginTop sapUiSmallMarginBeginEnd"/>
+			<List id="idPersonByWorkCenterList" updateFinished="onListUpdateFinish" updateStarted="onListUpdateStart" mode="SingleSelectMaster"
+				growing="true" growingThreshold="200" selectionChange="onItemSelect" growingScrollToLoad="true" ariaLabelledBy="idHeaderTextForResourceList">
+				<items>
+					<CustomListItem id="idPersRespItem">
+						<HBox id="idAvatarResourceHL" class="sapUiSmallMarginBegin">
+							<Avatar id="idEmployeeAvatar" src="{AssignDialogModel>EmployeeImageURL}" class="sapUiSmallMarginTopBottom"
+								backgroundColor="{ parts: ['AssignDialogModel>OperationPersonResponsibleID'], formatter: '.formatter.personResponsibleAvatarColor'}"
+								initials="{ parts: ['AssignDialogModel>OperationPersonRespName'], formatter: '.formatter.personResponsibleAvatarInitials'}"
+								fallbackIcon="sap-icon://person-placeholder"/>
+							<VBox id="idWrkCntrFuncVL" class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom">
+								<FormattedText id="idPersonRespName"
+									htmlText="{ parts: ['AssignDialogModel>OperationPersonRespName', 'AssignDialogModel>OperationPersonResponsibleID'], formatter: '.formatPersonRespName'}"/>
+								<Text id="idConcatenatedWorkCenter" text="{ parts: ['AssignDialogModel>WorkCenter', 'AssignDialogModel>Plant'], formatter: '.formatWorkCenterPlant'}"/>
+								<Text id="idConcatenatedFunctions" text="{AssignDialogModel>ConcatenatedRespyMgmtFuncTxt}"/>
+							</VBox>
+						</HBox>
+					</CustomListItem>
+				</items>
+			</List>
+		</content>
+		<endButton>
+			<Button id="idCancelAssignDialog" text="{i18nLib>Cancel}" press="closeDialog"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

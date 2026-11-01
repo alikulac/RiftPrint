@@ -1,0 +1,21 @@
+<!--
+
+    Copyright (C) 2009-2023 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<core:FragmentDefinition id="idFilterInfoDialogFragDef" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns="sap.m">
+	<Dialog id="idDialog" title="{i18nLib>ErrorMessageTypeInformation}" icon="sap-icon://message-information" type="Message"
+		class="sapUiResponsiveContentPadding">
+		<content>
+			<l:VerticalLayout id="idVerticalLayout" visible="{= !${DialogueLocalData>/bSwitchFromPersonalizationToVariantInfo}}">
+				<Text id="idDialogueText" text="{DialogueLocalData>/DialogueText}" class="sapUiTinyMarginBegin sapUiSmallMarginTopBottom"/>
+				<CheckBox id="idFiklterInfoDialogCB" text="{i18nLib>FilterInfoDialogDoNotShow}"/>
+			</l:VerticalLayout>
+			<core:HTML id="idSwitchFromPersonalizationToVariantText" content="{DialogueLocalData>/DialogueText}"
+				class="sapUiTinyMarginBegin sapUiSmallMarginTopBottom" visible="{DialogueLocalData>/bSwitchFromPersonalizationToVariantInfo}"/>
+		</content>
+		<buttons>
+			<Button id="idOkButton" text="{i18nLib>Ok}" press="handleCloseButtonPress" visible="true" type="Emphasized"></Button>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

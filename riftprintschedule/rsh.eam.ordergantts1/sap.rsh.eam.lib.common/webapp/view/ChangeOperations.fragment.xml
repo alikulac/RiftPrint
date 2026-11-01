@@ -1,0 +1,140 @@
+<!--
+
+    Copyright (C) 2009-2023 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+	xmlns:smartField="sap.ui.comp.smartfield" id="idChangeOpsFragDef">
+	<Dialog id="massChangeDialog" title="{i18nLib>ChangeMaintainanceOrderOperation}" resizable="true" draggable="true" contentWidth="60rem"
+		contentHeight="45rem">
+		<content>
+			<f:Form id="idChangeOpFragForm" editable="true">
+				<f:layout>
+					<f:ResponsiveGridLayout labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0"
+						emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="2" columnsM="2" id="idChangeOpFragRespGridLayout"/>
+				</f:layout>
+				<f:formContainers>
+					<f:FormContainer id="idChangeOps01FormContainer">
+						<f:formElements id="idFormElement">
+							<f:FormElement id="idPerfWCFormEle">
+								<f:label>
+									<Label id="idLabelPerfWorkCenter" text="{i18nLib>PerformingWorkCenter}">
+										<customData>
+											<core:CustomData key="help-id" value="idHelpPerformingWorkCenter" writeToDom="true"/>
+										</customData>
+									</Label>
+								</f:label>
+								<f:fields>
+									<Select items="{C_RSHEditWorkCenterVH}" id="idWorkCenterName"
+										change="onChangeWorkCenter" selectedKey="{UIElementState>/sWorkCenterSelectedKey}"
+										valueState="{UIElementState>/sWorkCenterValueState}"
+										valueStateText="{UIElementState>/sWorkCenterValueStateText}">
+										<core:ListItem id="idWorkCenterListItem" key="{WorkCenterInternalID}" text="{parts: ['WorkCenter', 'Plant', 'UIElementState>/bNeedPlantInfo'] , formatter: '.formatWorkCenterSelect'}"/>
+									</Select>
+								</f:fields>
+							</f:FormElement>
+							<f:FormElement id="idActDescFormEle">
+								<f:label>
+									<Label id="idLabelActDesc" text="{i18nLib>ActionDescription}">
+										<customData>
+											<core:CustomData key="help-id" value="idHelpActionChange" writeToDom="true"/>
+										</customData>
+									</Label>
+								</f:label>
+								<f:fields>
+									<Select items="{C_RSHEditDispatchOptionVH}" id="idActionDescription" change="onChangeStatus" selectedKey="{UIElementState>/sActionSelectedKey}"
+										valueState="{UIElementState>/sActionValueState}"
+										valueStateText="{UIElementState>/sActionValueStateText}">
+										<core:Item key="{Action}" text="{ActionDescription}" id="idActionItem"/>
+									</Select>
+								</f:fields>
+							</f:FormElement>
+						</f:formElements>
+					</f:FormContainer>
+					<f:FormContainer id="idChangeOps02FormContainer">
+						<f:formElements>
+							<f:FormElement id="idMustStOnFormEle">
+								<f:label>
+									<Label id="idLabelMustStartOn" text="{i18nLib>MustStartOn}">
+										<customData>
+											<core:CustomData key="help-id" value="idHelpMustStartOn" writeToDom="true"/>
+										</customData>
+									</Label>
+								</f:label>
+								<f:fields>
+									<DateTimePicker id="idDateTimeMustStart" 
+									value="{path: 'UIElementState>/dOperationMustStart', type : 'sap.ui.model.odata.type.DateTimeOffset'}" 
+									change="onChangeMustStart" 
+									showTimezone="true"
+									minDate="{UIElementState>/dMustStartMinDateTime}"
+									enabled="{UIElementState>/bDateChangeAllowed}"
+									valueState="{UIElementState>/sMustStartValueState}"
+									valueStateText="{UIElementState>/sMustStartValueStateText}"></DateTimePicker>
+								</f:fields>
+							</f:FormElement>
+						</f:formElements>
+					</f:FormContainer>
+				</f:formContainers>
+			</f:Form>
+			<Table id="idSelectedItemsTable" inset="false" items="{selectedItemsModel>/}" mode="Delete" delete="deleteMassChangeRowsOperations">
+				<headerToolbar>
+					<Toolbar id="idSelectedTblToolbar" visible='false'>
+						<Title id="idChangeMaintOdrOprText" text="{i18nLib>ChangeMaintainanceOrderOperation}"/>
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column id="idMaintOrderColumn" minScreenWidth="Large" demandPopin="true">
+						<Text id="idMaintOrderText" text="{/#C_RSHOperationsType/MaintenanceOrder/@sap:label}"/>
+					</Column>
+					<Column id="idMaintOperColumn" minScreenWidth="Large" demandPopin="true">
+						<Text id="idMaintOperText" text="{/#C_RSHOperationsType/MaintenanceOrderOperation/@sap:label}"/>
+					</Column>
+					<Column id="idWorkCenterColumn" minScreenWidth="Large" demandPopin="true">
+						<Text id="idWorkCenterText" text="{/#C_RSHOperationsType/WorkCenter/@sap:label}"/>
+					</Column>
+					<Column id="idPlantColumn" hAlign="Left" minScreenWidth="Large" demandPopin="true" visible="{UIElementState>/bNeedPlantInfo}">
+						<Text id="idPlantText" text="{/#C_RSHOperationsType/Plant/@sap:label}"/>
+					</Column>
+					<Column id="idProcessingStatusColumn" minScreenWidth="Large" demandPopin="true">
+						<Text id="idProcessingStatusText" text="{/#C_RSHOperationsType/ProcessingStatus/@sap:label}"/>
+					</Column>
+					<Column id="idPlannedStartDateColumn" hAlign="Right" minScreenWidth="Large" demandPopin="true">
+						<Text id="idPlannedStartDateText" text="{/#C_RSHOperationsType/OrderOperationStartDateTime/@sap:label}"/>
+					</Column>
+					<Column id="idOpPersRespNameColumn" hAlign="Left" minScreenWidth="Large" demandPopin="true">
+						<Text id="idOpPersRespNameText" text="{/#C_RSHOperationsType/OperationPersonRespName/@sap:label}"/>
+					</Column>
+					<Column id="idOpAssignedPeopleColumn" hAlign="Left" minScreenWidth="Large" demandPopin="true">
+						<Text id="idOpAssignedPeopleText" text="{/#C_RSHOperationsType/ConcatenatedAssignedPersonsTxt/@sap:label}"/>
+					</Column>					
+				</columns>
+				<items>
+					<ColumnListItem highlight="{selectedItemsModel>Highlight}">
+						<cells>
+							<l:VerticalLayout>
+								<ObjectIdentifier title="{selectedItemsModel>MaintenanceOrder}"/>
+								<Text text="{selectedItemsModel>MaintenanceOrderDesc}"/>
+							</l:VerticalLayout>
+							<l:VerticalLayout>
+								<Text text="{parts: ['selectedItemsModel>MaintenanceOrderOperation' , 'selectedItemsModel>MaintenanceOrderSubOperation'] , formatter: '.formatter.formatSubOperation'}"/>
+								<Text text="{selectedItemsModel>OperationDescription}"/>
+							</l:VerticalLayout>
+							<Text text="{selectedItemsModel>WorkCenter}"/>
+							<Text text="{selectedItemsModel>Plant}"/>
+							<ObjectStatus text="{selectedItemsModel>ProcessingStatusText}"
+								state="{path: 'selectedItemsModel>ProcessingStatus', formatter: '.formatter.statusColor'}"/>
+							<Text text="{path: 'selectedItemsModel>OrderOperationStartDateTime', type:'sap.ui.model.odata.type.DateTimeOffset'}"/>
+							<Text text="{selectedItemsModel>OperationPersonRespName}"/>
+							<Text text="{selectedItemsModel>ConcatenatedAssignedPersonsTxt}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+		<buttons>
+			<Button id="idChangeButton" text="{i18nLib>Change}" type="{UIElementState>/sChangeButtonType}" press="onMassChange" enabled="{UIElementState>/bEnableChange}"/>
+			<Button id="idResetButton" text="{i18nLib>Reset}" press="onResetMassChange" enabled="{UIElementState>/bEnableReset}"/>
+			<Button id="idCloseButton" text="{i18nLib>Cancel}" press="onCloseDialog"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

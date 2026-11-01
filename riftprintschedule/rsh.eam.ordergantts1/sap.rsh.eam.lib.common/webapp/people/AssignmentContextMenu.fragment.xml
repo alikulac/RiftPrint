@@ -1,0 +1,10 @@
+<!--
+
+    Copyright (C) 2009-2023 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<ActionSheet id="idActionSheet" placement="PreferredBottomOrFlip" afterClose="onAfterClose">
+		<Button id="idButtonDeleteAction" text="{i18nLib>AssignmentDeleteButton}" type="Transparent" press="onDeleteAssignment"/>
+	</ActionSheet>
+</core:FragmentDefinition>

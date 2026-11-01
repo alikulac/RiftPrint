@@ -1,0 +1,336 @@
+<!--
+
+    Copyright (C) 2009-2023 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<core:FragmentDefinition id="idGanttChartSettingsFragDef" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout"
+	xmlns:grid="sap.ui.layout.cssgrid" xmlns:f="sap.ui.layout.form">
+	<Dialog id="idGanttChartSettingsDialog" title="{i18nLib>SettingsTitle}" contentHeight="35rem"
+		contentWidth="40rem" verticalScrolling="false" horizontalScrolling="false" draggable="true">
+		<content>
+			<IconTabBar id="idSettingsIconTabBar" expandable="false" selectedKey="Layout" stretchContentHeight="true" applyContentPadding="true"
+				headerMode="Inline" backgroundDesign="Transparent">
+				<items>
+					<IconTabFilter text="{i18nLib>LayoutSetting}" id="idLayoutSettingTab" key="Layout"
+						visible="{= ${SettingConfiguration>/LayoutTab} ? true : false}"
+						enabled="{= ${utilizationThresholdValueStateModel>/lowerThresholdValueState} !== 'Error' &amp;&amp; ${utilizationThresholdValueStateModel>/MiddleThresholdValueState} !== 'Error' &amp;&amp; ${utilizationThresholdValueStateModel>/HigherThresholdValueState} !== 'Error'}">
+						<ScrollContainer id="idLayoutSettingScrollContainer" height="100%" vertical="true">
+							<VBox id="idVboxLayoutSettings">
+								<CheckBox id="idEnableNowLine" name="enableNowLine" text="{i18nLib>IndicateCurrentTime}"
+									visible="{= ${SettingConfiguration>/Layoutsettings/enableNowLine} ? true : false}" selected="{=${SettingValues>/enableNowLine}}"
+									select="onCheckBoxSelect"/>
+								<CheckBox id="idEnableCursorLine" name="enableCursorLine" text="{i18nLib>ShowCursorLine}"
+									visible="{= ${SettingConfiguration>/Layoutsettings/enableCursorLine} ? true : false}" selected="{=${SettingValues>/enableCursorLine}}"
+									select="onCheckBoxSelect"/>
+								<CheckBox id="idEnableVerticalLine" name="enableVerticalLine" text="{i18nLib>ShowDividerLines}"
+									visible="{= ${SettingConfiguration>/Layoutsettings/enableVerticalLine} ? true : false}" selected="{=${SettingValues>/enableVerticalLine}}"
+									select="onCheckBoxSelect"/>
+								<CheckBox id="idEnableStatusBar" name="enableStatusBar" text="{i18nLib>ShowStatusBar}"
+									visible="{= ${SettingConfiguration>/Layoutsettings/enableStatusBar} ? true : false}" selected="{=${SettingValues>/enableStatusBar}}"
+									select="onCheckBoxSelect"/>
+								<CheckBox id="idCondensedModeActive" name="condensedModeActive" text="{i18nLib>ShowCondensedLayout}"
+									visible="{= ${SettingConfiguration>/Layoutsettings/condensedModeActive} ? true : false}"
+									selected="{=${SettingValues>/bCondensedModeActive}}" select="onCheckBoxSelect"/>
+								<CheckBox id="idExpandAll" name="expandAll" text="{i18nLib>ExpandAllOrders}"
+									visible="{= ${SettingConfiguration>/Layoutsettings/expandAll} ? true : false}" selected="{=${SettingValues>/bExpandAll}}"
+									select="onCheckBoxSelect"/>
+							</VBox>
+						</ScrollContainer>
+					</IconTabFilter>
+					<IconTabFilter text="{i18nLib>WorkCenterSetting}" id="idWorkCenterSettingTab" key="WorkCenters"
+						visible="{= ${SettingConfiguration>/WorkCenterTab} ? true : false}">
+						<ScrollContainer id="idWorkCenterSettingScrollContainer" height="100%" vertical="true">
+							<VBox id="idVboxWorkCenterSettings" class="sapUiSmallMarginTop">
+								<Title id="idUtilizationThres" text="{i18nLib>UtilizationThres}" level="H3"/>
+								<grid:CSSGrid id="idUtilizationBarColorTresholdsSettingGrid" gridAutoFlow="RowDense" gridTemplateColumns="max-content max-content"
+									gridTemplateRows="1fr 1fr 1fr 1fr" gridColumnGap="0.5rem" class="sapUiMediumMarginBegin" width="90%"
+									visible="{= ${SettingConfiguration>/WorkCenterSettings/showColorsUtilizationBars} ? true : false}">
+									<Text id="idBelowTHtext" text="{i18nLib>EnhancedSettingsTextBelow}" class="sapUiSmallMarginTop"></Text>
+									<HBox id="idHBoxBelowThresholdInput" class="sapUiSmallMarginBegin">
+										<Input id="idBelowTHInput" valueState="{utilizationThresholdValueStateModel>/lowerThresholdValueState}"
+											valueStateText="{utilizationThresholdValueStateModel>/errorValueStateText}" liveChange=".onTHInputLiveChange"
+											value="{=${SettingValues>/ilowerThreshold}}" width="4rem" textAlign="Right" type="Number" name="ilowerThreshold" class="sapUiTinyMarginTop"
+											ariaLabelledBy="idBelowTHtext"/>
+										<Text id="idBelowTHPercentText" text="{i18nLib>EnhancedSettingsPercent}" class="sapUiTinyMarginBegin sapUiSmallMarginTop"/>
+										<core:Icon id="idIconColorBelowThreshold" class="sapUiTinyMarginTop sapUiSmallMarginBegin" src="sap-icon://color-fill" size="1.5rem"
+											color="{SettingValues>/sUtilColorBelowThreshold}" tooltip="{i18nLib>ColorIconUtilTHTooltip}" alt="{SettingValues>/sUtilColorBelowThreshold}"/>
+										<Link id="idLinkChangeBelowTHColor" text="{i18nLib>ThresholdColorChangeLink}" class="sapUiTinyMarginBegin sapUiSmallMarginTop"
+											visible="true" press="onPressColorChangeThreshold"
+											ariaLabelledBy="idBelowTHtext,idBelowTHInput,idBelowTHPercentText,idIconColorBelowThreshold"/>
+									</HBox>
+									<Text id="idLowerTHtext" text="{path: 'SettingValues>/ilowerThreshold', formatter: '.formatStartLowerThresholdValue'}"
+										class="sapUiSmallMarginTop" renderWhitespace="true"></Text>
+									<HBox id="idHBoxLowThresholdInput" class="sapUiSmallMarginBegin">
+										<Input id="idLowerTHInput" valueState="{utilizationThresholdValueStateModel>/MiddleThresholdValueState}"
+											valueStateText="{utilizationThresholdValueStateModel>/errorValueStateText}" liveChange=".onTHInputLiveChange"
+											value="{=${SettingValues>/iMiddleThreshold}}" width="4rem" textAlign="Right" type="Number" name="iMiddleThreshold"
+											class="sapUiTinyMarginTop" ariaLabelledBy="idLowerTHtext"/>
+										<Text id="idLowerTHPercentText" text="{i18nLib>EnhancedSettingsPercent}" class="sapUiTinyMarginBegin sapUiSmallMarginTop"/>
+										<core:Icon id="idIconColorLowerThreshold" class="sapUiTinyMarginTop sapUiSmallMarginBegin" src="sap-icon://color-fill" size="1.5rem"
+											color="{SettingValues>/sUtilColorLowerThreshold}" tooltip="{i18nLib>ColorIconUtilTHTooltip}" alt="{SettingValues>/sUtilColorLowerThreshold}"/>
+										<Link id="idLinkChangeLowerTHColor" class="sapUiTinyMarginBegin sapUiSmallMarginTop" text="{i18nLib>ThresholdColorChangeLink}"
+											visible="true" press="onPressColorChangeThreshold"
+											ariaLabelledBy="idLowerTHtext,idLowerTHInput,idLowerTHPercentText,idIconColorLowerThreshold"/>
+									</HBox>
+									<Text id="idMiddleTHtext" text="{path: 'SettingValues>/iMiddleThreshold', formatter: '.formatStartThresholdValue'}"
+										class="sapUiSmallMarginTop" renderWhitespace="true"></Text>
+									<HBox id="idHBoxMiddleThresholdInput" class="sapUiSmallMarginBegin">
+										<Input id="idMiddleTHInput" valueState="{utilizationThresholdValueStateModel>/HigherThresholdValueState}"
+											valueStateText="{utilizationThresholdValueStateModel>/errorValueStateText}" liveChange=".onTHInputLiveChange"
+											value="{=${SettingValues>/iHigherThreshold}}" width="4rem" textAlign="Right" type="Number" name="iHigherThreshold"
+											class="sapUiTinyMarginTop" ariaLabelledBy="idMiddleTHtext"></Input>
+										<Text id="idMiddleTHPercentText" text="{i18nLib>EnhancedSettingsPercent}" class="sapUiTinyMarginBegin sapUiSmallMarginTop"></Text>
+										<core:Icon id="idIconColorMiddleThreshold" class="sapUiTinyMarginTop sapUiSmallMarginBegin" src="sap-icon://color-fill" size="1.5rem"
+											color="{SettingValues>/sUtilColorMiddleThreshold}" tooltip="{i18nLib>ColorIconUtilTHTooltip}"
+											alt="{SettingValues>/sUtilColorMiddleThreshold}"/>
+										<Link class="sapUiTinyMarginBegin sapUiSmallMarginTop" id="idLinkChangeMiddleTHColor" text="{i18nLib>ThresholdColorChangeLink}"
+											visible="true" press="onPressColorChangeThreshold"
+											ariaLabelledBy="idMiddleTHtext,idMiddleTHInput,idMiddleTHPercentText,idIconColorMiddleThreshold"/>
+									</HBox>
+									<Text id="idHigherTHtext" text="{path: 'SettingValues>/iHigherThreshold', formatter: '.formatStartThresholdValue'}"
+										class="sapUiSmallMarginTop" renderWhitespace="true"/>
+									<HBox id="idHBoxHigherThresholdInput" class="sapUiSmallMarginBegin">
+										<Input id="idHigherTHInput" value="999" width="4rem" textAlign="Right" type="Number" enabled="false" editable="true"
+											class="sapUiTinyMarginTop" ariaLabelledBy="idHigherTHtext"/>
+										<Text id="idHigherTHPercentText" text="{i18nLib>EnhancedSettingsPercent}" class="sapUiTinyMarginBegin sapUiSmallMarginTop"/>
+										<core:Icon id="idIconColorHigherThreshold" class="sapUiTinyMarginTop sapUiSmallMarginBegin" src="sap-icon://color-fill" size="1.5rem"
+											color="{SettingValues>/sUtilColorHigherThreshold}" tooltip="{i18nLib>ColorIconUtilTHTooltip}"
+											alt="{SettingValues>/sUtilColorHigherThreshold}"/>
+										<Link id="idLinkChangeHigherTHColor" class="sapUiTinyMarginBegin sapUiSmallMarginTop" text="{i18nLib>ThresholdColorChangeLink}"
+											visible="true" press="onPressColorChangeThreshold"
+											ariaLabelledBy="idHigherTHtext,idHigherTHInput,idHigherTHPercentText,idIconColorHigherThreshold"/>
+									</HBox>
+								</grid:CSSGrid>
+								<Title id="idShowOrderGantt" text="{i18nLib>ShowOrderGantt}" class="sapUiMediumMarginTop" level="H3"/>
+								<CheckBox id="idShowNonWorkingTimes" name="showNonWorkingTimes" text="{i18nLib>NonWorkingTimes}"
+									visible="{=${SettingConfiguration>/WorkCenterSettings/showNonWorkingTimes} ? true : false}" selected="{SettingValues>/bShowNonWorkingTimes}"
+									select="onCheckBoxSelect"/>
+								<CheckBox id="idShowUtilizationIndicator" name="showUtilizationIndicator" text="{i18nLib>Utilization}"
+									visible="{=${SettingConfiguration>/WorkCenterSettings/showUtilizationIndicator} ? true : false}"
+									selected="{SettingValues>/bShowUtilizationIndicator}" select="onCheckBoxSelect"/>
+								<grid:CSSGrid id="idOrdGanttUtilizationBarColorTresholdsSettingGrid" gridAutoFlow="RowDense" gridTemplateColumns="max-content max-content"
+									gridTemplateRows="1fr 1fr 1fr 1fr" gridColumnGap="0.5rem" class="sapUiMediumMarginBegin" width="90%"
+									visible="{= ${SettingConfiguration>/WorkCenterSettings/showColorsUtilizationBars} ? true : false}">
+									<CheckBox id="idShowBelowTreshold" selected="{SettingValues>/bShowBarBelow}" name="bShowBarBelow" select="onCheckBoxSelect"
+										editable="{SettingValues>/bShowUtilizationIndicator}" class="sapUiTinyMarginTop"
+										ariaLabelledBy="idShowBelowTreshold,idOrdGanttIconColorBelowThreshold"
+										text="{i18nLib>EnhancedSettingsTextBelow} {=${SettingValues>/ilowerThreshold}} {i18nLib>EnhancedSettingsPercent}"></CheckBox>
+									<core:Icon id="idOrdGanttIconColorBelowThreshold" class="sapUiTinyMarginTop sapUiTinyMarginBegin" src="sap-icon://color-fill" size="1.5rem"
+										color="{SettingValues>/sUtilColorBelowThreshold}" tooltip="{i18nLib>ColorIconUtilTHTooltip}" alt="{SettingValues>/sUtilColorBelowThreshold}"/>
+									<CheckBox id="idShowLowTreshold" selected="{SettingValues>/bShowBarLower}" name="bShowBarLower" select="onCheckBoxSelect"
+										editable="{SettingValues>/bShowUtilizationIndicator}" class="sapUiTinyMarginTop"
+										ariaLabelledBy="idShowLowTreshold,idOrdGanttIconColorLowerThreshold"
+										text="{parts:['SettingValues>/ilowerThreshold','SettingValues>/iMiddleThreshold'], formatter: '.formatShowLowThresholdText'}"></CheckBox>
+									<core:Icon id="idOrdGanttIconColorLowerThreshold" class="sapUiTinyMarginTop sapUiTinyMarginBegin" src="sap-icon://color-fill" size="1.5rem"
+										color="{SettingValues>/sUtilColorLowerThreshold}" tooltip="{i18nLib>ColorIconUtilTHTooltip}" alt="{SettingValues>/sUtilColorLowerThreshold}"/>
+									<CheckBox id="idShowMiddleTreshold" selected="{SettingValues>/bShowBarMiddle}" name="bShowBarMiddle" select="onCheckBoxSelect"
+										editable="{SettingValues>/bShowUtilizationIndicator}" class="sapUiTinyMarginTop"
+										ariaLabelledBy="idShowMiddleTreshold,idOrdGanttIconColorMiddleThreshold"
+										text="{parts: ['SettingValues>/iMiddleThreshold','SettingValues>/iHigherThreshold'], formatter: '.formatStartandEndThresholdValue'}"></CheckBox>
+									<core:Icon id="idOrdGanttIconColorMiddleThreshold" class="sapUiTinyMarginTop sapUiTinyMarginBegin" src="sap-icon://color-fill" size="1.5rem"
+										color="{SettingValues>/sUtilColorMiddleThreshold}" tooltip="{i18nLib>ColorIconUtilTHTooltip}"
+										alt="{SettingValues>/sUtilColorMiddleThreshold}"/>
+									<CheckBox id="idShowHigherTreshold" selected="{SettingValues>/bShowBarHigher}" name="bShowBarHigher" select="onCheckBoxSelect"
+										editable="{SettingValues>/bShowUtilizationIndicator}" class="sapUiTinyMarginTop"
+										ariaLabelledBy="idShowHigherTreshold,idOrdGanttIconColorHigherThreshold"
+										text="{path: 'SettingValues>/iHigherThreshold', formatter: '.formatStartandEndThresholdValue'}"></CheckBox>
+									<core:Icon id="idOrdGanttIconColorHigherThreshold" class="sapUiTinyMarginTop sapUiTinyMarginBegin" src="sap-icon://color-fill" size="1.5rem"
+										color="{SettingValues>/sUtilColorHigherThreshold}" tooltip="{i18nLib>ColorIconUtilTHTooltip}"
+										alt="{SettingValues>/sUtilColorHigherThreshold}"/>
+								</grid:CSSGrid>
+							</VBox>
+						</ScrollContainer>
+					</IconTabFilter>
+					<IconTabFilter text="{i18nLib>ElementSetting}" id="idOrderOperationSettingTab" key="OrdersAndOperations"
+						visible="{= ${SettingConfiguration>/OrderOperationTab} ? true : false}"
+						enabled="{= ${utilizationThresholdValueStateModel>/lowerThresholdValueState} !== 'Error' &amp;&amp; ${utilizationThresholdValueStateModel>/MiddleThresholdValueState} !== 'Error' &amp;&amp; ${utilizationThresholdValueStateModel>/HigherThresholdValueState} !== 'Error'}">
+						<ScrollContainer id="idElementSettingScrollContainer" height="100%" vertical="true">
+							<VBox id="idVboxOrdersAndOperationsSettings">
+								<CheckBox id="idShowFinalDueDate" name="showFinalDueDate" text="{i18nLib>ShowFinalDueDate}"
+									visible="{= ${SettingConfiguration>/OrdersAndOperationsSettings/showFinalDueDate} ? true : false}"
+									selected="{=${SettingValues>/bShowFinalDueDate}}" select="onCheckBoxSelect"/>
+								<CheckBox id="idShowImpRel" name="showImpRel" text="{i18nLib>ShowImplicitRelationships}"
+									visible="{= ${SettingConfiguration>/OrdersAndOperationsSettings/showImpRel} ? true : false}" selected="{=${SettingValues>/bShowImpRel}}"
+									select="onCheckBoxSelect"/>
+								<CheckBox id="idShowExpRel" name="showExpRel" text="{i18nLib>ShowExplicitRelationships}"
+									visible="{= ${SettingConfiguration>/OrdersAndOperationsSettings/showExpRel} ? true : false}" selected="{=${SettingValues>/bShowExpRel}}"
+									select="onCheckBoxSelect"/>
+								<CheckBox id="idShowRestrictions" name="showRestrictions" text="{i18nLib>ShowMustStartOnConstraints}"
+									visible="{= ${SettingConfiguration>/OrdersAndOperationsSettings/showMustStartRestriction} ? true : false}"
+									selected="{=${SettingValues>/bShowRestrictions}}" select="onCheckBoxSelect"/>
+								<CheckBox id="idShowMaintenanceEvents" name="showMaintenanceEvent" text="{i18nLib>ShowMaintenanceEvents}"
+									visible="{= ${SettingConfiguration>/OrdersAndOperationsSettings/showMaintenanceEvent} ? true : false}"
+									selected="{=${SettingValues>/bShowMaintenanceEvent}}" select="onCheckBoxSelect"/>
+								<CheckBox id="idShowSummaryBarforAssets" name="showSummaryBarforAssets" text="{i18nLib>ShowOrderSummary}"
+									visible="{= ${SettingConfiguration>/OrdersAndOperationsSettings/showSummaryBarforAssets} ? true : false}"
+									selected="{=${SettingValues>/bShowSummaryBarforAssets}}" select="onCheckBoxSelect"/>
+								<CheckBox id="idShowActualDates" name="showActualDates" text="{i18nLib>ShowActualDates}"
+									visible="{= ${SettingConfiguration>/OrdersAndOperationsSettings/showActualDates} ? true : false}"
+									selected="{=${SettingValues>/bShowActualDates}}" select="onCheckBoxSelect"/>
+							</VBox>
+						</ScrollContainer>
+					</IconTabFilter>
+					<IconTabFilter text="{i18nLib>LabelsSetting}" id="idLabelsSettingTab" key="Labels"
+						visible="{= ${SettingConfiguration>/LabelTab} ? true : false}">
+						<customData>
+							<core:CustomData key="help-id" value="idHelpLabelSettingTab" writeToDom="true"/>
+						</customData>
+						<items>
+							<IconTabFilter text="{i18nLib>Orders}" id="idOrderLabelsSettings" key="OrderLabels"
+								visible="{= ${SettingConfiguration>/MaintenanceOrderSubTab} ? true : false}">
+								<ScrollContainer id="idLabelSettingOrdersScrollContainer" height="100%" vertical="true">
+									<VBox id="idVboxOrderLabelSettings">
+										<f:Form id="idOrderLabelForm" editable="true">
+											<f:layout>
+												<f:ResponsiveGridLayout labelSpanXL="4" labelSpanL="4" labelSpanM="2" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4"
+													emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1"/>
+											</f:layout>
+											<f:formContainers>
+												<f:FormContainer id="idOrdersFormContainer">
+													<f:toolbar>
+														<Toolbar>
+															<Title id="idOrdersTitle" text="{i18nLib>LabelForOrderBars}"/>
+														</Toolbar>
+													</f:toolbar>
+													<f:formElements>
+														<f:FormElement id="idOrderLeftInFE" label="{i18nLib>LabelToTheLeft}"
+															visible="{= ${SettingConfiguration>/LabelSettings/orderBarLeftText} ? true : false}">
+															<f:fields>
+																<ComboBox id="idOrderLeftComboBox" name="OrderLeftComboBox" selectionChange="onLabelSelectionChange" width="50%"
+																	selectedKey="{SettingValues>/sOrderLabelLeft}" items="{SettingConfiguration>/LabelSettings/orderBarLeftFields}">
+																	<core:Item id="idOrderBarLeftItem" key="{SettingConfiguration>key}" text="{path: 'SettingConfiguration>key', formatter: '.getItemText'}"/>
+																</ComboBox>
+															</f:fields>
+														</f:FormElement>
+														<f:FormElement id="idOrderInsideInFE" label="{i18nLib>LabelInside}"
+															visible="{= ${SettingConfiguration>/LabelSettings/orderBarInsideText} ? true : false}">
+															<f:fields>
+																<ComboBox id="idOrderInsideComboBox" name="OrderInsideComboBox" selectionChange="onLabelSelectionChange" width="50%"
+																	selectedKey="{SettingValues>/sOrderLabelInside}" items="{SettingConfiguration>/LabelSettings/orderBarInsideFields}">
+																	<core:Item id="idOrderBarInsideItem" key="{SettingConfiguration>key}" text="{path: 'SettingConfiguration>key', formatter: '.getItemText'}"/>
+																</ComboBox>
+															</f:fields>
+														</f:FormElement>
+														<f:FormElement id="idOrderRightInFE" label="{i18nLib>LabelToTheRight}"
+															visible="{= ${SettingConfiguration>/LabelSettings/orderBarRightText} ? true : false}">
+															<f:fields>
+																<ComboBox id="idOrderRightComboBox" name="OrderRightComboBox" selectionChange="onLabelSelectionChange" width="50%"
+																	selectedKey="{SettingValues>/sOrderLabelRight}" items="{SettingConfiguration>/LabelSettings/orderBarRightFields}">
+																	<core:Item id="idOrderBarRightItem" key="{SettingConfiguration>key}" text="{path: 'SettingConfiguration>key', formatter: '.getItemText'}"/>
+																</ComboBox>
+															</f:fields>
+														</f:FormElement>
+													</f:formElements>
+												</f:FormContainer>
+											</f:formContainers>
+										</f:Form>
+									</VBox>
+								</ScrollContainer>
+							</IconTabFilter>
+							<IconTabFilter text="{i18nLib>Operations}" id="idOperationLabelsSettings" key="OperationLabels"
+								visible="{= ${SettingConfiguration>/MaintenanceOperationSubTab} ? true : false}">
+								<ScrollContainer id="idLabelSettingOperationsScrollContainer" height="100%" vertical="true">
+									<VBox id="idVboxOperationLabelSettings">
+										<f:Form id="idOperationLabelForm" editable="true">
+											<f:layout>
+												<f:ResponsiveGridLayout labelSpanXL="4" labelSpanL="4" labelSpanM="2" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4"
+													emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1"/>
+											</f:layout>
+											<f:formContainers>
+												<f:FormContainer id="idOperationsFormContainer">
+													<f:toolbar>
+														<Toolbar>
+															<Title id="idOperationsTitle" text="{i18nLib>LabelForOperationBars}"/>
+														</Toolbar>
+													</f:toolbar>
+													<f:formElements>
+														<f:FormElement id="idOperationLeftInFE" label="{i18nLib>LabelToTheLeft}"
+															visible="{= ${SettingConfiguration>/LabelSettings/operationBarLeftText} ? true : false}">
+															<f:fields>
+																<ComboBox id="idOperationLeftComboBox" name="OperationLeftComboBox" selectionChange="onLabelSelectionChange" width="55%"
+																	selectedKey="{SettingValues>/sOperationLabelLeft}" items="{SettingConfiguration>/LabelSettings/operationBarLeftFields}">
+																	<core:Item id="idOpBarLeftItem" key="{SettingConfiguration>key}" text="{path: 'SettingConfiguration>key', formatter: '.getItemText'}"/>
+																</ComboBox>
+															</f:fields>
+														</f:FormElement>
+														<f:FormElement id="idOperationInsideInFE" label="{i18nLib>LabelInside}"
+															visible="{= ${SettingConfiguration>/LabelSettings/operationBarInsideText} ? true : false}">
+															<f:fields>
+																<ComboBox id="idOperationInsideComboBox" name="OperationInsideComboBox" selectionChange="onLabelSelectionChange" width="55%"
+																	selectedKey="{SettingValues>/sOperationLabelInside}" items="{SettingConfiguration>/LabelSettings/operationBarInsideFields}">
+																	<core:Item id="idOpBarInsideItem" key="{SettingConfiguration>key}" text="{path: 'SettingConfiguration>key', formatter: '.getItemText'}"/>
+																</ComboBox>
+															</f:fields>
+														</f:FormElement>
+														<f:FormElement id="idOperationRightInFE" label="{i18nLib>LabelToTheRight}"
+															visible="{= ${SettingConfiguration>/LabelSettings/operationsBarRightText} ? true : false}">
+															<f:fields>
+																<ComboBox id="idOperationRightComboBox" name="OperationRightComboBox" selectionChange="onLabelSelectionChange" width="55%"
+																	selectedKey="{SettingValues>/sOperationLabelRight}" items="{SettingConfiguration>/LabelSettings/operationBarRightFields}">
+																	<core:Item id="idOpBarRightItem" key="{SettingConfiguration>key}" text="{path: 'SettingConfiguration>key', formatter: '.getItemText'}"/>
+																</ComboBox>
+															</f:fields>
+														</f:FormElement>
+													</f:formElements>
+												</f:FormContainer>
+											</f:formContainers>
+										</f:Form>
+									</VBox>
+								</ScrollContainer>
+							</IconTabFilter>
+							<IconTabFilter text="{i18nLib>MaintenanceEvents}" id="idMaintEventLabelsSettings" key="MaintEventLabels"
+								visible="{= ${SettingConfiguration>/MaintenanceEventSubTab} ? true : false}">
+								<ScrollContainer id="idLabelSettingMaintainEventsScrollContainer" height="100%" vertical="true">
+									<VBox id="idVboxMaintEventLabelSettings">
+										<f:Form id="idMaintEventLabelForm" editable="true">
+											<f:layout>
+												<f:ResponsiveGridLayout labelSpanXL="4" labelSpanL="4" labelSpanM="2" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4"
+													emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1"/>
+											</f:layout>
+											<f:formContainers>
+												<f:FormContainer id="idMaintEventsFormContainer">
+													<f:toolbar>
+														<Toolbar>
+															<Title id="idMaintEventsTitle" text="{i18nLib>LabelForMaintEvents}"/>
+														</Toolbar>
+													</f:toolbar>
+													<f:formElements>
+														<f:FormElement id="idMaintEventsLeftInFE" label="{i18nLib>LabelToTheLeft}"
+															visible="{= ${SettingConfiguration>/LabelSettings/MaintenanceEventLeftText} ? true : false}">
+															<f:fields>
+																<ComboBox id="idMaintEventLeftComboBox" name="MaintEventLeftComboBox" selectionChange="onLabelSelectionChange" width="55%"
+																	selectedKey="{SettingValues>/sMaintEventLabelLeft}" items="{SettingConfiguration>/LabelSettings/MaintenanceEventLeftFields}">
+																	<core:Item id="idMaintEventLeftItem" key="{SettingConfiguration>key}" text="{path: 'SettingConfiguration>key', formatter: '.getItemText'}"/>
+																</ComboBox>
+															</f:fields>
+														</f:FormElement>
+														<f:FormElement id="idMaintEventRightInFE" label="{i18nLib>LabelToTheRight}"
+															visible="{= ${SettingConfiguration>/LabelSettings/MaintenanceEventRightText} ? true : false}">
+															<f:fields>
+																<ComboBox id="idMaintEventRightComboBox" name="MaintEventRightComboBox" selectionChange="onLabelSelectionChange" width="55%"
+																	selectedKey="{SettingValues>/sMaintEventLabelRight}" items="{SettingConfiguration>/LabelSettings/MaintenanceEventRightFields}">
+																	<core:Item id="idMaintEventRightItem" key="{SettingConfiguration>key}" text="{path: 'SettingConfiguration>key', formatter: '.getItemText'}"/>
+																</ComboBox>
+															</f:fields>
+														</f:FormElement>
+													</f:formElements>
+												</f:FormContainer>
+											</f:formContainers>
+										</f:Form>
+									</VBox>
+								</ScrollContainer>
+							</IconTabFilter>
+						</items>
+					</IconTabFilter>
+					<IconTabFilter text="{i18nLib>DragAndDropSetting}" id="idDragAndDropSettingTab" key="DragAndDrop"
+						visible="{= ${SettingConfiguration>/DragAndDropTab} ? true : false}"></IconTabFilter>
+				</items>
+			</IconTabBar>
+		</content>
+		<buttons>
+			<Button id="idOkButton" text="{i18nLib>Ok}" press="onSave" type="Emphasized"
+				enabled="{= ${utilizationThresholdValueStateModel>/lowerThresholdValueState} !== 'Error' &amp;&amp; ${utilizationThresholdValueStateModel>/MiddleThresholdValueState} !== 'Error' &amp;&amp; ${utilizationThresholdValueStateModel>/HigherThresholdValueState} !== 'Error'}"/>
+			<Button id="idCancelButton" text="{i18nLib>ButtonClose}" press="onCancel"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

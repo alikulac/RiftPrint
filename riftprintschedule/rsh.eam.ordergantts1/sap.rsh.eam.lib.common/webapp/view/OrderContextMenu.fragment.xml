@@ -1,0 +1,27 @@
+<!--
+
+    Copyright (C) 2009-2023 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<core:FragmentDefinition id="idFragOrderContextMenuPopup" xmlns="sap.m" xmlns:core="sap.ui.core">
+	<ResponsivePopover id="idOrderContextMenu" showHeader="false" placement="PreferredBottomOrFlip" afterClose="onPopoverClose">
+		<VBox id="idHBoxOrderContextMenu" class="sapUiTinyMargin">
+			<Button id="idExpandbtn" text="{i18nLib>ShowOperations}" type="Transparent" press="onExpandPress"
+				visible="{= ${OrderContextMenuConfiguration>/Expand} ? true : false}"/>
+			<Button id="idCollapsebtn" text="{i18nLib>HideOperations}" type="Transparent" press="onCollapsePress"
+				visible="{= ${OrderContextMenuConfiguration>/Collapse} ? true : false}"/>
+			<Button id="idSetPlannedStart" text="{i18nLib>SetPlannedStart}" type="Transparent" press="onSetPlannedStartPress"
+				visible="{= ${OrderContextMenuConfiguration>/SetPlannedStart} ? true : false}"/>
+			<Button id="idTriggerSchedulingbtn" text="{i18nLib>TriggerScheduling}" type="Transparent" press="onTriggerSchedulingPress"
+				visible="{= ${OrderContextMenuConfiguration>/TriggerScheduling} ? true : false}"/>
+			<Button id="idOpenOrderbtn" text="{i18nLib>OpenOrder}" type="Transparent" press="onOpenOrderPress"
+				visible="{= ${OrderContextMenuConfiguration>/OpenOrder} ? true : false}"/>
+			<Button id="idOpenGanttOrder" text="{i18nLib>ShowInGanttButtonText}" type="Transparent" press="onOpenGanttPress"
+				visible="{= ${OrderContextMenuConfiguration>/ShowInGantt} ? true : false}"/>
+			<Button id="idAssignEvent" text="{i18nLib>AssignEvent}" type="Transparent" press="onPressAssignEvent"
+				visible="{= ${OrderContextMenuConfiguration>/AssignEvent} ? true : false}"/>
+			<Button id="idUnAssignEvent" text="{i18nLib>UnAssignEvent}" type="Transparent" press="onPressUnAssignEvent"
+				visible="{= ${OrderContextMenuConfiguration>/UnAssignEvent} ? true : false}"/>
+		</VBox>
+	</ResponsivePopover>
+</core:FragmentDefinition>

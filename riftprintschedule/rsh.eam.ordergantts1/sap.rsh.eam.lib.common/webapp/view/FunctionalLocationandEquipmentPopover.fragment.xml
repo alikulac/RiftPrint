@@ -1,0 +1,26 @@
+<!--
+
+    Copyright (C) 2009-2023 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<core:FragmentDefinition id="idPopoverFragDef" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
+	<ResponsivePopover id="idPopover" class="sapUiContentPadding" title="{/data/0/GenericTitle}" contentHeight="130px" contentWidth="400px"
+		titleAlignment="Center" placement="Auto">
+		<content>
+			<HBox id="idHBoxFunctLocation">
+				<core:Icon id="idFunctLocIcon" src="{/data/0/GenericIcon}" height="2em" width="2em" size="2em"
+					class="sapUiSmallMarginEnd sapUiIcon sapMSLIImgNoInset"></core:Icon>
+				<VBox id="idVBoxTbspacer" class="sapUiSmallMarginTopBottom">
+					<ToolbarSpacer id="idToolbarSpacer"/>
+				</VBox>
+				<VBox id="idVBoxFunctLocation" class="sapUiNoContentPadding">
+					<Title id="idTitle1" text="{/data/0/GenericObjectName}" titleStyle="H2" wrapping="true" class="sapMTitle"/>
+					<Text id="idText2" text="{/data/0/GenericObject}" class="sapMText"/>
+				</VBox>
+			</HBox>
+		</content>
+		<endButton>
+			<Button id="idFunctLocBtn" text="{i18nLib>LinkFunctionalLocationPopup}" type="Transparent" visible="{/data/0/showHideGenericLink}" press="handleAssetBoardNavigation"/>
+		</endButton>
+	</ResponsivePopover>
+</core:FragmentDefinition>

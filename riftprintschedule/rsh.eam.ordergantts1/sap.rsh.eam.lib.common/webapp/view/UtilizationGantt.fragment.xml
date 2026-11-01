@@ -1,0 +1,58 @@
+<!--
+
+    Copyright (C) 2009-2023 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<core:FragmentDefinition xmlns:table="sap.ui.table" xmlns:m="sap.m" xmlns:core="sap.ui.core" xmlns:axistime="sap.gantt.axistime"
+	xmlns:config="sap.gantt.config" xmlns="sap.gantt.simple" id="idUtilGanttFragment"
+	controllerName="sap.rsh.eam.lib.common.controller.UtilizationGantt">
+	<GanttChartWithTable id="idUtilizationGanttChartWithTable" ghostAlignment="Start" adhocLineLayer="Bottom" enableAdhocLine="false"
+		nowLineInUTC="false" selectOnlyGraphicalShape="true" enableChartOverflowToolbar="true"
+		visibleHorizonUpdate="onVisibleHorizonUpdate" enableDateTimezoneFormatter="true">
+		<table>
+			<table:Table id="idUtilTreeTable" selectionMode="Single" visibleRowCountMode="Auto" minAutoRowCount="1" selectionBehavior="RowSelector"
+				columnVisibility=".onColumnVisibilityChanged" showColumnVisibilityMenu="true" enableColumnReordering="false" columnResize=".onColumnResize">
+				<table:extension>
+					<m:OverflowToolbar id="idToolbarUtilGanttTT">
+						<m:Title id="idTitleWCUtilizationGantt"
+							text="{parts: ['i18nLib>WorkCenterUtilization', 'UtilizationGantt>/iRowCount'], formatter: 'jQuery.sap.formatMessage'}"/>
+					</m:OverflowToolbar>
+				</table:extension>
+				<table:rowSettingsTemplate>
+					<GanttRowSettings id="idUtilGntRowStg" rowId="{data>WorkCenterInternalID}"
+						shapes1="{path:'data>to_UtilIndicator', templateShareable: 'true'}">
+						<shapes1>
+							<BaseRectangle id="idBaseRectangleWCUtilizationGantt" countInBirdEye="true" hoverable="true"
+								visible="{parts: ['data>WorkCenterAvailableCapacity', 'data>WorkCenterRequiredCapacity'], formatter: '.formatters.getVisibilityForUtilization'}"
+								tooltip="{parts: ['data>WorkCenterUtilization', 'data>WorkCenterRequiredCapacity', 'data>WorkCenterAvailableCapacity', 'data>WorkCenterCapacityUnit'], formatter: '.formatters.getTooltipForUtilization'}"
+								title="{parts: ['data>WorkCenterUtilization', 'data>WorkCenterRequiredCapacity', 'data>WorkCenterAvailableCapacity', 'data>WorkCenterCapacityUnit', 'UtilizationGantt>/iTitleLevel'], formatter: '.formatters.getTitleForUtilization'}"
+								time="{data>WrkCtrUtilznStartDateTime}"
+								endTime="{data>WrkCtrUtilznEndDateTime}" height="{= ${UIModel>/condensedModeActive} ? 20 : 26}"
+								showTitle="true" fontFamily="72" fontWeight="bold" fontSize="{= ${UIModel>/condensedModeActive} ? 12 : 14}"
+								fill="{parts: ['data>WorkCenterUtilization','UIModel>/sThresholdUpdateTime'], formatter: '.formatters.getUtilizationColor'}"
+								strokeWidth="2" stroke="@sapUiBaseColor" horizontalTextAlignment="Middle" verticalTextAlignment="Center"/>
+						</shapes1>
+					</GanttRowSettings>
+				</table:rowSettingsTemplate>
+				<table:columns>
+					<table:Column id="idWorkCenterColumn" label="{i18nLib>WorkCenterUtil}" width="30%" autoResizable="true" sorted="true"
+						sortProperty="WorkCenter">
+						<table:template>
+							<m:Text id="idWorkCenterLabel" text="{data>WorkCenter}" wrapping="false"/>
+						</table:template>
+					</table:Column>
+					<table:Column id="idWorkCenterPlantColumnUtilGantt" label="{i18nLib>WorkCenterPlant}" width="30%" visible="false" sortProperty="Plant">
+						<table:template>
+							<m:Text id="idWorkCenterPlantLabelUtilGantt" text="{data>Plant}" wrapping="false"/>
+						</table:template>
+					</table:Column>
+					<table:Column id="idWorkCenterDescColumn" label="{i18nLib>WorkCenterDescription}">
+						<table:template>
+							<m:Text id="idWorkCenterDescLabel" text="{data>WorkCenterText}" wrapping="false"/>
+						</table:template>
+					</table:Column>
+				</table:columns>
+			</table:Table>
+		</table>
+	</GanttChartWithTable>
+</core:FragmentDefinition>

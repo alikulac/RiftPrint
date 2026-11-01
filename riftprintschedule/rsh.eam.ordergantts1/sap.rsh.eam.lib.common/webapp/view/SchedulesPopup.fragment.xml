@@ -1,0 +1,22 @@
+<!--
+
+    Copyright (C) 2009-2023 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" id="idGenQuickViewFragDef">
+	<ResponsivePopover id="idSchedulesPopover" class="sapUiContentPadding" title="{i18nLib>SchedulesOPTitle}">
+		<content>
+			<List id="idSchedList" items="{/data}">
+				<CustomListItem id="idCustomListItemSchedule">
+					<VBox id="idVBoxSchedule" class="sapUiSmallMarginTopBottom">
+						<Link id="idScheduleLink" text="{ScheduleName}" href="{ScheduleUrl}" enabled="{NavSupported}"/>
+						<HBox id="idHBoxSchedule" justifyContent="SpaceBetween">
+							<Text id="idSchedPeriodTxt" text="{SchedulePeriod}"/>
+							<Text id="idSchedStatusTxt" text="{ScheduleStatus}" class="sapUiMediumMarginBegin"/>
+						</HBox>
+					</VBox>
+				</CustomListItem>
+			</List>
+		</content>
+	</ResponsivePopover>
+</core:FragmentDefinition>

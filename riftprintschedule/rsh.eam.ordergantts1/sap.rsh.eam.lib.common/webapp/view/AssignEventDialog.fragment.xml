@@ -1,0 +1,30 @@
+<!--
+
+    Copyright (C) 2009-2023 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" id="idFragAssignEvent" xmlns:l="sap.ui.layout"
+	xmlns:smartMultiInput="sap.ui.comp.smartmultiinput">
+	<ResponsivePopover id="idAssignEventPopover" title="{i18nLib>AssignEventTitle}" class="sapUiContentPadding" placement="Bottom"
+		contentWidth="25em" afterOpen="onAfterAssignDialogOpen" afterClose="onPopoverClose" modal="true">
+		<customHeader>
+			<Toolbar>
+				<Button id="idMEBackNavigation" icon="sap-icon://nav-back" press="onNavBackPress"></Button>
+				<Title id="idAssignEventTitle" text="{i18nLib>AssignEventTitle}"></Title>
+			</Toolbar>
+		</customHeader>
+		<content>
+			<l:VerticalLayout id="idAssignEventInnerVL" width="70%">
+				<smartMultiInput:SmartMultiInput id="idSmartFieldMaintEvent" value="{MaintenanceRevision}" entitySet="C_RSHMaintenanceRevisionList"
+					tokenUpdate="onSelectMaintEvent" singleTokenMode="true" supportMultiSelect="false" placeholder="{i18nLib>AssignMaintEventPalceholder}"
+					historyEnabled="false"/>
+			</l:VerticalLayout>
+		</content>
+		<beginButton>
+			<Button id="idAssignMaintEventOk" text="{i18nLib>AssignEventButton}" press="onAddMaintenanceEvent" type="Emphasized" enabled="false"/>
+		</beginButton>
+		<endButton>
+			<Button id="idAssignMaintEventCancel" text="{i18nLib>Cancel}" press="onCancel"/>
+		</endButton>
+	</ResponsivePopover>
+</core:FragmentDefinition>

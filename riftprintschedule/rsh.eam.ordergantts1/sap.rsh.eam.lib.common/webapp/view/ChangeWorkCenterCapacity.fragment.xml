@@ -1,0 +1,510 @@
+<!--
+
+    Copyright (C) 2009-2023 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<core:FragmentDefinition id="idOpSchedSessionFD" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
+	xmlns:unified="sap.ui.unified" xmlns:cal="sap.ui.unified.calendar" xmlns:layout="sap.ui.layout"
+	xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" xmlns:smartTable="sap.ui.comp.smarttable"
+	xmlns:smartField="sap.ui.comp.smartfield">
+	<Dialog id="idWorkCenterCapChange" title="{UIElementStates>/sTitle}" resizable="true" draggable="true"
+		afterClose="onAfterDialogClose" contentWidth="110rem">
+		<content>
+			<f:Form id="idOpSchedSessionForm" editable="true">
+				<f:layout>
+					<f:ResponsiveGridLayout id="idWorkCenterCapRGLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false"
+						emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="2" columnsM="2"/>
+				</f:layout>
+				<f:formContainers>
+					<f:FormContainer id="idWorkCenterCapFormContainer">
+						<f:FormElement id="idWorkCenterCapFilledFE">
+							<f:fields>
+								<layout:VerticalLayout id="idVLWorcCenterCapacity">
+									<Label id="idWeekSelectionLabel" labelFor="idWeekSelectionDatePicker" text="{i18nLib>WeekSelectionLabel}" wrapping="true"/>
+									<FlexBox id="idFlexBoxDatePicker" width="40%">
+										<items>
+											<DatePicker id="idTargetWeekDatePicker" change="handleTargetWeekSelected" value="{UIElementStates>/sWeekSelectedText}"
+												editable="{UIElementStates>/bTargetWeekEditable}" valueState="{UIElementStates>/sTargetWeekDatePickerValueState}"
+												valueStateText="{UIElementStates>/sTargetWeekDatePickerValueStateText}">
+												<specialDates>
+													<unified:DateTypeRange type="Type16" startDate="{= ${UIElementStates>/dWeekSelectionStartDate}}"
+														endDate="{= ${UIElementStates>/dWeekSelectionEndDate}}" id="idWeekSelectionDtDTR"/>
+												</specialDates>
+												<layoutData>
+													<FlexItemData id="idFlexItem1Row1" growFactor="1"/>
+												</layoutData>
+											</DatePicker>
+											<HBox id="idHBoxPagination" direction="Row" class="sapUiTinyMarginEnd" justifyContent="SpaceBetween">
+												<Button id="idPrevWeek" type="Transparent" icon="sap-icon://nav-back" tooltip="{i18nLib>PrevWeekTooltip}"
+													press="onPrevWeekNavigationButtonPress" enabled="{UIElementStates>/bPrevWeekEnabled}"></Button>
+												<Button id="idNextWeek" type="Transparent" icon="sap-icon://feeder-arrow" tooltip="{i18nLib>NextWeekTooltip}"
+													press="onNextWeekNavigationButtonPress" enabled="{UIElementStates>/bNextWeekEnabled}"></Button>
+											</HBox>
+										</items>
+									</FlexBox>
+								</layout:VerticalLayout>
+							</f:fields>
+						</f:FormElement>
+					</f:FormContainer>
+				</f:formContainers>
+			</f:Form>
+			<smartTable:SmartTable id="idWorkCenterCapChangeList" tableType="ResponsiveTable" height="80%" beforeRebindTable="onBeforeRebindTable"
+				entitySet="C_RSHWorkCenterCapacityChangeSet" useVariantManagement="false" showRowCount="false" useTablePersonalisation="false"
+				useExportToExcel="false" enableAutoBinding="false" persistencyKey="pKeyWorkCenterCapList" noData="{i18nLib>NoDataTextForWC}"
+				initialise="onTableInitialized" initialNoDataText="{i18nLib>NoDataTextForWC}" demandPopin="true"
+				requestAtLeastFields="ShiftDefinitionName,ShiftDefinition,Plant,WorkCenterCapacityUnit,WrkCtrCapDay1NmbrOfCapFldCtrl,WrkCtrCapDay2NmbrOfCapFldCtrl,WrkCtrCapDay3NmbrOfCapFldCtrl,WrkCtrCapDay4NmbrOfCapFldCtrl,WrkCtrCapDay5NmbrOfCapFldCtrl,WrkCtrCapDay6NmbrOfCapFldCtrl,WrkCtrCapDay7NmbrOfCapFldCtrl"
+				ignoreFromPersonalisation="WrkCtrCapDay1NmbrOfCapFldCtrl,WrkCtrCapDay2NmbrOfCapFldCtrl,WrkCtrCapDay3NmbrOfCapFldCtrl,WrkCtrCapDay4NmbrOfCapFldCtrl,WrkCtrCapDay5NmbrOfCapFldCtrl,WrkCtrCapDay6NmbrOfCapFldCtrl,WrkCtrCapDay7NmbrOfCapFldCtrl">
+				<smartTable:layoutData>
+					<FlexItemData id="idWorkCenterCapListFlexItemData" growFactor="1" baseSize="0%"/>
+				</smartTable:layoutData>
+				<smartTable:customToolbar>
+					<OverflowToolbar id="idWCCapOverflowToolbar" design="Transparent" visible="false">
+						<ToolbarSpacer id="idWCCapTBSpacer"></ToolbarSpacer>
+					</OverflowToolbar>
+				</smartTable:customToolbar>
+				<Table mode="None" id="idWorkCenterCapChangeTable" noDataText="{i18nLib>NoDataTextForWC}">
+					<columns>
+						<Column id="idWorkCenter" width="6rem" mergeDuplicates="true" mergeFunctionName="getTitle">
+							<customData>
+								<core:CustomData key="p13nData"
+									value='\{"columnKey": "WorkCenter", "type": "string", "columnIndex":"0", "leadingProperty":["WorkCenter"], "filterProperty": "WorkCenter", "sortProperty":"WorkCenter"}'/>
+							</customData>
+							<Text id="idWorkCenterText" text="{/#C_RSHWorkCenterCapacityChangeType/WorkCenter/@sap:label}"/>
+						</Column>
+						<Column id="idShiftDefinition" width="6rem" visible="{= ${UIElementStates>/bHasShiftData}}">
+							<customData>
+								<core:CustomData key="p13nData"
+									value='\{"columnKey": "ShiftDefinitionName", "type":"string", "columnIndex":"1", "leadingProperty":["ShiftDefinitionName"]}'/>
+							</customData>
+							<Text id="idShiftDefinitionText" text="{i18nLib>ShiftsText}"/>
+						</Column>
+						<Column id="idShiftsStartCol" width="6rem">
+							<customData>
+								<core:CustomData key="p13nData"
+									value='\{"columnKey": "ShiftStartTime", "type":"string", "columnIndex":"2", "leadingProperty":["ShiftStartTime"]}'/>
+							</customData>
+							<Text id="idShiftsStartText" text="{i18nLib>ShiftsStartText}"/>
+						</Column>
+						<Column id="idShiftsEndCol" width="6rem">
+							<customData>
+								<core:CustomData key="p13nData"
+									value='\{"columnKey": "ShiftEndTime", "type":"string", "columnIndex":"3", "leadingProperty":["ShiftEndTime"]}'/>
+							</customData>
+							<Text id="idShiftsEndText" text="{i18nLib>ShiftsEndText}"/>
+						</Column>
+						<Column id="idDay1Col" width="10em">
+							<customData>
+								<core:CustomData key="p13nData"
+									value='\{"columnKey":"WrkCtrCapDay1NmbrOfCapacities","additionalProperty":"WrkCtrCapDay1OperatingHours,WrkCtrCapDay1NmbrOfCapModified","type":"string", "columnIndex":"4", "leadingProperty":["WrkCtrCapDay1NmbrOfCapacities"]}'/>
+							</customData>
+							<Text id="idDay1Text" text="{i18nLib>MondayText}"/>
+						</Column>
+						<Column id="idDay2Col" width="10em">
+							<customData>
+								<core:CustomData key="p13nData"
+									value='\{"columnKey":"WrkCtrCapDay2NmbrOfCapacities","additionalProperty":"WrkCtrCapDay2OperatingHours,WrkCtrCapDay2NmbrOfCapModified","type":"string", "columnIndex":"5", "leadingProperty":["WrkCtrCapDay2NmbrOfCapacities"]}'/>
+							</customData>
+							<Text id="idDay2Text" text="{i18nLib>TuesdayText}"/>
+						</Column>
+						<Column id="idDay3Col" width="10em">
+							<customData>
+								<core:CustomData key="p13nData"
+									value='\{"columnKey":"WrkCtrCapDay3NmbrOfCapacities","additionalProperty":"WrkCtrCapDay3OperatingHours,WrkCtrCapDay3NmbrOfCapModified","type":"string", "columnIndex":"6", "leadingProperty":["WrkCtrCapDay3NmbrOfCapacities"]}'/>
+							</customData>
+							<Text id="idDay3Text" text="{i18nLib>WednesdayText}"/>
+						</Column>
+						<Column id="idDay4Col" width="10em">
+							<customData>
+								<core:CustomData key="p13nData"
+									value='\{"columnKey":"WrkCtrCapDay4NmbrOfCapacities","additionalProperty":"WrkCtrCapDay4OperatingHours,WrkCtrCapDay4NmbrOfCapModified","type":"string", "columnIndex":"7", "leadingProperty":["WrkCtrCapDay4NmbrOfCapacities"]}'/>
+							</customData>
+							<Text id="idDay4Text" text="{i18nLib>ThursdayText}"/>
+						</Column>
+						<Column id="idDay5Col" width="10em">
+							<customData>
+								<core:CustomData key="p13nData"
+									value='\{"columnKey":"WrkCtrCapDay5NmbrOfCapacities","additionalProperty":"WrkCtrCapDay5OperatingHours,WrkCtrCapDay5NmbrOfCapModified","type":"string", "columnIndex":"8", "leadingProperty":["WrkCtrCapDay5NmbrOfCapacities"]}'/>
+							</customData>
+							<Text id="idDay5Text" text="{i18nLib>FridayText}"/>
+						</Column>
+						<Column id="idDay6Col" width="10em">
+							<customData>
+								<core:CustomData key="p13nData"
+									value='\{"columnKey":"WrkCtrCapDay6NmbrOfCapacities","additionalProperty":"WrkCtrCapDay6OperatingHours,WrkCtrCapDay6NmbrOfCapModified","type":"string", "columnIndex":"9", "leadingProperty":["WrkCtrCapDay6NmbrOfCapacities"]}'/>
+							</customData>
+							<Text id="idDay6Text" text="{i18nLib>SaturdayText}"/>
+						</Column>
+						<Column id="idDay7Col" width="10em">
+							<customData>
+								<core:CustomData key="p13nData"
+									value='\{"columnKey":"WrkCtrCapDay7NmbrOfCapacities","additionalProperty":"WrkCtrCapDay7OperatingHours,WrkCtrCapDay7NmbrOfCapModified","type":"string", "columnIndex":"10", "leadingProperty":["WrkCtrCapDay7NmbrOfCapacities"]}'/>
+							</customData>
+							<Text id="idDay7Text" text="{i18nLib>SundayText}"/>
+						</Column>
+					</columns>
+					<items>
+						<ColumnListItem press="handleRowPress" id="idWorkCenterCapColListItems">
+							<cells xmlns="sap.m">
+								<ObjectIdentifier id="idWorkCenterField"
+									title="{parts:['WorkCenter','Plant','UIElementStates>/bNeedPlantInfo'],formatter: '.concatWorkCenterAndPlant'}"
+									titlePress="handleChangeWorkCenterInNewTab" titleActive="{UIElementStates>/bChangeWorkCenterSupported}"/>
+								<Text id="idShiftsDefinitionSmartField" text="{parts:['ShiftDefinition','ShiftDefinitionName'],formatter: '.selectShiftName'}"/>
+								<smartField:SmartField value="{ShiftStartTime}" id="idShiftsStartTimeSmartField" enabled="false"/>
+								<smartField:SmartField value="{ShiftEndTime}" id="idShiftsEndTimeSmartField" enabled="false"/>
+								<VBox id="idVBoxDay1" width="8em" class="sapUiSmallMarginEnd">
+									<FlexBox id="idFlexBoxRow1Day1" direction="Row" alignItems="Center" height="3em" alignContent="Center" justifyContent="Center"
+										visible="{= parseFloat(${WrkCtrCapDay1OperatingHours}).toFixed(2) !== '0.00'}">
+										<items>
+											<core:Icon id="idIconRow1Day1" color="Neutral" width="2em" src="sap-icon://person-placeholder" tooltip="{i18nLib>ResourcesText}">
+												<core:layoutData>
+													<FlexItemData id="idFlexItem1Row1Day1" growFactor="1"/>
+												</core:layoutData>
+											</core:Icon>
+											<HBox id="idHBoxRow1Day1" direction="RowReverse" width="4em" class="sapUiTinyMarginEnd" alignItems="Center" alignContent="Center"
+												justifyContent="End">
+												<StepInput id="idWrkCtrCapDay1Nmbr" value="{WrkCtrCapDay1NmbrOfCapacities}" validationMode="LiveChange" min="0" max="999"
+													change="handleCapacityDay1FieldChange" textAlign="Right" width="1em" ariaLabelledBy="idDay1Col"
+													enabled="{path: 'WrkCtrCapDay1NmbrOfCapFldCtrl', formatter: '.isWrkCtrCapStepInputFieldEnabled'}" class="sapUiTinyNegativeMarginBeginEnd"/>
+												<layoutData>
+													<FlexItemData id="idFlexItem2Row1Day1" growFactor="1"/>
+												</layoutData>
+											</HBox>
+										</items>
+									</FlexBox>
+									<FlexBox id="idFlexBoxRow2Day1" direction="Row" alignItems="Center" height="2em" alignContent="Center" justifyContent="Center"
+										visible="{= parseFloat(${WrkCtrCapDay1OperatingHours}).toFixed(2) !== '0.00'}">
+										<items>
+											<core:Icon id="idIconRow2Day1" color="Neutral" width="2em" src="sap-icon://history" tooltip="{i18nLib>HoursText}">
+												<core:layoutData>
+													<FlexItemData id="idFlexItem1Row2Day1" growFactor="1"/>
+												</core:layoutData>
+											</core:Icon>
+											<HBox id="idHBoxRow2Day1" direction="RowReverse" width="4em" class="sapUiTinyMarginEnd">
+												<Label id="idWrkCtrCapDay1OperatingHours" design="{= ${WrkCtrCapDay1NmbrOfCapModified} === 'X' ? 'Bold' : 'Standard'}"
+													text="{parts: ['WrkCtrCapDay1OperatingHours', 'WrkCtrCapDay1NmbrOfCapacities', 'WorkCenterCapacityUnit'], formatter: '.formatCapHours'}"/>
+												<layoutData>
+													<FlexItemData id="idFlexItem2Row2Day1" growFactor="1"/>
+												</layoutData>
+											</HBox>
+											<Label id="idUnitDay1" text="{WorkCenterCapacityUnit}" textAlign="Left" width="100%">
+												<layoutData>
+													<FlexItemData id="idFlexItem3Row2Day1" growFactor="2"/>
+												</layoutData>
+											</Label>
+										</items>
+									</FlexBox>
+									<FlexBox id="idFlexBoxRow3Day1" direction="Row" alignItems="Center" alignContent="Center" justifyContent="Center"
+										visible="{= parseFloat(${WrkCtrCapDay1OperatingHours}).toFixed(2) === '0.00'}">
+										<items>
+											<Label id="idNoShiftDay1" text="{i18nLib>NoShiftText}" width="100%"/>
+										</items>
+									</FlexBox>
+								</VBox>
+								<VBox id="idVBoxDay2" width="8em" class="sapUiSmallMarginEnd">
+									<FlexBox id="idFlexBoxRow1Day2" direction="Row" alignItems="Center" height="3em" alignContent="Center" justifyContent="Center"
+										visible="{= parseFloat(${WrkCtrCapDay2OperatingHours}).toFixed(2) !== '0.00'}">
+										<items>
+											<core:Icon id="idIconRow1Day2" color="Neutral" width="2em" src="sap-icon://person-placeholder" tooltip="{i18nLib>ResourcesText}">
+												<core:layoutData>
+													<FlexItemData id="idFlexItem1Row1Day2" growFactor="1"/>
+												</core:layoutData>
+											</core:Icon>
+											<HBox id="idHBoxRow1Day2" direction="RowReverse" width="4em" class="sapUiTinyMarginEnd" alignItems="Center" alignContent="Center"
+												justifyContent="End">
+												<StepInput id="idWrkCtrCapDay2Nmbr" value="{WrkCtrCapDay2NmbrOfCapacities}" validationMode="LiveChange" min="0" max="999"
+													change="handleCapacityDay2FieldChange" textAlign="Right" width="1em" ariaLabelledBy="idDay2Col"
+													enabled="{path: 'WrkCtrCapDay2NmbrOfCapFldCtrl', formatter: '.isWrkCtrCapStepInputFieldEnabled'}" class="sapUiTinyNegativeMarginBeginEnd"/>
+												<layoutData>
+													<FlexItemData id="idFlexItem2Row1Day2" growFactor="1"/>
+												</layoutData>
+											</HBox>
+										</items>
+									</FlexBox>
+									<FlexBox id="idFlexBoxRow2Day2" direction="Row" alignItems="Center" height="2em" alignContent="Center" justifyContent="Center"
+										visible="{= parseFloat(${WrkCtrCapDay2OperatingHours}).toFixed(2) !== '0.00'}">
+										<items>
+											<core:Icon id="idIconRow2Day2" color="Neutral" width="2em" src="sap-icon://history" tooltip="{i18nLib>HoursText}">
+												<core:layoutData>
+													<FlexItemData id="idFlexItem1Row2Day2" growFactor="1"/>
+												</core:layoutData>
+											</core:Icon>
+											<HBox id="idHBoxRow2Day2" direction="RowReverse" width="4em" class="sapUiTinyMarginEnd">
+												<Label id="idWrkCtrCapDay2OperatingHours" design="{= ${WrkCtrCapDay2NmbrOfCapModified} === 'X' ? 'Bold' : 'Standard'}"
+													text="{parts: ['WrkCtrCapDay2OperatingHours', 'WrkCtrCapDay2NmbrOfCapacities', 'WorkCenterCapacityUnit'], formatter: '.formatCapHours'}"/>
+												<layoutData>
+													<FlexItemData id="idFlexItem2Row2Day2" growFactor="1"/>
+												</layoutData>
+											</HBox>
+											<Label id="idUnitDay2" text="{WorkCenterCapacityUnit}" textAlign="Left" width="100%">
+												<layoutData>
+													<FlexItemData id="idFlexItem3Row2Day2" growFactor="2"/>
+												</layoutData>
+											</Label>
+										</items>
+									</FlexBox>
+									<FlexBox id="idFlexBoxRow3Day2" direction="Row" alignItems="Center" alignContent="Center" justifyContent="Center"
+										visible="{= parseFloat(${WrkCtrCapDay2OperatingHours}).toFixed(2) === '0.00'}">
+										<items>
+											<Label id="idNoShiftDay2" text="{i18nLib>NoShiftText}" width="100%"/>
+										</items>
+									</FlexBox>
+								</VBox>
+								<VBox id="idVBoxDay3" width="8em" class="sapUiSmallMarginEnd">
+									<FlexBox id="idFlexBoxRow1Day3" direction="Row" alignItems="Center" height="3em" alignContent="Center" justifyContent="Center"
+										visible="{= parseFloat(${WrkCtrCapDay3OperatingHours}).toFixed(2) !== '0.00'}">
+										<items>
+											<core:Icon id="idIconRow1Day3" color="Neutral" width="2em" src="sap-icon://person-placeholder" tooltip="{i18nLib>ResourcesText}">
+												<core:layoutData>
+													<FlexItemData id="idFlexItem1Row1Day3" growFactor="1"/>
+												</core:layoutData>
+											</core:Icon>
+											<HBox id="idHBoxRow1Day3" direction="RowReverse" width="4em" class="sapUiTinyMarginEnd" alignItems="Center" alignContent="Center"
+												justifyContent="End">
+												<StepInput id="idWrkCtrCapDay3Nmbr" value="{WrkCtrCapDay3NmbrOfCapacities}" validationMode="LiveChange" min="0" max="999"
+													change="handleCapacityDay3FieldChange" textAlign="Right" width="1em" ariaLabelledBy="idDay3Col"
+													enabled="{path: 'WrkCtrCapDay3NmbrOfCapFldCtrl', formatter: '.isWrkCtrCapStepInputFieldEnabled'}" class="sapUiTinyNegativeMarginBeginEnd"/>
+												<layoutData>
+													<FlexItemData id="idFlexItem2Row1Day3" growFactor="1"/>
+												</layoutData>
+											</HBox>
+										</items>
+									</FlexBox>
+									<FlexBox id="idFlexBoxRow2Day3" direction="Row" alignItems="Center" height="2em" alignContent="Center" justifyContent="Center"
+										visible="{= parseFloat(${WrkCtrCapDay3OperatingHours}).toFixed(2) !== '0.00'}">
+										<items>
+											<core:Icon id="idIconRow2Day3" color="Neutral" width="2em" src="sap-icon://history" tooltip="{i18nLib>HoursText}">
+												<core:layoutData>
+													<FlexItemData id="idFlexItem1Row2Day3" growFactor="1"/>
+												</core:layoutData>
+											</core:Icon>
+											<HBox id="idHBoxRow2Day3" direction="RowReverse" width="4em" class="sapUiTinyMarginEnd">
+												<Label id="idWrkCtrCapDay3OperatingHours" design="{= ${WrkCtrCapDay3NmbrOfCapModified} === 'X' ? 'Bold' : 'Standard'}"
+													text="{parts: ['WrkCtrCapDay3OperatingHours', 'WrkCtrCapDay3NmbrOfCapacities', 'WorkCenterCapacityUnit'], formatter: '.formatCapHours'}"/>
+												<layoutData>
+													<FlexItemData id="idFlexItem2Row2Day3" growFactor="1"/>
+												</layoutData>
+											</HBox>
+											<Label id="idUnitDay3" text="{WorkCenterCapacityUnit}" textAlign="Left" width="100%">
+												<layoutData>
+													<FlexItemData id="idFlexItem3Row2Day3" growFactor="2"/>
+												</layoutData>
+											</Label>
+										</items>
+									</FlexBox>
+									<FlexBox id="idFlexBoxRow3Day3" direction="Row" alignItems="Center" alignContent="Center" justifyContent="Center"
+										visible="{= parseFloat(${WrkCtrCapDay3OperatingHours}).toFixed(2) === '0.00'}">
+										<items>
+											<Label id="idNoShiftDay3" text="{i18nLib>NoShiftText}" width="100%"/>
+										</items>
+									</FlexBox>
+								</VBox>
+								<VBox id="idVBoxDay4" width="8em" class="sapUiSmallMarginEnd">
+									<FlexBox id="idFlexBoxRow1Day4" direction="Row" alignItems="Center" height="3em" alignContent="Center" justifyContent="Center"
+										visible="{= parseFloat(${WrkCtrCapDay4OperatingHours}).toFixed(2) !== '0.00'}">
+										<items>
+											<core:Icon id="idIconRow1Day4" color="Neutral" width="2em" src="sap-icon://person-placeholder" tooltip="{i18nLib>ResourcesText}">
+												<core:layoutData>
+													<FlexItemData id="idFlexItem1Row1Day4" growFactor="1"/>
+												</core:layoutData>
+											</core:Icon>
+											<HBox id="idHBoxRow1Day4" direction="RowReverse" width="4em" class="sapUiTinyMarginEnd" alignItems="Center" alignContent="Center"
+												justifyContent="End">
+												<StepInput id="idWrkCtrCapDay4Nmbr" value="{WrkCtrCapDay4NmbrOfCapacities}" validationMode="LiveChange" min="0" max="999"
+													change="handleCapacityDay4FieldChange" textAlign="Right" width="1em" ariaLabelledBy="idDay4Col"
+													enabled="{path: 'WrkCtrCapDay4NmbrOfCapFldCtrl', formatter: '.isWrkCtrCapStepInputFieldEnabled'}" class="sapUiTinyNegativeMarginBeginEnd"/>
+												<layoutData>
+													<FlexItemData id="idFlexItem2Row1Day4" growFactor="1"/>
+												</layoutData>
+											</HBox>
+										</items>
+									</FlexBox>
+									<FlexBox id="idFlexBoxRow2Day4" direction="Row" alignItems="Center" height="2em" alignContent="Center" justifyContent="Center"
+										visible="{= parseFloat(${WrkCtrCapDay4OperatingHours}).toFixed(2) !== '0.00'}">
+										<items>
+											<core:Icon id="idIconRow2Day4" color="Neutral" width="2em" src="sap-icon://history" tooltip="{i18nLib>HoursText}">
+												<core:layoutData>
+													<FlexItemData id="idFlexItem1Row2Day4" growFactor="1"/>
+												</core:layoutData>
+											</core:Icon>
+											<HBox id="idHBoxRow2Day4" direction="RowReverse" width="4em" class="sapUiTinyMarginEnd">
+												<Label id="idWrkCtrCapDay4OperatingHours" design="{= ${WrkCtrCapDay4NmbrOfCapModified} === 'X' ? 'Bold' : 'Standard'}"
+													text="{parts: ['WrkCtrCapDay4OperatingHours', 'WrkCtrCapDay4NmbrOfCapacities', 'WorkCenterCapacityUnit'], formatter: '.formatCapHours'}"/>
+												<layoutData>
+													<FlexItemData id="idFlexItem2Row2Day4" growFactor="1"/>
+												</layoutData>
+											</HBox>
+											<Label id="idUnitDay4" text="{WorkCenterCapacityUnit}" textAlign="Left" width="100%">
+												<layoutData>
+													<FlexItemData id="idFlexItem3Row2Day4" growFactor="2"/>
+												</layoutData>
+											</Label>
+										</items>
+									</FlexBox>
+									<FlexBox id="idFlexBoxRow3Day4" direction="Row" alignItems="Center" alignContent="Center" justifyContent="Center"
+										visible="{= parseFloat(${WrkCtrCapDay4OperatingHours}).toFixed(2) === '0.00'}">
+										<items>
+											<Label id="idNoShiftDay4" text="{i18nLib>NoShiftText}" width="100%"/>
+										</items>
+									</FlexBox>
+								</VBox>
+								<VBox id="idVBoxDay5" width="8em" class="sapUiSmallMarginEnd">
+									<FlexBox id="idFlexBoxRow1Day5" direction="Row" alignItems="Center" height="3em" alignContent="Center" justifyContent="Center"
+										visible="{= parseFloat(${WrkCtrCapDay5OperatingHours}).toFixed(2) !== '0.00'}">
+										<items>
+											<core:Icon id="idIconRow1Day5" color="Neutral" width="2em" src="sap-icon://person-placeholder" tooltip="{i18nLib>ResourcesText}">
+												<core:layoutData>
+													<FlexItemData id="idFlexItem1Row1Day5" growFactor="1"/>
+												</core:layoutData>
+											</core:Icon>
+											<HBox id="idHBoxRow1Day5" direction="RowReverse" width="4em" class="sapUiTinyMarginEnd" alignItems="Center" alignContent="Center"
+												justifyContent="End">
+												<StepInput id="idWrkCtrCapDay5Nmbr" value="{WrkCtrCapDay5NmbrOfCapacities}" validationMode="LiveChange" min="0" max="999"
+													change="handleCapacityDay5FieldChange" textAlign="Right" width="1em" ariaLabelledBy="idDay5Col"
+													enabled="{path: 'WrkCtrCapDay5NmbrOfCapFldCtrl', formatter: '.isWrkCtrCapStepInputFieldEnabled'}" class="sapUiTinyNegativeMarginBeginEnd"/>
+												<layoutData>
+													<FlexItemData id="idFlexItem2Row1Day5" growFactor="1"/>
+												</layoutData>
+											</HBox>
+										</items>
+									</FlexBox>
+									<FlexBox id="idFlexBoxRow2Day5" direction="Row" alignItems="Center" height="2em" alignContent="Center" justifyContent="Center"
+										visible="{= parseFloat(${WrkCtrCapDay5OperatingHours}).toFixed(2) !== '0.00'}">
+										<items>
+											<core:Icon id="idIconRow2Day5" color="Neutral" width="2em" src="sap-icon://history" tooltip="{i18nLib>HoursText}">
+												<core:layoutData>
+													<FlexItemData id="idFlexItem1Row2Day5" growFactor="1"/>
+												</core:layoutData>
+											</core:Icon>
+											<HBox id="idHBoxRow2Day5" direction="RowReverse" width="4em" class="sapUiTinyMarginEnd">
+												<Label id="idWrkCtrCapDay5OperatingHours" design="{= ${WrkCtrCapDay5NmbrOfCapModified} === 'X' ? 'Bold' : 'Standard'}"
+													text="{parts: ['WrkCtrCapDay5OperatingHours', 'WrkCtrCapDay5NmbrOfCapacities', 'WorkCenterCapacityUnit'], formatter: '.formatCapHours'}"/>
+												<layoutData>
+													<FlexItemData id="idFlexItem2Row2Day5" growFactor="1"/>
+												</layoutData>
+											</HBox>
+											<Label id="idUnitDay5" text="{WorkCenterCapacityUnit}" textAlign="Left" width="100%">
+												<layoutData>
+													<FlexItemData id="idFlexItem3Row2Day5" growFactor="2"/>
+												</layoutData>
+											</Label>
+										</items>
+									</FlexBox>
+									<FlexBox id="idFlexBoxRow3Day5" direction="Row" alignItems="Center" alignContent="Center" justifyContent="Center"
+										visible="{= parseFloat(${WrkCtrCapDay5OperatingHours}).toFixed(2) === '0.00'}">
+										<items>
+											<Label id="idNoShiftDay5" text="{i18nLib>NoShiftText}" width="100%"/>
+										</items>
+									</FlexBox>
+								</VBox>
+								<VBox id="idVBoxDay6" width="8em" class="sapUiSmallMarginEnd">
+									<FlexBox id="idFlexBoxRow1Day6" direction="Row" alignItems="Center" height="3em" alignContent="Center" justifyContent="Center"
+										visible="{= parseFloat(${WrkCtrCapDay6OperatingHours}).toFixed(2) !== '0.00'}">
+										<items>
+											<core:Icon id="idIconRow1Day6" color="Neutral" width="2em" src="sap-icon://person-placeholder" tooltip="{i18nLib>ResourcesText}">
+												<core:layoutData>
+													<FlexItemData id="idFlexItem1Row1Day6" growFactor="1"/>
+												</core:layoutData>
+											</core:Icon>
+											<HBox id="idHBoxRow1Day6" direction="RowReverse" width="4em" class="sapUiTinyMarginEnd" alignItems="Center" alignContent="Center"
+												justifyContent="End">
+												<StepInput id="idWrkCtrCapDay6Nmbr" value="{WrkCtrCapDay6NmbrOfCapacities}" validationMode="LiveChange" min="0" max="999"
+													change="handleCapacityDay6FieldChange" textAlign="Right" width="1em" ariaLabelledBy="idDay6Col"
+													enabled="{path: 'WrkCtrCapDay6NmbrOfCapFldCtrl', formatter: '.isWrkCtrCapStepInputFieldEnabled'}" class="sapUiTinyNegativeMarginBeginEnd"/>
+												<layoutData>
+													<FlexItemData id="idFlexItem2Row1Day6" growFactor="1"/>
+												</layoutData>
+											</HBox>
+										</items>
+									</FlexBox>
+									<FlexBox id="idFlexBoxRow2Day6" direction="Row" alignItems="Center" height="2em" alignContent="Center" justifyContent="Center"
+										visible="{= parseFloat(${WrkCtrCapDay6OperatingHours}).toFixed(2) !== '0.00'}">
+										<items>
+											<core:Icon id="idIconRow2Day6" color="Neutral" width="2em" src="sap-icon://history" tooltip="{i18nLib>HoursText}">
+												<core:layoutData>
+													<FlexItemData id="idFlexItem1Row2Day6" growFactor="1"/>
+												</core:layoutData>
+											</core:Icon>
+											<HBox id="idHBoxRow2Day6" direction="RowReverse" width="4em" class="sapUiTinyMarginEnd">
+												<Label id="idWrkCtrCapDay6OperatingHours" design="{= ${WrkCtrCapDay6NmbrOfCapModified} === 'X' ? 'Bold' : 'Standard'}"
+													text="{parts: ['WrkCtrCapDay6OperatingHours', 'WrkCtrCapDay6NmbrOfCapacities', 'WorkCenterCapacityUnit'], formatter: '.formatCapHours'}"/>
+												<layoutData>
+													<FlexItemData id="idFlexItem2Row2Day6" growFactor="1"/>
+												</layoutData>
+											</HBox>
+											<Label id="idUnitDay6" text="{WorkCenterCapacityUnit}" textAlign="Left" width="100%">
+												<layoutData>
+													<FlexItemData id="idFlexItem3Row2Day6" growFactor="2"/>
+												</layoutData>
+											</Label>
+										</items>
+									</FlexBox>
+									<FlexBox id="idFlexBoxRow3Day6" direction="Row" alignItems="Center" alignContent="Center" justifyContent="Center"
+										visible="{= parseFloat(${WrkCtrCapDay6OperatingHours}).toFixed(2) === '0.00'}">
+										<items>
+											<Label id="idNoShiftDay6" text="{i18nLib>NoShiftText}" width="100%"/>
+										</items>
+									</FlexBox>
+								</VBox>
+								<VBox id="idVBoxDay7" width="8em" class="sapUiSmallMarginEnd">
+									<FlexBox id="idFlexBoxRow1Day7" direction="Row" alignItems="Center" height="3em" alignContent="Center" justifyContent="Center"
+										visible="{= parseFloat(${WrkCtrCapDay7OperatingHours}).toFixed(2) !== '0.00'}">
+										<items>
+											<core:Icon id="idIconRow1Day7" color="Neutral" width="2em" src="sap-icon://person-placeholder" tooltip="{i18nLib>ResourcesText}">
+												<core:layoutData>
+													<FlexItemData id="idFlexItem1Row1Day7" growFactor="1"/>
+												</core:layoutData>
+											</core:Icon>
+											<HBox id="idHBoxRow1Day7" direction="RowReverse" width="4em" class="sapUiTinyMarginEnd" alignItems="Center" alignContent="Center"
+												justifyContent="End">
+												<StepInput id="idWrkCtrCapDay7Nmbr" value="{WrkCtrCapDay7NmbrOfCapacities}" validationMode="LiveChange" min="0" max="999"
+													change="handleCapacityDay7FieldChange" textAlign="Right" width="1em" ariaLabelledBy="idDay7Col"
+													enabled="{path: 'WrkCtrCapDay7NmbrOfCapFldCtrl', formatter: '.isWrkCtrCapStepInputFieldEnabled'}" class="sapUiTinyNegativeMarginBeginEnd"/>
+												<layoutData>
+													<FlexItemData id="idFlexItem2Row1Day7" growFactor="1"/>
+												</layoutData>
+											</HBox>
+										</items>
+									</FlexBox>
+									<FlexBox id="idFlexBoxRow2Day7" direction="Row" alignItems="Center" height="2em" alignContent="Center" justifyContent="Center"
+										visible="{= parseFloat(${WrkCtrCapDay7OperatingHours}).toFixed(2) !== '0.00'}">
+										<items>
+											<core:Icon id="idIconRow2Day7" color="Neutral" width="2em" src="sap-icon://history" tooltip="{i18nLib>HoursText}">
+												<core:layoutData>
+													<FlexItemData id="idFlexItem1Row2Day7" growFactor="1"/>
+												</core:layoutData>
+											</core:Icon>
+											<HBox id="idHBoxRow2Day7" direction="RowReverse" width="4em" class="sapUiTinyMarginEnd">
+												<Label id="idWrkCtrCapDay7OperatingHours" design="{= ${WrkCtrCapDay7NmbrOfCapModified} === 'X' ? 'Bold' : 'Standard'}"
+													text="{parts: ['WrkCtrCapDay7OperatingHours', 'WrkCtrCapDay7NmbrOfCapacities', 'WorkCenterCapacityUnit'], formatter: '.formatCapHours'}"/>
+												<layoutData>
+													<FlexItemData id="idFlexItem2Row2Day7" growFactor="1"/>
+												</layoutData>
+											</HBox>
+											<Label id="idUnitDay7" text="{WorkCenterCapacityUnit}" textAlign="Left" width="100%">
+												<layoutData>
+													<FlexItemData id="idFlexItem3Row2Day7" growFactor="2"/>
+												</layoutData>
+											</Label>
+										</items>
+									</FlexBox>
+									<FlexBox id="idFlexBoxRow3Day7" direction="Row" alignItems="Center" alignContent="Center" justifyContent="Center"
+										visible="{= parseFloat(${WrkCtrCapDay7OperatingHours}).toFixed(2) === '0.00'}">
+										<items>
+											<Label id="idNoShiftDay7" text="{i18nLib>NoShiftText}" width="100%"/>
+										</items>
+									</FlexBox>
+								</VBox>
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
+			</smartTable:SmartTable>
+		</content>
+		<buttons>
+			<Button id="idSave" text="{i18nLib>SaveButtonText}" press="onSave" type="Emphasized" enabled="{= ${UIElementStates>/bHasChanges}}"/>
+			<Button id="idReset" text="{i18nLib>ResetButtonText}" press="onReset"
+				enabled="{= ${UIElementStates>/bHasChanges} || ${UIElementStates>/bHasDataErrors}}"/>
+			<Button id="idCancel" text="{i18nLib>CancelButtonText}" press="onCancel"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

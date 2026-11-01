@@ -1,0 +1,71 @@
+{
+	"_version": "1.7.0",
+
+	"sap.app": {
+		"id": "sap.rsh.eam.lib.common",
+		"type": "library",
+		"embeds": [],
+		"i18n": "messagebundle.properties",
+		"applicationVersion": {
+			"version": "12.0.22"
+		},
+		"title": "{{title}}",
+		"description": "{{description}}",
+		"ach": "CA-RSH-EAM",
+		"resources": "resources.json",
+		"offline": false
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": false
+		},
+		"supportedThemes": []
+	},
+
+	"sap.ui5": {
+		"handleValidation": true,
+		"dependencies": {
+			"minUI5Version": "1.114.2",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {},
+				"sap.f": {},
+				"sap.ushell": {},
+				"sap.collaboration": {},
+				"sap.ui.comp": {},
+				"sap.uxap": {},
+				"sap.suite.ui.commons": {},
+				"sap.ui.generic.app": {},
+				"sap.ui.unified": {},
+				"sap.gantt": {},
+				"sap.ui.table": {
+					"lazy": false
+				}
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		}
+	},
+
+	"sap.platform.hcp": {
+		"uri": ""
+	},
+
+	"sap.fiori": {
+		"registrationIds": ["F3062"],
+		"archeType": "reusecomponent"
+	}
+}

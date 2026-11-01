@@ -1,0 +1,75 @@
+<!--
+
+    Copyright (C) 2009-2023 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<core:FragmentDefinition xmlns:smartField="sap.ui.comp.smartfield" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m" id="idAssignMyWorkCentersFragDef">
+	<Dialog id="idAssignMyWorkCenters" title="{i18nLib>FilterTitle}" horizontalScrolling="true" verticalScrolling="true" resizable="true"
+		contentWidth="45rem">
+		<MessageStrip id="idInfoUsedInSchedule" text="{i18nLib>WorkCenterUsedInSchedule}" type="Warning" showIcon="true"
+			class="sapUiTinyMarginBottom" visible="false" enableFormattedText="true"/>
+		<Table id="idMyWorkCenterTable" mode="Delete" delete="onDeleteRow" width="100%"
+			items="{ path: '/C_RSHUserVariantWithTeam', sorter: [{path: 'Plant'},{path: 'WorkCenter'}]}" noDataText="{i18nLib>NoDataText}"
+			fixedLayout="false">
+			<headerToolbar>
+				<Toolbar id="idTableToolbar">
+					<content>
+						<Title id="title" text="{i18nLib>TableTitle}"/>
+						<ToolbarSpacer id="idToolbarSpacer"/>
+						<Button id="idAddButton" tooltip="{i18nLib>Add}" icon="sap-icon://add" press="onAdd" enabled="false"/>
+					</content>
+				</Toolbar>
+			</headerToolbar>
+			<columns>
+				<Column id="idWCObjectIdentifier" visible="false"></Column>
+				<Column id="idWorkCenterColumn" width="11em">
+					<Text id="idWorkCenterLabel" text="{/#C_RSHUserVariantWithTeam/WorkCenter/@sap:label}" wrapping="false"/>
+				</Column>
+				<Column id="idWorkCenterText" minScreenWidth="XXLarge" demandPopin="true" width="10em">
+					<Text id="idWorkCenterTextLabel" text="{/#C_RSHUserVariantWithTeam/WorkCenterText/@sap:label}" wrapping="false"/>
+				</Column>
+				<Column id="idPlantColumn" width="4em">
+					<Text id="idPlantText" text="{/#C_RSHUserVariantWithTeam/Plant/@sap:label}" wrapping="false"/>
+				</Column>
+				<Column id="idTeamNameColumn" width="7em">
+					<Text id="idTeamNameText" text="{/#C_RSHUserVariantWithTeam/TeamName/@sap:label}" wrapping="false"/>
+				</Column>
+				<Column id="idTeamDescColumn" width="10em">
+					<Text id="idTeamDescText" text="{/#C_RSHUserVariantWithTeam/TeamDescription/@sap:label}" wrapping="false"/>
+				</Column>
+				<Column id="idUsedInSchedule" visible="false">
+					<Text id="idUsedInScheduleText" text="{/#C_RSHUserVariantWithTeam/Plant/@sap:label}"/>
+				</Column>
+				<Column id="idTeamIdColumn" visible="false">
+					<Text id="idTeamIdText" text="{/#C_RSHUserVariantWithTeam/RespyMgmtTeamID/@sap:label}"/>
+				</Column>
+				<Column id="idWCInteralID" visible="false">
+					<Text id="idWCInternalIDLabel" text="{/#C_RSHUserVariantWithTeam/WorkCenterInternalID/@sap:label}"/>
+				</Column>
+			</columns>
+			<items>
+				<ColumnListItem id="idWorkCenterListItem" vAlign="Middle">
+					<cells>
+						<ObjectIdentifier id="idWorkCenterOI"/>
+						<smartField:SmartField id="idSmartFieldWC" value="{WorkCenter}" showLabel="false" mandatory="true"
+							placeholder="{i18nLib>WorkCenterPlaceholder}" change="onChangeWorkCenterSmartField" editable="false" wrapping="false"/>
+						<Text id="idWCTxt" text="{WorkCenterText}"/>
+						<Text id="idWCPlantTxt" text="{Plant}" wrapping="false"/>
+						<Link id="idWCTeamLink" text="{TeamName}" press="onPressTeamLink" enabled="{UIElementStates>/bTeamsLinkEnabled}" wrapping="false"/>
+						<Text id="idWCTeamDescTxt" text="{TeamDescription}"/>
+						<Text id="idWCusedInScheduleTxt" text="{WorkCenterIsUsedInPlngSchedule}"/>
+						<Text id="idWCTeamIdTxt" text="{RespyMgmtTeamID}"/>
+						<Text id="idWCInternalIDTxt" text="{WorkCenterInternalID}"/>
+					</cells>
+				</ColumnListItem>
+			</items>
+		</Table>
+		<buttons>
+			<Button id="idAssignButton" text="{i18nLib>Go}" press="onSave" type="Emphasized" ariaHasPopup="Dialog"
+				enabled="{= (${changeState>/bHasDeletions} || ${changeState>/bHasCreations}) &amp;&amp; !${changeState>/bErrorExists}}"/>
+			<Button id="idResetButton" text="{i18nLib>Reset}" press="onReset"/>
+			<Button id="idCloseButton" text="{i18nLib>ButtonClose}" press="onClose"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

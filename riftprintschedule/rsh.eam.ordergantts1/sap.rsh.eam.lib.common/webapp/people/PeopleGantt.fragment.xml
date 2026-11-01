@@ -1,0 +1,115 @@
+<!--
+
+    Copyright (C) 2009-2023 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<core:FragmentDefinition id="idPeopleGanttFragDef" xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:table="sap.ui.table"
+	xmlns:gantt="sap.gantt.simple" xmlns:gnt-def="sap.gantt.def" xmlns:gnt-cal="sap.gantt.def.cal" >
+	<gantt:GanttChartWithTable id="idResourceGanttChartWithTable" ghostAlignment="Start" adhocLineLayer="Bottom" enableAdhocLine="false" nowLineInUTC="false" 
+		shapeOverRelationship="false" dragOrientation="Horizontal" enableSelectAndDrag="false" shapeSelectionMode="Single" enableExpandedRowBorders="false" 
+		expandedRowHeight="28" showParentRowOnExpand="false" useParentShapeOnExpand="true" shapeContextMenu="onShapeContextMenu" shapePress="onShapePress" enableDateTimezoneFormatter="true" enableExpandedRowBackground="false">
+		<gantt:table>
+			<table:TreeTable id="idResourceTable" visibleRowCountMode="Auto" minAutoRowCount="1" rowActionCount="1" selectionMode="None" enableColumnReordering="false" showColumnVisibilityMenu="true" columnVisibility="onColumnVisibilityChange">
+				<table:rowSettingsTemplate>
+					<gantt:MultiActivityRowSettings id="ResourceGntRowStgID" rowId="{peopleGanttModel>MaintWorkCenterPersonID}" tasks="{path:'peopleGanttModel>to_Assignment', templateShareable: 'true'}" shapes1="{path:'peopleGanttModel>to_Conflicts', templateShareable: 'true'}">
+						<gantt:tasks>
+							<gantt:MultiActivityGroup id="idAssignmentBaseGroup" shapeId="{peopleGanttModel>MaintWorkCenterPersonID}" scheme="assignment" expandable="true">
+								<gantt:task>
+									<gantt:BaseRectangle id="idAssignmentShape" scheme="assignment" shapeId="{peopleGanttModel>CapacityRequirement} + {peopleGanttModel>CapacityRequirementItem} + {peopleGanttModel>CapacityRqmtItemCapacity}" countInBirdEye="true" hoverable="true" 
+										draggable="false" selectable="true" time="{peopleGanttModel>AssignedMaintOpStartDateTime}" 
+										endTime="{peopleGanttModel>AssignedMaintOpEndDateTime}" titleColor="@sapUiContentContrastTextColor" showTitle="true" 
+										tooltip="{parts: ['peopleGanttModel>CapacityRequirement', 'peopleGanttModel>MaintenanceOrder', 'peopleGanttModel>MaintenanceOrderOperation', 'peopleGanttModel>MaintenanceOrderSubOperation'], formatter: '.formatter.getAssignmentTooltip'}" 
+										fill="{parts: ['peopleGanttModel>CapacityRequirement', 'peopleGanttModel>MaintenanceOrder', 'peopleGanttModel>MaintenanceOrderOperation', 'peopleGanttModel>MaintenanceOrderSubOperation'], formatter: '.formatter.getAssignmentFillColor'}" height="{= ${UIModel>/condensedModeActive} ? 11 : 17}"
+										title="{parts: ['peopleGanttModel>MaintenanceOrder', 'peopleGanttModel>MaintenanceOrderOperation', 'peopleGanttModel>MaintenanceOrderSubOperation'], formatter: '.formatter.getAssignmentLabel'}" 
+										fillOpacity="{= ${peopleGanttModel>CapacityRequirement} !== undefined ? 1 : 0.6}" stroke="{parts: ['peopleGanttModel>CapacityRequirement', 'peopleGanttModel>MaintenanceOrder', 'peopleGanttModel>MaintenanceOrderOperation', 'peopleGanttModel>MaintenanceOrderSubOperation'], formatter: '.formatter.getAssignmentStrokeColor'}" 
+										strokeDasharray="{= ${peopleGanttModel>CapacityRequirement} !== undefined ? '5 0' : '5 2'}" strokeWidth="1"
+										horizontalTextAlignment="Start" verticalTextAlignment="Center" rx="8" ry="8" fontFamily="'72'" fontWeight="bold" fontSize="{= ${UIModel>/condensedModeActive} ? 10 : 12}"/>
+								</gantt:task>
+							</gantt:MultiActivityGroup>
+						</gantt:tasks>
+						<gantt:shapes1>
+							<gantt:BaseGroup id="idConflictsGroup" shapeId="{peopleGanttModel>MaintWorkCenterPersonID} + {peopleGanttModel>ConflictStartDateTime}" selectable="true">
+								<gantt:shapes>
+									<gantt:BaseRectangle id="idAssignmentConflictIndicator" hoverable="true" 
+										draggable="false" time="{peopleGanttModel>ConflictStartDateTime}" 
+										endTime="{peopleGanttModel>ConflictEndDateTime}"
+										tooltip="{i18nLib>conflictShapeTooltip}" fill="@sapUiNegativeElement" height="{= ${UIModel>/condensedModeActive} ? 2 : 3}" alignShape="Top"/>
+									<gantt:BaseRectangle id="idAssignmentConflictBlock" hoverable="true" 
+										draggable="false" time="{peopleGanttModel>ConflictStartDateTime}" 
+										endTime="{peopleGanttModel>ConflictEndDateTime}"
+										tooltip="{i18nLib>conflictShapeTooltip}" fill="@sapUiNegativeElement" height="inherit" fillOpacity="0.3"/>
+								</gantt:shapes>	
+							</gantt:BaseGroup>
+						</gantt:shapes1>						
+						<gantt:calendars>
+							<gantt:BaseCalendar id="idAvailabilityCal" shapeId="{peopleGanttModel>MaintWorkCenterPersonID}" calendarName="{peopleGanttModel>MaintWorkCenterPersonID}"/>
+						</gantt:calendars>
+					</gantt:MultiActivityRowSettings>
+				</table:rowSettingsTemplate>
+				<!-- Columns declaration -->
+				<table:columns>
+					<table:Column id="idExpandRowColumn" width="3rem" showSortMenuEntry="false" hAlign="Center">
+						<table:template>
+							<HBox id="idExpandActionHL" alignItems="Center" justifyContent="Center">
+								<Button id="idExpandRowAction" type="Transparent" icon="{path: 'peopleGanttModel>MaintWorkCenterPersonID', formatter: '.formatter.getExpandIcon'}" tooltip="{i18nLib>ActionExpandRow}" press="onToggleExpandRow"/>
+							</HBox>
+						</table:template>
+					</table:Column>					
+					<table:Column id="idResourceColumn" label="{i18nLib>TableColumnResource}" tooltip="{i18nLib>TableColumnResource}" width="40%" showSortMenuEntry="false">
+						<table:template>
+							<HBox id="idResourceIconHL" alignItems="Center">
+									<Avatar id="idResourceAvatar" src="{peopleGanttModel>EmployeeImageURL}" displaySize="Custom" customDisplaySize="{= ${UIModel>/condensedModeActive} ? '1.2rem' : '1.5rem'}" customFontSize="{= ${UIModel>/condensedModeActive} ? '0.55rem' : '0.75rem'}"
+										backgroundColor="{ parts: ['peopleGanttModel>MaintWorkCenterPersonID'], formatter: '.commonFormatter.personResponsibleAvatarColor'}" 
+										initials="{ parts: ['peopleGanttModel>MaintWorkCenterPersonName'], formatter: '.commonFormatter.personResponsibleAvatarInitials'}" 
+										fallbackIcon="sap-icon://person-placeholder" class="sapUiTinyMarginEnd customMarginTop"/>
+								<Text id="idResourceText" text="{peopleGanttModel>MaintWorkCenterPersonName}" wrapping="false"/>
+							</HBox>
+						</table:template>
+					</table:Column>
+					<table:Column id="idFunctionColumn" label="{i18nLib>TableColumnFunction}" tooltip="{i18nLib>TableColumnFunction}" width="30%" showSortMenuEntry="false">
+						<table:template>
+							<Text id="idFunctionText" text="{peopleGanttModel>RespyMgmtFunctionDescription}" wrapping="false"/>
+						</table:template>
+					</table:Column>
+					<table:Column id="idPersonWorkCenterColumn" visible="false" label="{i18nLib>TableColumnWorkCenter}" tooltip="{i18nLib>TableColumnWorkCenter}" width="20%" showSortMenuEntry="false">
+						<table:template>
+							<Text id="idWorkCenterText" text="{peopleGanttModel>MaintenanceWorkCenter}" wrapping="false"/>
+						</table:template>
+					</table:Column>
+					<table:Column id="idWorkCenterPlantColumn" visible="false" label="{i18nLib>TableColumnWorkCenterPlant}" tooltip="{i18nLib>TableColumnWorkCenterPlant}" width="20%" showSortMenuEntry="false">
+						<table:template>
+							<Text id="idWorkCenterPlantText" text="{peopleGanttModel>MaintenanceWorkCenterPlant}" wrapping="false"/>
+						</table:template>
+					</table:Column>								
+					<table:Column id="idPersonIDColumn" visible="false" label="{i18nLib>TableColumnPersonID}" tooltip="{i18nLib>TableColumnPersonID}" width="20%" showSortMenuEntry="false">
+						<table:template>
+							<Text id="idPersonIDText" text="{peopleGanttModel>MaintWorkCenterPersonID}" wrapping="false"/>
+						</table:template>
+					</table:Column>
+					<table:Column id="idActionColumn" label="{i18nLib>TableColumnAction}" tooltip="{i18nLib>TableColumnAction}" width="30%" hAlign="Center" showSortMenuEntry="false">
+						<table:template>
+						<HBox id="idAssignActionHL" width="100%">
+							<VBox id="idAssignButtonVL" width="70%" class="sapUiTinyMarginEnd">
+								<Button id="idAssignActionButton" text="{path: 'peopleGanttModel>MaintWorkCenterPersonID', formatter: '.formatter.getAssignButtonText'}" press="onAssign" 
+								type="{path: 'peopleGanttModel>MaintWorkCenterPersonID', formatter: '.formatter.getAssignButtonType'}" width="100%" 
+								icon="{path: 'peopleGanttModel>MaintWorkCenterPersonID', formatter: '.formatter.getAssignButtonIcon'}" 
+								tooltip="{path: 'peopleGanttModel>MaintWorkCenterPersonID', formatter: '.formatter.getAssignButtonText'}"/>									
+							</VBox>
+							<VBox id="idUnassignButtonVL" width="30%">
+								<Button id="idUnassignActionButton" width="100%" visible="{path: 'peopleGanttModel>MaintWorkCenterPersonID', formatter: '.formatter.getUnassignVisiblitiy'}"
+								icon="sap-icon://delete" type="Reject" tooltip="{i18nLib>UnassignButtonText}" press="onUnassign"/>
+							</VBox>									
+						</HBox>
+						</table:template>
+					</table:Column>
+				</table:columns>
+			</table:TreeTable>
+		</gantt:table>
+		<gantt:calendarDef>
+			<gnt-cal:CalendarDefs id="idAvailabilityCalDef"></gnt-cal:CalendarDefs>
+		</gantt:calendarDef>
+		<gantt:shapeSchemes>
+			<gantt:ShapeScheme key="assignment" primary="true"/>
+		</gantt:shapeSchemes>
+	</gantt:GanttChartWithTable>
+</core:FragmentDefinition>

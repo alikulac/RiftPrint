@@ -1,0 +1,14 @@
+{
+  "application": "rsh.eam.lib.common",
+  "version": "12.0.22",
+  "buildNumber": "1",
+  "buildId": "1",
+  "branch": "s4op-2023sp0",
+  "revision": "c0c9706fb582467874fd7f116c78a1ce417bf827",
+  "GitURL": "",
+  "namespace": "sap.rsh.eam.lib.common",
+  "buildStatus": "P",
+  "translationComplete": "",
+  "cidi": "",
+  "ciltsCM": ""
+}
