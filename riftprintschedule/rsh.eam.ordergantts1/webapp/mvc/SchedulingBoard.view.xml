@@ -78,6 +78,18 @@
 								<m:OverflowToolbarLayoutData id="idRiftPrintButtonLayout" priority="NeverOverflow"/>
 							</m:layoutData>
 						</m:Button>
+						<m:Button id="idSelectAllButton" text="{i18n>SelectAllButtonText}" icon="sap-icon://multi-select" press="onPressSelectAllButton"
+								  type="Transparent">
+							<m:layoutData>
+								<m:OverflowToolbarLayoutData id="idSelectAllButtonLayout" priority="High"/>
+							</m:layoutData>
+						</m:Button>
+						<m:Button id="idDeselectAllButton" text="{i18n>DeselectAllButtonText}" icon="sap-icon://multiselect-none" press="onPressDeselectAllButton"
+								  type="Transparent">
+							<m:layoutData>
+								<m:OverflowToolbarLayoutData id="idDeselectAllButtonLayout" priority="High"/>
+							</m:layoutData>
+						</m:Button>
 						<ContainerToolbarPlaceholder id="idLegendPlaceholderCT" type="LegendButton"/>
 						<legendContainer>
 							<core:Fragment fragmentName="zrsh.eam.ordergantts1.mvc.gantt.GanttLegend" type="XML"/>

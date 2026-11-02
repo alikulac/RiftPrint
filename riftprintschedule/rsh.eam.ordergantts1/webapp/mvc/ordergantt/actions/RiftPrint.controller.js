@@ -30,21 +30,17 @@ sap.ui.define(
 
 				MessageToast.show(this.oBundle.getText("RiftPrintSelectedOrders", [aOrderNumbers.join(", ")]));
 
-				setTimeout(
-					function () {
-						var sHash = this._oCrossAppNav.hrefForExternal({
-							target: {
-								semanticObject: "ZPM_RIFT_PRINT",
-								action: "display"
-							},
-							params: {
-								P_ORDER: aOrderNumbers.join(",")
-							}
-						});
-						window.open(sHash, "_self");
-					}.bind(this),
-					1500
-				);
+				var sHash = this._oCrossAppNav.hrefForExternal({
+					target: {
+						semanticObject: "ZPM_RIFT_PRINT",
+						action: "display"
+					},
+					params: {
+						P_ORDER: aOrderNumbers.join(",")
+					}
+				});
+				// Open in a new tab so the scheduling board (filters, loaded data, selection) stays as it is
+				sap.m.URLHelper.redirect(sHash, true);
 			}
 		});
 	}

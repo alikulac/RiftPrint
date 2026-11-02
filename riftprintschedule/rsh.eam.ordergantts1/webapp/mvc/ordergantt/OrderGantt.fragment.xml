@@ -27,7 +27,7 @@
 							 rowSelectionChange="onOrderTableSelectRows" columnVisibility=".onColumnVisibilityChanged" columnResize=".onColumnResize"
 							 firstVisibleRowChanged="onOrderTableFirstVisibleRowChanged" sort="onOrderTableSort" toggleOpenState="onToggleOpenState" >
 				<table:plugins>
-					<plugins:MultiSelectionPlugin id="idMultiSelectionPlugin" enableNotification="true" showHeaderSelector="true"
+					<plugins:MultiSelectionPlugin id="idMultiSelectionPlugin" limit="0" enableNotification="true" showHeaderSelector="true"
 												  selectionChange="onOrderTableSelectRows"/>
 				</table:plugins>
 				<table:extension>

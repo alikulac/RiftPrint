@@ -42,6 +42,7 @@ sap.ui.define(
 		"zrsh/eam/ordergantts1/mvc/ordergantt/actions/OpenLinks.controller",
 		"zrsh/eam/ordergantts1/mvc/ordergantt/actions/ScheduleOrders.controller",
 		"zrsh/eam/ordergantts1/mvc/ordergantt/actions/RiftPrint.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/actions/SelectRows.controller",
 		"zrsh/eam/ordergantts1/mvc/ordergantt/actions/AssignEvent.controller",
 		"zrsh/eam/ordergantts1/mvc/ordergantt/actions/UpdateOrderOpDates.controller",
 		"zrsh/eam/ordergantts1/mvc/ordergantt/actions/ChangeOperations.controller",
@@ -99,6 +100,7 @@ sap.ui.define(
 		OpenLinksController,
 		ScheduleOrdersController,
 		RiftPrintController,
+		SelectRowsController,
 		AssignEvent,
 		UpdateOrderOpDatesController,
 		ChangeOperationsController,
@@ -184,6 +186,7 @@ sap.ui.define(
 				this.controllers.ordergantt.openLinks = new OpenLinksController(this);
 				this.controllers.ordergantt.scheduleOrders = new ScheduleOrdersController(this);
 				this.controllers.ordergantt.riftPrint = new RiftPrintController(this);
+				this.controllers.ordergantt.selectRows = new SelectRowsController(this);
 				this.controllers.ordergantt.editRelationships = new EditRelationshipsController(this);
 				this.controllers.ordergantt.columnSettings = new ColumnSettingsController(this);
 				this.controllers.ordergantt.fields = new FieldsController(this);
@@ -314,6 +317,14 @@ sap.ui.define(
 
 			onPressRiftPrintButton: function () {
 				this.controllers.ordergantt.riftPrint.print();
+			},
+
+			onPressSelectAllButton: function () {
+				this.controllers.ordergantt.selectRows.selectAll();
+			},
+
+			onPressDeselectAllButton: function () {
+				this.controllers.ordergantt.selectRows.deselectAll();
 			},
 
 			onColumnSettingsPress: function (oEvent) {
