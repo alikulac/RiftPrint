@@ -13,7 +13,8 @@
 		"ach": "CA-RSH-EAM",
 		"sourceTemplate": {
 			"id": "servicecatalog.connectivityComponentForManifest",
-			"version": "0.0.0"
+			"version": "0.0.0",
+			"toolsId": "2f37d46d-8fa8-43a9-8cad-f840ed39bbef"
 		},
 		"dataSources": {
 			"RSH_EAM_ORDER_GANTT_SRV": {
