@@ -1,0 +1,82 @@
+[
+	{
+		"HasError": "HasError 1",
+		"HasErrorDescription": "HasErrorDescription 1",
+		"__metadata": {
+			"uri": "C_RSHOperationHasErrorVH('HasError%201')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationHasErrorVHType"
+		}
+	},
+	{
+		"HasError": "HasError 2",
+		"HasErrorDescription": "HasErrorDescription 2",
+		"__metadata": {
+			"uri": "C_RSHOperationHasErrorVH('HasError%202')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationHasErrorVHType"
+		}
+	},
+	{
+		"HasError": "HasError 3",
+		"HasErrorDescription": "HasErrorDescription 3",
+		"__metadata": {
+			"uri": "C_RSHOperationHasErrorVH('HasError%203')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationHasErrorVHType"
+		}
+	},
+	{
+		"HasError": "HasError 4",
+		"HasErrorDescription": "HasErrorDescription 4",
+		"__metadata": {
+			"uri": "C_RSHOperationHasErrorVH('HasError%204')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationHasErrorVHType"
+		}
+	},
+	{
+		"HasError": "HasError 5",
+		"HasErrorDescription": "HasErrorDescription 5",
+		"__metadata": {
+			"uri": "C_RSHOperationHasErrorVH('HasError%205')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationHasErrorVHType"
+		}
+	},
+	{
+		"HasError": "HasError 6",
+		"HasErrorDescription": "HasErrorDescription 6",
+		"__metadata": {
+			"uri": "C_RSHOperationHasErrorVH('HasError%206')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationHasErrorVHType"
+		}
+	},
+	{
+		"HasError": "HasError 7",
+		"HasErrorDescription": "HasErrorDescription 7",
+		"__metadata": {
+			"uri": "C_RSHOperationHasErrorVH('HasError%207')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationHasErrorVHType"
+		}
+	},
+	{
+		"HasError": "HasError 8",
+		"HasErrorDescription": "HasErrorDescription 8",
+		"__metadata": {
+			"uri": "C_RSHOperationHasErrorVH('HasError%208')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationHasErrorVHType"
+		}
+	},
+	{
+		"HasError": "HasError 9",
+		"HasErrorDescription": "HasErrorDescription 9",
+		"__metadata": {
+			"uri": "C_RSHOperationHasErrorVH('HasError%209')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationHasErrorVHType"
+		}
+	},
+	{
+		"HasError": "HasError 10",
+		"HasErrorDescription": "HasErrorDescription 10",
+		"__metadata": {
+			"uri": "C_RSHOperationHasErrorVH('HasError%2010')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationHasErrorVHType"
+		}
+	}
+]

@@ -1,0 +1,37 @@
+[
+	{
+		"__metadata": {
+			"uri": "C_RSHUnitOfMeasureTimeVH('D')"
+		},
+		"UnitOfMeasure": "D",
+		"UnitOfMeasureLongName": "Days"
+	},
+	{
+		"__metadata": {
+			"uri": "C_RSHUnitOfMeasureTimeVH('H')"
+		},
+		"UnitOfMeasure": "H",
+		"UnitOfMeasureLongName": "Hours"
+	},
+	{
+		"__metadata": {
+			"uri": "C_RSHUnitOfMeasureTimeVH('MIN')"
+		},
+		"UnitOfMeasure": "MIN",
+		"UnitOfMeasureLongName": "Minutes"
+	},
+	{
+		"__metadata": {
+			"uri": "C_RSHUnitOfMeasureTimeVH('HR')"
+		},
+		"UnitOfMeasure": "HR",
+		"UnitOfMeasureLongName": "Hours"
+	},
+	{
+		"__metadata": {
+			"uri": "C_RSHUnitOfMeasureTimeVH('DAY')"
+		},
+		"UnitOfMeasure": "DAY",
+		"UnitOfMeasureLongName": "Days"
+	}
+]

@@ -1,0 +1,3610 @@
+[
+	{
+		"__metadata": {
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType"
+		},
+		"ID": "000004018843",
+		"MaintenanceOrder": "4018843",
+		"MaintenanceOrderOperation": "",
+		"MaintenanceOrderSubOperation": "",
+		"MaintenanceOrderInternalID": "OR000004018843",
+		"MaintOrderOperationInternalID": "OV100002647100000003",
+		"FirstMaintSchedSimulation": "",
+		"MaintOrderRoutingNumber": "1000184143",
+		"MaintOrderOperationCounter": "9",
+		"OperationDescription": "",
+		"MaintenanceOrderDesc": "Order Description",
+		"OrderType": "PM02",
+		"MaintenanceActivityType": "002",
+		"MaintenanceActivityTypeName": "Inspection",
+		"MaintOrdBasicStartDate": "/Date(1613296000000)/",
+		"MaintOrdBasicEndDate": "/Date(1614419200000)/",
+		"MaintPriority": "",
+		"MaintPriorityDesc": "4-Low",
+		"OperationHasLongText": "",
+		"OperationHasLongTextDesc": "No",
+		"MaintenanceNotification": "",
+		"NotificationText": "",
+		"Equipment": "CK-EQUI-01-1",
+		"EquipmentName": "CK Equipment 01-1",
+		"EquipmentInternalNumber": "CK-EQUI-01-1",
+		"TechObjTypeForEquipment": "EAMS_EQUI",
+		"FunctionalLocation": "PK01-A02",
+		"FunctionalLocationName": "PK Asset Structure: PK01-A02",
+		"RelevantFunctionalLocation": "PK01-A02",
+		"TechObjTypeForFuncnlLocation": "EAMS_FL",
+		"MaintenancePlannerGroup": "",
+		"MaintenanceRevision": "EVENT1",
+		"MaintenancePlanningPlant": "0001",
+		"OperationSystemCondition": "",
+		"OperationSystemConditionText": "",
+		"AssetRoom": "",
+		"AssetLocation": "",
+		"PlantSection": "",
+		"MaintenancePlan": "",
+		"SuperiorProjectNetwork": "",
+		"OperationControlKey": "PM01",
+		"OperationPersonResponsible": "00000000",
+		"OperationPersonRespName": "person name",
+		"WorkCenter": "RSH_WC01",
+		"WorkCenterInternalID": "10000430",
+		"WorkCenterTypeCode": "A",
+		"Plant": "",
+		"OperationDuration": "10.0",
+		"OperationDurationUnit": "H",
+		"OperationPlannedWork": "10.0",
+		"OperationPlannedWorkUnit": "H",
+		"NumberOfCapacities": 1,
+		"PlannedStartDate": "/Date(1613327400000+0000)/",
+		"PlannedStartTime": "PT00H07M30S",
+		"PlannedEndDate": "/Date(1613586600000+0000)/",
+		"PlannedEndTime": "PT02H15M00S",
+		"PeriodType": "/Date(1613327400000)/",
+		"ProcessingStatus": 20,
+		"ProcessingStatusText": "Due",
+		"MaterialStatus": 20,
+		"MaterialStatusKey": "NMAT ",
+		"MaterialStatusCode": "I0485 ",
+		"MaterialStatusText": "Material Availability Not Checked",
+		"HasError": "",
+		"HasErrorDescription": "No Information Available ",
+		"AuthorizationGroup": "",
+		"MaintenancePlant": "",
+		"ControllingArea": "0001",
+		"ResponsibleCostCenter": "",
+		"OpBscEndDateConstraintType": "",
+		"OpBscStartDateConstraintType": "",
+		"OrderOperationIsExpanded": "expanded",
+		"OrderOperationParentRowID": "00000401884300000001",
+		"OrderOperationRowID": "00000401884300000000",
+		"OrderOperationRowLevel": 0,
+		"OrderOperationStartDateTime": "/Date(1613296000000+0000)/",
+		"OrderOperationEndDateTime": "/Date(1613296000000+0000)/",
+		"OrderOpEndConstraintDateTime": "",
+		"OrderOpStartConstraintDateTime": "",
+		"OrderStartDateTime": "/Date(1613296000000+0000)/",
+		"OrderEndDateTime": "/Date(1614419200000+0000)/",
+		"MainWorkCenter": "RSH_JS02",
+		"MainWorkCenterPlant": "0001",
+		"OpErlstSchedldExecStrtDte": "/Date(1613296000000+0000)/",
+		"OpErlstSchedldExecEndDte": "/Date(1613296000000+0000)/",
+		"OpLtstSchedldExecStrtDte": "/Date(1613296000000+0000)/",
+		"OpLtstSchedldExecEndDte": "/Date(1613296000000+0000)/",
+		"SchedulingIsPerformedBackward": "",
+		"SchedulingType": "1",
+		"HasCrossOrderRelationship": "",
+		"MaintObjectFunctionalLocID": "",
+		"MaintObjectEquipmentID": "",
+		"OpMaintObjectFunctionalLocID": "",
+		"OpMaintObjectEquipmentID": "",
+		"LatestAcceptableCompletionDate": "/Date(1614419200000)/",
+		"MaintOrdProcessPhaseCode": "01",
+		"MaintOrdProcessPhaseDesc": "Phase 1",
+		"MaintOrdProcessSubPhaseCode": "0001",
+		"MaintOrdProcessSubPhaseDesc": "Subphase 1",
+		"MaintOrdOpProcessPhaseCode": "01",
+		"MaintOrdOpProcessPhaseDesc": "Op Phase 1",
+		"MaintOrdOpProcessSubPhaseCode": "0001",
+		"MaintOrdOpProcessSubPhaseDesc": "Op Subphase 1",
+		"BasicSchedulingType": "1",
+		"OrdIsNotSchedldAutomatically": false,
+		"StartDate": "",
+		"EndDate": "",
+		"Project": "",
+		"WBSElement": "",
+		"ActualWorkQuantity": "",
+		"RemainingWorkQuantity": "",
+		"OpActualExecutionStartDateTime": null,
+		"OpActualExecutionEndDateTime": null,
+		"NumberOfAssignedPersons": "",
+		"ConcatenatedAssignedPersonsTxt": "",
+		"AssignedMaintOpStartDateTime": null,
+		"AssignedMaintOpEndDateTime": null,
+		"MaintOpIsAssignedToPeople": "",
+		"AssignedPerson": "",
+		"OrderSystemConditionText": "",
+		"TechnicalObjectDescription": "CK Equipment 01-1",
+		"TechObjIsEquipOrFuncnlLocDesc": "Equipment",
+		"TechnicalObject": "CK-EQUI-01-1",
+		"TechnicalObjectLabel": "CK-EQUI-01-1",
+		"TechObjIsEquipOrFuncnlLoc": "EAMS_EQUI",
+		"MaintOrderProcessingContext": "ES",
+		"MaintOrdProcessingContextText": "Order for Emergency Work with Screening",
+		"MaintOrdCompAvailyCritltyCode": 0,
+		"MaintOpCompAvailyCritltyCode": 0,
+		"MaintOrdSchedCriticalityCode": 3,
+		"MaintOrdStatusCriticalityCode": 1,
+		"MaintOpStatusCriticalityCode": 0,
+		"MaintOpSchedCriticalityCode": 1,
+		"MaintOpExecutionStageName": "MAIN",
+		"ServiceDocument": "",
+		"MaintPlanningBucketUUID": "210d1d93-8115-1edf-b595-8b2b17efb6f6",
+		"MaintPlngBucketLabel": "TESTING_WC3",
+		"ServiceDocumentDescription": "",
+		"ServiceDocumentItem": "",
+		"ServiceDocumentItemDescription": "",
+		"ServiceDocumentType": "",
+		"SoldToParty": "",
+		"BusinessPartnerFullName": "",
+		"SalesOrganization": "",
+		"SalesOrganizationName": "",
+		"Product": "",
+		"ProductName": "",
+		"ScheduledBasicStartDateTime": "/Date(1740463200000+0000)/",
+		"ScheduledBasicEndDateTime": "/Date(1740463200000+0000)/"
+	},
+	{
+		"__metadata": {
+			"id": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0011.3~')",
+			"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0011.3~')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType"
+		},
+		"ID": ".1~000004018843.2~0011.3~",
+		"MaintSchedSimlnUUID": "506b4bc3-45cc-1edb-bfca-5047d278a7f9",
+		"MaintSchedSimlnDescription": "test",
+		"FirstMaintSchedSimulation": "Schedule1",
+		"NumberOfMaintSchedSimulations": 1,
+		"MaintenanceOrder": "4018843",
+		"MaintenanceOrderOperation": "0011",
+		"MaintenanceOrderSubOperation": "",
+		"MaintenanceOrderInternalID": "OR000004018843",
+		"MaintOrderRoutingNumber": "1000184143",
+		"MaintOrderOperationCounter": "9",
+		"MaintOrderOperationInternalID": "OV100002662400000002",
+		"OperationDescription": "maintain pump",
+		"MaintenanceOrderDesc": "maintain pump",
+		"OrderType": "PM01",
+		"MaintenanceActivityType": "001",
+		"MaintenanceActivityTypeName": "Inspection",
+		"MaintOrdBasicStartDate": "/Date(1613296000000)/",
+		"MaintOrdBasicEndDate": "/Date(1614419200000)/",
+		"MaintPriority": "4",
+		"MaintPriorityDesc": "4-Low",
+		"OperationHasLongText": "X",
+		"OperationHasLongTextDesc": "Yes",
+		"MaintenanceNotification": "10028423",
+		"NotificationText": "PM Order",
+		"Equipment": "SER-EQIP-147-01",
+		"EquipmentName": "Test Equipment for funl hierarchy",
+		"EquipmentInternalNumber": "SER-EQIP-147-01",
+		"TechObjTypeForEquipment": "EAMS_EQUI",
+		"FunctionalLocation": "PAS",
+		"FunctionalLocationName": "Plant Air System",
+		"RelevantFunctionalLocation": "PAS",
+		"TechObjTypeForFuncnlLocation": "EAMS_FL",
+		"MaintenancePlannerGroup": "",
+		"MaintenanceRevision": "",
+		"OperationSystemCondition": "",
+		"OperationSystemConditionText": "",
+		"AssetRoom": "",
+		"AssetLocation": "",
+		"PlantSection": "",
+		"MaintenancePlan": "",
+		"SuperiorProjectNetwork": "",
+		"OperationControlKey": "PM01",
+		"OperationPersonResponsible": "00000000",
+		"OperationPersonRespName": "person name",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"Plant": "",
+		"OperationDuration": "60.0",
+		"OperationDurationUnit": "H",
+		"OperationPlannedWork": "60.0",
+		"OperationPlannedWorkUnit": "H",
+		"NumberOfCapacities": 1,
+		"PlannedStartDate": "/Date(1613296000000)/",
+		"PlannedStartTime": "PT00H00M00S",
+		"PlannedEndDate": "/Date(163900800000)/",
+		"PlannedEndTime": "PT00H00M10S",
+		"PeriodType": "/Date(1613327400000)/",
+		"ProcessingStatus": 20,
+		"ProcessingStatusText": "Due",
+		"MaterialStatus": 20,
+		"MaterialStatusKey": "MANC",
+		"MaterialStatusCode": "I0420",
+		"MaterialStatusText": "Material Availability Not Checked",
+		"HasError": "",
+		"HasErrorDescription": "No Information Available",
+		"AuthorizationGroup": "",
+		"MaintenancePlant": "",
+		"ControllingArea": "0001",
+		"ResponsibleCostCenter": "",
+		"OpBscEndDateConstraintType": "",
+		"OpBscStartDateConstraintType": "",
+		"OrderOperationIsExpanded": "leaf",
+		"OrderOperationParentRowID": "00000401884300000000",
+		"OrderOperationRowID": "0000040188430011",
+		"OrderOperationRowLevel": 1,
+		"OrderOperationStartDateTime": "/Date(1613296000000+0000)/",
+		"OrderOperationEndDateTime": "/Date(1613900810000+0000)/",
+		"OrderOpEndConstraintDateTime": "",
+		"OrderOpStartConstraintDateTime": "",
+		"OrderStartDateTime": "/Date(1613296000000+0000)/",
+		"OrderEndDateTime": "/Date(1613900810000+0000)/",
+		"MainWorkCenter": "RSH_JS02",
+		"MainWorkCenterPlant": "0001",
+		"OpErlstSchedldExecStrtDte": "/Date(1613296000000)/",
+		"OpErlstSchedldExecEndDte": "/Date(1613900800000)/",
+		"OpLtstSchedldExecStrtDte": "/Date(1613296000000)/",
+		"OpLtstSchedldExecEndDte": "/Date(1613900800000)/",
+		"SchedulingIsPerformedBackward": "",
+		"SchedulingType": "5",
+		"HasCrossOrderRelationship": "",
+		"MaintObjectEquipmentID": "",
+		"MaintObjectFunctionalLocID": "",
+		"OpMaintObjectFunctionalLocID": "",
+		"OpMaintObjectEquipmentID": "",
+		"OperationIsOnCriticalPath": "X",
+		"OperationIsOnCriticalPathText": "Yes",
+		"LatestAcceptableCompletionDate": "/Date(1614419200000)/",
+		"MaintOrdProcessPhaseCode": "01",
+		"MaintOrdProcessPhaseDesc": "Phase 1",
+		"MaintOrdProcessSubPhaseCode": "0001",
+		"MaintOrdProcessSubPhaseDesc": "Subphase 1",
+		"MaintOrdOpProcessPhaseCode": "01",
+		"MaintOrdOpProcessPhaseDesc": "Op Phase 1",
+		"MaintOrdOpProcessSubPhaseCode": "0001",
+		"MaintOrdOpProcessSubPhaseDesc": "Op Subphase 1",
+		"OperationTechnicalObject": "",
+		"OperationTechnicalObjectLabel": "",
+		"OperationTechnicalObjectDesc": "",
+		"OperationEquipment": "SER-EQIP-147-01",
+		"OperationEquipmentName": "Test Equipment for funl hierarchy",
+		"OpEquipmentInternalNumber": "SER-EQIP-147-01",
+		"OperationFunctionalLocation": "PAS",
+		"OpFunctionalLocationName": "Plant Air System",
+		"RelevantOperationFuncLocation": "PAS",
+		"OpTechObjEquipOrFuncnlLoc": "EAMS_FL",
+		"OpTechObjEquipOrFuncnlLocDesc": "Functional Location",
+		"ConcatenatedOrderPhaseCtrlText": "",
+		"ConcatenatedOrdOpPhaseCtrlText": "",
+		"MaintenancePhaseControlText": "",
+		"BasicSchedulingType": "1",
+		"OrdIsNotSchedldAutomatically": false,
+		"StartDate": "",
+		"EndDate": "",
+		"Project": "",
+		"WBSElement": "",
+		"ActualWorkQuantity": "",
+		"RemainingWorkQuantity": "",
+		"OpActualExecutionStartDateTime": null,
+		"OpActualExecutionEndDateTime": null,
+		"MaintenancePlanningPlant": "1010",
+		"NumberOfAssignedPersons": "0",
+		"ConcatenatedAssignedPersonsTxt": "",
+		"AssignedMaintOpStartDateTime": null,
+		"AssignedMaintOpEndDateTime": null,
+		"MaintOpIsAssignedToPeople": "",
+		"AssignedPerson": "",
+		"OrderSystemConditionText": "",
+		"TechnicalObjectDescription": "Plant Air System",
+		"TechObjIsEquipOrFuncnlLocDesc": "Functional Location",
+		"TechnicalObject": "PAS",
+		"TechnicalObjectLabel": "PAS",
+		"TechObjIsEquipOrFuncnlLoc": "",
+		"MaintOrderProcessingContext": "ES",
+		"MaintOrdProcessingContextText": "Order for Emergency Work with Screening",
+		"MaintOpSchedCriticalityCode": 1,
+		"MaintOpExecutionStageName": "MAIN",
+		"MaintOrdCompAvailyCritltyCode": 0,
+		"MaintOpCompAvailyCritltyCode": 0,
+		"MaintOrdSchedCriticalityCode": 1,
+		"MaintOrdStatusCriticalityCode": 0,
+		"MaintOpStatusCriticalityCode": 0,
+		"ServiceDocument": "",
+		"MaintPlanningBucketUUID": "",
+		"MaintPlngBucketLabel": "",
+		"ServiceDocumentDescription": "",
+		"ServiceDocumentItem": "",
+		"ServiceDocumentItemDescription": "",
+		"ServiceDocumentType": "",
+		"SoldToParty": "",
+		"BusinessPartnerFullName": "",
+		"to_OperationDetails": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0011.3~')/to_OperationDetails"
+			}
+		},
+		"to_ActivityTypeVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0011.3~')/to_ActivityTypeVH"
+			}
+		},
+		"to_EquipmentVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0011.3~')/to_EquipmentVH"
+			}
+		},
+		"to_FunctionalLocationVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0011.3~')/to_FunctionalLocationVH"
+			}
+		},
+		"to_HasErrorVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0011.3~')/to_HasErrorVH"
+			}
+		},
+		"to_HasLongTextVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0011.3~')/to_HasLongTextVH"
+			}
+		},
+		"to_MaintenanceOrderOperationVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0011.3~')/to_MaintenanceOrderOperationVH"
+			}
+		},
+		"to_MaintenanceOrderVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0011.3~')/to_MaintenanceOrderVH"
+			}
+		},
+		"to_MaintOrderTypeVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0011.3~')/to_MaintOrderTypeVH"
+			}
+		},
+		"to_MaterialStatusVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0011.3~')/to_MaterialStatusVH"
+			}
+		},
+		"to_MyWorkCenterVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0011.3~')/to_MyWorkCenterVH"
+			}
+		},
+		"to_OperationActiveStatus": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0011.3~')/to_OperationActiveStatus"
+			}
+		},
+		"to_OrderActiveStatus": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0011.3~')/to_OrderActiveStatus"
+			}
+		},
+		"to_OrderDetails": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0011.3~')/to_OrderDetails"
+			}
+		},
+		"to_PriorityVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0011.3~')/to_PriorityVH"
+			}
+		},
+		"to_ProcessingStatusVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0011.3~')/to_ProcessingStatusVH"
+			}
+		},
+		"to_Validation": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0011.3~')/to_Validation"
+			}
+		},
+		"SalesOrganization": "",
+		"SalesOrganizationName": "",
+		"Product": "",
+		"ProductName": "",
+		"ScheduledBasicStartDateTime": "/Date(1740463200000+0000)/",
+		"ScheduledBasicEndDateTime": "/Date(1740463200000+0000)/"
+	},
+	{
+		"__metadata": {
+			"id": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0020.3~')",
+			"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0020.3~')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType"
+		},
+		"ID": ".1~000004018843.2~0020.3~",
+		"MaintSchedSimlnUUID": "506b4bc3-45cc-1edb-bfca-5047d278a7f9",
+		"MaintSchedSimlnDescription": "test",
+		"FirstMaintSchedSimulation": "Schedule1",
+		"NumberOfMaintSchedSimulations": 1,
+		"MaintenanceOrder": "4018843",
+		"MaintenanceOrderOperation": "0020",
+		"MaintenanceOrderSubOperation": "",
+		"MaintenanceOrderInternalID": "OR000004018843",
+		"MaintOrderOperationInternalID": "OV100002662400000003",
+		"MaintOrderRoutingNumber": "1000184143",
+		"MaintOrderOperationCounter": "9",
+		"OperationDescription": "0020 op 20",
+		"MaintenanceOrderDesc": "operation description 20",
+		"OrderType": "PM02",
+		"MaintenanceActivityType": "001",
+		"MaintenanceActivityTypeName": "Inspection",
+		"MaintOrdBasicStartDate": "/Date(1613296000000)/",
+		"MaintOrdBasicEndDate": "/Date(1614419200000)/",
+		"MaintPriority": "4",
+		"MaintPriorityDesc": "4-Low",
+		"OperationHasLongText": "",
+		"OperationHasLongTextDesc": "No",
+		"MaintenanceNotification": "10028423",
+		"NotificationText": "PM Order",
+		"Equipment": "",
+		"EquipmentName": "",
+		"EquipmentInternalNumber": "",
+		"TechObjTypeForEquipment": "EAMS_EQUI",
+		"FunctionalLocation": "",
+		"FunctionalLocationName": "",
+		"RelevantFunctionalLocation": "",
+		"TechObjTypeForFuncnlLocation": "EAMS_FL",
+		"MaintenancePlannerGroup": "",
+		"MaintenanceRevision": "",
+		"OperationSystemCondition": "",
+		"OperationSystemConditionText": "",
+		"AssetRoom": "",
+		"AssetLocation": "",
+		"PlantSection": "",
+		"MaintenancePlan": "",
+		"SuperiorProjectNetwork": "",
+		"OperationControlKey": "PM01",
+		"OperationPersonResponsible": "00000000",
+		"OperationPersonRespName": "person name",
+		"WorkCenter": "RSH_WC01",
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"Plant": "",
+		"OperationDuration": "30.0",
+		"OperationDurationUnit": "H",
+		"OperationPlannedWork": "30.0",
+		"OperationPlannedWorkUnit": "H",
+		"NumberOfCapacities": 1,
+		"PlannedStartDate": "/Date(1613900800000)/",
+		"PlannedStartTime": "PT00H00M10S",
+		"PlannedEndDate": "/Date(1614419200000)/",
+		"PlannedEndTime": "PT06H00M14S",
+		"PeriodType": "/Date(1613327400000)/",
+		"ProcessingStatus": 30,
+		"ProcessingStatusText": "Dispatched",
+		"MaterialStatus": 20,
+		"MaterialStatusKey": "MANC",
+		"MaterialStatusCode": "I0420",
+		"MaterialStatusText": "Material Availability Not Checked",
+		"HasError": "",
+		"HasErrorDescription": "No Information Available",
+		"AuthorizationGroup": "",
+		"MaintenancePlant": "",
+		"ControllingArea": "0001",
+		"ResponsibleCostCenter": "",
+		"OpBscEndDateConstraintType": "",
+		"OpBscStartDateConstraintType": "",
+		"OrderOperationIsExpanded": "leaf",
+		"OrderOperationParentRowID": "00000401884300000000",
+		"OrderOperationRowID": "0000040188430020",
+		"OrderOperationRowLevel": 1,
+		"OrderOperationStartDateTime": "/Date(1613900810000+0000)/",
+		"OrderOperationEndDateTime": "/Date(1614440814000+0000)/",
+		"OrderOpEndConstraintDateTime": "",
+		"OrderOpStartConstraintDateTime": "",
+		"OrderStartDateTime": "/Date(1613900810000+0000)/",
+		"OrderEndDateTime": "/Date(1614440814000+0000)/",
+		"MainWorkCenter": "RSH_WC01",
+		"MainWorkCenterPlant": "0001",
+		"OpErlstSchedldExecStrtDte": "/Date(1613900800000)/",
+		"OpErlstSchedldExecEndDte": "/Date(1614419200000)/",
+		"OpLtstSchedldExecStrtDte": "/Date(1613900800000)/",
+		"OpLtstSchedldExecEndDte": "/Date(1614419200000)/",
+		"SchedulingIsPerformedBackward": "",
+		"SchedulingType": "5",
+		"HasCrossOrderRelationship": "",
+		"MaintObjectEquipmentID": "",
+		"MaintObjectFunctionalLocID": "",
+		"OpMaintObjectFunctionalLocID": "",
+		"OpMaintObjectEquipmentID": "",
+		"OperationIsOnCriticalPath": "X",
+		"OperationIsOnCriticalPathText": "Yes",
+		"LatestAcceptableCompletionDate": "/Date(1614419200000)/",
+		"MaintOrdProcessPhaseCode": "01",
+		"MaintOrdProcessPhaseDesc": "Phase 1",
+		"MaintOrdProcessSubPhaseCode": "0001",
+		"MaintOrdProcessSubPhaseDesc": "Subphase 1",
+		"MaintOrdOpProcessPhaseCode": "01",
+		"MaintOrdOpProcessPhaseDesc": "Op Phase 1",
+		"MaintOrdOpProcessSubPhaseCode": "0001",
+		"MaintOrdOpProcessSubPhaseDesc": "Op Subphase 1",
+		"OperationTechnicalObject": "",
+		"OperationTechnicalObjectLabel": "",
+		"OperationTechnicalObjectDesc": "",
+		"OperationEquipment": "",
+		"OperationEquipmentName": "",
+		"OpEquipmentInternalNumber": "",
+		"OperationFunctionalLocation": "",
+		"OpFunctionalLocationName": "",
+		"RelevantOperationFuncLocation": "",
+		"OpTechObjEquipOrFuncnlLoc": "",
+		"OpTechObjEquipOrFuncnlLocDesc": "",
+		"ConcatenatedOrderPhaseCtrlText": "",
+		"ConcatenatedOrdOpPhaseCtrlText": "",
+		"MaintenancePhaseControlText": "",
+		"BasicSchedulingType": "1",
+		"OrdIsNotSchedldAutomatically": false,
+		"StartDate": "",
+		"EndDate": "",
+		"Project": "",
+		"WBSElement": "",
+		"ActualWorkQuantity": "",
+		"RemainingWorkQuantity": "",
+		"OpActualExecutionStartDateTime": null,
+		"OpActualExecutionEndDateTime": null,
+		"MaintenancePlanningPlant": "1010",
+		"NumberOfAssignedPersons": "1",
+		"ConcatenatedAssignedPersonsTxt": "Travor SaltsMan",
+		"AssignedMaintOpStartDateTime": "/Date(1613900810000+0000)/",
+		"AssignedMaintOpEndDateTime": "/Date(1614440814000+0000)/",
+		"MaintOpIsAssignedToPeople": "",
+		"AssignedPerson": "",
+		"OrderSystemConditionText": "",
+		"TechnicalObjectDescription": "Plant Air System",
+		"TechObjIsEquipOrFuncnlLocDesc": "Functional Location",
+		"TechnicalObject": "",
+		"TechnicalObjectLabel": "",
+		"TechObjIsEquipOrFuncnlLoc": "",
+		"MaintOrderProcessingContext": "ES",
+		"MaintOrdProcessingContextText": "Order for Emergency Work with Screening",
+		"MaintOpSchedCriticalityCode": 1,
+		"MaintOpExecutionStageName": "MAIN",
+		"MaintOrdCompAvailyCritltyCode": 0,
+		"MaintOpCompAvailyCritltyCode": 0,
+		"MaintOrdSchedCriticalityCode": 1,
+		"MaintOrdStatusCriticalityCode": 0,
+		"MaintOpStatusCriticalityCode": 0,
+		"ServiceDocument": "",
+		"MaintPlanningBucketUUID": "",
+		"MaintPlngBucketLabel": "",
+		"ServiceDocumentDescription": "",
+		"ServiceDocumentItem": "",
+		"ServiceDocumentItemDescription": "",
+		"ServiceDocumentType": "",
+		"SoldToParty": "",
+		"BusinessPartnerFullName": "",
+		"to_OperationDetails": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0020.3~')/to_OperationDetails"
+			}
+		},
+		"to_ActivityTypeVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0020.3~')/to_ActivityTypeVH"
+			}
+		},
+		"to_EquipmentVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0020.3~')/to_EquipmentVH"
+			}
+		},
+		"to_FunctionalLocationVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0020.3~')/to_FunctionalLocationVH"
+			}
+		},
+		"to_HasErrorVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0020.3~')/to_HasErrorVH"
+			}
+		},
+		"to_HasLongTextVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0020.3~')/to_HasLongTextVH"
+			}
+		},
+		"to_MaintenanceOrderOperationVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0020.3~')/to_MaintenanceOrderOperationVH"
+			}
+		},
+		"to_MaintenanceOrderVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0020.3~')/to_MaintenanceOrderVH"
+			}
+		},
+		"to_MaintOrderTypeVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0020.3~')/to_MaintOrderTypeVH"
+			}
+		},
+		"to_MaterialStatusVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0020.3~')/to_MaterialStatusVH"
+			}
+		},
+		"to_MyWorkCenterVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0020.3~')/to_MyWorkCenterVH"
+			}
+		},
+		"to_UtilIndicator": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0020.3~')/to_UtilIndicator"
+			}
+		},
+		"to_OperationActiveStatus": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0020.3~')/to_OperationActiveStatus"
+			}
+		},
+		"to_OrderActiveStatus": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0020.3~')/to_OrderActiveStatus"
+			}
+		},
+		"to_OrderDetails": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0020.3~')/to_OrderDetails"
+			}
+		},
+		"to_PriorityVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0020.3~')/to_PriorityVH"
+			}
+		},
+		"to_ProcessingStatusVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0020.3~')/to_ProcessingStatusVH"
+			}
+		},
+		"to_Validation": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0020.3~')/to_Validation"
+			}
+		},
+		"SalesOrganization": "",
+		"SalesOrganizationName": "",
+		"Product": "",
+		"ProductName": "",
+		"ScheduledBasicStartDateTime": "/Date(1740463200000+0000)/",
+		"ScheduledBasicEndDateTime": "/Date(1740463200000+0000)/"
+	},
+	{
+		"__metadata": {
+			"id": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0030.3~')",
+			"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0030.3~')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType"
+		},
+		"ID": ".1~000004018843.2~0030.3~",
+		"MaintSchedSimlnUUID": "",
+		"MaintSchedSimlnDescription": "",
+		"FirstMaintSchedSimulation": "",
+		"NumberOfMaintSchedSimulations": 0,
+		"MaintenanceOrder": "4018843",
+		"MaintenanceOrderOperation": "0030",
+		"MaintenanceOrderSubOperation": "0030",
+		"MaintenanceOrderInternalID": "OR000004018843",
+		"MaintOrderOperationInternalID": "OV100002662400000004",
+		"MaintOrderRoutingNumber": "1000184143",
+		"MaintOrderOperationCounter": "9",
+		"OperationDescription": "0030 suboperation",
+		"MaintenanceOrderDesc": "operation description 30",
+		"OrderType": "PM01",
+		"MaintenanceActivityType": "001",
+		"MaintenanceActivityTypeName": "Inspection",
+		"MaintOrdBasicStartDate": "/Date(1613296000000)/",
+		"MaintOrdBasicEndDate": "/Date(1614419200000)/",
+		"MaintPriority": "4",
+		"MaintPriorityDesc": "4-Low",
+		"OperationHasLongText": "",
+		"OperationHasLongTextDesc": "No",
+		"MaintenanceNotification": "10028423",
+		"NotificationText": "PM Order",
+		"Equipment": "",
+		"EquipmentName": "",
+		"EquipmentInternalNumber": "",
+		"TechObjTypeForEquipment": "EAMS_EQUI",
+		"FunctionalLocation": "",
+		"FunctionalLocationName": "",
+		"RelevantFunctionalLocation": "",
+		"TechObjTypeForFuncnlLocation": "EAMS_FL",
+		"MaintenancePlannerGroup": "",
+		"MaintenanceRevision": "",
+		"OperationSystemCondition": "",
+		"OperationSystemConditionText": "",
+		"AssetRoom": "",
+		"AssetLocation": "",
+		"PlantSection": "",
+		"MaintenancePlan": "",
+		"SuperiorProjectNetwork": "",
+		"OperationControlKey": "PM01",
+		"OperationPersonResponsible": "00000000",
+		"OperationPersonRespName": "person name",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"Plant": "",
+		"OperationDuration": "10.0",
+		"OperationDurationUnit": "H",
+		"OperationPlannedWork": "10.0",
+		"OperationPlannedWorkUnit": "H",
+		"NumberOfCapacities": 1,
+		"PlannedStartDate": "/Date(1613900800000)/",
+		"PlannedStartTime": "PT00H00M10S",
+		"PlannedEndDate": "/Date(1614419200000)/",
+		"PlannedEndTime": "PT06H00M14S",
+		"PeriodType": "/Date(1613327400000)/",
+		"ProcessingStatus": 30,
+		"ProcessingStatusText": "Dispatched",
+		"MaterialStatus": 20,
+		"MaterialStatusKey": "MANC",
+		"MaterialStatusCode": "I0420",
+		"MaterialStatusText": "Material Availability Not Checked",
+		"HasError": "",
+		"HasErrorDescription": "No Information Available",
+		"AuthorizationGroup": "",
+		"MaintenancePlant": "",
+		"ControllingArea": "0001",
+		"ResponsibleCostCenter": "",
+		"OpBscEndDateConstraintType": "",
+		"OpBscStartDateConstraintType": "",
+		"OrderOperationIsExpanded": "leaf",
+		"OrderOperationParentRowID": "00000401884300000000",
+		"OrderOperationRowID": "0000040188430030",
+		"OrderOperationRowLevel": 1,
+		"OrderOperationStartDateTime": "/Date(1613900810000+0000)/",
+		"OrderOperationEndDateTime": "/Date(1614440814000+0000)/",
+		"OrderOpEndConstraintDateTime": "",
+		"OrderOpStartConstraintDateTime": "",
+		"OrderStartDateTime": "/Date(1613900810000+0000)/",
+		"OrderEndDateTime": "/Date(1614440814000+0000)/",
+		"MainWorkCenter": "RSH_JS02",
+		"MainWorkCenterPlant": "0001",
+		"OpErlstSchedldExecStrtDte": "/Date(1613900800000)/",
+		"OpErlstSchedldExecEndDte": "/Date(1614419200000)/",
+		"OpLtstSchedldExecStrtDte": "/Date(1613900800000)/",
+		"OpLtstSchedldExecEndDte": "/Date(1614419200000)/",
+		"SchedulingIsPerformedBackward": "",
+		"SchedulingType": "5",
+		"HasCrossOrderRelationship": "",
+		"MaintObjectEquipmentID": "",
+		"MaintObjectFunctionalLocID": "",
+		"OpMaintObjectFunctionalLocID": "",
+		"OpMaintObjectEquipmentID": "",
+		"OperationIsOnCriticalPath": "X",
+		"OperationIsOnCriticalPathText": "No",
+		"LatestAcceptableCompletionDate": "/Date(1614419200000)/",
+		"MaintOrdProcessPhaseCode": "01",
+		"MaintOrdProcessPhaseDesc": "Phase 1",
+		"MaintOrdProcessSubPhaseCode": "0001",
+		"MaintOrdProcessSubPhaseDesc": "Subphase 1",
+		"MaintOrdOpProcessPhaseCode": "01",
+		"MaintOrdOpProcessPhaseDesc": "Op Phase 1",
+		"MaintOrdOpProcessSubPhaseCode": "0001",
+		"MaintOrdOpProcessSubPhaseDesc": "Op Subphase 1",
+		"OperationTechnicalObject": "",
+		"OperationTechnicalObjectLabel": "",
+		"OperationTechnicalObjectDesc": "",
+		"OperationEquipment": "",
+		"OperationEquipmentName": "",
+		"OpEquipmentInternalNumber": "",
+		"OperationFunctionalLocation": "",
+		"OpFunctionalLocationName": "",
+		"RelevantOperationFuncLocation": "",
+		"OpTechObjEquipOrFuncnlLoc": "",
+		"OpTechObjEquipOrFuncnlLocDesc": "",
+		"ConcatenatedOrderPhaseCtrlText": "",
+		"ConcatenatedOrdOpPhaseCtrlText": "",
+		"MaintenancePhaseControlText": "",
+		"BasicSchedulingType": "1",
+		"OrdIsNotSchedldAutomatically": false,
+		"StartDate": "",
+		"EndDate": "",
+		"Project": "",
+		"WBSElement": "",
+		"ActualWorkQuantity": "",
+		"RemainingWorkQuantity": "",
+		"OpActualExecutionStartDateTime": null,
+		"OpActualExecutionEndDateTime": null,
+		"MaintenancePlanningPlant": "1010",
+		"NumberOfAssignedPersons": "0",
+		"ConcatenatedAssignedPersonsTxt": "",
+		"AssignedMaintOpStartDateTime": null,
+		"AssignedMaintOpEndDateTime": null,
+		"MaintOpIsAssignedToPeople": "",
+		"AssignedPerson": "",
+		"OrderSystemConditionText": "",
+		"TechnicalObjectDescription": "Plant Air System",
+		"TechObjIsEquipOrFuncnlLocDesc": "Functional Location",
+		"TechnicalObject": "",
+		"TechnicalObjectLabel": "",
+		"TechObjIsEquipOrFuncnlLoc": "",
+		"MaintOrderProcessingContext": "M",
+		"MaintOrdProcessingContextText": "Minor Work Order",
+		"MaintOpSchedCriticalityCode": 1,
+		"MaintOpExecutionStageName": "MAIN",
+		"MaintOrdCompAvailyCritltyCode": 0,
+		"MaintOpCompAvailyCritltyCode": 0,
+		"MaintOrdSchedCriticalityCode": 1,
+		"MaintOrdStatusCriticalityCode": 0,
+		"MaintOpStatusCriticalityCode": 0,
+		"ServiceDocument": "",
+		"MaintPlanningBucketUUID": "",
+		"MaintPlngBucketLabel": "",
+		"ServiceDocumentDescription": "",
+		"ServiceDocumentItem": "",
+		"ServiceDocumentItemDescription": "",
+		"ServiceDocumentType": "",
+		"SoldToParty": "",
+		"BusinessPartnerFullName": "",
+		"to_OperationDetails": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0030.3~')/to_OperationDetails"
+			}
+		},
+		"to_ActivityTypeVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0030.3~')/to_ActivityTypeVH"
+			}
+		},
+		"to_EquipmentVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0030.3~')/to_EquipmentVH"
+			}
+		},
+		"to_FunctionalLocationVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0030.3~')/to_FunctionalLocationVH"
+			}
+		},
+		"to_HasErrorVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0030.3~')/to_HasErrorVH"
+			}
+		},
+		"to_HasLongTextVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0030.3~')/to_HasLongTextVH"
+			}
+		},
+		"to_MaintenanceOrderOperationVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0030.3~')/to_MaintenanceOrderOperationVH"
+			}
+		},
+		"to_MaintenanceOrderVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0030.3~')/to_MaintenanceOrderVH"
+			}
+		},
+		"to_MaintOrderTypeVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0030.3~')/to_MaintOrderTypeVH"
+			}
+		},
+		"to_MaterialStatusVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0030.3~')/to_MaterialStatusVH"
+			}
+		},
+		"to_MyWorkCenterVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0030.3~')/to_MyWorkCenterVH"
+			}
+		},
+		"to_OperationActiveStatus": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0030.3~')/to_OperationActiveStatus"
+			}
+		},
+		"to_OrderActiveStatus": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0030.3~')/to_OrderActiveStatus"
+			}
+		},
+		"to_OrderDetails": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0030.3~')/to_OrderDetails"
+			}
+		},
+		"to_PriorityVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0030.3~')/to_PriorityVH"
+			}
+		},
+		"to_UtilIndicator": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0030.3~')/to_UtilIndicator"
+			}
+		},
+		"to_ProcessingStatusVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0030.3~')/to_ProcessingStatusVH"
+			},
+			"to_Validation": {
+				"__deferred": {
+					"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0030.3~')/to_Validation"
+				}
+			}
+		},
+		"SalesOrganization": "",
+		"SalesOrganizationName": "",
+		"Product": "",
+		"ProductName": "",
+		"ScheduledBasicStartDateTime": "/Date(1740463200000+0000)/",
+		"ScheduledBasicEndDateTime": "/Date(1740463200000+0000)/"
+	},
+	{
+		"__metadata": {
+			"id": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0040.3~')",
+			"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0040.3~')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType"
+		},
+		"ID": ".1~000004018843.2~0040.3~",
+		"MaintSchedSimlnUUID": "",
+		"MaintSchedSimlnDescription": "",
+		"FirstMaintSchedSimulation": "",
+		"NumberOfMaintSchedSimulations": 0,
+		"MaintenanceOrder": "4018843",
+		"MaintenanceOrderOperation": "0040",
+		"MaintenanceOrderSubOperation": "",
+		"MaintenanceOrderInternalID": "OR000004018843",
+		"MaintOrderOperationInternalID": "OV100002662400000005",
+		"MaintOrderRoutingNumber": "1000184143",
+		"MaintOrderOperationCounter": "9",
+		"OperationDescription": "0040 operation",
+		"MaintenanceOrderDesc": "operation description 40",
+		"OrderType": "PM01",
+		"MaintenanceActivityType": "001",
+		"MaintenanceActivityTypeName": "Inspection",
+		"MaintOrdBasicStartDate": "/Date(1613296000000)/",
+		"MaintOrdBasicEndDate": "/Date(1614419200000)/",
+		"MaintPriority": "4",
+		"MaintPriorityDesc": "4-Low",
+		"OperationHasLongText": "",
+		"OperationHasLongTextDesc": "No",
+		"MaintenanceNotification": "10028423",
+		"NotificationText": "PM Order",
+		"Equipment": "",
+		"EquipmentName": "",
+		"EquipmentInternalNumber": "",
+		"TechObjTypeForEquipment": "EAMS_EQUI",
+		"FunctionalLocation": "",
+		"FunctionalLocationName": "",
+		"RelevantFunctionalLocation": "",
+		"TechObjTypeForFuncnlLocation": "EAMS_FL",
+		"MaintenancePlannerGroup": "",
+		"MaintenanceRevision": "",
+		"OperationSystemCondition": "",
+		"OperationSystemConditionText": "",
+		"AssetRoom": "",
+		"AssetLocation": "",
+		"PlantSection": "",
+		"MaintenancePlan": "",
+		"SuperiorProjectNetwork": "",
+		"OperationControlKey": "PM01",
+		"OperationPersonResponsible": "00000000",
+		"OperationPersonRespName": "person name",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"Plant": "",
+		"OperationDuration": "10.0",
+		"OperationDurationUnit": "H",
+		"OperationPlannedWork": "10.0",
+		"OperationPlannedWorkUnit": "H",
+		"NumberOfCapacities": 1,
+		"PlannedStartDate": "/Date(1613900800000)/",
+		"PlannedStartTime": "PT00H00M10S",
+		"PlannedEndDate": "/Date(1614419200000)/",
+		"PlannedEndTime": "PT06H00M14S",
+		"PeriodType": "/Date(1613327400000)/",
+		"ProcessingStatus": 20,
+		"ProcessingStatusText": "Due",
+		"MaterialStatus": 20,
+		"MaterialStatusKey": "MANC",
+		"MaterialStatusCode": "I0420",
+		"MaterialStatusText": "Material Availability Not Checked",
+		"HasError": "",
+		"HasErrorDescription": "No Information Available",
+		"AuthorizationGroup": "",
+		"MaintenancePlant": "",
+		"ControllingArea": "0001",
+		"ResponsibleCostCenter": "",
+		"OpBscEndDateConstraintType": "",
+		"OpBscStartDateConstraintType": "",
+		"OrderOperationIsExpanded": "leaf",
+		"OrderOperationParentRowID": "00000401884300000000",
+		"OrderOperationRowID": "0000040188430040",
+		"OrderOperationRowLevel": 1,
+		"OrderOperationStartDateTime": "/Date(1613987210000+0000)/",
+		"OrderOperationEndDateTime": "/Date(1614009210000+0000)/",
+		"OrderOpEndConstraintDateTime": "",
+		"OrderOpStartConstraintDateTime": "",
+		"OrderStartDateTime": "/Date(1613900810000+0000)/",
+		"OrderEndDateTime": "/Date(1614440814000+0000)/",
+		"MainWorkCenter": "RSH_JS02",
+		"MainWorkCenterPlant": "0001",
+		"OpErlstSchedldExecStrtDte": "/Date(1613900800000)/",
+		"OpErlstSchedldExecEndDte": "/Date(1614419200000)/",
+		"OpLtstSchedldExecStrtDte": "/Date(1613900800000)/",
+		"OpLtstSchedldExecEndDte": "/Date(1614419200000)/",
+		"SchedulingIsPerformedBackward": "",
+		"SchedulingType": "5",
+		"HasCrossOrderRelationship": "",
+		"MaintObjectEquipmentID": "",
+		"MaintObjectFunctionalLocID": "",
+		"OpMaintObjectFunctionalLocID": "",
+		"OpMaintObjectEquipmentID": "",
+		"OperationIsOnCriticalPath": "X",
+		"OperationIsOnCriticalPathText": "Yes",
+		"LatestAcceptableCompletionDate": "/Date(1614419200000)/",
+		"MaintOrdProcessPhaseCode": "01",
+		"MaintOrdProcessPhaseDesc": "Phase 1",
+		"MaintOrdProcessSubPhaseCode": "0001",
+		"MaintOrdProcessSubPhaseDesc": "Subphase 1",
+		"MaintOrdOpProcessPhaseCode": "01",
+		"MaintOrdOpProcessPhaseDesc": "Op Phase 1",
+		"MaintOrdOpProcessSubPhaseCode": "0001",
+		"MaintOrdOpProcessSubPhaseDesc": "Op Subphase 1",
+		"OperationTechnicalObject": "",
+		"OperationTechnicalObjectLabel": "",
+		"OperationTechnicalObjectDesc": "",
+		"OperationEquipment": "",
+		"OperationEquipmentName": "",
+		"OpEquipmentInternalNumber": "",
+		"OperationFunctionalLocation": "",
+		"OpFunctionalLocationName": "",
+		"RelevantOperationFuncLocation": "",
+		"OpTechObjEquipOrFuncnlLoc": "",
+		"OpTechObjEquipOrFuncnlLocDesc": "",
+		"ConcatenatedOrderPhaseCtrlText": "",
+		"ConcatenatedOrdOpPhaseCtrlText": "",
+		"MaintenancePhaseControlText": "",
+		"BasicSchedulingType": "1",
+		"OrdIsNotSchedldAutomatically": false,
+		"StartDate": "",
+		"EndDate": "",
+		"Project": "",
+		"WBSElement": "",
+		"ActualWorkQuantity": "",
+		"RemainingWorkQuantity": "",
+		"OpActualExecutionStartDateTime": null,
+		"OpActualExecutionEndDateTime": null,
+		"MaintenancePlanningPlant": "1010",
+		"NumberOfAssignedPersons": "0",
+		"ConcatenatedAssignedPersonsTxt": "",
+		"AssignedMaintOpStartDateTime": null,
+		"AssignedMaintOpEndDateTime": null,
+		"MaintOpIsAssignedToPeople": "",
+		"AssignedPerson": "",
+		"OrderSystemConditionText": "",
+		"TechnicalObjectDescription": "Plant Air System",
+		"TechnicalObject": "",
+		"TechnicalObjectLabel": "",
+		"TechObjIsEquipOrFuncnlLocDesc": "Functional Location",
+		"TechObjIsEquipOrFuncnlLoc": "",
+		"MaintOrderProcessingContext": "M",
+		"MaintOrdProcessingContextText": "Minor Work Order",
+		"MaintOpSchedCriticalityCode": 1,
+		"MaintOpExecutionStageName": "MAIN",
+		"MaintOrdCompAvailyCritltyCode": 0,
+		"MaintOpCompAvailyCritltyCode": 0,
+		"MaintOrdSchedCriticalityCode": 1,
+		"MaintOrdStatusCriticalityCode": 0,
+		"MaintOpStatusCriticalityCode": 0,
+		"ServiceDocument": "",
+		"MaintPlanningBucketUUID": "",
+		"MaintPlngBucketLabel": "",
+		"ServiceDocumentDescription": "",
+		"ServiceDocumentItem": "",
+		"ServiceDocumentItemDescription": "",
+		"ServiceDocumentType": "",
+		"SoldToParty": "",
+		"BusinessPartnerFullName": "",
+		"to_OperationDetails": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0040.3~')/to_OperationDetails"
+			}
+		},
+		"to_ActivityTypeVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0040.3~')/to_ActivityTypeVH"
+			}
+		},
+		"to_EquipmentVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0040.3~')/to_EquipmentVH"
+			}
+		},
+		"to_FunctionalLocationVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0040.3~')/to_FunctionalLocationVH"
+			}
+		},
+		"to_HasErrorVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0040.3~')/to_HasErrorVH"
+			}
+		},
+		"to_HasLongTextVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0040.3~')/to_HasLongTextVH"
+			}
+		},
+		"to_MaintenanceOrderOperationVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0040.3~')/to_MaintenanceOrderOperationVH"
+			}
+		},
+		"to_MaintenanceOrderVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0040.3~')/to_MaintenanceOrderVH"
+			}
+		},
+		"to_MaintOrderTypeVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0040.3~')/to_MaintOrderTypeVH"
+			}
+		},
+		"to_MaterialStatusVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0040.3~')/to_MaterialStatusVH"
+			}
+		},
+		"to_MyWorkCenterVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0040.3~')/to_MyWorkCenterVH"
+			}
+		},
+		"to_UtilIndicator": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0040.3~')/to_UtilIndicator"
+			}
+		},
+		"to_OperationActiveStatus": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0040.3~')/to_OperationActiveStatus"
+			}
+		},
+		"to_OrderActiveStatus": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0040.3~')/to_OrderActiveStatus"
+			}
+		},
+		"to_OrderDetails": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0040.3~')/to_OrderDetails"
+			}
+		},
+		"to_PriorityVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0040.3~')/to_PriorityVH"
+			}
+		},
+		"to_ProcessingStatusVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0040.3~')/to_ProcessingStatusVH"
+			},
+			"to_Validation": {
+				"__deferred": {
+					"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0040.3~')/to_Validation"
+				}
+			}
+		},
+		"SalesOrganization": "",
+		"SalesOrganizationName": "",
+		"Product": "",
+		"ProductName": "",
+		"ScheduledBasicStartDateTime": "/Date(1740463200000+0000)/",
+		"ScheduledBasicEndDateTime": "/Date(1740463200000+0000)/"
+	},
+	{
+		"__metadata": {
+			"id": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0050.3~')",
+			"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0050.3~')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType"
+		},
+		"ID": ".1~000004018843.2~0050.3~",
+		"MaintSchedSimlnUUID": "",
+		"MaintSchedSimlnDescription": "",
+		"FirstMaintSchedSimulation": "",
+		"NumberOfMaintSchedSimulations": 0,
+		"MaintenanceOrder": "4018843",
+		"MaintenanceOrderOperation": "0050",
+		"MaintenanceOrderSubOperation": "",
+		"MaintenanceOrderInternalID": "OR000004018843",
+		"MaintOrderOperationInternalID": "OV100002662400000006",
+		"MaintOrderRoutingNumber": "1000184143",
+		"MaintOrderOperationCounter": "9",
+		"OperationDescription": "0050 operation",
+		"MaintenanceOrderDesc": "operation description 50",
+		"OrderType": "PM01",
+		"MaintenanceActivityType": "001",
+		"MaintenanceActivityTypeName": "Inspection",
+		"MaintOrdBasicStartDate": "/Date(1613296000000)/",
+		"MaintOrdBasicEndDate": "/Date(1614419200000)/",
+		"MaintPriority": "4",
+		"MaintPriorityDesc": "4-Low",
+		"OperationHasLongText": "",
+		"OperationHasLongTextDesc": "No",
+		"MaintenanceNotification": "10028423",
+		"NotificationText": "PM Order",
+		"Equipment": "",
+		"EquipmentName": "",
+		"EquipmentInternalNumber": "",
+		"TechObjTypeForEquipment": "EAMS_EQUI",
+		"FunctionalLocation": "",
+		"FunctionalLocationName": "",
+		"RelevantFunctionalLocation": "",
+		"TechObjTypeForFuncnlLocation": "EAMS_FL",
+		"MaintenancePlannerGroup": "",
+		"MaintenanceRevision": "",
+		"OperationSystemCondition": "",
+		"OperationSystemConditionText": "",
+		"AssetRoom": "",
+		"AssetLocation": "",
+		"PlantSection": "",
+		"MaintenancePlan": "",
+		"SuperiorProjectNetwork": "",
+		"OperationControlKey": "PM01",
+		"OperationPersonResponsible": "00000000",
+		"OperationPersonRespName": "person name",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"Plant": "",
+		"OperationDuration": "10.0",
+		"OperationDurationUnit": "H",
+		"OperationPlannedWork": "10.0",
+		"OperationPlannedWorkUnit": "H",
+		"NumberOfCapacities": 1,
+		"PlannedStartDate": "/Date(1613900800000)/",
+		"PlannedStartTime": "PT00H00M10S",
+		"PlannedEndDate": "/Date(1614419200000)/",
+		"PlannedEndTime": "PT06H00M14S",
+		"PeriodType": "/Date(1613327400000)/",
+		"ProcessingStatus": 20,
+		"ProcessingStatusText": "Due",
+		"MaterialStatus": 20,
+		"MaterialStatusKey": "MANC",
+		"MaterialStatusCode": "I0420",
+		"MaterialStatusText": "Material Availability Not Checked",
+		"HasError": "",
+		"HasErrorDescription": "No Information Available",
+		"AuthorizationGroup": "",
+		"MaintenancePlant": "",
+		"ControllingArea": "0001",
+		"ResponsibleCostCenter": "",
+		"OpBscEndDateConstraintType": "",
+		"OpBscStartDateConstraintType": "1",
+		"OrderOperationIsExpanded": "leaf",
+		"OrderOperationParentRowID": "00000401884300000000",
+		"OrderOperationRowID": "0000040188430050",
+		"OrderOperationRowLevel": 1,
+		"OrderOperationStartDateTime": "/Date(1613900810000+0000)/",
+		"OrderOperationEndDateTime": "/Date(1614440814000+0000)/",
+		"OrderOpEndConstraintDateTime": "",
+		"OrderOpStartConstraintDateTime": "/Date(1613900810000+0000)/",
+		"OrderStartDateTime": "/Date(1613900810000+0000)/",
+		"OrderEndDateTime": "/Date(1614440814000+0000)/",
+		"MainWorkCenter": "RSH_JS02",
+		"MainWorkCenterPlant": "0001",
+		"OpErlstSchedldExecStrtDte": "/Date(1613900800000)/",
+		"OpErlstSchedldExecEndDte": "/Date(1614419200000)/",
+		"OpLtstSchedldExecStrtDte": "/Date(1613900800000)/",
+		"OpLtstSchedldExecEndDte": "/Date(1614419200000)/",
+		"SchedulingIsPerformedBackward": "",
+		"SchedulingType": "5",
+		"HasCrossOrderRelationship": "",
+		"MaintObjectEquipmentID": "",
+		"MaintObjectFunctionalLocID": "",
+		"OpMaintObjectFunctionalLocID": "",
+		"OpMaintObjectEquipmentID": "",
+		"OperationIsOnCriticalPath": "X",
+		"OperationIsOnCriticalPathText": "Yes",
+		"LatestAcceptableCompletionDate": "/Date(1614419200000)/",
+		"MaintOrdProcessPhaseCode": "01",
+		"MaintOrdProcessPhaseDesc": "Phase 1",
+		"MaintOrdProcessSubPhaseCode": "0001",
+		"MaintOrdProcessSubPhaseDesc": "Subphase 1",
+		"MaintOrdOpProcessPhaseCode": "01",
+		"MaintOrdOpProcessPhaseDesc": "Op Phase 1",
+		"MaintOrdOpProcessSubPhaseCode": "0001",
+		"MaintOrdOpProcessSubPhaseDesc": "Op Subphase 1",
+		"OperationTechnicalObject": "",
+		"OperationTechnicalObjectLabel": "",
+		"OperationTechnicalObjectDesc": "",
+		"OperationEquipment": "",
+		"OperationEquipmentName": "",
+		"OpEquipmentInternalNumber": "",
+		"OperationFunctionalLocation": "",
+		"OpFunctionalLocationName": "",
+		"RelevantOperationFuncLocation": "",
+		"OpTechObjEquipOrFuncnlLoc": "",
+		"OpTechObjEquipOrFuncnlLocDesc": "",
+		"ConcatenatedOrderPhaseCtrlText": "",
+		"ConcatenatedOrdOpPhaseCtrlText": "",
+		"MaintenancePhaseControlText": "",
+		"BasicSchedulingType": "1",
+		"OrdIsNotSchedldAutomatically": false,
+		"StartDate": "",
+		"EndDate": "",
+		"Project": "",
+		"WBSElement": "",
+		"ActualWorkQuantity": "",
+		"RemainingWorkQuantity": "",
+		"OpActualExecutionStartDateTime": null,
+		"OpActualExecutionEndDateTime": null,
+		"MaintenancePlanningPlant": "1010",
+		"NumberOfAssignedPersons": "0",
+		"ConcatenatedAssignedPersonsTxt": "",
+		"AssignedMaintOpStartDateTime": null,
+		"AssignedMaintOpEndDateTime": null,
+		"MaintOpIsAssignedToPeople": "",
+		"AssignedPerson": "",
+		"OrderSystemConditionText": "",
+		"TechnicalObjectDescription": "Plant Air System",
+		"TechnicalObject": "",
+		"TechnicalObjectLabel": "",
+		"TechObjIsEquipOrFuncnlLocDesc": "Functional Location",
+		"TechObjIsEquipOrFuncnlLoc": "",
+		"MaintOrderProcessingContext": "M",
+		"MaintOrdProcessingContextText": "Minor Work Order",
+		"MaintOpSchedCriticalityCode": 1,
+		"MaintOpExecutionStageName": "MAIN",
+		"MaintOrdCompAvailyCritltyCode": 0,
+		"MaintOpCompAvailyCritltyCode": 0,
+		"MaintOrdSchedCriticalityCode": 1,
+		"MaintOrdStatusCriticalityCode": 0,
+		"MaintOpStatusCriticalityCode": 0,
+		"ServiceDocument": "",
+		"MaintPlanningBucketUUID": "",
+		"MaintPlngBucketLabel": "",
+		"ServiceDocumentDescription": "",
+		"ServiceDocumentItem": "",
+		"ServiceDocumentItemDescription": "",
+		"ServiceDocumentType": "",
+		"SoldToParty": "",
+		"BusinessPartnerFullName": "",
+		"to_OperationDetails": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0050.3~')/to_OperationDetails"
+			}
+		},
+		"to_ActivityTypeVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0050.3~')/to_ActivityTypeVH"
+			}
+		},
+		"to_EquipmentVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0050.3~')/to_EquipmentVH"
+			}
+		},
+		"to_FunctionalLocationVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0050.3~')/to_FunctionalLocationVH"
+			}
+		},
+		"to_HasErrorVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0050.3~')/to_HasErrorVH"
+			}
+		},
+		"to_HasLongTextVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0050.3~')/to_HasLongTextVH"
+			}
+		},
+		"to_MaintenanceOrderOperationVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0050.3~')/to_MaintenanceOrderOperationVH"
+			}
+		},
+		"to_MaintenanceOrderVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0050.3~')/to_MaintenanceOrderVH"
+			}
+		},
+		"to_MaintOrderTypeVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0050.3~')/to_MaintOrderTypeVH"
+			}
+		},
+		"to_MaterialStatusVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0050.3~')/to_MaterialStatusVH"
+			}
+		},
+		"to_MyWorkCenterVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0050.3~')/to_MyWorkCenterVH"
+			}
+		},
+		"to_UtilIndicator": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0050.3~')/to_UtilIndicator"
+			}
+		},
+		"to_OperationActiveStatus": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0050.3~')/to_OperationActiveStatus"
+			}
+		},
+		"to_OrderActiveStatus": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0050.3~')/to_OrderActiveStatus"
+			}
+		},
+		"to_OrderDetails": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0050.3~')/to_OrderDetails"
+			}
+		},
+		"to_PriorityVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0050.3~')/to_PriorityVH"
+			}
+		},
+		"to_ProcessingStatusVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0050.3~')/to_ProcessingStatusVH"
+			},
+			"to_Validation": {
+				"__deferred": {
+					"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0050.3~')/to_Validation"
+				}
+			}
+		},
+		"SalesOrganization": "",
+		"SalesOrganizationName": "",
+		"Product": "",
+		"ProductName": "",
+		"ScheduledBasicStartDateTime": "/Date(1740463200000+0000)/",
+		"ScheduledBasicEndDateTime": "/Date(1740463200000+0000)/"
+	},
+	{
+		"__metadata": {
+			"id": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0060.3~')",
+			"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0060.3~')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType"
+		},
+		"ID": ".1~000004018843.2~0060.3~",
+		"MaintSchedSimlnUUID": "",
+		"MaintSchedSimlnDescription": "",
+		"FirstMaintSchedSimulation": "",
+		"NumberOfMaintSchedSimulations": 0,
+		"MaintenanceOrder": "4018843",
+		"MaintenanceOrderOperation": "0060",
+		"MaintenanceOrderSubOperation": "",
+		"MaintenanceOrderInternalID": "OR000004018843",
+		"MaintOrderOperationInternalID": "OV100002662400000007",
+		"MaintOrderRoutingNumber": "1000184143",
+		"MaintOrderOperationCounter": "9",
+		"OperationDescription": "0060 operation",
+		"MaintenanceOrderDesc": "operation description 60",
+		"OrderType": "PM01",
+		"MaintenanceActivityType": "001",
+		"MaintenanceActivityTypeName": "Inspection",
+		"MaintOrdBasicStartDate": "/Date(1613296000000)/",
+		"MaintOrdBasicEndDate": "/Date(1614419200000)/",
+		"MaintPriority": "4",
+		"MaintPriorityDesc": "4-Low",
+		"OperationHasLongText": "",
+		"OperationHasLongTextDesc": "No",
+		"MaintenanceNotification": "10028423",
+		"NotificationText": "PM Order",
+		"Equipment": "",
+		"EquipmentName": "",
+		"EquipmentInternalNumber": "",
+		"TechObjTypeForEquipment": "EAMS_EQUI",
+		"FunctionalLocation": "",
+		"FunctionalLocationName": "",
+		"RelevantFunctionalLocation": "",
+		"TechObjTypeForFuncnlLocation": "EAMS_FL",
+		"MaintenancePlannerGroup": "",
+		"MaintenanceRevision": "",
+		"OperationSystemCondition": "",
+		"OperationSystemConditionText": "",
+		"AssetRoom": "",
+		"AssetLocation": "",
+		"PlantSection": "",
+		"MaintenancePlan": "",
+		"SuperiorProjectNetwork": "",
+		"OperationControlKey": "PM01",
+		"OperationPersonResponsible": "00000000",
+		"OperationPersonRespName": "person name",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"Plant": "",
+		"OperationDuration": "10.0",
+		"OperationDurationUnit": "H",
+		"OperationPlannedWork": "10.0",
+		"OperationPlannedWorkUnit": "H",
+		"NumberOfCapacities": 1,
+		"PlannedStartDate": "/Date(1613900800000)/",
+		"PlannedStartTime": "PT00H00M10S",
+		"PlannedEndDate": "/Date(1614419200000)/",
+		"PlannedEndTime": "PT06H00M14S",
+		"PeriodType": "/Date(1613327400000)/",
+		"ProcessingStatus": 40,
+		"ProcessingStatusText": "In Process",
+		"MaterialStatus": 20,
+		"MaterialStatusKey": "MANC",
+		"MaterialStatusCode": "I0420",
+		"MaterialStatusText": "Material Availability Not Checked",
+		"HasError": "X",
+		"HasErrorDescription": "No Information Available",
+		"AuthorizationGroup": "",
+		"MaintenancePlant": "",
+		"ControllingArea": "0001",
+		"ResponsibleCostCenter": "",
+		"OpBscEndDateConstraintType": "",
+		"OpBscStartDateConstraintType": "",
+		"OrderOperationIsExpanded": "leaf",
+		"OrderOperationParentRowID": "00000401884300000000",
+		"OrderOperationRowID": "0000040188430060",
+		"OrderOperationRowLevel": 1,
+		"OrderOperationStartDateTime": "/Date(1613900810000+0000)/",
+		"OrderOperationEndDateTime": "/Date(1614440814000+0000)/",
+		"OrderOpEndConstraintDateTime": "",
+		"OrderOpStartConstraintDateTime": "",
+		"OrderStartDateTime": "/Date(1613900810000+0000)/",
+		"OrderEndDateTime": "/Date(1614440814000+0000)/",
+		"MainWorkCenter": "RSH_JS02",
+		"MainWorkCenterPlant": "0001",
+		"OpErlstSchedldExecStrtDte": "/Date(1613900800000)/",
+		"OpErlstSchedldExecEndDte": "/Date(1614419200000)/",
+		"OpLtstSchedldExecStrtDte": "/Date(1613900800000)/",
+		"OpLtstSchedldExecEndDte": "/Date(1614419200000)/",
+		"SchedulingIsPerformedBackward": "",
+		"SchedulingType": "5",
+		"HasCrossOrderRelationship": "",
+		"MaintObjectEquipmentID": "",
+		"MaintObjectFunctionalLocID": "",
+		"OpMaintObjectFunctionalLocID": "",
+		"OpMaintObjectEquipmentID": "",
+		"OperationIsOnCriticalPath": "X",
+		"OperationIsOnCriticalPathText": "Yes",
+		"LatestAcceptableCompletionDate": "/Date(1614419200000)/",
+		"MaintOrdProcessPhaseCode": "01",
+		"MaintOrdProcessPhaseDesc": "Phase 1",
+		"MaintOrdProcessSubPhaseCode": "0001",
+		"MaintOrdProcessSubPhaseDesc": "Subphase 1",
+		"MaintOrdOpProcessPhaseCode": "01",
+		"MaintOrdOpProcessPhaseDesc": "Op Phase 1",
+		"MaintOrdOpProcessSubPhaseCode": "0001",
+		"MaintOrdOpProcessSubPhaseDesc": "Op Subphase 1",
+		"OperationTechnicalObject": "",
+		"OperationTechnicalObjectLabel": "",
+		"OperationTechnicalObjectDesc": "",
+		"OperationEquipment": "",
+		"OperationEquipmentName": "",
+		"OpEquipmentInternalNumber": "",
+		"OperationFunctionalLocation": "",
+		"OpFunctionalLocationName": "",
+		"RelevantOperationFuncLocation": "",
+		"OpTechObjEquipOrFuncnlLoc": "",
+		"OpTechObjEquipOrFuncnlLocDesc": "",
+		"ConcatenatedOrderPhaseCtrlText": "",
+		"ConcatenatedOrdOpPhaseCtrlText": "",
+		"MaintenancePhaseControlText": "",
+		"BasicSchedulingType": "1",
+		"OrdIsNotSchedldAutomatically": false,
+		"StartDate": "",
+		"EndDate": "",
+		"Project": "",
+		"WBSElement": "",
+		"ActualWorkQuantity": "",
+		"RemainingWorkQuantity": "",
+		"OpActualExecutionStartDateTime": null,
+		"OpActualExecutionEndDateTime": null,
+		"MaintenancePlanningPlant": "1010",
+		"NumberOfAssignedPersons": "1",
+		"ConcatenatedAssignedPersonsTxt": "Simon Miller",
+		"AssignedMaintOpStartDateTime": "/Date(1613900810000+0000)/",
+		"AssignedMaintOpEndDateTime": "/Date(1614440814000+0000)/",
+		"MaintOpIsAssignedToPeople": "",
+		"AssignedPerson": "",
+		"OrderSystemConditionText": "",
+		"TechnicalObjectDescription": "Plant Air System",
+		"TechnicalObject": "",
+		"TechnicalObjectLabel": "",
+		"TechObjIsEquipOrFuncnlLocDesc": "Functional Location",
+		"TechObjIsEquipOrFuncnlLoc": "",
+		"MaintOrderProcessingContext": "MS",
+		"MaintOrdProcessingContextText": "Order for Minor Work with Screening",
+		"MaintOpSchedCriticalityCode": 1,
+		"MaintOpExecutionStageName": "MAIN",
+		"MaintOrdCompAvailyCritltyCode": 0,
+		"MaintOpCompAvailyCritltyCode": 0,
+		"MaintOrdSchedCriticalityCode": 1,
+		"MaintOrdStatusCriticalityCode": 0,
+		"MaintOpStatusCriticalityCode": 0,
+		"ServiceDocument": "",
+		"MaintPlanningBucketUUID": "",
+		"MaintPlngBucketLabel": "",
+		"ServiceDocumentDescription": "",
+		"ServiceDocumentItem": "",
+		"ServiceDocumentItemDescription": "",
+		"ServiceDocumentType": "",
+		"SoldToParty": "",
+		"BusinessPartnerFullName": "",
+		"to_OperationDetails": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0060.3~')/to_OperationDetails"
+			}
+		},
+		"to_ActivityTypeVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0060.3~')/to_ActivityTypeVH"
+			}
+		},
+		"to_EquipmentVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0060.3~')/to_EquipmentVH"
+			}
+		},
+		"to_FunctionalLocationVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0060.3~')/to_FunctionalLocationVH"
+			}
+		},
+		"to_HasErrorVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0060.3~')/to_HasErrorVH"
+			}
+		},
+		"to_HasLongTextVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0060.3~')/to_HasLongTextVH"
+			}
+		},
+		"to_MaintenanceOrderOperationVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0060.3~')/to_MaintenanceOrderOperationVH"
+			}
+		},
+		"to_MaintenanceOrderVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0060.3~')/to_MaintenanceOrderVH"
+			}
+		},
+		"to_MaintOrderTypeVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0060.3~')/to_MaintOrderTypeVH"
+			}
+		},
+		"to_MaterialStatusVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0060.3~')/to_MaterialStatusVH"
+			}
+		},
+		"to_MyWorkCenterVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0060.3~')/to_MyWorkCenterVH"
+			}
+		},
+		"to_UtilIndicator": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0060.3~')/to_UtilIndicator"
+			}
+		},
+		"to_OperationActiveStatus": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0060.3~')/to_OperationActiveStatus"
+			}
+		},
+		"to_OrderActiveStatus": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0060.3~')/to_OrderActiveStatus"
+			}
+		},
+		"to_OrderDetails": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0060.3~')/to_OrderDetails"
+			}
+		},
+		"to_PriorityVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0060.3~')/to_PriorityVH"
+			}
+		},
+		"to_ProcessingStatusVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0060.3~')/to_ProcessingStatusVH"
+			},
+			"to_Validation": {
+				"__deferred": {
+					"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0060.3~')/to_Validation"
+				}
+			}
+		},
+		"SalesOrganization": "",
+		"SalesOrganizationName": "",
+		"Product": "",
+		"ProductName": "",
+		"ScheduledBasicStartDateTime": "/Date(1740463200000+0000)/",
+		"ScheduledBasicEndDateTime": "/Date(1740463200000+0000)/"
+	},
+	{
+		"__metadata": {
+			"id": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0070.3~')",
+			"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0070.3~')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType"
+		},
+		"ID": ".1~000004018843.2~0070.3~",
+		"MaintSchedSimlnUUID": "",
+		"MaintSchedSimlnDescription": "",
+		"FirstMaintSchedSimulation": "",
+		"NumberOfMaintSchedSimulations": 0,
+		"MaintenanceOrder": "4018843",
+		"MaintenanceOrderOperation": "0070",
+		"MaintenanceOrderSubOperation": "",
+		"MaintenanceOrderInternalID": "OR000004018843",
+		"MaintOrderOperationInternalID": "OV100002662400000008",
+		"MaintOrderRoutingNumber": "1000184143",
+		"MaintOrderOperationCounter": "9",
+		"OperationDescription": "0070 operation",
+		"MaintenanceOrderDesc": "operation description 70",
+		"OrderType": "PM01",
+		"MaintenanceActivityType": "001",
+		"MaintenanceActivityTypeName": "Inspection",
+		"MaintOrdBasicStartDate": "/Date(1613296000000)/",
+		"MaintOrdBasicEndDate": "/Date(1614419200000)/",
+		"MaintPriority": "4",
+		"MaintPriorityDesc": "4-Low",
+		"OperationHasLongText": "",
+		"OperationHasLongTextDesc": "No",
+		"MaintenanceNotification": "10028423",
+		"NotificationText": "PM Order",
+		"Equipment": "",
+		"EquipmentName": "",
+		"EquipmentInternalNumber": "",
+		"TechObjTypeForEquipment": "EAMS_EQUI",
+		"FunctionalLocation": "",
+		"FunctionalLocationName": "",
+		"RelevantFunctionalLocation": "",
+		"TechObjTypeForFuncnlLocation": "EAMS_FL",
+		"MaintenancePlannerGroup": "",
+		"MaintenanceRevision": "",
+		"OperationSystemCondition": "",
+		"OperationSystemConditionText": "",
+		"AssetRoom": "",
+		"AssetLocation": "",
+		"PlantSection": "",
+		"MaintenancePlan": "",
+		"SuperiorProjectNetwork": "",
+		"OperationControlKey": "PM01",
+		"OperationPersonResponsible": "00000000",
+		"OperationPersonRespName": "person name",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"Plant": "",
+		"OperationDuration": "10.0",
+		"OperationDurationUnit": "H",
+		"OperationPlannedWork": "10.0",
+		"OperationPlannedWorkUnit": "H",
+		"NumberOfCapacities": 1,
+		"PlannedStartDate": "/Date(1613900800000)/",
+		"PlannedStartTime": "PT00H00M10S",
+		"PlannedEndDate": "/Date(1614419200000)/",
+		"PlannedEndTime": "PT06H00M14S",
+		"PeriodType": "/Date(1613327400000)/",
+		"ProcessingStatus": 30,
+		"ProcessingStatusText": "Dispatched",
+		"MaterialStatus": 20,
+		"MaterialStatusKey": "MANC",
+		"MaterialStatusCode": "I0420",
+		"MaterialStatusText": "Material Availability Not Checked",
+		"HasError": "",
+		"HasErrorDescription": "No Information Available",
+		"AuthorizationGroup": "",
+		"MaintenancePlant": "",
+		"ControllingArea": "0001",
+		"ResponsibleCostCenter": "",
+		"OpBscEndDateConstraintType": "",
+		"OpBscStartDateConstraintType": "1",
+		"OrderOperationIsExpanded": "leaf",
+		"OrderOperationParentRowID": "00000401884300000000",
+		"OrderOperationRowID": "0000040188430070",
+		"OrderOperationRowLevel": 1,
+		"OrderOperationStartDateTime": "/Date(1613900810000+0000)/",
+		"OrderOperationEndDateTime": "/Date(1614440814000+0000)/",
+		"OrderOpEndConstraintDateTime": "",
+		"OrderOpStartConstraintDateTime": "/Date(1613900810000+0000)/",
+		"OrderStartDateTime": "/Date(1613900810000+0000)/",
+		"OrderEndDateTime": "/Date(1614440814000+0000)/",
+		"MainWorkCenter": "RSH_JS02",
+		"MainWorkCenterPlant": "0001",
+		"OpErlstSchedldExecStrtDte": "/Date(1613900800000)/",
+		"OpErlstSchedldExecEndDte": "/Date(1614419200000)/",
+		"OpLtstSchedldExecStrtDte": "/Date(1613900800000)/",
+		"OpLtstSchedldExecEndDte": "/Date(1614419200000)/",
+		"SchedulingIsPerformedBackward": "",
+		"SchedulingType": "5",
+		"HasCrossOrderRelationship": "",
+		"MaintObjectEquipmentID": "",
+		"MaintObjectFunctionalLocID": "",
+		"OpMaintObjectFunctionalLocID": "",
+		"OpMaintObjectEquipmentID": "",
+		"OperationIsOnCriticalPath": "X",
+		"OperationIsOnCriticalPathText": "Yes",
+		"LatestAcceptableCompletionDate": "/Date(1614419200000)/",
+		"MaintOrdProcessPhaseCode": "01",
+		"MaintOrdProcessPhaseDesc": "Phase 1",
+		"MaintOrdProcessSubPhaseCode": "0001",
+		"MaintOrdProcessSubPhaseDesc": "Subphase 1",
+		"MaintOrdOpProcessPhaseCode": "01",
+		"MaintOrdOpProcessPhaseDesc": "Op Phase 1",
+		"MaintOrdOpProcessSubPhaseCode": "0001",
+		"MaintOrdOpProcessSubPhaseDesc": "Op Subphase 1",
+		"OperationTechnicalObject": "",
+		"OperationTechnicalObjectLabel": "",
+		"OperationTechnicalObjectDesc": "",
+		"OperationEquipment": "",
+		"OperationEquipmentName": "",
+		"OpEquipmentInternalNumber": "",
+		"OperationFunctionalLocation": "",
+		"OpFunctionalLocationName": "",
+		"RelevantOperationFuncLocation": "",
+		"OpTechObjEquipOrFuncnlLoc": "",
+		"OpTechObjEquipOrFuncnlLocDesc": "",
+		"ConcatenatedOrderPhaseCtrlText": "",
+		"ConcatenatedOrdOpPhaseCtrlText": "",
+		"MaintenancePhaseControlText": "",
+		"BasicSchedulingType": "1",
+		"OrdIsNotSchedldAutomatically": false,
+		"StartDate": "",
+		"EndDate": "",
+		"Project": "",
+		"WBSElement": "",
+		"ActualWorkQuantity": "",
+		"RemainingWorkQuantity": "",
+		"OpActualExecutionStartDateTime": null,
+		"OpActualExecutionEndDateTime": null,
+		"MaintenancePlanningPlant": "1010",
+		"NumberOfAssignedPersons": "0",
+		"ConcatenatedAssignedPersonsTxt": "",
+		"AssignedMaintOpStartDateTime": null,
+		"AssignedMaintOpEndDateTime": null,
+		"MaintOpIsAssignedToPeople": "",
+		"AssignedPerson": "",
+		"OrderSystemConditionText": "",
+		"TechnicalObjectDescription": "Plant Air System",
+		"TechnicalObject": "",
+		"TechnicalObjectLabel": "",
+		"TechObjIsEquipOrFuncnlLocDesc": "Functional Location",
+		"TechObjIsEquipOrFuncnlLoc": "",
+		"MaintOrderProcessingContext": "MS",
+		"MaintOrdProcessingContextText": "Order for Minor Work with Screening",
+		"MaintOpSchedCriticalityCode": 1,
+		"MaintOpExecutionStageName": "MAIN",
+		"MaintOrdCompAvailyCritltyCode": 0,
+		"MaintOpCompAvailyCritltyCode": 0,
+		"MaintOrdSchedCriticalityCode": 1,
+		"MaintOrdStatusCriticalityCode": 0,
+		"MaintOpStatusCriticalityCode": 0,
+		"ServiceDocument": "",
+		"MaintPlanningBucketUUID": "",
+		"MaintPlngBucketLabel": "",
+		"ServiceDocumentDescription": "",
+		"ServiceDocumentItem": "",
+		"ServiceDocumentItemDescription": "",
+		"ServiceDocumentType": "",
+		"SoldToParty": "",
+		"BusinessPartnerFullName": "",
+		"to_OperationDetails": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0070.3~')/to_OperationDetails"
+			}
+		},
+		"to_ActivityTypeVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0070.3~')/to_ActivityTypeVH"
+			}
+		},
+		"to_EquipmentVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0070.3~')/to_EquipmentVH"
+			}
+		},
+		"to_FunctionalLocationVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0070.3~')/to_FunctionalLocationVH"
+			}
+		},
+		"to_HasErrorVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0070.3~')/to_HasErrorVH"
+			}
+		},
+		"to_HasLongTextVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0070.3~')/to_HasLongTextVH"
+			}
+		},
+		"to_MaintenanceOrderOperationVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0070.3~')/to_MaintenanceOrderOperationVH"
+			}
+		},
+		"to_MaintenanceOrderVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0070.3~')/to_MaintenanceOrderVH"
+			}
+		},
+		"to_MaintOrderTypeVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0070.3~')/to_MaintOrderTypeVH"
+			}
+		},
+		"to_MaterialStatusVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0070.3~')/to_MaterialStatusVH"
+			}
+		},
+		"to_MyWorkCenterVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0070.3~')/to_MyWorkCenterVH"
+			}
+		},
+		"to_UtilIndicator": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0070.3~')/to_UtilIndicator"
+			}
+		},
+		"to_OperationActiveStatus": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0070.3~')/to_OperationActiveStatus"
+			}
+		},
+		"to_OrderActiveStatus": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0070.3~')/to_OrderActiveStatus"
+			}
+		},
+		"to_OrderDetails": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0070.3~')/to_OrderDetails"
+			}
+		},
+		"to_PriorityVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0070.3~')/to_PriorityVH"
+			}
+		},
+		"to_ProcessingStatusVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0070.3~')/to_ProcessingStatusVH"
+			},
+			"to_Validation": {
+				"__deferred": {
+					"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0070.3~')/to_Validation"
+				}
+			}
+		},
+		"SalesOrganization": "",
+		"SalesOrganizationName": "",
+		"Product": "",
+		"ProductName": "",
+		"ScheduledBasicStartDateTime": "/Date(1740463200000+0000)/",
+		"ScheduledBasicEndDateTime": "/Date(1740463200000+0000)/"
+	},
+	{
+		"__metadata": {
+			"id": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0080.3~')",
+			"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0080.3~')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType"
+		},
+		"ID": ".1~000004018843.2~0080.3~",
+		"MaintSchedSimlnUUID": "",
+		"MaintSchedSimlnDescription": "",
+		"FirstMaintSchedSimulation": "",
+		"NumberOfMaintSchedSimulations": 0,
+		"MaintenanceOrder": "4018843",
+		"MaintenanceOrderOperation": "0080",
+		"MaintenanceOrderSubOperation": "",
+		"MaintenanceOrderInternalID": "OR000004018843",
+		"MaintOrderOperationInternalID": "OV100002662400000009",
+		"MaintOrderRoutingNumber": "1000184143",
+		"MaintOrderOperationCounter": "9",
+		"OperationDescription": "0080 operation",
+		"MaintenanceOrderDesc": "operation description 80",
+		"OrderType": "PM01",
+		"MaintenanceActivityType": "001",
+		"MaintenanceActivityTypeName": "Inspection",
+		"MaintOrdBasicStartDate": "/Date(1613296000000)/",
+		"MaintOrdBasicEndDate": "/Date(1614419200000)/",
+		"MaintPriority": "4",
+		"MaintPriorityDesc": "4-Low",
+		"OperationHasLongText": "",
+		"OperationHasLongTextDesc": "No",
+		"MaintenanceNotification": "10028423",
+		"NotificationText": "PM Order",
+		"Equipment": "",
+		"EquipmentName": "",
+		"EquipmentInternalNumber": "",
+		"TechObjTypeForEquipment": "EAMS_EQUI",
+		"FunctionalLocation": "",
+		"FunctionalLocationName": "",
+		"RelevantFunctionalLocation": "",
+		"TechObjTypeForFuncnlLocation": "EAMS_FL",
+		"MaintenancePlannerGroup": "",
+		"MaintenanceRevision": "",
+		"OperationSystemCondition": "",
+		"OperationSystemConditionText": "",
+		"AssetRoom": "",
+		"AssetLocation": "",
+		"PlantSection": "",
+		"MaintenancePlan": "",
+		"SuperiorProjectNetwork": "",
+		"OperationControlKey": "PM01",
+		"OperationPersonResponsible": "00000000",
+		"OperationPersonRespName": "person name",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"Plant": "",
+		"OperationDuration": "10.0",
+		"OperationDurationUnit": "H",
+		"OperationPlannedWork": "10.0",
+		"OperationPlannedWorkUnit": "H",
+		"NumberOfCapacities": 1,
+		"PlannedStartDate": "/Date(1613900800000)/",
+		"PlannedStartTime": "PT00H00M10S",
+		"PlannedEndDate": "/Date(1614419200000)/",
+		"PlannedEndTime": "PT06H00M14S",
+		"PeriodType": "/Date(1613327400000)/",
+		"ProcessingStatus": 20,
+		"ProcessingStatusText": "Due",
+		"MaterialStatus": 20,
+		"MaterialStatusKey": "MANC",
+		"MaterialStatusCode": "I0420",
+		"MaterialStatusText": "Material Availability Not Checked",
+		"HasError": "",
+		"HasErrorDescription": "No Information Available",
+		"AuthorizationGroup": "",
+		"MaintenancePlant": "",
+		"ControllingArea": "0001",
+		"ResponsibleCostCenter": "",
+		"OpBscEndDateConstraintType": "",
+		"OpBscStartDateConstraintType": "",
+		"OrderOperationIsExpanded": "leaf",
+		"OrderOperationParentRowID": "00000401884300000000",
+		"OrderOperationRowID": "0000040188430080",
+		"OrderOperationRowLevel": 1,
+		"OrderOperationStartDateTime": "/Date(1613900810000+0000)/",
+		"OrderOperationEndDateTime": "/Date(1614440814000+0000)/",
+		"OrderOpEndConstraintDateTime": "",
+		"OrderOpStartConstraintDateTime": "",
+		"OrderStartDateTime": "/Date(1613900810000+0000)/",
+		"OrderEndDateTime": "/Date(1614440814000+0000)/",
+		"MainWorkCenter": "RSH_JS02",
+		"MainWorkCenterPlant": "0001",
+		"OpErlstSchedldExecStrtDte": "/Date(1613900800000)/",
+		"OpErlstSchedldExecEndDte": "/Date(1614419200000)/",
+		"OpLtstSchedldExecStrtDte": "/Date(1613900800000)/",
+		"OpLtstSchedldExecEndDte": "/Date(1614419200000)/",
+		"SchedulingIsPerformedBackward": "",
+		"SchedulingType": "5",
+		"HasCrossOrderRelationship": "",
+		"MaintObjectEquipmentID": "",
+		"MaintObjectFunctionalLocID": "",
+		"OpMaintObjectFunctionalLocID": "",
+		"OpMaintObjectEquipmentID": "",
+		"OperationIsOnCriticalPath": "X",
+		"OperationIsOnCriticalPathText": "Yes",
+		"LatestAcceptableCompletionDate": "/Date(1614419200000)/",
+		"MaintOrdProcessPhaseCode": "01",
+		"MaintOrdProcessPhaseDesc": "Phase 1",
+		"MaintOrdProcessSubPhaseCode": "0001",
+		"MaintOrdProcessSubPhaseDesc": "Subphase 1",
+		"MaintOrdOpProcessPhaseCode": "01",
+		"MaintOrdOpProcessPhaseDesc": "Op Phase 1",
+		"MaintOrdOpProcessSubPhaseCode": "0001",
+		"MaintOrdOpProcessSubPhaseDesc": "Op Subphase 1",
+		"OperationTechnicalObject": "",
+		"OperationTechnicalObjectLabel": "",
+		"OperationTechnicalObjectDesc": "",
+		"OperationEquipment": "",
+		"OperationEquipmentName": "",
+		"OpEquipmentInternalNumber": "",
+		"OperationFunctionalLocation": "",
+		"OpFunctionalLocationName": "",
+		"RelevantOperationFuncLocation": "",
+		"OpTechObjEquipOrFuncnlLoc": "",
+		"OpTechObjEquipOrFuncnlLocDesc": "",
+		"ConcatenatedOrderPhaseCtrlText": "",
+		"ConcatenatedOrdOpPhaseCtrlText": "",
+		"MaintenancePhaseControlText": "",
+		"BasicSchedulingType": "1",
+		"OrdIsNotSchedldAutomatically": false,
+		"StartDate": "",
+		"EndDate": "",
+		"Project": "",
+		"WBSElement": "",
+		"ActualWorkQuantity": "",
+		"RemainingWorkQuantity": "",
+		"OpActualExecutionStartDateTime": null,
+		"OpActualExecutionEndDateTime": null,
+		"MaintenancePlanningPlant": "1010",
+		"NumberOfAssignedPersons": "1",
+		"ConcatenatedAssignedPersonsTxt": "Patrick Johnson",
+		"AssignedMaintOpStartDateTime": "/Date(1613900810000+0000)/",
+		"AssignedMaintOpEndDateTime": "/Date(1614440814000+0000)/",
+		"MaintOpIsAssignedToPeople": "",
+		"AssignedPerson": "",
+		"OrderSystemConditionText": "",
+		"TechnicalObjectDescription": "Plant Air System",
+		"TechnicalObject": "",
+		"TechnicalObjectLabel": "",
+		"TechObjIsEquipOrFuncnlLocDesc": "Functional Location",
+		"TechObjIsEquipOrFuncnlLoc": "",
+		"MaintOrderProcessingContext": "MS",
+		"MaintOrdProcessingContextText": "Order for Minor Work with Screening",
+		"MaintOpSchedCriticalityCode": 1,
+		"MaintOpExecutionStageName": "MAIN",
+		"MaintOrdCompAvailyCritltyCode": 0,
+		"MaintOpCompAvailyCritltyCode": 0,
+		"MaintOrdSchedCriticalityCode": 1,
+		"MaintOrdStatusCriticalityCode": 0,
+		"MaintOpStatusCriticalityCode": 0,
+		"ServiceDocument": "",
+		"MaintPlanningBucketUUID": "",
+		"MaintPlngBucketLabel": "",
+		"ServiceDocumentDescription": "",
+		"ServiceDocumentItem": "",
+		"ServiceDocumentItemDescription": "",
+		"ServiceDocumentType": "",
+		"SoldToParty": "",
+		"BusinessPartnerFullName": "",
+		"to_OperationDetails": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0080.3~')/to_OperationDetails"
+			}
+		},
+		"to_ActivityTypeVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0080.3~')/to_ActivityTypeVH"
+			}
+		},
+		"to_EquipmentVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0080.3~')/to_EquipmentVH"
+			}
+		},
+		"to_FunctionalLocationVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0080.3~')/to_FunctionalLocationVH"
+			}
+		},
+		"to_HasErrorVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0080.3~')/to_HasErrorVH"
+			}
+		},
+		"to_HasLongTextVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0080.3~')/to_HasLongTextVH"
+			}
+		},
+		"to_MaintenanceOrderOperationVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0080.3~')/to_MaintenanceOrderOperationVH"
+			}
+		},
+		"to_MaintenanceOrderVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0080.3~')/to_MaintenanceOrderVH"
+			}
+		},
+		"to_MaintOrderTypeVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0080.3~')/to_MaintOrderTypeVH"
+			}
+		},
+		"to_MaterialStatusVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0080.3~')/to_MaterialStatusVH"
+			}
+		},
+		"to_MyWorkCenterVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0080.3~')/to_MyWorkCenterVH"
+			}
+		},
+		"to_UtilIndicator": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0080.3~')/to_UtilIndicator"
+			}
+		},
+		"to_OperationActiveStatus": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0080.3~')/to_OperationActiveStatus"
+			}
+		},
+		"to_OrderActiveStatus": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0080.3~')/to_OrderActiveStatus"
+			}
+		},
+		"to_OrderDetails": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0080.3~')/to_OrderDetails"
+			}
+		},
+		"to_PriorityVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0080.3~')/to_PriorityVH"
+			}
+		},
+		"to_ProcessingStatusVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0080.3~')/to_ProcessingStatusVH"
+			},
+			"to_Validation": {
+				"__deferred": {
+					"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0080.3~')/to_Validation"
+				}
+			}
+		},
+		"SalesOrganization": "",
+		"SalesOrganizationName": "",
+		"Product": "",
+		"ProductName": "",
+		"ScheduledBasicStartDateTime": "/Date(1740463200000+0000)/",
+		"ScheduledBasicEndDateTime": "/Date(1740463200000+0000)/"
+	},
+	{
+		"__metadata": {
+			"id": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0090.3~')",
+			"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0090.3~')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType"
+		},
+		"ID": ".1~000004018843.2~0090.3~",
+		"MaintSchedSimlnUUID": "",
+		"MaintSchedSimlnDescription": "",
+		"FirstMaintSchedSimulation": "",
+		"NumberOfMaintSchedSimulations": 0,
+		"MaintenanceOrder": "4018843",
+		"MaintenanceOrderOperation": "0090",
+		"MaintenanceOrderSubOperation": "",
+		"MaintenanceOrderInternalID": "OR000004018843",
+		"MaintOrderOperationInternalID": "OV100002662400000010",
+		"MaintOrderRoutingNumber": "1000184143",
+		"MaintOrderOperationCounter": "9",
+		"OperationDescription": "0090 operation",
+		"MaintenanceOrderDesc": "operation description 90",
+		"OrderType": "PM01",
+		"MaintenanceActivityType": "001",
+		"MaintenanceActivityTypeName": "Inspection",
+		"MaintOrdBasicStartDate": "/Date(1613296000000)/",
+		"MaintOrdBasicEndDate": "/Date(1614419200000)/",
+		"MaintPriority": "4",
+		"MaintPriorityDesc": "4-Low",
+		"OperationHasLongText": "",
+		"OperationHasLongTextDesc": "No",
+		"MaintenanceNotification": "10028423",
+		"NotificationText": "PM Order",
+		"Equipment": "",
+		"EquipmentName": "",
+		"EquipmentInternalNumber": "",
+		"TechObjTypeForEquipment": "EAMS_EQUI",
+		"FunctionalLocation": "",
+		"FunctionalLocationName": "",
+		"RelevantFunctionalLocation": "",
+		"TechObjTypeForFuncnlLocation": "EAMS_FL",
+		"MaintenancePlannerGroup": "",
+		"MaintenanceRevision": "",
+		"OperationSystemCondition": "",
+		"OperationSystemConditionText": "",
+		"AssetRoom": "",
+		"AssetLocation": "",
+		"PlantSection": "",
+		"MaintenancePlan": "",
+		"SuperiorProjectNetwork": "",
+		"OperationControlKey": "PM01",
+		"OperationPersonResponsible": "00000000",
+		"OperationPersonRespName": "person name",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"Plant": "",
+		"OperationDuration": "10.0",
+		"OperationDurationUnit": "H",
+		"OperationPlannedWork": "10.0",
+		"OperationPlannedWorkUnit": "H",
+		"NumberOfCapacities": 1,
+		"PlannedStartDate": "/Date(1613900800000)/",
+		"PlannedStartTime": "PT00H00M10S",
+		"PlannedEndDate": "/Date(1614419200000)/",
+		"PlannedEndTime": "PT06H00M14S",
+		"PeriodType": "/Date(1613327400000)/",
+		"ProcessingStatus": 30,
+		"ProcessingStatusText": "Dispatched",
+		"MaterialStatus": 20,
+		"MaterialStatusKey": "MANC",
+		"MaterialStatusCode": "I0420",
+		"MaterialStatusText": "Material Availability Not Checked",
+		"HasError": "",
+		"HasErrorDescription": "No Information Available",
+		"AuthorizationGroup": "",
+		"MaintenancePlant": "",
+		"ControllingArea": "0001",
+		"ResponsibleCostCenter": "",
+		"OpBscEndDateConstraintType": "",
+		"OpBscStartDateConstraintType": "1",
+		"OrderOperationIsExpanded": "leaf",
+		"OrderOperationParentRowID": "00000401884300000000",
+		"OrderOperationRowID": "0000040188430090",
+		"OrderOperationRowLevel": 1,
+		"OrderOperationStartDateTime": "/Date(1613900810000+0000)/",
+		"OrderOperationEndDateTime": "/Date(1614408140000+0000)/",
+		"OrderOpEndConstraintDateTime": "",
+		"OrderOpStartConstraintDateTime": "/Date(1613900810000+0000)/",
+		"OrderStartDateTime": "/Date(1613900810000+0000)/",
+		"OrderEndDateTime": "/Date(1614440814000+0000)/",
+		"MainWorkCenter": "RSH_JS02",
+		"MainWorkCenterPlant": "0001",
+		"OpErlstSchedldExecStrtDte": "/Date(1613900800000)/",
+		"OpErlstSchedldExecEndDte": "/Date(1614419200000)/",
+		"OpLtstSchedldExecStrtDte": "/Date(1613900800000)/",
+		"OpLtstSchedldExecEndDte": "/Date(1614419200000)/",
+		"SchedulingIsPerformedBackward": "",
+		"SchedulingType": "5",
+		"HasCrossOrderRelationship": "",
+		"MaintObjectEquipmentID": "",
+		"MaintObjectFunctionalLocID": "",
+		"OpMaintObjectFunctionalLocID": "",
+		"OpMaintObjectEquipmentID": "",
+		"OperationIsOnCriticalPath": "X",
+		"OperationIsOnCriticalPathText": "Yes",
+		"LatestAcceptableCompletionDate": "/Date(1614419200000)/",
+		"MaintOrdProcessPhaseCode": "01",
+		"MaintOrdProcessPhaseDesc": "Phase 1",
+		"MaintOrdProcessSubPhaseCode": "0001",
+		"MaintOrdProcessSubPhaseDesc": "Subphase 1",
+		"MaintOrdOpProcessPhaseCode": "01",
+		"MaintOrdOpProcessPhaseDesc": "Op Phase 1",
+		"MaintOrdOpProcessSubPhaseCode": "0001",
+		"MaintOrdOpProcessSubPhaseDesc": "Op Subphase 1",
+		"OperationTechnicalObject": "",
+		"OperationTechnicalObjectLabel": "",
+		"OperationTechnicalObjectDesc": "",
+		"OperationEquipment": "",
+		"OperationEquipmentName": "",
+		"OpEquipmentInternalNumber": "",
+		"OperationFunctionalLocation": "",
+		"OpFunctionalLocationName": "",
+		"RelevantOperationFuncLocation": "",
+		"OpTechObjEquipOrFuncnlLoc": "",
+		"OpTechObjEquipOrFuncnlLocDesc": "",
+		"ConcatenatedOrderPhaseCtrlText": "",
+		"ConcatenatedOrdOpPhaseCtrlText": "",
+		"MaintenancePhaseControlText": "",
+		"BasicSchedulingType": "1",
+		"OrdIsNotSchedldAutomatically": false,
+		"StartDate": "",
+		"EndDate": "",
+		"Project": "",
+		"WBSElement": "",
+		"ActualWorkQuantity": "",
+		"RemainingWorkQuantity": "",
+		"OpActualExecutionStartDateTime": null,
+		"OpActualExecutionEndDateTime": null,
+		"MaintenancePlanningPlant": "1010",
+		"NumberOfAssignedPersons": "0",
+		"ConcatenatedAssignedPersonsTxt": "",
+		"AssignedMaintOpStartDateTime": null,
+		"AssignedMaintOpEndDateTime": null,
+		"MaintOpIsAssignedToPeople": "",
+		"AssignedPerson": "",
+		"OrderSystemConditionText": "",
+		"TechnicalObjectDescription": "Plant Air System",
+		"TechnicalObject": "",
+		"TechnicalObjectLabel": "",
+		"TechObjIsEquipOrFuncnlLocDesc": "Functional Location",
+		"TechObjIsEquipOrFuncnlLoc": "",
+		"MaintOrderProcessingContext": "",
+		"MaintOrdProcessingContextText": "Standard Order",
+		"MaintOpSchedCriticalityCode": 1,
+		"MaintOpExecutionStageName": "MAIN",
+		"MaintOrdCompAvailyCritltyCode": 0,
+		"MaintOpCompAvailyCritltyCode": 0,
+		"MaintOrdSchedCriticalityCode": 1,
+		"MaintOrdStatusCriticalityCode": 0,
+		"MaintOpStatusCriticalityCode": 0,
+		"ServiceDocument": "",
+		"MaintPlanningBucketUUID": "",
+		"MaintPlngBucketLabel": "",
+		"ServiceDocumentDescription": "",
+		"ServiceDocumentItem": "",
+		"ServiceDocumentItemDescription": "",
+		"ServiceDocumentType": "",
+		"SoldToParty": "",
+		"BusinessPartnerFullName": "",
+		"to_OperationDetails": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0090.3~')/to_OperationDetails"
+			}
+		},
+		"to_UtilIndicator": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0090.3~')/to_UtilIndicator"
+			}
+		},
+		"to_ActivityTypeVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0090.3~')/to_ActivityTypeVH"
+			}
+		},
+		"to_EquipmentVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0090.3~')/to_EquipmentVH"
+			}
+		},
+		"to_FunctionalLocationVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0090.3~')/to_FunctionalLocationVH"
+			}
+		},
+		"to_HasErrorVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0090.3~')/to_HasErrorVH"
+			}
+		},
+		"to_HasLongTextVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0090.3~')/to_HasLongTextVH"
+			}
+		},
+		"to_MaintenanceOrderOperationVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0090.3~')/to_MaintenanceOrderOperationVH"
+			}
+		},
+		"to_MaintenanceOrderVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0090.3~')/to_MaintenanceOrderVH"
+			}
+		},
+		"to_MaintOrderTypeVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0090.3~')/to_MaintOrderTypeVH"
+			}
+		},
+		"to_MaterialStatusVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0090.3~')/to_MaterialStatusVH"
+			}
+		},
+		"to_MyWorkCenterVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0090.3~')/to_MyWorkCenterVH"
+			}
+		},
+		"to_OperationActiveStatus": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0090.3~')/to_OperationActiveStatus"
+			}
+		},
+		"to_OrderActiveStatus": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0090.3~')/to_OrderActiveStatus"
+			}
+		},
+		"to_OrderDetails": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0090.3~')/to_OrderDetails"
+			}
+		},
+		"to_PriorityVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0090.3~')/to_PriorityVH"
+			}
+		},
+		"to_ProcessingStatusVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0090.3~')/to_ProcessingStatusVH"
+			},
+			"to_Validation": {
+				"__deferred": {
+					"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018843.2~0090.3~')/to_Validation"
+				}
+			}
+		},
+		"SalesOrganization": "",
+		"SalesOrganizationName": "",
+		"Product": "",
+		"ProductName": "",
+		"ScheduledBasicStartDateTime": "/Date(1740463200000+0000)/",
+		"ScheduledBasicEndDateTime": "/Date(1740463200000+0000)/"
+	},
+	{
+		"__metadata": {
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType"
+		},
+		"ID": ".1~000004018843.2~0100.3~",
+		"MaintenanceOrder": "4018843",
+		"MaintenanceOrderOperation": "0100",
+		"MaintenanceOrderSubOperation": "",
+		"MaintenanceOrderInternalID": "OR000004018843",
+		"MaintOrderOperationInternalID": "OV100002662400000005",
+		"MaintOrderRoutingNumber": "1000184143",
+		"MaintOrderOperationCounter": "5",
+		"OperationDescription": "0100 operation",
+		"MaintenanceOrderDesc": "actual work operation",
+		"FirstMaintSchedSimulation": "",
+		"OrderType": "PM01",
+		"MaintenanceActivityType": "001",
+		"MaintenanceActivityTypeName": "Inspection",
+		"MaintOrdBasicStartDate": "/Date(1613296000000)/",
+		"MaintOrdBasicEndDate": "/Date(1614419200000)/",
+		"MaintPriority": "3",
+		"MaintPriorityDesc": "3-Medium",
+		"OperationHasLongText": "",
+		"OperationHasLongTextDesc": "No",
+		"MaintenanceNotification": "10028423",
+		"NotificationText": "PM Order",
+		"Equipment": "",
+		"EquipmentName": "",
+		"EquipmentInternalNumber": "",
+		"TechObjTypeForEquipment": "EAMS_EQUI",
+		"FunctionalLocation": "",
+		"FunctionalLocationName": "",
+		"RelevantFunctionalLocation": "",
+		"TechObjTypeForFuncnlLocation": "EAMS_FL",
+		"MaintenancePlannerGroup": "",
+		"MaintenanceRevision": "",
+		"OperationSystemCondition": "",
+		"OperationSystemConditionText": "",
+		"AssetRoom": "",
+		"AssetLocation": "",
+		"PlantSection": "",
+		"MaintenancePlan": "",
+		"SuperiorProjectNetwork": "",
+		"OperationControlKey": "PM01",
+		"OperationPersonResponsible": "00000000",
+		"OperationPersonRespName": "person name",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"Plant": "",
+		"OperationDuration": "10.0",
+		"OperationDurationUnit": "H",
+		"OperationPlannedWork": "10.0",
+		"OperationPlannedWorkUnit": "H",
+		"NumberOfCapacities": 1,
+		"PlannedStartDate": "/Date(1613900800000)/",
+		"PlannedStartTime": "PT00H00M10S",
+		"PlannedEndDate": "/Date(1614419200000)/",
+		"PlannedEndTime": "PT06H00M14S",
+		"PeriodType": "/Date(1613327400000)/",
+		"ProcessingStatus": 40,
+		"ProcessingStatusText": "In Process",
+		"MaterialStatus": 20,
+		"MaterialStatusKey": "MANC",
+		"MaterialStatusCode": "I0420",
+		"MaterialStatusText": "Material Availability Not Checked",
+		"HasError": "X",
+		"HasErrorDescription": "No Information Available",
+		"AuthorizationGroup": "",
+		"MaintenancePlant": "",
+		"ControllingArea": "0001",
+		"ResponsibleCostCenter": "",
+		"OpBscEndDateConstraintType": "",
+		"OpBscStartDateConstraintType": "1",
+		"OrderOperationIsExpanded": "leaf",
+		"OrderOperationParentRowID": "00000401884300000000",
+		"OrderOperationRowID": "0000040188430100",
+		"OrderOperationRowLevel": 1,
+		"OrderOperationStartDateTime": "/Date(1613900810000+0000)/",
+		"OrderOperationEndDateTime": "/Date(1614408140000+0000)/",
+		"OrderOpEndConstraintDateTime": "",
+		"OrderOpStartConstraintDateTime": "/Date(1613900810000+0000)/",
+		"OrderStartDateTime": "/Date(1613900810000+0000)/",
+		"OrderEndDateTime": "/Date(1614440814000+0000)/",
+		"MainWorkCenter": "RSH_JS02",
+		"MainWorkCenterPlant": "0001",
+		"OpErlstSchedldExecStrtDte": "/Date(1613900800000)/",
+		"OpErlstSchedldExecEndDte": "/Date(1614419200000)/",
+		"OpLtstSchedldExecStrtDte": "/Date(1613900800000)/",
+		"OpLtstSchedldExecEndDte": "/Date(1614419200000)/",
+		"SchedulingIsPerformedBackward": "",
+		"SchedulingType": "5",
+		"HasCrossOrderRelationship": "",
+		"MaintObjectEquipmentID": "",
+		"MaintObjectFunctionalLocID": "",
+		"OpMaintObjectFunctionalLocID": "",
+		"OpMaintObjectEquipmentID": "",
+		"OperationIsOnCriticalPath": "X",
+		"OperationIsOnCriticalPathText": "Yes",
+		"LatestAcceptableCompletionDate": "",
+		"MaintOrdProcessPhaseCode": "01",
+		"MaintOrdProcessPhaseDesc": "Phase 1",
+		"MaintOrdProcessSubPhaseCode": "0001",
+		"MaintOrdProcessSubPhaseDesc": "Subphase 1",
+		"MaintOrdOpProcessPhaseCode": "01",
+		"MaintOrdOpProcessPhaseDesc": "Op Phase 1",
+		"MaintOrdOpProcessSubPhaseCode": "0001",
+		"MaintOrdOpProcessSubPhaseDesc": "Op Subphase 1",
+		"OperationTechnicalObject": "",
+		"OperationTechnicalObjectLabel": "",
+		"OperationTechnicalObjectDesc": "",
+		"OperationEquipment": "",
+		"OperationEquipmentName": "",
+		"OpEquipmentInternalNumber": "",
+		"OperationFunctionalLocation": "",
+		"OpFunctionalLocationName": "",
+		"RelevantOperationFuncLocation": "",
+		"OpTechObjEquipOrFuncnlLoc": "",
+		"OpTechObjEquipOrFuncnlLocDesc": "",
+		"MaintenanceEvent": "",
+		"MaintenancePlanningPlant": "1010",
+		"NumberOfAssignedPersons": "1",
+		"ConcatenatedAssignedPersonsTxt": "Claudia Klaus",
+		"AssignedMaintOpStartDateTime": "/Date(1613900810000+0000)/",
+		"AssignedMaintOpEndDateTime": "/Date(1614408140000+0000)/",
+		"MaintOpIsAssignedToPeople": "",
+		"AssignedPerson": "",
+		"ActualWorkQuantity": "2.167",
+		"RemainingWorkQuantity": "3.3",
+		"BasicSchedulingType": "1",
+		"OrdIsNotSchedldAutomatically": false,
+		"OpActualExecutionStartDateTime": "/Date(1613900800000+0000)/",
+		"OpActualExecutionEndDateTime": "/Date(1614419200000+0000)/",
+		"NumberOfMaintSchedSimulations": 0,
+		"MaintSchedSimlnUUID": "",
+		"OrderSystemConditionText": "",
+		"TechnicalObjectDescription": "Plant Air System",
+		"TechObjIsEquipOrFuncnlLocDesc": "Functional Location",
+		"TechnicalObject": "",
+		"TechnicalObjectLabel": "",
+		"TechObjIsEquipOrFuncnlLoc": "",
+		"MaintOrderProcessingContext": "",
+		"MaintOrdProcessingContextText": "Standard Order",
+		"MaintOpSchedCriticalityCode": 1,
+		"MaintOpExecutionStageName": "MAIN",
+		"MaintOrdCompAvailyCritltyCode": 0,
+		"MaintOpCompAvailyCritltyCode": 0,
+		"MaintOrdSchedCriticalityCode": 1,
+		"MaintOrdStatusCriticalityCode": 0,
+		"MaintOpStatusCriticalityCode": 0,
+		"ServiceDocument": "8000664882",
+		"MaintPlanningBucketUUID": "",
+		"MaintPlngBucketLabel": "",
+		"ServiceDocumentDescription": "",
+		"ServiceDocumentItem": "",
+		"ServiceDocumentItemDescription": "",
+		"ServiceDocumentType": "",
+		"SoldToParty": "",
+		"BusinessPartnerFullName": "",
+		"to_ActivityTypeVH": {
+			"__deferred": {
+				"uri": "C_RSHOrdersAndOperations('.1~000004018843.2~0100.3~')/to_ActivityTypeVH"
+			}
+		},
+		"to_EquipmentVH": {
+			"__deferred": {
+				"uri": "C_RSHOrdersAndOperations('.1~000004018843.2~0100.3~')/to_EquipmentVH"
+			}
+		},
+		"to_FunctionalLocationVH": {
+			"__deferred": {
+				"uri": "C_RSHOrdersAndOperations('.1~000004018843.2~0100.3~')/to_FunctionalLocationVH"
+			}
+		},
+		"to_HasErrorVH": {
+			"__deferred": {
+				"uri": "C_RSHOrdersAndOperations('.1~000004018843.2~0100.3~')/to_HasErrorVH"
+			}
+		},
+		"to_HasLongTextVH": {
+			"__deferred": {
+				"uri": "C_RSHOrdersAndOperations('.1~000004018843.2~0100.3~')/to_HasLongTextVH"
+			}
+		},
+		"to_MaintenanceOrderOperationVH": {
+			"__deferred": {
+				"uri": "C_RSHOrdersAndOperations('.1~000004018843.2~0100.3~')/to_MaintenanceOrderOperationVH"
+			}
+		},
+		"to_MaintenanceOrderVH": {
+			"__deferred": {
+				"uri": "C_RSHOrdersAndOperations('.1~000004018843.2~0100.3~')/to_MaintenanceOrderVH"
+			}
+		},
+		"to_MaintOrderTypeVH": {
+			"__deferred": {
+				"uri": "C_RSHOrdersAndOperations('.1~000004018843.2~0100.3~')/to_MaintOrderTypeVH"
+			}
+		},
+		"to_MaterialStatusVH": {
+			"__deferred": {
+				"uri": "C_RSHOrdersAndOperations('.1~000004018843.2~0100.3~')/to_MaterialStatusVH"
+			}
+		},
+		"to_MyWorkCenterVH": {
+			"__deferred": {
+				"uri": "C_RSHOrdersAndOperations('.1~000004018843.2~0100.3~')/to_MyWorkCenterVH"
+			}
+		},
+		"to_OperationActiveStatus": {
+			"__deferred": {
+				"uri": "C_RSHOrdersAndOperations('.1~000004018843.2~0100.3~')/to_OperationActiveStatus"
+			}
+		},
+		"to_OrderActiveStatus": {
+			"__deferred": {
+				"uri": "C_RSHOrdersAndOperations('.1~000004018843.2~0100.3~')/to_OrderActiveStatus"
+			}
+		},
+		"to_OrderDetails": {
+			"__deferred": {
+				"uri": "C_RSHOrdersAndOperations('.1~000004018843.2~0100.3~')/to_OrderDetails"
+			}
+		},
+		"to_PriorityVH": {
+			"__deferred": {
+				"uri": "C_RSHOrdersAndOperations('.1~000004018843.2~0100.3~')/to_PriorityVH"
+			}
+		},
+		"to_ProcessingStatusVH": {
+			"__deferred": {
+				"uri": "C_RSHOrdersAndOperations('.1~000004018843.2~0100.3~')/to_ProcessingStatusVH"
+			},
+			"to_Validation": {
+				"__deferred": {
+					"uri": "C_RSHOrdersAndOperations('.1~000004018843.2~0100.3~')/to_Validation"
+				}
+			}
+		},
+		"SalesOrganization": "",
+		"SalesOrganizationName": "",
+		"Product": "",
+		"ProductName": "",
+		"ScheduledBasicStartDateTime": "/Date(1740463200000+0000)/",
+		"ScheduledBasicEndDateTime": "/Date(1740463200000+0000)/"
+	},
+	{
+		"__metadata": {
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType"
+		},
+		"ID": "000004018844",
+		"MaintenanceOrder": "4018844",
+		"MaintenanceOrderOperation": "",
+		"MaintenanceOrderSubOperation": "",
+		"MaintenanceOrderInternalID": "OR000004018844",
+		"MaintOrderOperationInternalID": "OV100002647100000003",
+		"FirstMaintSchedSimulation": "",
+		"MaintOrderRoutingNumber": "1000184143",
+		"MaintOrderOperationCounter": "2",
+		"OperationDescription": "",
+		"MaintenanceOrderDesc": "Order Description",
+		"OrderType": "PM01",
+		"MaintenanceActivityType": "002",
+		"MaintenanceActivityTypeName": "Inspection",
+		"MaintOrdBasicStartDate": "/Date(1623436200000)/",
+		"MaintOrdBasicEndDate": "/Date(1623954600000)/",
+		"MaintPriority": "",
+		"MaintPriorityDesc": "4-Low",
+		"OperationHasLongText": "",
+		"OperationHasLongTextDesc": "No",
+		"MaintenanceNotification": "",
+		"NotificationText": "",
+		"Equipment": "CK-EQUI-01-1",
+		"EquipmentName": "CK Equipment 01-1",
+		"EquipmentInternalNumber": "CK-EQUI-01-1",
+		"TechObjTypeForEquipment": "EAMS_EQUI",
+		"FunctionalLocation": "CK01-A02",
+		"FunctionalLocationName": "CK Asset Structure: CK01-A02",
+		"RelevantFunctionalLocation": "CK01-A02",
+		"TechObjTypeForFuncnlLocation": "EAMS_FL",
+		"MaintenancePlannerGroup": "",
+		"MaintenanceRevision": "EVENT2",
+		"MaintenancePlanningPlant": "0001",
+		"OperationSystemCondition": "",
+		"OperationSystemConditionText": "",
+		"AssetRoom": "",
+		"AssetLocation": "",
+		"PlantSection": "",
+		"MaintenancePlan": "",
+		"SuperiorProjectNetwork": "",
+		"OperationControlKey": "PM01",
+		"OperationPersonResponsible": "00000000",
+		"OperationPersonRespName": "person name",
+		"WorkCenter": "RSH_CK01",
+		"WorkCenterInternalID": "10000429",
+		"WorkCenterTypeCode": "A",
+		"Plant": "0001",
+		"OperationDuration": "10.0",
+		"OperationDurationUnit": "H",
+		"OperationPlannedWork": "10.0",
+		"OperationPlannedWorkUnit": "H",
+		"NumberOfCapacities": 1,
+		"PlannedStartDate": "/Date(1613327400000+0000)/",
+		"PlannedStartTime": "PT00H07M30S",
+		"PlannedEndDate": "/Date(1613586600000+0000)/",
+		"PlannedEndTime": "PT02H15M00S",
+		"PeriodType": "/Date(1623436200000)/",
+		"ProcessingStatus": 20,
+		"ProcessingStatusText": "Due",
+		"MaterialStatus": 20,
+		"MaterialStatusKey": "NMAT ",
+		"MaterialStatusCode": "I0485 ",
+		"MaterialStatusText": "Material Availability Not Checked",
+		"HasError": "",
+		"HasErrorDescription": "No Information Available ",
+		"AuthorizationGroup": "",
+		"MaintenancePlant": "",
+		"ControllingArea": "0001",
+		"ResponsibleCostCenter": "",
+		"OpBscEndDateConstraintType": "",
+		"OpBscStartDateConstraintType": "",
+		"OrderOperationIsExpanded": "expanded",
+		"OrderOperationParentRowID": "00000401884400000001",
+		"OrderOperationRowID": "00000401884400000000",
+		"OrderOperationRowLevel": 0,
+		"OrderOperationStartDateTime": "/Date(1623436200000+0000)/",
+		"OrderOperationEndDateTime": "/Date(1623436200000+0000)/",
+		"OrderOpEndConstraintDateTime": "",
+		"OrderOpStartConstraintDateTime": "",
+		"OrderStartDateTime": "/Date(1623436200000+0000)/",
+		"OrderEndDateTime": "/Date(1623954600000+0000)/",
+		"MainWorkCenter": "RSH_JS02",
+		"MainWorkCenterPlant": "0001",
+		"OpErlstSchedldExecStrtDte": "/Date(1623436200000+0000)/",
+		"OpErlstSchedldExecEndDte": "/Date(1623436200000+0000)/",
+		"OpLtstSchedldExecStrtDte": "/Date(1623436200000+0000)/",
+		"OpLtstSchedldExecEndDte": "/Date(1623436200000+0000)/",
+		"SchedulingIsPerformedBackward": "",
+		"SchedulingType": "1",
+		"HasCrossOrderRelationship": "",
+		"MaintObjectFunctionalLocID": "",
+		"MaintObjectEquipmentID": "",
+		"OpMaintObjectFunctionalLocID": "",
+		"OpMaintObjectEquipmentID": "",
+		"LatestAcceptableCompletionDate": "/Date(1623954600000)/",
+		"MaintOrdProcessPhaseCode": "01",
+		"MaintOrdProcessPhaseDesc": "Phase 1",
+		"MaintOrdProcessSubPhaseCode": "0001",
+		"MaintOrdProcessSubPhaseDesc": "Subphase 1",
+		"MaintOrdOpProcessPhaseCode": "01",
+		"MaintOrdOpProcessPhaseDesc": "Op Phase 1",
+		"MaintOrdOpProcessSubPhaseCode": "0001",
+		"MaintOrdOpProcessSubPhaseDesc": "Op Subphase 1",
+		"BasicSchedulingType": "1",
+		"OrdIsNotSchedldAutomatically": false,
+		"StartDate": "",
+		"EndDate": "",
+		"Project": "",
+		"WBSElement": "",
+		"ActualWorkQuantity": "",
+		"RemainingWorkQuantity": "",
+		"OpActualExecutionStartDateTime": null,
+		"OpActualExecutionEndDateTime": null,
+		"NumberOfAssignedPersons": "",
+		"ConcatenatedAssignedPersonsTxt": "",
+		"AssignedMaintOpStartDateTime": null,
+		"AssignedMaintOpEndDateTime": null,
+		"MaintOpIsAssignedToPeople": "",
+		"AssignedPerson": "",
+		"TechnicalObjectDescription": "CK Equipment 01-1",
+		"TechObjIsEquipOrFuncnlLocDesc": "Equipment",
+		"TechnicalObject": "CK-EQUI-01-1",
+		"TechnicalObjectLabel": "CK-EQUI-01-1",
+		"TechObjIsEquipOrFuncnlLoc": "EAMS_EQUI",
+		"OrderSystemConditionText": "",
+		"MaintOrderProcessingContext": "",
+		"MaintOrdProcessingContextText": "Standard Order",
+		"MaintOpSchedCriticalityCode": 1,
+		"MaintOpExecutionStageName": "MAIN",
+		"MaintOrdCompAvailyCritltyCode": 0,
+		"MaintOpCompAvailyCritltyCode": 0,
+		"MaintOrdSchedCriticalityCode": 2,
+		"MaintOrdStatusCriticalityCode": 3,
+		"MaintOpStatusCriticalityCode": 0,
+		"ServiceDocument": "8000664882",
+		"MaintPlanningBucketUUID": "00000000-0000-0000-0000-000000000000",
+		"MaintPlngBucketLabel": "TESTING_WC3",
+		"ServiceDocumentDescription": "",
+		"ServiceDocumentItem": "",
+		"ServiceDocumentItemDescription": "",
+		"ServiceDocumentType": "",
+		"SoldToParty": "",
+		"BusinessPartnerFullName": "",
+		"SalesOrganization": "",
+		"SalesOrganizationName": "",
+		"Product": "",
+		"ProductName": "",
+		"ScheduledBasicStartDateTime": "/Date(1740463200000+0000)/",
+		"ScheduledBasicEndDateTime": "/Date(1740463200000+0000)/"
+	},
+	{
+		"__metadata": {
+			"id": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018844.2~0011.3~')",
+			"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018844.2~0011.3~')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType"
+		},
+		"ID": ".1~000004018844.2~0011.3~",
+		"MaintSchedSimlnUUID": "506b4bc3-45cc-1edb-bfca-5047d278a7f9",
+		"MaintSchedSimlnDescription": "test",
+		"FirstMaintSchedSimulation": "Schedule1",
+		"NumberOfMaintSchedSimulations": 1,
+		"MaintenanceOrder": "4018844",
+		"MaintenanceOrderOperation": "0011",
+		"MaintenanceOrderSubOperation": "",
+		"MaintenanceOrderInternalID": "OR000004018844",
+		"MaintOrderRoutingNumber": "1000184143",
+		"MaintOrderOperationCounter": "9",
+		"MaintOrderOperationInternalID": "OV100002662400000002",
+		"OperationDescription": "maintain pump",
+		"MaintenanceOrderDesc": "maintain pump",
+		"OrderType": "PM01",
+		"MaintenanceActivityType": "001",
+		"MaintenanceActivityTypeName": "Inspection",
+		"MaintOrdBasicStartDate": "/Date(1623436200000)/",
+		"MaintOrdBasicEndDate": "/Date(1623954600000)/",
+		"MaintPriority": "4",
+		"MaintPriorityDesc": "4-Low",
+		"OperationHasLongText": "X",
+		"OperationHasLongTextDesc": "Yes",
+		"MaintenanceNotification": "10028423",
+		"NotificationText": "PM Order",
+		"Equipment": "",
+		"EquipmentName": "",
+		"EquipmentInternalNumber": "",
+		"TechObjTypeForEquipment": "EAMS_EQUI",
+		"FunctionalLocation": "",
+		"FunctionalLocationName": "",
+		"RelevantFunctionalLocation": "",
+		"TechObjTypeForFuncnlLocation": "EAMS_FL",
+		"MaintenancePlannerGroup": "",
+		"MaintenanceRevision": "",
+		"OperationSystemCondition": "",
+		"OperationSystemConditionText": "",
+		"AssetRoom": "",
+		"AssetLocation": "",
+		"PlantSection": "",
+		"MaintenancePlan": "",
+		"SuperiorProjectNetwork": "",
+		"OperationControlKey": "PM01",
+		"OperationPersonResponsible": "00000000",
+		"OperationPersonRespName": "person name",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"Plant": "0001",
+		"OperationDuration": "60.0",
+		"OperationDurationUnit": "H",
+		"OperationPlannedWork": "60.0",
+		"OperationPlannedWorkUnit": "H",
+		"NumberOfCapacities": 1,
+		"PlannedStartDate": "/Date(1623436200000)/",
+		"PlannedStartTime": "PT00H00M00S",
+		"PlannedEndDate": "/Date(163900800000)/",
+		"PlannedEndTime": "PT00H00M10S",
+		"PeriodType": "/Date(1623436200000)/",
+		"ProcessingStatus": 20,
+		"ProcessingStatusText": "Due",
+		"MaterialStatus": 20,
+		"MaterialStatusKey": "MANC",
+		"MaterialStatusCode": "I0420",
+		"MaterialStatusText": "Material Availability Not Checked",
+		"HasError": "",
+		"HasErrorDescription": "No Information Available",
+		"AuthorizationGroup": "",
+		"MaintenancePlant": "",
+		"ControllingArea": "0001",
+		"ResponsibleCostCenter": "",
+		"OpBscEndDateConstraintType": "",
+		"OpBscStartDateConstraintType": "",
+		"OrderOperationIsExpanded": "leaf",
+		"OrderOperationParentRowID": "00000401884400000000",
+		"OrderOperationRowID": "0000040188440011",
+		"OrderOperationRowLevel": 1,
+		"OrderOperationStartDateTime": "/Date(1623436200000+0000)/",
+		"OrderOperationEndDateTime": "/Date(1623954600000+0000)/",
+		"OrderOpEndConstraintDateTime": "",
+		"OrderOpStartConstraintDateTime": "",
+		"OrderStartDateTime": "/Date(1623436200000+0000)/",
+		"OrderEndDateTime": "/Date(1623954600000+0000)/",
+		"MainWorkCenter": "RSH_JS02",
+		"MainWorkCenterPlant": "0001",
+		"OpErlstSchedldExecStrtDte": "/Date(1623436200000)/",
+		"OpErlstSchedldExecEndDte": "/Date(1613900800000)/",
+		"OpLtstSchedldExecStrtDte": "/Date(1623436200000)/",
+		"OpLtstSchedldExecEndDte": "/Date(1613900800000)/",
+		"SchedulingIsPerformedBackward": "",
+		"SchedulingType": "5",
+		"HasCrossOrderRelationship": "",
+		"MaintObjectEquipmentID": "",
+		"MaintObjectFunctionalLocID": "",
+		"OpMaintObjectFunctionalLocID": "",
+		"OpMaintObjectEquipmentID": "",
+		"OperationIsOnCriticalPath": "X",
+		"OperationIsOnCriticalPathText": "Yes",
+		"LatestAcceptableCompletionDate": "/Date(1623954600000)/",
+		"MaintOrdProcessPhaseCode": "01",
+		"MaintOrdProcessPhaseDesc": "Phase 1",
+		"MaintOrdProcessSubPhaseCode": "0001",
+		"MaintOrdProcessSubPhaseDesc": "Subphase 1",
+		"MaintOrdOpProcessPhaseCode": "01",
+		"MaintOrdOpProcessPhaseDesc": "Op Phase 1",
+		"MaintOrdOpProcessSubPhaseCode": "0001",
+		"MaintOrdOpProcessSubPhaseDesc": "Op Subphase 1",
+		"OperationTechnicalObject": "",
+		"OperationTechnicalObjectLabel": "",
+		"OperationTechnicalObjectDesc": "",
+		"OperationEquipment": "",
+		"OperationEquipmentName": "",
+		"OpEquipmentInternalNumber": "",
+		"OperationFunctionalLocation": "",
+		"OpFunctionalLocationName": "",
+		"RelevantOperationFuncLocation": "",
+		"OpTechObjEquipOrFuncnlLoc": "",
+		"OpTechObjEquipOrFuncnlLocDesc": "",
+		"ConcatenatedOrderPhaseCtrlText": "",
+		"ConcatenatedOrdOpPhaseCtrlText": "",
+		"MaintenancePhaseControlText": "",
+		"BasicSchedulingType": "1",
+		"OrdIsNotSchedldAutomatically": false,
+		"StartDate": "",
+		"EndDate": "",
+		"Project": "",
+		"WBSElement": "",
+		"ActualWorkQuantity": "",
+		"RemainingWorkQuantity": "",
+		"OpActualExecutionStartDateTime": null,
+		"OpActualExecutionEndDateTime": null,
+		"MaintenancePlanningPlant": "1010",
+		"NumberOfAssignedPersons": "0",
+		"ConcatenatedAssignedPersonsTxt": "",
+		"AssignedMaintOpStartDateTime": null,
+		"AssignedMaintOpEndDateTime": null,
+		"MaintOpIsAssignedToPeople": "",
+		"AssignedPerson": "",
+		"TechObjIsEquipOrFuncnlLoc": "",
+		"OrderSystemConditionText": "",
+		"TechnicalObjectDescription": "Plant Air System",
+		"TechObjIsEquipOrFuncnlLocDesc": "Functional Location",
+		"TechnicalObject": "",
+		"TechnicalObjectLabel": "",
+		"MaintOrderProcessingContext": "B",
+		"MaintOrdProcessingContextText": "Billable Order",
+		"MaintOpSchedCriticalityCode": 1,
+		"MaintOpExecutionStageName": "MAIN",
+		"MaintOrdCompAvailyCritltyCode": 0,
+		"MaintOpCompAvailyCritltyCode": 0,
+		"MaintOrdSchedCriticalityCode": 1,
+		"MaintOrdStatusCriticalityCode": 0,
+		"MaintOpStatusCriticalityCode": 0,
+		"MaintPlanningBucketUUID": "",
+		"MaintPlngBucketLabel": "",
+		"to_OperationDetails": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018844.2~0011.3~')/to_OperationDetails"
+			}
+		},
+		"to_ActivityTypeVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018844.2~0011.3~')/to_ActivityTypeVH"
+			}
+		},
+		"to_EquipmentVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018844.2~0011.3~')/to_EquipmentVH"
+			}
+		},
+		"to_FunctionalLocationVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018844.2~0011.3~')/to_FunctionalLocationVH"
+			}
+		},
+		"to_HasErrorVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018844.2~0011.3~')/to_HasErrorVH"
+			}
+		},
+		"to_HasLongTextVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018844.2~0011.3~')/to_HasLongTextVH"
+			}
+		},
+		"to_MaintenanceOrderOperationVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018844.2~0011.3~')/to_MaintenanceOrderOperationVH"
+			}
+		},
+		"to_MaintenanceOrderVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018844.2~0011.3~')/to_MaintenanceOrderVH"
+			}
+		},
+		"to_MaintOrderTypeVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018844.2~0011.3~')/to_MaintOrderTypeVH"
+			}
+		},
+		"to_MaterialStatusVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018844.2~0011.3~')/to_MaterialStatusVH"
+			}
+		},
+		"to_MyWorkCenterVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018844.2~0011.3~')/to_MyWorkCenterVH"
+			}
+		},
+		"to_OperationActiveStatus": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018844.2~0011.3~')/to_OperationActiveStatus"
+			}
+		},
+		"to_OrderActiveStatus": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018844.2~0011.3~')/to_OrderActiveStatus"
+			}
+		},
+		"to_OrderDetails": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018844.2~0011.3~')/to_OrderDetails"
+			}
+		},
+		"to_PriorityVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018844.2~0011.3~')/to_PriorityVH"
+			}
+		},
+		"to_ProcessingStatusVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018844.2~0011.3~')/to_ProcessingStatusVH"
+			}
+		},
+		"to_Validation": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018844.2~0011.3~')/to_Validation"
+			}
+		},
+		"ServiceDocument": "8000664882",
+		"ServiceDocumentDescription": "Test with Product",
+		"ServiceDocumentItem": "10",
+		"ServiceDocumentItemDescription": "Car model X18",
+		"ServiceDocumentType": "10",
+		"SoldToParty": "CSM1000",
+		"BusinessPartnerFullName": "Maxwell Co",
+		"SalesOrganization": "0001",
+		"SalesOrganizationName": "Sales Org. 001",
+		"Product": "4022-RM001",
+		"ProductName": "Raw Material",
+		"ScheduledBasicStartDateTime": "/Date(1740463200000+0000)/",
+		"ScheduledBasicEndDateTime": "/Date(1740463200000+0000)/"
+	},
+	{
+		"__metadata": {
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType"
+		},
+		"ID": "000004018845",
+		"MaintenanceOrder": "4018845",
+		"MaintenanceOrderOperation": "",
+		"MaintenanceOrderSubOperation": "",
+		"MaintenanceOrderInternalID": "OR000004018845",
+		"MaintOrderOperationInternalID": "OV100002647100000003",
+		"FirstMaintSchedSimulation": "",
+		"MaintOrderRoutingNumber": "1000184143",
+		"MaintOrderOperationCounter": "2",
+		"OperationDescription": "",
+		"MaintenanceOrderDesc": "Order Description",
+		"OrderType": "PM01",
+		"MaintenanceActivityType": "002",
+		"MaintenanceActivityTypeName": "Inspection",
+		"MaintOrdBasicStartDate": "/Date(1623695400000)/",
+		"MaintOrdBasicEndDate": "/Date(1624213800000)/",
+		"MaintPriority": "",
+		"MaintPriorityDesc": "4-Low",
+		"OperationHasLongText": "",
+		"OperationHasLongTextDesc": "No",
+		"MaintenanceNotification": "",
+		"NotificationText": "",
+		"Equipment": "CK-EQUI-01-1",
+		"EquipmentName": "CK Equipment 01-1",
+		"EquipmentInternalNumber": "CK-EQUI-01-1",
+		"TechObjTypeForEquipment": "EAMS_EQUI",
+		"FunctionalLocation": "CK01-A02",
+		"FunctionalLocationName": "CK Asset Structure: CK01-A02",
+		"RelevantFunctionalLocation": "CK01-A02",
+		"TechObjTypeForFuncnlLocation": "EAMS_FL",
+		"MaintenancePlannerGroup": "",
+		"MaintenanceRevision": "EVENT1",
+		"MaintenancePlanningPlant": "0001",
+		"OperationSystemCondition": "",
+		"OperationSystemConditionText": "",
+		"AssetRoom": "",
+		"AssetLocation": "",
+		"PlantSection": "",
+		"MaintenancePlan": "",
+		"SuperiorProjectNetwork": "",
+		"OperationControlKey": "PM01",
+		"OperationPersonResponsible": "00000000",
+		"OperationPersonRespName": "person name",
+		"WorkCenter": "RSH_WC01",
+		"WorkCenterInternalID": "10000429",
+		"WorkCenterTypeCode": "A",
+		"Plant": "0001",
+		"OperationDuration": "10.0",
+		"OperationDurationUnit": "H",
+		"OperationPlannedWork": "10.0",
+		"OperationPlannedWorkUnit": "H",
+		"NumberOfCapacities": 1,
+		"PlannedStartDate": "/Date(1613327400000+0000)/",
+		"PlannedStartTime": "PT00H07M30S",
+		"PlannedEndDate": "/Date(1613586600000+0000)/",
+		"PlannedEndTime": "PT02H15M00S",
+		"PeriodType": "/Date(1623954600000)/",
+		"ProcessingStatus": 20,
+		"ProcessingStatusText": "Due",
+		"MaterialStatus": 20,
+		"MaterialStatusKey": "NMAT ",
+		"MaterialStatusCode": "I0485 ",
+		"MaterialStatusText": "Material Availability Not Checked",
+		"HasError": "",
+		"HasErrorDescription": "No Information Available ",
+		"AuthorizationGroup": "",
+		"MaintenancePlant": "",
+		"ControllingArea": "0001",
+		"ResponsibleCostCenter": "",
+		"OpBscEndDateConstraintType": "",
+		"OpBscStartDateConstraintType": "",
+		"OrderOperationIsExpanded": "expanded",
+		"OrderOperationParentRowID": "00000401884500000001",
+		"OrderOperationRowID": "00000401884500000000",
+		"OrderOperationRowLevel": 0,
+		"OrderOperationStartDateTime": "/Date(1623695400000+0000)/",
+		"OrderOperationEndDateTime": "/Date(1623695400000+0000)/",
+		"OrderOpEndConstraintDateTime": "",
+		"OrderOpStartConstraintDateTime": "",
+		"OrderStartDateTime": "/Date(1623695400000+0000)/",
+		"OrderEndDateTime": "/Date(1624213800000+0000)/",
+		"MainWorkCenter": "RSH_WC01",
+		"MainWorkCenterPlant": "0001",
+		"OpErlstSchedldExecStrtDte": "/Date(1623695400000+0000)/",
+		"OpErlstSchedldExecEndDte": "/Date(1623695400000+0000)/",
+		"OpLtstSchedldExecStrtDte": "/Date(1623695400000+0000)/",
+		"OpLtstSchedldExecEndDte": "/Date(1623695400000+0000)/",
+		"SchedulingIsPerformedBackward": "",
+		"SchedulingType": "1",
+		"HasCrossOrderRelationship": "",
+		"MaintObjectFunctionalLocID": "",
+		"OpMaintObjectFunctionalLocID": "",
+		"OpMaintObjectEquipmentID": "",
+		"MaintObjectEquipmentID": "",
+		"LatestAcceptableCompletionDate": "/Date(1624213800000)/",
+		"MaintOrdProcessPhaseCode": "01",
+		"MaintOrdProcessPhaseDesc": "Phase 1",
+		"MaintOrdProcessSubPhaseCode": "0001",
+		"MaintOrdProcessSubPhaseDesc": "Subphase 1",
+		"MaintOrdOpProcessPhaseCode": "01",
+		"MaintOrdOpProcessPhaseDesc": "Op Phase 1",
+		"MaintOrdOpProcessSubPhaseCode": "0001",
+		"MaintOrdOpProcessSubPhaseDesc": "Op Subphase 1",
+		"BasicSchedulingType": "1",
+		"OrdIsNotSchedldAutomatically": false,
+		"StartDate": "",
+		"EndDate": "",
+		"Project": "",
+		"WBSElement": "",
+		"ActualWorkQuantity": "",
+		"RemainingWorkQuantity": "",
+		"OpActualExecutionStartDateTime": null,
+		"OpActualExecutionEndDateTime": null,
+		"NumberOfAssignedPersons": "",
+		"ConcatenatedAssignedPersonsTxt": "",
+		"AssignedMaintOpStartDateTime": null,
+		"AssignedMaintOpEndDateTime": null,
+		"MaintOpIsAssignedToPeople": "",
+		"AssignedPerson": "",
+		"TechnicalObjectDescription": "CK Equipment 01-1",
+		"TechObjIsEquipOrFuncnlLocDesc": "Equipment",
+		"TechnicalObject": "CK-EQUI-01-1",
+		"TechnicalObjectLabel": "CK-EQUI-01-1",
+		"TechObjIsEquipOrFuncnlLoc": "EAMS_EQUI",
+		"OrderSystemConditionText": "",
+		"MaintOrderProcessingContext": "B",
+		"MaintOrdProcessingContextText": "Billable Order",
+		"MaintOpSchedCriticalityCode": 1,
+		"MaintOpExecutionStageName": "MAIN",
+		"MaintOrdCompAvailyCritltyCode": 0,
+		"MaintOpCompAvailyCritltyCode": 0,
+		"MaintOrdSchedCriticalityCode": 1,
+		"MaintOrdStatusCriticalityCode": 0,
+		"MaintOpStatusCriticalityCode": 0,
+		"ServiceDocument": "8000664882",
+		"MaintPlanningBucketUUID": "210d1d93-8115-1edf-b595-8b2b17efb6f6",
+		"MaintPlngBucketLabel": "TESTING_WC3",
+		"ServiceDocumentDescription": "Test with Product",
+		"ServiceDocumentItem": "10",
+		"ServiceDocumentItemDescription": "Car model X18",
+		"ServiceDocumentType": "10",
+		"SoldToParty": "CSM1000",
+		"BusinessPartnerFullName": "Maxwell Co",
+		"SalesOrganization": "0001",
+		"SalesOrganizationName": "Sales Org. 001",
+		"Product": "4022-RM001",
+		"ProductName": "Raw Material",
+		"ScheduledBasicStartDateTime": "/Date(1740463200000+0000)/",
+		"ScheduledBasicEndDateTime": "/Date(1740463200000+0000)/"
+	},
+	{
+		"__metadata": {
+			"id": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018845.2~0011.3~')",
+			"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018845.2~0011.3~')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType"
+		},
+		"ID": ".1~000004018845.2~0011.3~",
+		"MaintSchedSimlnUUID": "506b4bc3-45cc-1edb-bfca-5047d278a7f9",
+		"MaintSchedSimlnDescription": "test",
+		"FirstMaintSchedSimulation": "Schedule1",
+		"NumberOfMaintSchedSimulations": 1,
+		"MaintenanceOrder": "4018845",
+		"MaintenanceOrderOperation": "0011",
+		"MaintenanceOrderSubOperation": "",
+		"MaintenanceOrderInternalID": "OR000004018845",
+		"MaintOrderRoutingNumber": "1000184143",
+		"MaintOrderOperationCounter": "9",
+		"MaintOrderOperationInternalID": "OV100002662400000002",
+		"OperationDescription": "maintain pump",
+		"MaintenanceOrderDesc": "maintain pump",
+		"OrderType": "PM01",
+		"MaintenanceActivityType": "001",
+		"MaintenanceActivityTypeName": "Inspection",
+		"MaintOrdBasicStartDate": "/Date(1623695400000)/",
+		"MaintOrdBasicEndDate": "/Date(1624213800000)/",
+		"MaintPriority": "4",
+		"MaintPriorityDesc": "4-Low",
+		"OperationHasLongText": "X",
+		"OperationHasLongTextDesc": "Yes",
+		"MaintenanceNotification": "10028423",
+		"NotificationText": "PM Order",
+		"Equipment": "",
+		"EquipmentName": "",
+		"EquipmentInternalNumber": "",
+		"TechObjTypeForEquipment": "EAMS_EQUI",
+		"FunctionalLocation": "",
+		"FunctionalLocationName": "",
+		"RelevantFunctionalLocation": "",
+		"TechObjTypeForFuncnlLocation": "EAMS_FL",
+		"MaintenancePlannerGroup": "",
+		"MaintenanceRevision": "",
+		"OperationSystemCondition": "",
+		"OperationSystemConditionText": "",
+		"AssetRoom": "",
+		"AssetLocation": "",
+		"PlantSection": "",
+		"MaintenancePlan": "",
+		"SuperiorProjectNetwork": "",
+		"OperationControlKey": "PM01",
+		"OperationPersonResponsible": "00000000",
+		"OperationPersonRespName": "person name",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"Plant": "0001",
+		"OperationDuration": "60.0",
+		"OperationDurationUnit": "H",
+		"OperationPlannedWork": "60.0",
+		"OperationPlannedWorkUnit": "H",
+		"NumberOfCapacities": 1,
+		"PlannedStartDate": "/Date(1623695400000)/",
+		"PlannedStartTime": "PT00H00M00S",
+		"PlannedEndDate": "/Date(163900800000)/",
+		"PlannedEndTime": "PT00H00M10S",
+		"PeriodType": "/Date(1623954600000)/",
+		"ProcessingStatus": 20,
+		"ProcessingStatusText": "Due",
+		"MaterialStatus": 20,
+		"MaterialStatusKey": "MANC",
+		"MaterialStatusCode": "I0420",
+		"MaterialStatusText": "Material Availability Not Checked",
+		"HasError": "",
+		"HasErrorDescription": "No Information Available",
+		"AuthorizationGroup": "",
+		"MaintenancePlant": "",
+		"ControllingArea": "0001",
+		"ResponsibleCostCenter": "",
+		"OpBscEndDateConstraintType": "",
+		"OpBscStartDateConstraintType": "",
+		"OrderOperationIsExpanded": "leaf",
+		"OrderOperationParentRowID": "00000401884500000000",
+		"OrderOperationRowID": "0000040188450011",
+		"OrderOperationRowLevel": 1,
+		"OrderOperationStartDateTime": "/Date(1623695400000+0000)/",
+		"OrderOperationEndDateTime": "/Date(1624213800000+0000)/",
+		"OrderOpEndConstraintDateTime": "",
+		"OrderOpStartConstraintDateTime": "",
+		"OrderStartDateTime": "/Date(1623695400000+0000)/",
+		"OrderEndDateTime": "/Date(1624213800000+0000)/",
+		"MainWorkCenter": "RSH_JS02",
+		"MainWorkCenterPlant": "0001",
+		"OpErlstSchedldExecStrtDte": "/Date(1623695400000)/",
+		"OpErlstSchedldExecEndDte": "/Date(1613900800000)/",
+		"OpLtstSchedldExecStrtDte": "/Date(1623695400000)/",
+		"OpLtstSchedldExecEndDte": "/Date(1613900800000)/",
+		"SchedulingIsPerformedBackward": "",
+		"SchedulingType": "5",
+		"HasCrossOrderRelationship": "",
+		"MaintObjectEquipmentID": "",
+		"MaintObjectFunctionalLocID": "",
+		"OpMaintObjectFunctionalLocID": "",
+		"OpMaintObjectEquipmentID": "",
+		"OperationIsOnCriticalPath": "X",
+		"OperationIsOnCriticalPathText": "Yes",
+		"LatestAcceptableCompletionDate": "/Date(1624213800000)/",
+		"MaintOrdProcessPhaseCode": "01",
+		"MaintOrdProcessPhaseDesc": "Phase 1",
+		"MaintOrdProcessSubPhaseCode": "0001",
+		"MaintOrdProcessSubPhaseDesc": "Subphase 1",
+		"MaintOrdOpProcessPhaseCode": "01",
+		"MaintOrdOpProcessPhaseDesc": "Op Phase 1",
+		"MaintOrdOpProcessSubPhaseCode": "0001",
+		"MaintOrdOpProcessSubPhaseDesc": "Op Subphase 1",
+		"OperationTechnicalObject": "",
+		"OperationTechnicalObjectLabel": "",
+		"OperationTechnicalObjectDesc": "",
+		"OperationEquipment": "",
+		"OperationEquipmentName": "",
+		"OpEquipmentInternalNumber": "",
+		"OperationFunctionalLocation": "",
+		"OpFunctionalLocationName": "",
+		"RelevantOperationFuncLocation": "",
+		"OpTechObjEquipOrFuncnlLoc": "",
+		"OpTechObjEquipOrFuncnlLocDesc": "",
+		"ConcatenatedOrderPhaseCtrlText": "",
+		"ConcatenatedOrdOpPhaseCtrlText": "",
+		"MaintenancePhaseControlText": "",
+		"BasicSchedulingType": "1",
+		"OrdIsNotSchedldAutomatically": false,
+		"StartDate": "",
+		"EndDate": "",
+		"Project": "",
+		"WBSElement": "",
+		"ActualWorkQuantity": "",
+		"RemainingWorkQuantity": "",
+		"OpActualExecutionStartDateTime": null,
+		"OpActualExecutionEndDateTime": null,
+		"MaintenancePlanningPlant": "1010",
+		"NumberOfAssignedPersons": "0",
+		"ConcatenatedAssignedPersonsTxt": "",
+		"AssignedMaintOpStartDateTime": null,
+		"AssignedMaintOpEndDateTime": null,
+		"MaintOpIsAssignedToPeople": "",
+		"AssignedPerson": "",
+		"TechObjIsEquipOrFuncnlLoc": "",
+		"TechnicalObject": "",
+		"TechnicalObjectLabel": "",
+		"OrderSystemConditionText": "",
+		"TechnicalObjectDescription": "Plant Air System",
+		"TechObjIsEquipOrFuncnlLocDesc": "Functional Location",
+		"MaintOrderProcessingContext": "B",
+		"MaintOrdProcessingContextText": "Billable Order",
+		"MaintOpSchedCriticalityCode": 1,
+		"MaintOpExecutionStageName": "MAIN",
+		"MaintOrdCompAvailyCritltyCode": 0,
+		"MaintOpCompAvailyCritltyCode": 0,
+		"MaintOpSchedCriticalityCode": 1,
+		"MaintOrdStatusCriticalityCode": 0,
+		"MaintOpStatusCriticalityCode": 0,
+		"ServiceDocument": "8000664882",
+		"MaintPlanningBucketUUID": "",
+		"MaintPlngBucketLabel": "",
+		"ServiceDocumentDescription": "Test with Product",
+		"ServiceDocumentItem": "10",
+		"ServiceDocumentItemDescription": "Car model X18",
+		"ServiceDocumentType": "10",
+		"SoldToParty": "CSM1000",
+		"BusinessPartnerFullName": "Maxwell Co",
+		"to_OperationDetails": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018845.2~0011.3~')/to_OperationDetails"
+			}
+		},
+		"to_ActivityTypeVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018845.2~0011.3~')/to_ActivityTypeVH"
+			}
+		},
+		"to_EquipmentVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018845.2~0011.3~')/to_EquipmentVH"
+			}
+		},
+		"to_FunctionalLocationVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018845.2~0011.3~')/to_FunctionalLocationVH"
+			}
+		},
+		"to_HasErrorVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018845.2~0011.3~')/to_HasErrorVH"
+			}
+		},
+		"to_HasLongTextVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018845.2~0011.3~')/to_HasLongTextVH"
+			}
+		},
+		"to_MaintenanceOrderOperationVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018845.2~0011.3~')/to_MaintenanceOrderOperationVH"
+			}
+		},
+		"to_MaintenanceOrderVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018845.2~0011.3~')/to_MaintenanceOrderVH"
+			}
+		},
+		"to_MaintOrderTypeVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018845.2~0011.3~')/to_MaintOrderTypeVH"
+			}
+		},
+		"to_MaterialStatusVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018845.2~0011.3~')/to_MaterialStatusVH"
+			}
+		},
+		"to_MyWorkCenterVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018845.2~0011.3~')/to_MyWorkCenterVH"
+			}
+		},
+		"to_OperationActiveStatus": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018845.2~0011.3~')/to_OperationActiveStatus"
+			}
+		},
+		"to_OrderActiveStatus": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018845.2~0011.3~')/to_OrderActiveStatus"
+			}
+		},
+		"to_OrderDetails": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018845.2~0011.3~')/to_OrderDetails"
+			}
+		},
+		"to_PriorityVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018845.2~0011.3~')/to_PriorityVH"
+			}
+		},
+		"to_ProcessingStatusVH": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018845.2~0011.3~')/to_ProcessingStatusVH"
+			}
+		},
+		"to_Validation": {
+			"__deferred": {
+				"uri": "https://uyt928-er9001.wdf.sap.corp/sap/opu/odata/sap/RSH_EAM_ORDER_GANTT_SRV/C_RSHOrdersAndOperations('.1~000004018845.2~0011.3~')/to_Validation"
+			}
+		},
+		"SalesOrganization": "0001",
+		"SalesOrganizationName": "Sales Org. 001",
+		"Product": "4022-RM001",
+		"ProductName": "Raw Material",
+		"ScheduledBasicStartDateTime": "/Date(1740463200000+0000)/",
+		"ScheduledBasicEndDateTime": "/Date(1740463200000+0000)/"
+	}
+]

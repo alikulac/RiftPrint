@@ -1,0 +1,27 @@
+[
+	{
+		"__metadata": {
+			"id": "C_RSHOrderGanttCalendarSet(P_StartDate=datetime'2021-01-31T00%3A00%3A00',P_EndDate=datetime'2021-03-01T00%3A00%3A00',WorkCenterInternalID='10001963',WorkCenterTypeCode='A')",
+			"uri": "C_RSHOrderGanttCalendarSet(P_StartDate=datetime'2021-01-31T00%3A00%3A00',P_EndDate=datetime'2021-03-01T00%3A00%3A00',WorkCenterInternalID='10001963',WorkCenterTypeCode='A')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttCalendarType"
+		},
+		"P_StartDate": "/Date(1612051200000)/",
+		"P_EndDate": "/Date(1614556800000)/",
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"StartDate": "/Date(1612051200000)/",
+		"EndDate": "/Date(1614556800000)/",
+		"WorkCenterCategoryCode": "0003",
+		"Plant": "0001",
+		"to_Intervals": {
+			"__deferred": {
+				"uri": "C_RSHOrderGanttCalendarSet(P_StartDate=datetime'2021-01-31T00%3A00%3A00',P_EndDate=datetime'2021-03-01T00%3A00%3A00',WorkCenterInternalID='10001963',WorkCenterTypeCode='A')/to_Intervals"
+			}
+		},
+		"Parameters": {
+			"__deferred": {
+				"uri": "C_RSHOrderGanttCalendarSet(P_StartDate=datetime'2021-01-31T00%3A00%3A00',P_EndDate=datetime'2021-03-01T00%3A00%3A00',WorkCenterInternalID='10001963',WorkCenterTypeCode='A')/Parameters"
+			}
+		}
+	}
+]

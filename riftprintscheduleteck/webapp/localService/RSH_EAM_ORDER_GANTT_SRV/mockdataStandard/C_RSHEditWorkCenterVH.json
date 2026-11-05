@@ -1,0 +1,102 @@
+[
+	{
+		"WorkCenterInternalID": "WorkCenterInternalID 1",
+		"WorkCenterTypeCode": "WorkCenterTypeCode 1",
+		"WorkCenter": "WorkCenter 1",
+		"Plant": "Plant 1",
+		"__metadata": {
+			"uri": "C_RSHEditWorkCenterVH(WorkCenterInternalID='WorkCenterInternalID%201',WorkCenterTypeCode='WorkCenterTypeCode%201')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHEditWorkCenterVHType"
+		}
+	},
+	{
+		"WorkCenterInternalID": "WorkCenterInternalID 2",
+		"WorkCenterTypeCode": "WorkCenterTypeCode 2",
+		"WorkCenter": "WorkCenter 2",
+		"Plant": "Plant 2",
+		"__metadata": {
+			"uri": "C_RSHEditWorkCenterVH(WorkCenterInternalID='WorkCenterInternalID%202',WorkCenterTypeCode='WorkCenterTypeCode%202')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHEditWorkCenterVHType"
+		}
+	},
+	{
+		"WorkCenterInternalID": "WorkCenterInternalID 3",
+		"WorkCenterTypeCode": "WorkCenterTypeCode 3",
+		"WorkCenter": "WorkCenter 3",
+		"Plant": "Plant 3",
+		"__metadata": {
+			"uri": "C_RSHEditWorkCenterVH(WorkCenterInternalID='WorkCenterInternalID%203',WorkCenterTypeCode='WorkCenterTypeCode%203')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHEditWorkCenterVHType"
+		}
+	},
+	{
+		"WorkCenterInternalID": "WorkCenterInternalID 4",
+		"WorkCenterTypeCode": "WorkCenterTypeCode 4",
+		"WorkCenter": "WorkCenter 4",
+		"Plant": "Plant 4",
+		"__metadata": {
+			"uri": "C_RSHEditWorkCenterVH(WorkCenterInternalID='WorkCenterInternalID%204',WorkCenterTypeCode='WorkCenterTypeCode%204')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHEditWorkCenterVHType"
+		}
+	},
+	{
+		"WorkCenterInternalID": "WorkCenterInternalID 5",
+		"WorkCenterTypeCode": "WorkCenterTypeCode 5",
+		"WorkCenter": "WorkCenter 5",
+		"Plant": "Plant 5",
+		"__metadata": {
+			"uri": "C_RSHEditWorkCenterVH(WorkCenterInternalID='WorkCenterInternalID%205',WorkCenterTypeCode='WorkCenterTypeCode%205')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHEditWorkCenterVHType"
+		}
+	},
+	{
+		"WorkCenterInternalID": "WorkCenterInternalID 6",
+		"WorkCenterTypeCode": "WorkCenterTypeCode 6",
+		"WorkCenter": "WorkCenter 6",
+		"Plant": "Plant 6",
+		"__metadata": {
+			"uri": "C_RSHEditWorkCenterVH(WorkCenterInternalID='WorkCenterInternalID%206',WorkCenterTypeCode='WorkCenterTypeCode%206')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHEditWorkCenterVHType"
+		}
+	},
+	{
+		"WorkCenterInternalID": "WorkCenterInternalID 7",
+		"WorkCenterTypeCode": "WorkCenterTypeCode 7",
+		"WorkCenter": "WorkCenter 7",
+		"Plant": "Plant 7",
+		"__metadata": {
+			"uri": "C_RSHEditWorkCenterVH(WorkCenterInternalID='WorkCenterInternalID%207',WorkCenterTypeCode='WorkCenterTypeCode%207')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHEditWorkCenterVHType"
+		}
+	},
+	{
+		"WorkCenterInternalID": "WorkCenterInternalID 8",
+		"WorkCenterTypeCode": "WorkCenterTypeCode 8",
+		"WorkCenter": "WorkCenter 8",
+		"Plant": "Plant 8",
+		"__metadata": {
+			"uri": "C_RSHEditWorkCenterVH(WorkCenterInternalID='WorkCenterInternalID%208',WorkCenterTypeCode='WorkCenterTypeCode%208')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHEditWorkCenterVHType"
+		}
+	},
+	{
+		"WorkCenterInternalID": "WorkCenterInternalID 9",
+		"WorkCenterTypeCode": "WorkCenterTypeCode 9",
+		"WorkCenter": "WorkCenter 9",
+		"Plant": "Plant 9",
+		"__metadata": {
+			"uri": "C_RSHEditWorkCenterVH(WorkCenterInternalID='WorkCenterInternalID%209',WorkCenterTypeCode='WorkCenterTypeCode%209')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHEditWorkCenterVHType"
+		}
+	},
+	{
+		"WorkCenterInternalID": "WorkCenterInternalID 10",
+		"WorkCenterTypeCode": "WorkCenterTypeCode 10",
+		"WorkCenter": "WorkCenter 10",
+		"Plant": "Plant 10",
+		"__metadata": {
+			"uri": "C_RSHEditWorkCenterVH(WorkCenterInternalID='WorkCenterInternalID%2010',WorkCenterTypeCode='WorkCenterTypeCode%2010')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHEditWorkCenterVHType"
+		}
+	}
+]

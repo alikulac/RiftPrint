@@ -1,0 +1,36 @@
+[
+	{
+		"__metadata": {
+			"id": "C_RSHOpInMaintSchedSimulation(MaintOrderRoutingNumber='1000202327',MaintOrderOperationCounter='00000001',MaintSchedSimlnUUID=guid'506b4bc3-461c-1eeb-bebf-cbef2e5f29a0')",
+			"uri": "C_RSHOpInMaintSchedSimulation(MaintOrderRoutingNumber='1000202327',MaintOrderOperationCounter='00000001',MaintSchedSimlnUUID=guid'506b4bc3-461c-1eeb-bebf-cbef2e5f29a0')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOpInMaintSchedSimulationType"
+		},
+		"MaintOrderRoutingNumber": "1000202327",
+		"MaintOrderOperationCounter": "00000001",
+		"MaintSchedSimlnUUID": "506b4bc3-461c-1eeb-bebf-cbef2e5f29a0",
+		"MaintSchedSimulationStartDate": "/Date(1630454400000)/",
+		"MaintSchedSimulationEndDate": "/Date(1631577600000)/",
+		"MaintSchedSimlnDescription": "test",
+		"CreationDateTime": "/Date(1628615648838+0000)/",
+		"SimulationSessionState": "W",
+		"MaintOrdSchedExecutionStatus": 10,
+		"MaintOrdSchedExecutionStatTxt": "Scoping"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHOpInMaintSchedSimulation(MaintOrderRoutingNumber='1000202327',MaintOrderOperationCounter='00000001',MaintSchedSimlnUUID=guid'506b4bc3-45cc-1edb-bfca-5047d278a7f9')",
+			"uri": "C_RSHOpInMaintSchedSimulation(MaintOrderRoutingNumber='1000202327',MaintOrderOperationCounter='00000001',MaintSchedSimlnUUID=guid'506b4bc3-45cc-1edb-bfca-5047d278a7f9')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOpInMaintSchedSimulationType"
+		},
+		"MaintOrderRoutingNumber": "1000202327",
+		"MaintOrderOperationCounter": "00000001",
+		"MaintSchedSimlnUUID": "506b4bc3-45cc-1edb-bfca-5047d278a7f9",
+		"MaintSchedSimulationStartDate": "/Date(1629676800000)/",
+		"MaintSchedSimulationEndDate": "/Date(1631664000000)/",
+		"MaintSchedSimlnDescription": "Schedule1",
+		"CreationDateTime": "/Date(1629091590221+0000)/",
+		"SimulationSessionState": "W",
+		"MaintOrdSchedExecutionStatus": 10,
+		"MaintOrdSchedExecutionStatTxt": "Scoping"
+	}
+]

@@ -1,0 +1,87 @@
+[
+	{
+		"WorkCenterInternalID": "10000429",
+		"WorkCenterTypeCode": "A",
+		"WorkCenter": "RSH_CK01",
+		"Plant": "0001",
+		"WorkCenterIsUsedInPlngSchedule": "",
+		"WorkCenterCategoryCode": "0003",
+		"WorkCenterText": "RSH Test CK01",
+		"TeamName": "Team Name 1",
+		"TeamDescription": "Team Description 1",
+		"RespyMgmtTeamID": "50098625",
+		"TimeZoneID": "Europe/Berlin",
+		"__metadata": {
+			"uri": "C_RSHUserVariantWithTeam(WorkCenterInternalID='10000429',WorkCenterTypeCode='A',WorkCenter='RSH_CK01',Plant='0001')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHUserVariantWithTeamType"
+		}
+	},
+	{
+		"WorkCenterInternalID": "10000440",
+		"WorkCenterTypeCode": "A",
+		"WorkCenter": "RSH_CK02",
+		"Plant": "0001",
+		"WorkCenterIsUsedInPlngSchedule": "",
+		"WorkCenterCategoryCode": "0003",
+		"WorkCenterText": "RSH Test CK02",
+		"TeamName": "Team Name 2",
+		"TeamDescription": "Team Description 2",
+		"RespyMgmtTeamID": "50098695",
+		"TimeZoneID": "Europe/Berlin",
+		"__metadata": {
+			"uri": "C_RSHUserVariantWithTeam(WorkCenterInternalID='10000440',WorkCenterTypeCode='A',WorkCenter='RSH_CK02',Plant='0001')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHUserVariantWithTeamType"
+		}
+	},
+	{
+		"WorkCenterInternalID": "10005075",
+		"WorkCenterTypeCode": "A",
+		"WorkCenter": "RSH_CK03",
+		"Plant": "0001",
+		"WorkCenterIsUsedInPlngSchedule": "",
+		"WorkCenterCategoryCode": "0003",
+		"WorkCenterText": "RSH Test CK03",
+		"TeamName": "Team Name 3",
+		"TeamDescription": "Team Description 3",
+		"RespyMgmtTeamID": "53398625",
+		"TimeZoneID": "Europe/Berlin",
+		"__metadata": {
+			"uri": "C_RSHUserVariantWithTeam(WorkCenterInternalID='10005075',WorkCenterTypeCode='A',WorkCenter='RSH_CK03',Plant='0001')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHUserVariantWithTeamType"
+		}
+	},
+	{
+		"WorkCenterInternalID": "10000311",
+		"WorkCenterTypeCode": "A",
+		"WorkCenter": "RSH_WEST",
+		"Plant": "0001",
+		"WorkCenterIsUsedInPlngSchedule": "X",
+		"WorkCenterCategoryCode": "0003",
+		"WorkCenterText": "RSH Test WEST",
+		"TeamName": "Team Name 4",
+		"TeamDescription": "Team Description 4",
+		"RespyMgmtTeamID": "50099625",
+		"TimeZoneID": "Europe/Berlin",
+		"__metadata": {
+			"uri": "C_RSHUserVariantWithTeam(WorkCenterInternalID='10000311',WorkCenterTypeCode='A',WorkCenter='RSH_WEST',Plant='0001')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHUserVariantWithTeamType"
+		}
+	},
+	{
+		"WorkCenterInternalID": "10000430",
+		"WorkCenterTypeCode": "A",
+		"WorkCenter": "RSH_WC01",
+		"Plant": "0001",
+		"WorkCenterIsUsedInPlngSchedule": "",
+		"WorkCenterCategoryCode": "0003",
+		"WorkCenterText": "RSH Test WC01",
+		"TeamName": "Team Name 5",
+		"TeamDescription": "Team Description 5",
+		"RespyMgmtTeamID": "50099625",
+		"TimeZoneID": "Europe/Berlin",
+		"__metadata": {
+			"uri": "C_RSHUserVariantWithTeam(WorkCenterInternalID='10000430',WorkCenterTypeCode='A',WorkCenter='RSH_WC01',Plant='0001')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHUserVariantWithTeamType"
+		}
+	}
+]

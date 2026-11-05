@@ -1,0 +1,40 @@
+<!--
+
+    Copyright (C) 2009-2025 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<core:FragmentDefinition
+	xmlns="sap.gantt.simple" 
+	xmlns:core="sap.ui.core">
+	<LegendContainer id="idLegendContOrderGantt" height="450px" width="250px">
+		<ListLegend id="idListLegendOrderGantt" title="{i18n>legendTitle}">
+			<ListLegendItem id="idListLegendItemOrder" legendName="{i18n>order}">
+				<BaseChevron id="idLegendOrder" shapeId="idOrderLegendShape" fill="@sapNeutralColor" title="{i18n>order}" showTitle="false" headWidth="5"
+							 tailWidth="5"/>
+			</ListLegendItem>
+			<ListLegendItem id="idListLegendItemOperation" legendName="{i18n>operation}">
+				<BaseRectangle id="idLegendOperation" shapeId="idOperationLegendShape" fill="@sapNeutralColor" title="{i18n>operation}" showTitle="false"/>
+			</ListLegendItem>
+			<ListLegendItem id="idListLegendItemSubOp" legendName="{i18n>suboperation}">
+				<BaseRectangle id="idLegendSubOp" shapeId="idSubOpLegendShape" fill="@sapNeutralColor" title="{i18n>suboperation}" showTitle="false"/>
+			</ListLegendItem>
+			<ListLegendItem id="idListLegendItemOpDue" legendName="{i18n>due}">
+				<BaseRectangle id="idLegendOpDue" shapeId="idDueLegendShape" fill="@sapCriticalColor" title="{i18n>due}" showTitle="false"/>
+			</ListLegendItem>
+			<ListLegendItem id="idListLegendItemOpDisp" legendName="{i18n>dispatched}">
+				<BaseRectangle id="idLegendOpDisp" shapeId="idDispatchedLegendShape" fill="@sapPositiveColor" title="{i18n>dispatched}" showTitle="false"/>
+			</ListLegendItem>
+			<ListLegendItem id="idListLegendItemOpInProcess" legendName="{i18n>inprocess}">
+				<BaseRectangle id="idLegendInProcess" shapeId="idInprocessLegendShape" fill="@sapNeutralColor" title="{i18n>inprocess}" showTitle="false"/>
+			</ListLegendItem>
+			<ListLegendItem id="idListLegendItemOpFDD" legendName="{i18n>finalDueDate}">
+				<BaseDiamond id="idLegendOpFDD" shapeId="idFinalDueLegendShape" stroke="@sapNeutralColor" title="{i18n>finalDueDate}" showTitle="false"
+							 strokeWidth="3" xBias="-2.5" fillOpacity="1" fill="@sapUiNeutralBG"/>
+			</ListLegendItem>
+			<ListLegendItem id="idListLegendItemOpConstraints" legendName="{i18n>opConstraints}">
+				<BaseRectangle id="idLegendOpConstraints" shapeId="idConstraintsLegendShape" fill="@sapTextColor" title="{i18n>opConstraints}"
+							   showTitle="false" width="2" xBias="11"/>
+			</ListLegendItem>
+		</ListLegend>
+	</LegendContainer>
+</core:FragmentDefinition>

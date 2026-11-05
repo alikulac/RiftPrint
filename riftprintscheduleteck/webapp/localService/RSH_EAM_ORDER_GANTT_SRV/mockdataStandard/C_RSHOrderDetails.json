@@ -1,0 +1,162 @@
+[
+	{
+		"MaintenanceOrder": "MaintenanceOrder 1",
+		"MaintenanceOrderInternalID": "MaintenanceOrderInternalID 1",
+		"MaintOrderOperationLongText": "MaintOrderOperationLongText 1",
+		"Plant": "Plant 1",
+		"OrderType": "OrderType 1",
+		"AuthorizationGroup": "AuthorizationGroup 1",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 1",
+		"MaintenancePlant": "MaintenancePlant 1",
+		"ControllingArea": "ControllingArea 1",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 1",
+		"__metadata": {
+			"uri": "C_RSHOrderDetails('MaintenanceOrder%201')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderDetailsType"
+		}
+	},
+	{
+		"MaintenanceOrder": "MaintenanceOrder 2",
+		"MaintenanceOrderInternalID": "MaintenanceOrderInternalID 2",
+		"MaintOrderOperationLongText": "MaintOrderOperationLongText 2",
+		"Plant": "Plant 2",
+		"OrderType": "OrderType 2",
+		"AuthorizationGroup": "AuthorizationGroup 2",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 2",
+		"MaintenancePlant": "MaintenancePlant 2",
+		"ControllingArea": "ControllingArea 2",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 2",
+		"__metadata": {
+			"uri": "C_RSHOrderDetails('MaintenanceOrder%202')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderDetailsType"
+		}
+	},
+	{
+		"MaintenanceOrder": "MaintenanceOrder 3",
+		"MaintenanceOrderInternalID": "MaintenanceOrderInternalID 3",
+		"MaintOrderOperationLongText": "MaintOrderOperationLongText 3",
+		"Plant": "Plant 3",
+		"OrderType": "OrderType 3",
+		"AuthorizationGroup": "AuthorizationGroup 3",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 3",
+		"MaintenancePlant": "MaintenancePlant 3",
+		"ControllingArea": "ControllingArea 3",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 3",
+		"__metadata": {
+			"uri": "C_RSHOrderDetails('MaintenanceOrder%203')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderDetailsType"
+		}
+	},
+	{
+		"MaintenanceOrder": "MaintenanceOrder 4",
+		"MaintenanceOrderInternalID": "MaintenanceOrderInternalID 4",
+		"MaintOrderOperationLongText": "MaintOrderOperationLongText 4",
+		"Plant": "Plant 4",
+		"OrderType": "OrderType 4",
+		"AuthorizationGroup": "AuthorizationGroup 4",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 4",
+		"MaintenancePlant": "MaintenancePlant 4",
+		"ControllingArea": "ControllingArea 4",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 4",
+		"__metadata": {
+			"uri": "C_RSHOrderDetails('MaintenanceOrder%204')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderDetailsType"
+		}
+	},
+	{
+		"MaintenanceOrder": "MaintenanceOrder 5",
+		"MaintenanceOrderInternalID": "MaintenanceOrderInternalID 5",
+		"MaintOrderOperationLongText": "MaintOrderOperationLongText 5",
+		"Plant": "Plant 5",
+		"OrderType": "OrderType 5",
+		"AuthorizationGroup": "AuthorizationGroup 5",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 5",
+		"MaintenancePlant": "MaintenancePlant 5",
+		"ControllingArea": "ControllingArea 5",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 5",
+		"__metadata": {
+			"uri": "C_RSHOrderDetails('MaintenanceOrder%205')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderDetailsType"
+		}
+	},
+	{
+		"MaintenanceOrder": "MaintenanceOrder 6",
+		"MaintenanceOrderInternalID": "MaintenanceOrderInternalID 6",
+		"MaintOrderOperationLongText": "MaintOrderOperationLongText 6",
+		"Plant": "Plant 6",
+		"OrderType": "OrderType 6",
+		"AuthorizationGroup": "AuthorizationGroup 6",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 6",
+		"MaintenancePlant": "MaintenancePlant 6",
+		"ControllingArea": "ControllingArea 6",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 6",
+		"__metadata": {
+			"uri": "C_RSHOrderDetails('MaintenanceOrder%206')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderDetailsType"
+		}
+	},
+	{
+		"MaintenanceOrder": "MaintenanceOrder 7",
+		"MaintenanceOrderInternalID": "MaintenanceOrderInternalID 7",
+		"MaintOrderOperationLongText": "MaintOrderOperationLongText 7",
+		"Plant": "Plant 7",
+		"OrderType": "OrderType 7",
+		"AuthorizationGroup": "AuthorizationGroup 7",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 7",
+		"MaintenancePlant": "MaintenancePlant 7",
+		"ControllingArea": "ControllingArea 7",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 7",
+		"__metadata": {
+			"uri": "C_RSHOrderDetails('MaintenanceOrder%207')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderDetailsType"
+		}
+	},
+	{
+		"MaintenanceOrder": "MaintenanceOrder 8",
+		"MaintenanceOrderInternalID": "MaintenanceOrderInternalID 8",
+		"MaintOrderOperationLongText": "MaintOrderOperationLongText 8",
+		"Plant": "Plant 8",
+		"OrderType": "OrderType 8",
+		"AuthorizationGroup": "AuthorizationGroup 8",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 8",
+		"MaintenancePlant": "MaintenancePlant 8",
+		"ControllingArea": "ControllingArea 8",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 8",
+		"__metadata": {
+			"uri": "C_RSHOrderDetails('MaintenanceOrder%208')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderDetailsType"
+		}
+	},
+	{
+		"MaintenanceOrder": "MaintenanceOrder 9",
+		"MaintenanceOrderInternalID": "MaintenanceOrderInternalID 9",
+		"MaintOrderOperationLongText": "MaintOrderOperationLongText 9",
+		"Plant": "Plant 9",
+		"OrderType": "OrderType 9",
+		"AuthorizationGroup": "AuthorizationGroup 9",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 9",
+		"MaintenancePlant": "MaintenancePlant 9",
+		"ControllingArea": "ControllingArea 9",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 9",
+		"__metadata": {
+			"uri": "C_RSHOrderDetails('MaintenanceOrder%209')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderDetailsType"
+		}
+	},
+	{
+		"MaintenanceOrder": "MaintenanceOrder 10",
+		"MaintenanceOrderInternalID": "MaintenanceOrderInternalID 10",
+		"MaintOrderOperationLongText": "MaintOrderOperationLongText 10",
+		"Plant": "Plant 10",
+		"OrderType": "OrderType 10",
+		"AuthorizationGroup": "AuthorizationGroup 10",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 10",
+		"MaintenancePlant": "MaintenancePlant 10",
+		"ControllingArea": "ControllingArea 10",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 10",
+		"__metadata": {
+			"uri": "C_RSHOrderDetails('MaintenanceOrder%2010')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderDetailsType"
+		}
+	}
+]

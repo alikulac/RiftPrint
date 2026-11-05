@@ -1,0 +1,15 @@
+[
+	{
+		"P_StartDate": "/Date(1612051200000)/",
+		"P_EndDate": "/Date(1614556800000)/",
+		"__metadata": {
+			"uri": "C_RSHOrderGanttCalendar(P_StartDate=datetime'2021-01-31T00%3A00%3A00',P_EndDate=datetime'2021-03-01T00%3A00%3A00')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttCalendarParameters"
+		},
+		"Set": {
+			"__deferred": {
+				"uri": "C_RSHOrderGanttCalendar(P_StartDate=datetime'2021-01-31T00%3A00%3A00',P_EndDate=datetime'2021-03-01T00%3A00%3A00')/Set"
+			}
+		}
+	}
+]

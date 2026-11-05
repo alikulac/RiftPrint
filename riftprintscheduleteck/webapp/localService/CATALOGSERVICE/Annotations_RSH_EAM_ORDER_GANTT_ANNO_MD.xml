@@ -1,0 +1,2862 @@
+<!--
+
+    Copyright (C) 2009-2025 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common" />
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI" />
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication" />
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PERSONALDATA',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.PersonalData.v1" Alias="PersonalData" />
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_VALIDATION',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="Org.OData.Validation.V1" Alias="Validation" />
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ANALYTICS',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Analytics.v1" Alias="Analytics" />
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_HTML5',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.HTML5.v1" Alias="HTML5" />
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ODM',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.ODM.v1" Alias="SAP__ODM" />
+    </edmx:Reference>
+    <edmx:Reference Uri="../../../sap/rsh_eam_order_gantt_srv/$metadata">
+        <edmx:Include Namespace="RSH_EAM_ORDER_GANTT_SRV" Alias="SAP" />
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema Namespace="rsh_eam_order_gantt_anno_mdl.v1" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_MaintenancePlannerGroupVHType/EmailAddress">
+                <Annotation Term="Communication.IsEmailAddress" />
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_MaintenancePlannerGroupVHType/MaintPlannerGroupPhoneNumber">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="Communication.IsPhoneNumber" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_MaintenancePlannerGroupVHType">
+                <Annotation Term="Communication.Contact">
+                    <Record>
+                        <PropertyValue Property="tel">
+                            <Collection>
+                                <Record>
+                                    <PropertyValue Property="type" EnumMember="Communication.PhoneType/preferred" />
+                                    <PropertyValue Property="uri" Path="MaintPlannerGroupPhoneNumber" />
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="email">
+                            <Collection>
+                                <Record>
+                                    <PropertyValue Property="address" Path="EmailAddress" />
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_MaintOpPhaseControlVHType/MaintenancePhaseControlName">
+                <Annotation Term="Common.Text" Path="MaintenancePhaseControlText">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_MaintOrdOpProcPhaseVHType/MaintOrdOpProcessPhaseCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_MaintOrdOpProcSubPhaseVHType/MaintOrdOpProcessSubPhaseDesc">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_MaintOrdOpProcSubPhaseVHType/MaintOrdOpProcessSubPhaseCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_MaintOrdPhaseControlVHType/MaintenancePhaseControlName">
+                <Annotation Term="Common.Text" Path="MaintenancePhaseControlText">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_MaintOrdProcessingContextVHType/MaintOrderProcessingContext">
+                <Annotation Term="Common.Text" Path="MaintOrdProcessingContextText">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_MaintOrdProcPhaseVHType/MaintOrdProcessPhaseCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_MaintOrdProcSubPhaseVHType/MaintOrdProcessSubPhaseCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_MaintOrdProcSubPhaseVHType">
+                <Annotation Term="UI.PresentationVariant" Qualifier="PhaseCodeDesc">
+                    <Record>
+                        <PropertyValue Property="SortOrder">
+                            <Collection>
+                                <Record Type="Common.SortOrderType">
+                                    <PropertyValue Property="Property" PropertyPath="MaintOrdProcessSubPhaseCode" />
+                                    <PropertyValue Property="Descending" Bool="false" />
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintObjPhaseControlType/StatusObject">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintObjPhaseControlType/MaintenanceOrderType">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintObjPhaseControlType/EAMBlockerCodeEntityType">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintObjPhaseControlType/MaintenancePhaseControlText">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintObjPhaseControlType/MaintUserStatusProfileCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintObjPhaseControlType/MaintenanceUserStatusCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintObjPhaseControlType/ConfignDeprecationCodeName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintObjPhaseControlType/MaintObjPhaseCtrlCodeSetBy">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintObjPhaseControlType/MaintObjPhaseCtrlCodeResetBy">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintObjPhaseControlType/MaintenancePhaseControlName">
+                <Annotation Term="Common.Text" Path="MaintenancePhaseControlText">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintObjPhaseControlType/ConfigDeprecationCode">
+                <Annotation Term="Common.Text" Path="ConfignDeprecationCodeName">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintObjPhaseControlType">
+                <Annotation Term="UI.LineItem">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Phase Control" />
+                            <PropertyValue Property="Value" Path="MaintenancePhaseControlName" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Phase Control Key" />
+                            <PropertyValue Property="Value" Path="MaintProcgPhseCtrlActvtnCode" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="EAMProcessPhaseCode" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="EAMProcessSubPhaseCode" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaintObjPhaseControlStateCode" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintPriorityColorCode">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintOrdBasicStartDate">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintOrdBasicEndDate">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintenanceOrderThumbnailURL">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.IsImageURL" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintOrdProcessPhaseCode">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="Common.Text" Path="MaintOrdProcessPhaseCode_Text">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintOrderWithLeadingZeros">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintenanceOrderDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintenanceOrderInternalID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintenanceOrderTypeName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintPriorityDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/TaskListGroup">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/TaskListType">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/TaskListGroupCounter">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/TaskListKeyDate">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/TechObjIsEquipOrFuncnlLocDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MainWorkCenterText">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintOrdBasicStartTime">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintOrdBasicEndTime">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/KeepOrRemoveConstraints">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintOrdSchedBasicStartDate">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/ScheduledBasicStartDate">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/ScheduledBasicEndDate">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintOrdSchedBasicStartTime">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/ScheduledBasicStartTime">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/ScheduledBasicEndTime">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintOrderReferenceDate">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintOrderReferenceTime">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintenancePlannerGroupName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/PersonResponsibleName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/CreationDate">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/CreationTime">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaterialName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/AssemblyName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/CostCenterName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/ProfitCenterName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/LocAcctAssgmtCostCenterDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MasterFixedAssetDescription">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/TechnicalObject">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/FunctionalLocation">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/WBSElementInternalID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/Plant">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintOrderRespPartnerFunction">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/RefTimeForOrderCompletion">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/StatusName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintOrdCostCriticality">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/WorkCenterInternalID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/WorkCenterTypeCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintOrderRoutingNumber">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintOrdTypeHasActvPhaseModel">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/IsCloudSystem">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/CompleteBusinessAndSetNotifSts">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/CompleteTechlyAndSetNotifSts">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/DoNotExectOrderAndSetNotifSts">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/ResetTechCompltnAndSetNotifSts">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintObjectLocAcctAssgmtNmbr">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/BasicSchedulingType">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/OrdIsNotSchedldAutomatically">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintOrderHasActiveWorkflow">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintPlanningBucketUUID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/Cancelbusinesscomplete_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/Canceltechnicalcomplete_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/Changeassgmt_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/Changescheduling_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/Completebusiness_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/Completetechnical_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/Donotexecute_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/Mainworkcompleted_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/Readyforscheduling_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/Release_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/Resetdeletionflag_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/Scheduleoperations_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/Setdeletionflag_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/OrderHasLongText_fc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/FunctionalLocationLabelName_Text">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintOrdProcessPhaseCode_Text">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintOrdProcessSubPhaseCode_Text">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintenanceOrder">
+                <Annotation Term="Common.SemanticObject" String="MaintenanceOrder" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintenanceNotification">
+                <Annotation Term="Common.SemanticObject" String="MaintenanceNotification" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/TaskList">
+                <Annotation Term="Common.SemanticObject" String="MaintenanceTaskList" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintenancePlan">
+                <Annotation Term="Common.SemanticObject" String="MaintenancePlan" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/TechnicalObjectLabel">
+                <Annotation Term="Common.SemanticObject" String="MaintenanceObject" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/Assembly">
+                <Annotation Term="Common.SemanticObject" String="Material" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintenanceOrderType">
+                <Annotation Term="Common.Text" Path="MaintenanceOrderTypeName">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintPriority">
+                <Annotation Term="Common.Text" Path="MaintPriority_Text">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/TechObjIsEquipOrFuncnlLoc">
+                <Annotation Term="Common.Text" Path="TechObjIsEquipOrFuncnlLoc_Text">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/OperationSystemCondition">
+                <Annotation Term="Common.Text" Path="OperationSystemConditionText">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintenanceOrderPlanningCode">
+                <Annotation Term="Common.Text" Path="MaintOrderPlanningCodeName">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/PlantSectionPersonRespName">
+                <Annotation Term="Common.Text" Path="PlantSectionPersonRespPhone">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextLast" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/ABCIndicator">
+                <Annotation Term="Common.Text" Path="ABCIndicatorDesc">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType/MaintOrdProcessSubPhaseCode">
+                <Annotation Term="Common.Text" Path="MaintOrdProcessSubPhaseCode_Text">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_ObjPgMaintOrderType">
+                <Annotation Term="UI.FieldGroup" Qualifier="AccountAssignData1">
+                    <Record>
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="LocAcctAssgmtCompanyCode" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="LocAcctAssgmtBusinessArea" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="LocAcctAssgmtControllingArea" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Label" String="Account Assignment" />
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="AccountAssignData2">
+                    <Record>
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="LocAcctAssgmtCostCenter" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="CityName" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="SettlementOrder" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Label" String="Account Assignment 2" />
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="AccountAssignData3">
+                    <Record>
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MasterFixedAsset" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="FixedAsset" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="LocAcctAssgmtWBSElement" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Label" String="Account Assignment 3" />
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="Dates">
+                    <Record>
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaintOrdBasicStartDateTime" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaintOrdBasicStartDate" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaintOrdBasicEndDate" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaintOrdBasicEndDateTime" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaintOrdSchedBasicStartDate" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="ScheduledBasicEndDate" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaintOrderCreationDateTime" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="CreationDate" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="CreatedByUser" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaintOrdSchedBscStartDateTime" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaintOrdSchedldBscEndDateTime" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Label" String="Dates" />
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="HeaderInfo1">
+                    <Record>
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaintenanceOrderType" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaintOrderProcessingContext" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaintPriority" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="TechnicalObjectLabel" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Label" String="Order Type" />
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="HeaderInfo2">
+                    <Record>
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaintenanceNotification" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaintOrdBasicStartDateTime" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaintOrdBasicStartDate" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaintOrdBasicEndDate" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaintOrdBasicEndDateTime" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Label" String="Notification" />
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="HeaderInfo3">
+                    <Record>
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="ConcatenatedActiveSystStsName" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="ConcatenatedActiveUserStsName" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaintOrdProcessPhaseCode" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaintOrdProcessSubPhaseCode" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaintOrdHasOpenMainWork" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaintObjNmbrOfPhaseCtrlCodes" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Label" String="Status" />
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="HeaderInfo5">
+                    <Record>
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="OrderNmbrOfAttachedDocuments" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaintOrderNumberOfOperations" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Label" String="Object Overview" />
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="LocationData">
+                    <Record>
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaintenancePlant" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="AssetLocation" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="AssetRoom" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="PlantSection" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="PlantSectionPersonRespName" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="WorkCenter" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="ABCIndicator" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="SortField" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Label" String="Location Data" />
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="OrganizationalData1">
+                    <Record>
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="CompanyCode" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="BusinessArea" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="ControllingArea" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Label" String="Organizational Data" />
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="OrganizationalData2">
+                    <Record>
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="ResponsibleCostCenter" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="ProfitCenter" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="ControllingObjectClass" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Label" String="Organizational Data 2" />
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="OrganizationalData3">
+                    <Record>
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="OrderProcessingGroup" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="WBSElement" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Project" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Label" String="Organizational Data 3" />
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="Responsibilities">
+                    <Record>
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MainWorkCenter" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MainWorkCenterPlant" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaintenancePlannerGroup" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="MaintenancePlanningPlant" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataFieldForAnnotation">
+                                    <PropertyValue Property="Label" String="Person Responsible" />
+                                    <PropertyValue Property="Target" String="">
+                                        <Annotation Term="Core.Messages">
+                                            <Collection>
+                                                <Record>
+                                                    <PropertyValue Property="code" String="SADL_GW_EXP_VOCAN-000" />
+                                                    <PropertyValue Property="message" String="Navigation property '_PersonResponsible' of annotation 'UI.FIELDGROUP' in proj./view 'C_ObjPgMaintOrder' not found" />
+                                                    <PropertyValue Property="severity" String="error" />
+                                                </Record>
+                                            </Collection>
+                                        </Annotation>
+                                    </PropertyValue>
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Label" String="Responsibilities" />
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="TechnicalObject">
+                    <Record>
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="TechnicalObjectLabel" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Material" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="SerialNumber" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Assembly" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="OperationSystemCondition" />
+                                    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="Label" String="Technical Object" />
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.HeaderInfo">
+                    <Record>
+                        <PropertyValue Property="TypeName" String="Maintenance Order" />
+                        <PropertyValue Property="TypeNamePlural" String="Maintenance Orders" />
+                        <PropertyValue Property="Title">
+                            <Record Type="UI.DataField">
+                                <PropertyValue Property="Value" Path="MaintenanceOrder" />
+                            </Record>
+                        </PropertyValue>
+                        <PropertyValue Property="Description">
+                            <Record Type="UI.DataField">
+                                <PropertyValue Property="Value" Path="MaintenanceOrderDesc" />
+                            </Record>
+                        </PropertyValue>
+                        <PropertyValue Property="ImageUrl" Path="MaintenanceOrderThumbnailURL" />
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.LineItem">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaintenanceOrder" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataFieldForAction">
+                            <PropertyValue Property="Label" String="Release" />
+                            <PropertyValue Property="Action" String="RSH_EAM_ORDER_GANTT_SRV.RSH_EAM_ORDER_GANTT_SRV_Entities/C_ObjPgMaintOrderRelease" />
+                            <PropertyValue Property="InvocationGrouping" EnumMember="UI.OperationGroupingType/Isolated" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaintenanceOrderType" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaintenanceNotification" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Criticality" Path="MaintPriorityColorCode" />
+                            <PropertyValue Property="CriticalityRepresentation" EnumMember="UI.CriticalityRepresentationType/WithoutIcon" />
+                            <PropertyValue Property="Value" Path="MaintPriority" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="LatestAcceptableCompletionDate" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="TechnicalObjectLabel" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaintOrdBasicStartDateTime" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaintOrdBasicStartDate" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaintOrdBasicEndDate" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaintOrdBasicEndDateTime" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaintOrdSchedBasicStartDate" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="ScheduledBasicEndDate" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaintOrdSchedBscStartDateTime" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaintOrdSchedldBscEndDateTime" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MainWorkCenter" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Criticality" Path="MaintOrdCostCriticality" />
+                            <PropertyValue Property="CriticalityRepresentation" EnumMember="UI.CriticalityRepresentationType/WithoutIcon" />
+                            <PropertyValue Property="Value" Path="MaintOrdTotalCost" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MainWorkCenterPlant" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaintenancePlan" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataFieldForAction">
+                            <PropertyValue Property="Label" String="Cancel Business Completion" />
+                            <PropertyValue Property="Action" String="RSH_EAM_ORDER_GANTT_SRV.RSH_EAM_ORDER_GANTT_SRV_Entities/C_ObjPgMaintOrderCancelbusinesscomplete" />
+                            <PropertyValue Property="InvocationGrouping" EnumMember="UI.OperationGroupingType/Isolated" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaintenanceItem" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataFieldForAnnotation">
+                            <PropertyValue Property="Label" String="Contact Information (Created By)" />
+                            <PropertyValue Property="Target" String="">
+                                <Annotation Term="Core.Messages">
+                                    <Collection>
+                                        <Record>
+                                            <PropertyValue Property="code" String="SADL_GW_EXP_VOCAN-000" />
+                                            <PropertyValue Property="message" String="Navigation property '_CreatedByUser' of annotation 'UI.LINEITEM$1$' in proj./view 'C_ObjPgMaintOrder' not found" />
+                                            <PropertyValue Property="severity" String="error" />
+                                        </Record>
+                                    </Collection>
+                                </Annotation>
+                            </PropertyValue>
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaintenanceProcessingPhase" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataFieldForAnnotation">
+                            <PropertyValue Property="Label" String="Contact Information (Person Responsible)" />
+                            <PropertyValue Property="Target" String="">
+                                <Annotation Term="Core.Messages">
+                                    <Collection>
+                                        <Record>
+                                            <PropertyValue Property="code" String="SADL_GW_EXP_VOCAN-000" />
+                                            <PropertyValue Property="message" String="Navigation property '_PersonResponsible' of annotation 'UI.LINEITEM' in proj./view 'C_ObjPgMaintOrder' not found" />
+                                            <PropertyValue Property="severity" String="error" />
+                                        </Record>
+                                    </Collection>
+                                </Annotation>
+                            </PropertyValue>
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaintOrdProcessPhaseCode" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaintOrdProcessSubPhaseCode" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaintOrderProcessingContext" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataFieldForAction">
+                            <PropertyValue Property="Label" String="Main Work Completed" />
+                            <PropertyValue Property="Action" String="RSH_EAM_ORDER_GANTT_SRV.RSH_EAM_ORDER_GANTT_SRV_Entities/C_ObjPgMaintOrderMainworkcompleted" />
+                            <PropertyValue Property="InvocationGrouping" EnumMember="UI.OperationGroupingType/Isolated" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low" />
+                        </Record>
+                        <Record Type="UI.DataFieldForAction">
+                            <PropertyValue Property="Label" String="Ready to Schedule" />
+                            <PropertyValue Property="Action" String="RSH_EAM_ORDER_GANTT_SRV.RSH_EAM_ORDER_GANTT_SRV_Entities/C_ObjPgMaintOrderReadyforscheduling" />
+                            <PropertyValue Property="InvocationGrouping" EnumMember="UI.OperationGroupingType/Isolated" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low" />
+                        </Record>
+                        <Record Type="UI.DataFieldForAction">
+                            <PropertyValue Property="Label" String="Dispatch Operations" />
+                            <PropertyValue Property="Action" String="RSH_EAM_ORDER_GANTT_SRV.RSH_EAM_ORDER_GANTT_SRV_Entities/C_ObjPgMaintOrderScheduleoperations" />
+                            <PropertyValue Property="InvocationGrouping" EnumMember="UI.OperationGroupingType/Isolated" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low" />
+                        </Record>
+                        <Record Type="UI.DataFieldForAction">
+                            <PropertyValue Property="Label" String="Set Deletion Flag" />
+                            <PropertyValue Property="Action" String="RSH_EAM_ORDER_GANTT_SRV.RSH_EAM_ORDER_GANTT_SRV_Entities/C_ObjPgMaintOrderSetdeletionflag" />
+                            <PropertyValue Property="InvocationGrouping" EnumMember="UI.OperationGroupingType/Isolated" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low" />
+                        </Record>
+                        <Record Type="UI.DataFieldForAction">
+                            <PropertyValue Property="Label" String="Reset Deletion Flag" />
+                            <PropertyValue Property="Action" String="RSH_EAM_ORDER_GANTT_SRV.RSH_EAM_ORDER_GANTT_SRV_Entities/C_ObjPgMaintOrderResetdeletionflag" />
+                            <PropertyValue Property="InvocationGrouping" EnumMember="UI.OperationGroupingType/Isolated" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low" />
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.PresentationVariant">
+                    <Record>
+                        <PropertyValue Property="RequestAtLeast">
+                            <Collection>
+                                <PropertyPath>TaskListKeyDate</PropertyPath>
+                                <PropertyPath>TaskListGroupCounter</PropertyPath>
+                                <PropertyPath>TaskListGroup</PropertyPath>
+                                <PropertyPath>TaskListType</PropertyPath>
+                                <PropertyPath>RefTimeForOrderCompletion</PropertyPath>
+                                <PropertyPath>ResetTechCompltnAndSetNotifSts</PropertyPath>
+                                <PropertyPath>DoNotExectOrderAndSetNotifSts</PropertyPath>
+                                <PropertyPath>CompleteTechlyAndSetNotifSts</PropertyPath>
+                                <PropertyPath>CompleteBusinessAndSetNotifSts</PropertyPath>
+                                <PropertyPath>TechnicalObject</PropertyPath>
+                                <PropertyPath>TechObjIsEquipOrFuncnlLoc</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.SelectionFields">
+                    <Collection>
+                        <PropertyPath>MaintenanceOrder</PropertyPath>
+                        <PropertyPath>MaintenanceOrderType</PropertyPath>
+                        <PropertyPath>MaintPriority</PropertyPath>
+                        <PropertyPath>LatestAcceptableCompletionDate</PropertyPath>
+                        <PropertyPath>TechnicalObjectLabel</PropertyPath>
+                        <PropertyPath>MaintOrdBasicStartDateTime</PropertyPath>
+                        <PropertyPath>MaintOrdBasicStartDate</PropertyPath>
+                        <PropertyPath>MaintOrdBasicEndDate</PropertyPath>
+                        <PropertyPath>MaintOrdBasicEndDateTime</PropertyPath>
+                        <PropertyPath>MaintOrdSchedBasicStartDate</PropertyPath>
+                        <PropertyPath>ScheduledBasicEndDate</PropertyPath>
+                        <PropertyPath>MaintOrdSchedBscStartDateTime</PropertyPath>
+                        <PropertyPath>MaintOrdSchedldBscEndDateTime</PropertyPath>
+                        <PropertyPath>MainWorkCenter</PropertyPath>
+                        <PropertyPath>MainWorkCenterPlant</PropertyPath>
+                        <PropertyPath>MaintOrderReferenceDateTime</PropertyPath>
+                        <PropertyPath>MaintenancePlan</PropertyPath>
+                        <PropertyPath>MaintenanceItem</PropertyPath>
+                        <PropertyPath>MaintenanceProcessingPhase</PropertyPath>
+                        <PropertyPath>MaintOrdProcessSubPhaseCode</PropertyPath>
+                        <PropertyPath>MaintOrdHasOpenMainWork</PropertyPath>
+                        <PropertyPath>MaintOrderProcessingContext</PropertyPath>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_PMWorkCenterVHType/WorkCenterInternalID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_PMWorkCenterVHType/WorkCenterTypeCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_PMWorkReqReporterVHType/EmailAddress">
+                <Annotation Term="Communication.IsEmailAddress" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_PMWorkReqReporterVHType/UserID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_PMWorkReqReporterVHType/FullName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_PMWorkReqReporterVHType">
+                <Annotation Term="Communication.Contact">
+                    <Record>
+                        <PropertyValue Property="fn" Path="FullName" />
+                        <PropertyValue Property="n">
+                            <Record>
+                                <PropertyValue Property="given" Path="FirstName" />
+                                <PropertyValue Property="surname" Path="LastName" />
+                            </Record>
+                        </PropertyValue>
+                        <PropertyValue Property="email">
+                            <Collection>
+                                <Record>
+                                    <PropertyValue Property="type" EnumMember="Communication.ContactInformationType/work" />
+                                    <PropertyValue Property="address" Path="EmailAddress" />
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHFunctionalLocationLabelVHType/FunctionalLocation">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationDetailsType/OperationPersonResponsible">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationHasErrorVHType/HasError">
+                <Annotation Term="UI.Hidden" />
+                <Annotation Term="Common.Text" Path="HasErrorDescription">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationOnCriticalPathVHType/OperationIsOnCriticalPath">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationProcessStatusVHType/ProcessingStatus">
+                <Annotation Term="UI.Hidden" />
+                <Annotation Term="Common.Text" Path="ProcessingStatusText">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaterialStatus">
+                <Annotation Term="UI.DataFieldDefault">
+                    <Record Type="UI.DataField">
+                        <PropertyValue Property="Criticality" Path="MaterialStatusColorCode" />
+                        <PropertyValue Property="CriticalityRepresentation" EnumMember="UI.CriticalityRepresentationType/WithoutIcon" />
+                        <PropertyValue Property="Value" Path="MaterialStatus" />
+                    </Record>
+                </Annotation>
+                <Annotation Term="Common.Text" Path="MaterialStatusText">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintenanceRevisionDesc">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/ABCIndicatorDesc">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/ProjectDescription">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/WBSDescription">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OperationPlannedWorkUnit">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OperationDurationUnit">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintOpExecStageShortText">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintOrdProcessPhaseCode">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintOrdOpProcessPhaseCode">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OrderStartDateTime">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OrderEndDateTime">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OpActualExecutionStartDateTime">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OpActualExecutionEndDateTime">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OrderOperationStartDateTime">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OrderOperationEndDateTime">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/ForecastWorkQuantity">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/ActualWorkQuantity">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/RemainingWorkQuantity">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/AssignedMaintOpStartDateTime">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/AssignedMaintOpEndDateTime">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/to_ObjPgMaintObjOrdOpPhaseCntrl">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/to_ObjPgMaintObjPhaseControl">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/to_OperationDetails">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintOrderRoutingNumber">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintOrderOperationCounter">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintOrderOperationInternalID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintOrderConfirmation">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintenanceOrderDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintenanceActivityTypeName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintPriorityType">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintPriorityDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OperationHasLongTextDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OperationHasSubOperations">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/EquipmentName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/FunctionalLocationName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/TechnicalObjectDescription">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OperationTechnicalObject">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OperationEquipmentName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/RelevantOperationFuncLocation">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OpFunctionalLocationName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OperationTechnicalObjectDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/FuncnlLocLabelIsPrimaryLabel">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/FunctionalLocLabelIsActive">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OperationSystemConditionText">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OrderSystemConditionText">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/SubOperationText">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OperationDescription">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/WorkCenterTypeCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OpErlstSchedldExecStrtDte">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OpErlstSchedldExecStrtTme">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OpErlstSchedldExecEndDte">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OpErlstSchedldExecEndTme">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OpLtstSchedldExecStrtDte">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OpLtstSchedldExecStrtTme">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OpLtstSchedldExecEndDte">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OpLtstSchedldExecEndTme">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/ScheduledBasicStartDate">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/ScheduledBasicStartTime">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/ScheduledBasicEndDate">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/ScheduledBasicEndTime">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/SchedulingIsPerformedBackward">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/SortSequence">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintOperationExecStageCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/SchedulingTypeName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/ProcessingStatusText">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/ProcessingStatusColorCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaterialStatusCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaterialStatusText">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaterialStatusColorCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/HasErrorDescription">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/HasCrossOrderRelationship">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintObjectLocAcctAssgmtNmbr">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintSchedSimlnUUID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/NumberOfMaintSchedSimulations">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintObjectFunctionalLocID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintObjectEquipmentID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OpMaintObjectEquipmentID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OpMaintObjectFunctionalLocID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/AuthorizationGroup">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintenanceOrderType">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintOrdProcessPhaseDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintOrdProcessSubPhaseDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintOrdOpProcessPhaseDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintOrdOpProcessSubPhaseDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintenanceOrderInternalID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/ConcatenatedAssignedPersonsTxt">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/ActualWorkQuantityUnit">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintenanceOrder">
+                <Annotation Term="Common.SemanticObject" String="MaintenanceOrder" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintenanceActivityType">
+                <Annotation Term="Common.Text" Path="MaintenanceActivityTypeName">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintPriority">
+                <Annotation Term="Common.Text" Path="MaintPriorityDesc">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OperationHasLongText">
+                <Annotation Term="Common.Text" Path="OperationHasLongTextDesc">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OperationSystemCondition">
+                <Annotation Term="Common.Text" Path="OperationSystemConditionText">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/OrderSystemCondition">
+                <Annotation Term="Common.Text" Path="OrderSystemConditionText">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/MaintOpExecutionStageName">
+                <Annotation Term="Common.Text" Path="MaintOpExecStageShortText">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/SchedulingType">
+                <Annotation Term="Common.Text" Path="SchedulingTypeName">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/ProcessingStatus">
+                <Annotation Term="Common.Text" Path="ProcessingStatusText">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType/AssignedPerson">
+                <Annotation Term="Common.Text" Path="ConcatenatedAssignedPersonsTxt">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationsType">
+                <Annotation Term="UI.LineItem">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaintenanceOrder" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaintenanceOrderOperation" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaintenanceOrderSubOperation" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaintPriority" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="OrderOperationStartDateTime" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="OrderOperationEndDateTime" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Criticality" Path="ProcessingStatusColorCode" />
+                            <PropertyValue Property="CriticalityRepresentation" EnumMember="UI.CriticalityRepresentationType/WithoutIcon" />
+                            <PropertyValue Property="Value" Path="ProcessingStatus" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="OperationPlannedWork" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="OrderType" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="WorkCenter" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.SelectionFields">
+                    <Collection>
+                        <PropertyPath>PeriodType</PropertyPath>
+                        <PropertyPath>WorkCenter</PropertyPath>
+                        <PropertyPath>MaintPriority</PropertyPath>
+                        <PropertyPath>OrderType</PropertyPath>
+                        <PropertyPath>MaintenanceActivityType</PropertyPath>
+                        <PropertyPath>OperationControlKey</PropertyPath>
+                        <PropertyPath>ProcessingStatus</PropertyPath>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOpInMaintSchedVHType/MaintSchedSimlnDescription">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOpInMaintSchedVHType/MaintSchedSimlnUUID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttCalendarType/P_StartDate">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttCalendarType/P_EndDate">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderHasLongTextVHType/OperationHasLongText">
+                <Annotation Term="UI.Hidden" />
+                <Annotation Term="Common.Text" Path="OperationHasLongTextDesc">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderMaterialStatusVHType/MaterialStatus">
+                <Annotation Term="UI.Hidden" />
+                <Annotation Term="Common.Text" Path="MaterialStatusText">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderPriorityVHType/MaintPriorityColorCode">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderPriorityVHType/MaintPriority">
+                <Annotation Term="Common.Text" Path="MaintPriorityDesc">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintenanceRevisionDesc">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/ABCIndicatorDesc">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/ProjectDescription">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/WBSDescription">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintOrdProcessPhaseCode">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="Common.Text" Path="MaintOrdProcessPhaseDesc">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintOrdOpProcessSubPhaseCode">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OrderStartDateTime">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OrderEndDateTime">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintenanceOrderOperation">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintenanceOrderSubOperation">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/ConcatenatedOrderPhaseCtrlText">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/ConcatenatedOrdOpPhaseCtrlText">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintOrdCnctntdActvUserSts">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintOrdOpCnctntdActvUserSts">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/FirstMaintSchedSimulation">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintOrderRoutingNumber">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintOrderOperationCounter">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/AssignedPerson">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintenanceOrderInternalID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintenanceOrderDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintPriorityDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintenanceActivityTypeName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/WorkCenter">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/Plant">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/WorkCenterInternalID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/WorkCenterTypeCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OrderHasLongText">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OperationHasLongTextDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/EquipmentName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/FunctionalLocationName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/FuncnlLocLabelIsPrimaryLabel">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/FunctionalLocLabelIsActive">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/TechnicalObjectDescription">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OperationTechnicalObject">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OpTechObjEquipOrFuncnlLoc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OperationTechnicalObjectLabel">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OperationTechnicalObjectDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OperationEquipment">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OperationEquipmentName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/RelevantOperationFuncLocation">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OperationFunctionalLocation">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OpFunctionalLocationName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OperationSystemCondition">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OperationSystemConditionText">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OrderSystemConditionText">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/SchedulingTypeName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/ProcessingStatusText">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/ProcessingStatusColorCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OperationControlKey">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OperationHasLongText">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OperationPersonResponsible">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OperationPersonRespName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OperationPlannedWork">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OperationPlannedWorkUnit">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OperationDuration">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OperationDurationUnit">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/NumberOfCapacities">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaterialStatusCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaterialStatusKey">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaterialStatusText">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaterialStatusColorCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OpErlstSchedldExecStrtDte">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OpErlstSchedldExecStrtTme">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OpErlstSchedldExecEndDte">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OpErlstSchedldExecEndTme">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OpLtstSchedldExecStrtDte">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OpLtstSchedldExecStrtTme">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OpLtstSchedldExecEndDte">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OpLtstSchedldExecEndTme">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/SchedulingIsPerformedBackward">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/HasError">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/HasErrorDescription">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintObjectLocAcctAssgmtNmbr">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintOperationExecStageCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintOpExecutionStageName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintOpExecStageShortText">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintObjectFunctionalLocID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintObjectEquipmentID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/AuthorizationGroup">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintenanceOrderType">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintOrdProcessPhaseDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintOrdProcessSubPhaseDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintOrdOpProcessPhaseCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintOrdOpProcessPhaseDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintOrdOpProcessSubPhaseDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/ID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintPriority">
+                <Annotation Term="Common.Text" Path="MaintPriorityDesc">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintenanceActivityType">
+                <Annotation Term="Common.Text" Path="MaintenanceActivityTypeName">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/OrderSystemCondition">
+                <Annotation Term="Common.Text" Path="OrderSystemConditionText">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/SchedulingType">
+                <Annotation Term="Common.Text" Path="SchedulingTypeName">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/ProcessingStatus">
+                <Annotation Term="Common.Text" Path="ProcessingStatusText">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaterialStatus">
+                <Annotation Term="Common.Text" Path="MaterialStatusText">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType/MaintOrdProcessSubPhaseCode">
+                <Annotation Term="Common.Text" Path="MaintOrdProcessSubPhaseDesc">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersType">
+                <Annotation Term="UI.LineItem">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaintenanceOrder" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaintPriority" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="OrderStartDateTime" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="OrderEndDateTime" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Criticality" Path="ProcessingStatusColorCode" />
+                            <PropertyValue Property="CriticalityRepresentation" EnumMember="UI.CriticalityRepresentationType/WithoutIcon" />
+                            <PropertyValue Property="Value" Path="ProcessingStatus" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="OperationPlannedWork" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="OrderType" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MainWorkCenter" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaintenanceActivityType" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Criticality" Path="MaterialStatusColorCode" />
+                            <PropertyValue Property="CriticalityRepresentation" EnumMember="UI.CriticalityRepresentationType/WithoutIcon" />
+                            <PropertyValue Property="Value" Path="MaterialStatus" />
+                        </Record>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintenanceRevisionDesc">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/ABCIndicatorDesc">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/ProjectDescription">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/WBSDescription">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OperationPlannedWorkUnit">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintOpExecStageShortText">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintOrdProcessPhaseCode">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintOrdOpProcessPhaseCode">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/ConcatenatedActiveUserStsName">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/ConcatenatedAssignedPersonsTxt">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/NumberOfAssignedPersons">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/ForecastWorkQuantity">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/ActualWorkQuantity">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/RemainingWorkQuantity">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/to_ControlKeyVH">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/to_MaintOpExecStageCodeText">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/to_MaintSchedSimulation">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/to_ObjPgMaintObjOrdOpPhaseCntrl">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/to_ObjPgMaintObjPhaseControl">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/to_OperationSystemConditionVH">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/to_OperationTechObjIsEquip">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/to_OrderSystemConditionVH">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/to_SchedulingTypeVH">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/to_TechObjIsEquipOrFuncnlLoc">
+                <Annotation Term="UI.HiddenFilter" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintenanceOrderSubOperation">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintOrderRoutingNumber">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintOrderOperationCounter">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintenanceOrderInternalID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintOrderOperationInternalID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OperationDescription">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintenanceOrderDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintenanceActivityTypeName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintPriorityType">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintPriorityDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OperationHasLongTextDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/NotificationText">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/EquipmentName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/FunctionalLocationName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/TechnicalObjectDescription">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/TechObjIsEquipOrFuncnlLocDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OperationTechnicalObject">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OpTechObjEquipOrFuncnlLocDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OperationTechnicalObjectDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OperationEquipmentName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/RelevantOperationFuncLocation">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OpFunctionalLocationName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OperationSystemConditionText">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OrderSystemConditionText">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/WorkCenterTypeCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OperationDurationUnit">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/SchedulingTypeName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/ProcessingStatusText">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaterialStatusKey">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaterialStatusCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaterialStatusText">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/HasError">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/HasErrorDescription">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/AuthorizationGroup">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintenanceOrderType">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/BasicSchedulingType">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OrdIsNotSchedldAutomatically">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintSchedSimlnUUID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/FirstMaintSchedSimulation">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/NumberOfMaintSchedSimulations">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OrderOperationIsExpanded">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OrderOperationParentRowID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OrderOperationRowID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OrderOperationRowLevel">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OrderOperationStartDateTime">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OrderOperationEndDateTime">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OrderStartDateTime">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OrderEndDateTime">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OpActualExecutionStartDate">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OpActualExecutionStartTime">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OpActualExecutionEndDate">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OpActualExecutionEndTime">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OpActualExecutionStartDateTime">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OpActualExecutionEndDateTime">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OpErlstSchedldExecStrtDte">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OpErlstSchedldExecStrtTme">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OpErlstSchedldExecEndDte">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OpErlstSchedldExecEndTme">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OpLtstSchedldExecStrtDte">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OpLtstSchedldExecStrtTme">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OpLtstSchedldExecEndDte">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OpLtstSchedldExecEndTme">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OpBscStartDateConstraintType">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OrderOpStartConstraintDateTime">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OpBscEndDateConstraintType">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OrderOpEndConstraintDateTime">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/SchedulingIsPerformedBackward">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/HasCrossOrderRelationship">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintObjectLocAcctAssgmtNmbr">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintObjectFunctionalLocID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintObjectEquipmentID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OpMaintObjectEquipmentID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OpMaintObjectFunctionalLocID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OperationIsOnCriticalPath">
+                <Annotation Term="UI.Hidden" />
+                <Annotation Term="Common.Text" Path="OperationOnCriticalPathText">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OperationOnCriticalPathText">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/SortSequence">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintOperationExecStageCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintOrdProcessPhaseDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintOrdProcessSubPhaseDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintOrdOpProcessPhaseDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintOrdOpProcessSubPhaseDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintenancePhaseControlText">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/StartDate">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/EndDate">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/ActualWorkQuantityUnit">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/AssignedMaintOpStartDateTime">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/AssignedMaintOpEndDateTime">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/ID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OperationHasLongText">
+                <Annotation Term="Common.Text" Path="OperationHasLongTextDesc">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/TechObjIsEquipOrFuncnlLoc">
+                <Annotation Term="Common.Text" Path="to_TechObjIsEquipOrFuncnlLoc/TechObjIsEquipOrFuncnlLoc_Text">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OpTechObjEquipOrFuncnlLoc">
+                <Annotation Term="Common.Text" Path="to_OperationTechObjIsEquip/TechObjIsEquipOrFuncnlLoc_Text">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OperationSystemCondition">
+                <Annotation Term="Common.Text" Path="OperationSystemConditionText">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/OrderSystemCondition">
+                <Annotation Term="Common.Text" Path="OrderSystemConditionText">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/ABCIndicator">
+                <Annotation Term="Common.Text" Path="ABCIndicatorDesc">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/SchedulingType">
+                <Annotation Term="Common.Text" Path="SchedulingTypeName">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHOrdersAndOperationsType/MaintOpExecutionStageName">
+                <Annotation Term="Common.Text" Path="MaintOpExecStageShortText">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextSeparate" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHPlngBucketAndEventDetailsType/MaintEventTypeDescription">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHPlngBucketAndEventDetailsType/MaintPlanningBucketUUID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHSchedulingTypeVHType/SchedulingType">
+                <Annotation Term="Common.Text" Path="SchedulingTypeName">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHUserVariantWithTeamType/WorkCenterIsUsedInPlngSchedule">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHWorkCenterCapacityChangeType/P_StartDate">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHWorkCenterCapacityChangeType/P_EndDate">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHWorkCenterVHType/WorkCenterInternalID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHWorkCenterVHType/WorkCenterTypeCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHWorkCenterVHType/RespyMgmtTeamID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHWorkCtrUtilizationType/StartDate">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHWorkCtrUtilizationType/EndDate">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHWrkCtrPersonResponsibleVHType/EmployeeImageURL">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHWrkCtrPersonResponsibleVHType/RespyMgmtFunction">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHWrkCtrPersonResponsibleVHType/WorkCenterInternalID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHWrkCtrPersonResponsibleVHType/Person">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHWrkCtrPersonResponsibleVHType/RespyMgmtFunctionDescription">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHWrkCtrPersonResponsibleVHType/BusinessPartner">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_RSHWrkCtrPersonResponsibleVHType">
+                <Annotation Term="UI.LineItem">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="OperationPersonRespName" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="OperationPersonResponsibleID" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="WorkCenter" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="ConcatenatedRespyMgmtFuncTxt" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Plant" />
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="Communication.Contact">
+                    <Record>
+                        <PropertyValue Property="fn" Path="OperationPersonRespName" />
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_TechnicalObjectFlatVHType/TechnicalObject">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_TechnicalObjectFlatVHType/FunctionalLocationLabelName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_TechnicalObjectFlatVHType/Equipment">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_TechnicalObjectFlatVHType/ABCIndicatorDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_TechnicalObjectFlatVHType/WorkCenterInternalID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_TechnicalObjectFlatVHType/WorkCenterTypeCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_TechnicalObjectFlatVHType/MainWorkCenterPlant">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_TechnicalObjectFlatVHType/MainWorkCenterInternalID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_TechnicalObjectFlatVHType/MainWorkCenterTypeCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_TechnicalObjectFlatVHType/MaintenancePlantName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_TechnicalObjectFlatVHType/MaintenancePlanningPlant">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_TechnicalObjectFlatVHType/TechnicalObjectCategoryDesc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_TechnicalObjectFlatVHType/TechObjInstallationLocation">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_TechnicalObjectFlatVHType/HierarchyNodeLevel">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_TechnicalObjectFlatVHType">
+                <Annotation Term="UI.LineItem">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="TechnicalObjectLabel" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_TechnicalObjectLabelVHType/TechObjIsEquipOrFuncnlLoc">
+                <Annotation Term="UI.Hidden" />
+                <Annotation Term="Common.Text" Path="TechObjIsEquipOrFuncnlLocDesc">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_TechnicalObjectLabelVHType/TechnicalObject">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_TechnicalObjectLabelVHType/FunctionalLocationLabelName">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.C_TechnicalObjectLabelVHType/Equipment">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_CostCenterStdVHType">
+                <Annotation Term="UI.LineItem">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CostCenter" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="ControllingArea" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_DraftAdministrativeDataType/DraftUUID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_DraftAdministrativeDataType/DraftEntityType">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_DraftAdministrativeDataType/DraftAccessType">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_DraftAdministrativeDataType/ProcessingStartDateTime">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_DraftAdministrativeDataType/InProcessByUser">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_DraftAdministrativeDataType/DraftIsKeptByUser">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_DraftAdministrativeDataType/EnqueueStartDateTime">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_DraftAdministrativeDataType/DraftIsCreatedByMe">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_DraftAdministrativeDataType/DraftIsLastChangedByMe">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_DraftAdministrativeDataType/DraftIsProcessedByMe">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_DraftAdministrativeDataType/CreatedByUserDescription">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_DraftAdministrativeDataType/LastChangedByUserDescription">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_DraftAdministrativeDataType/InProcessByUserDescription">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_EquipmentCategoryStdVHType/EquipmentCategoryStatusProfile">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_EquipmentCategoryStdVHType/EquipmentCategoryViewProfile">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_EquipmentCategoryStdVHType/EquipCatHasLinearAttributes">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_EquipmentCategoryStdVHType/EquipmentCategoryOID">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_EquipmentCategoryStdVHType/IsUtilitiesData">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_EquipmentCategoryStdVHType/NumberRangeForIntIDAssignment">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_EquipmentCategoryStdVHType/NumberRangeForExtIDAssignment">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_EquipmentCategoryStdVHType/TechObjInspectionLevelCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_EquipmentCategoryStdVHType/EquipmentCategoryReferenceType">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_FunctionalLocationLabelStdVHType/FunctionalLocation">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintenanceRevisionStdVHType/MaintenanceEventTypeCategory">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintenanceTaskListStdVHType/TaskListVersionCounter">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOpExecStageCodeVHType/MaintOperationExecStageCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOpExecStageCodeVHType/MaintOpExecStageGroupCode">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOpExecStageCodeVHType/SequenceNumber">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOpExecStageCodeVHType/MaintOpExecutionStageName">
+                <Annotation Term="Common.Text" Path="MaintOpExecStageShortText">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderOperationTPType/HasDraftEntity">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderOperationTPType/DraftUUID">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderOperationTPType/ParentDraftUUID">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderOperationTPType/DraftEntityCreationDateTime">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderOperationTPType/DraftEntityLastChangeDateTime">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderOperationTPType/HasActiveEntity">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderOperationTPType/IsActiveEntity">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderOperationTPType/Changeassgmt_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderOperationTPType/Changescheduling_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderOperationTPType/Createtimeconf_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderOperationTPType/Create_component_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderOperationTPType/Delete_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderOperationTPType/Preparation_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderOperationTPType/Setdispatch_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderOperationTPType/Unsetdispatch_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderOperationTPType/Validation_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderSubOperationTPType/HasDraftEntity">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderSubOperationTPType/DraftUUID">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderSubOperationTPType/ParentDraftUUID">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderSubOperationTPType/RootDraftUUID">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderSubOperationTPType/DraftEntityCreationDateTime">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderSubOperationTPType/DraftEntityLastChangeDateTime">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderSubOperationTPType/HasActiveEntity">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderSubOperationTPType/IsActiveEntity">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderSubOperationTPType/Changeassgmt_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderSubOperationTPType/Createtimeconf_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderSubOperationTPType/Preparation_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderSubOperationTPType/Setdispatch_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderSubOperationTPType/Unsetdispatch_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderSubOperationTPType/Validation_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType/HasDraftEntity">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType/DraftUUID">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType/DraftEntityCreationDateTime">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType/DraftEntityLastChangeDateTime">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType/HasActiveEntity">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType/IsActiveEntity">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType/Activation_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType/Cancelbusinesscomplete_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType/Canceltechnicalcomplete_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType/Changeassgmt_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType/Changescheduling_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType/Completebusiness_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType/Completetechnical_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType/Donotexecute_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType/Edit_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType/Mainworkcompleted_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType/Preparation_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType/Readyforscheduling_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType/Release_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType/Resetdeletionflag_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType/Scheduleoperations_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType/Setdeletionflag_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType/Validation_ac">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType/OrderHasLongText_fc">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintPlanningBucketVHType/MaintPlanningBucketUUID">
+                <Annotation Term="UI.Hidden" />
+                <Annotation Term="Common.Text" Path="MaintPlngBucketLabel">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintPlanningBucketVHType/RefMaintPlanningBucket">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintPlanningBucketVHType/MaintPlanningBucketIsRefBucket">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_MaintPlanningBucketVHType/MaintPlanningBucketType">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_PersWrkAgrmtSrchHelpType/PersonWorkAgrmtAuthznGrpg">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_PersWrkAgrmtSrchHelpType/AuthorizationGroup">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_PersWrkAgrmtSrchHelpType/IsBusinessPurposeCompleted">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_PersWrkAgrmtSrchHelp_1Type/PersonWorkAgrmtAuthznGrpg">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_PersWrkAgrmtSrchHelp_1Type/AuthorizationGroup">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_PersWrkAgrmtSrchHelp_1Type/IsBusinessPurposeCompleted">
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_ProfitCenterStdVHType">
+                <Annotation Term="UI.LineItem">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="ProfitCenter" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="ControllingArea" />
+                        </Record>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_ProjectByInternalKeyStdVHType">
+                <Annotation Term="UI.LineItem">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="ProjectInternalID" />
+                            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Project" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="ProjectExternalID" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="ProjectDescription" />
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.SelectionFields">
+                    <Collection>
+                        <PropertyPath>ProjectInternalID</PropertyPath>
+                        <PropertyPath>Project</PropertyPath>
+                        <PropertyPath>ProjectExternalID</PropertyPath>
+                        <PropertyPath>ProjectDescription</PropertyPath>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_Supplier_VHType/AuthorizationGroup">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_Supplier_VHType/SupplierAccountGroup">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_Supplier_VHType/IsBusinessPurposeCompleted">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_Supplier_VHType/DataControllerSet">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_Supplier_VHType/DataController1">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_Supplier_VHType/DataController2">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_Supplier_VHType/DataController3">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_Supplier_VHType/DataController4">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_Supplier_VHType/DataController5">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_Supplier_VHType/DataController6">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_Supplier_VHType/DataController7">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_Supplier_VHType/DataController8">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_Supplier_VHType/DataController9">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_Supplier_VHType/DataController10">
+                <Annotation Term="UI.HiddenFilter" />
+                <Annotation Term="UI.Hidden" />
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_TechnicalObjectStdVHType/TechObjIsEquipOrFuncnlLoc">
+                <Annotation Term="UI.Hidden" />
+                <Annotation Term="Common.Text" Path="TechObjIsEquipOrFuncnlLoc_Text">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="RSH_EAM_ORDER_GANTT_SRV.I_TechObjIsEquipOrFuncnlLocType/TechObjIsEquipOrFuncnlLoc">
+                <Annotation Term="Common.Text" Path="TechObjIsEquipOrFuncnlLoc_Text">
+                    <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly" />
+                </Annotation>
+            </Annotations>
+            <Annotations Target="_Entities" />
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

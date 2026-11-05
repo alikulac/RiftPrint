@@ -1,0 +1,52 @@
+[
+  {
+    "__metadata": {
+      "type": "RSH_EAM_ORDER_GANTT_SRV.C_MaintOrdProcessingContextVHType"
+    },
+    "MaintOrderProcessingContext": "",
+    "MaintOrdProcessingContextText": "Standard Order"
+  },
+  {
+    "__metadata": {
+      "type": "RSH_EAM_ORDER_GANTT_SRV.C_MaintOrdProcessingContextVHType"
+    },
+    "MaintOrderProcessingContext": "B",
+    "MaintOrdProcessingContextText": "Billable Order"
+  },
+  {
+    "__metadata": {
+      "type": "RSH_EAM_ORDER_GANTT_SRV.C_MaintOrdProcessingContextVHType"
+    },
+    "MaintOrderProcessingContext": "BE",
+    "MaintOrdProcessingContextText": "Billable Emergency Order"
+  },
+  {
+    "__metadata": {
+      "type": "RSH_EAM_ORDER_GANTT_SRV.C_MaintOrdProcessingContextVHType"
+    },
+    "MaintOrderProcessingContext": "E",
+    "MaintOrdProcessingContextText": "Emergency Order"
+  },
+  {
+    "__metadata": {
+      "type": "RSH_EAM_ORDER_GANTT_SRV.C_MaintOrdProcessingContextVHType"
+    },
+    "MaintOrderProcessingContext": "ES",
+    "MaintOrdProcessingContextText": "Order for Emergency Work with Screening"
+  },
+  {
+    "__metadata": {
+      "type": "RSH_EAM_ORDER_GANTT_SRV.C_MaintOrdProcessingContextVHType"
+    },
+    "MaintOrderProcessingContext": "M",
+    "MaintOrdProcessingContextText": "Minor Work Order"
+  },
+  {
+    "__metadata": {
+      "type": "RSH_EAM_ORDER_GANTT_SRV.C_MaintOrdProcessingContextVHType"
+    },
+    "MaintOrderProcessingContext": "MS",
+    "MaintOrdProcessingContextText": "Order for Minor Work with Screening"
+  }
+]
+

@@ -1,0 +1,82 @@
+[
+	{
+		"ProcessingStatus": 9,
+		"ProcessingStatusText": "ProcessingStatusText 1",
+		"__metadata": {
+			"uri": "C_RSHOperationProcessStatusVH(9)",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationProcessStatusVHType"
+		}
+	},
+	{
+		"ProcessingStatus": 0,
+		"ProcessingStatusText": "ProcessingStatusText 2",
+		"__metadata": {
+			"uri": "C_RSHOperationProcessStatusVH(9)",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationProcessStatusVHType"
+		}
+	},
+	{
+		"ProcessingStatus": 4,
+		"ProcessingStatusText": "ProcessingStatusText 3",
+		"__metadata": {
+			"uri": "C_RSHOperationProcessStatusVH(5)",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationProcessStatusVHType"
+		}
+	},
+	{
+		"ProcessingStatus": 9,
+		"ProcessingStatusText": "ProcessingStatusText 4",
+		"__metadata": {
+			"uri": "C_RSHOperationProcessStatusVH(7)",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationProcessStatusVHType"
+		}
+	},
+	{
+		"ProcessingStatus": 9,
+		"ProcessingStatusText": "ProcessingStatusText 5",
+		"__metadata": {
+			"uri": "C_RSHOperationProcessStatusVH(4)",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationProcessStatusVHType"
+		}
+	},
+	{
+		"ProcessingStatus": 5,
+		"ProcessingStatusText": "ProcessingStatusText 6",
+		"__metadata": {
+			"uri": "C_RSHOperationProcessStatusVH(7)",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationProcessStatusVHType"
+		}
+	},
+	{
+		"ProcessingStatus": 6,
+		"ProcessingStatusText": "ProcessingStatusText 7",
+		"__metadata": {
+			"uri": "C_RSHOperationProcessStatusVH(4)",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationProcessStatusVHType"
+		}
+	},
+	{
+		"ProcessingStatus": 7,
+		"ProcessingStatusText": "ProcessingStatusText 8",
+		"__metadata": {
+			"uri": "C_RSHOperationProcessStatusVH(7)",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationProcessStatusVHType"
+		}
+	},
+	{
+		"ProcessingStatus": 5,
+		"ProcessingStatusText": "ProcessingStatusText 9",
+		"__metadata": {
+			"uri": "C_RSHOperationProcessStatusVH(7)",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationProcessStatusVHType"
+		}
+	},
+	{
+		"ProcessingStatus": 5,
+		"ProcessingStatusText": "ProcessingStatusText 10",
+		"__metadata": {
+			"uri": "C_RSHOperationProcessStatusVH(5)",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationProcessStatusVHType"
+		}
+	}
+]

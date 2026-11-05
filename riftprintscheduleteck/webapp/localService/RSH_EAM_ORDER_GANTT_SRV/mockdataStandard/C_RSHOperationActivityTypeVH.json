@@ -1,0 +1,132 @@
+[
+	{
+		"MaintenanceActivityType": "MaintenanceActivityType 1",
+		"MaintenanceActivityType_Text": "MaintenanceActivityType_Text 1",
+		"__metadata": {
+			"uri": "C_RSHOperationActivityTypeVH('MaintenanceActivityType%201')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationActivityTypeVHType"
+		},
+		"to_Text": {
+			"__deferred": {
+				"uri": "C_RSHOperationActivityTypeVH('MaintenanceActivityType%201')/to_Text"
+			}
+		}
+	},
+	{
+		"MaintenanceActivityType": "MaintenanceActivityType 2",
+		"MaintenanceActivityType_Text": "MaintenanceActivityType_Text 2",
+		"__metadata": {
+			"uri": "C_RSHOperationActivityTypeVH('MaintenanceActivityType%202')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationActivityTypeVHType"
+		},
+		"to_Text": {
+			"__deferred": {
+				"uri": "C_RSHOperationActivityTypeVH('MaintenanceActivityType%202')/to_Text"
+			}
+		}
+	},
+	{
+		"MaintenanceActivityType": "MaintenanceActivityType 3",
+		"MaintenanceActivityType_Text": "MaintenanceActivityType_Text 3",
+		"__metadata": {
+			"uri": "C_RSHOperationActivityTypeVH('MaintenanceActivityType%203')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationActivityTypeVHType"
+		},
+		"to_Text": {
+			"__deferred": {
+				"uri": "C_RSHOperationActivityTypeVH('MaintenanceActivityType%203')/to_Text"
+			}
+		}
+	},
+	{
+		"MaintenanceActivityType": "MaintenanceActivityType 4",
+		"MaintenanceActivityType_Text": "MaintenanceActivityType_Text 4",
+		"__metadata": {
+			"uri": "C_RSHOperationActivityTypeVH('MaintenanceActivityType%204')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationActivityTypeVHType"
+		},
+		"to_Text": {
+			"__deferred": {
+				"uri": "C_RSHOperationActivityTypeVH('MaintenanceActivityType%204')/to_Text"
+			}
+		}
+	},
+	{
+		"MaintenanceActivityType": "MaintenanceActivityType 5",
+		"MaintenanceActivityType_Text": "MaintenanceActivityType_Text 5",
+		"__metadata": {
+			"uri": "C_RSHOperationActivityTypeVH('MaintenanceActivityType%205')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationActivityTypeVHType"
+		},
+		"to_Text": {
+			"__deferred": {
+				"uri": "C_RSHOperationActivityTypeVH('MaintenanceActivityType%205')/to_Text"
+			}
+		}
+	},
+	{
+		"MaintenanceActivityType": "MaintenanceActivityType 6",
+		"MaintenanceActivityType_Text": "MaintenanceActivityType_Text 6",
+		"__metadata": {
+			"uri": "C_RSHOperationActivityTypeVH('MaintenanceActivityType%206')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationActivityTypeVHType"
+		},
+		"to_Text": {
+			"__deferred": {
+				"uri": "C_RSHOperationActivityTypeVH('MaintenanceActivityType%206')/to_Text"
+			}
+		}
+	},
+	{
+		"MaintenanceActivityType": "MaintenanceActivityType 7",
+		"MaintenanceActivityType_Text": "MaintenanceActivityType_Text 7",
+		"__metadata": {
+			"uri": "C_RSHOperationActivityTypeVH('MaintenanceActivityType%207')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationActivityTypeVHType"
+		},
+		"to_Text": {
+			"__deferred": {
+				"uri": "C_RSHOperationActivityTypeVH('MaintenanceActivityType%207')/to_Text"
+			}
+		}
+	},
+	{
+		"MaintenanceActivityType": "MaintenanceActivityType 8",
+		"MaintenanceActivityType_Text": "MaintenanceActivityType_Text 8",
+		"__metadata": {
+			"uri": "C_RSHOperationActivityTypeVH('MaintenanceActivityType%208')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationActivityTypeVHType"
+		},
+		"to_Text": {
+			"__deferred": {
+				"uri": "C_RSHOperationActivityTypeVH('MaintenanceActivityType%208')/to_Text"
+			}
+		}
+	},
+	{
+		"MaintenanceActivityType": "MaintenanceActivityType 9",
+		"MaintenanceActivityType_Text": "MaintenanceActivityType_Text 9",
+		"__metadata": {
+			"uri": "C_RSHOperationActivityTypeVH('MaintenanceActivityType%209')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationActivityTypeVHType"
+		},
+		"to_Text": {
+			"__deferred": {
+				"uri": "C_RSHOperationActivityTypeVH('MaintenanceActivityType%209')/to_Text"
+			}
+		}
+	},
+	{
+		"MaintenanceActivityType": "MaintenanceActivityType 10",
+		"MaintenanceActivityType_Text": "MaintenanceActivityType_Text 10",
+		"__metadata": {
+			"uri": "C_RSHOperationActivityTypeVH('MaintenanceActivityType%2010')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationActivityTypeVHType"
+		},
+		"to_Text": {
+			"__deferred": {
+				"uri": "C_RSHOperationActivityTypeVH('MaintenanceActivityType%2010')/to_Text"
+			}
+		}
+	}
+]

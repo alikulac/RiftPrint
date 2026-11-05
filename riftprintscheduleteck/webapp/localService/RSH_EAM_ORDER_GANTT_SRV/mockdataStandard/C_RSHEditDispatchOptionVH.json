@@ -1,0 +1,26 @@
+[
+	{
+		"__metadata": {
+			"uri": "C_RSHEditDispatchOptionVH('')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHEditDispatchOptionVHType"
+		},
+		"Action": "",
+		"ActionDescription": "Keep Current Status"
+	},
+	{
+		"__metadata": {
+			"uri": "C_RSHEditDispatchOptionVH('1')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHEditDispatchOptionVHType"
+		},
+		"Action": "1",
+		"ActionDescription": "Trigger Dispatch"
+	},
+	{
+		"__metadata": {
+			"uri": "C_RSHEditDispatchOptionVH('2')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHEditDispatchOptionVHType"
+		},
+		"Action": "2",
+		"ActionDescription": "Cancel Dispatch"
+	}
+]

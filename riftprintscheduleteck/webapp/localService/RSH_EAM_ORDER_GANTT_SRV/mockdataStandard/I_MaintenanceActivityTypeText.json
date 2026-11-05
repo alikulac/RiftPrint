@@ -1,0 +1,92 @@
+[
+	{
+		"Language": "Language 1",
+		"MaintenanceActivityType": "MaintenanceActivityType 1",
+		"MaintenanceActivityTypeName": "MaintenanceActivityTypeName 1",
+		"__metadata": {
+			"uri": "I_MaintenanceActivityTypeText(Language='Language%201',MaintenanceActivityType='MaintenanceActivityType%201')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintenanceActivityTypeTextType"
+		}
+	},
+	{
+		"Language": "Language 2",
+		"MaintenanceActivityType": "MaintenanceActivityType 2",
+		"MaintenanceActivityTypeName": "MaintenanceActivityTypeName 2",
+		"__metadata": {
+			"uri": "I_MaintenanceActivityTypeText(Language='Language%202',MaintenanceActivityType='MaintenanceActivityType%202')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintenanceActivityTypeTextType"
+		}
+	},
+	{
+		"Language": "Language 3",
+		"MaintenanceActivityType": "MaintenanceActivityType 3",
+		"MaintenanceActivityTypeName": "MaintenanceActivityTypeName 3",
+		"__metadata": {
+			"uri": "I_MaintenanceActivityTypeText(Language='Language%203',MaintenanceActivityType='MaintenanceActivityType%203')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintenanceActivityTypeTextType"
+		}
+	},
+	{
+		"Language": "Language 4",
+		"MaintenanceActivityType": "MaintenanceActivityType 4",
+		"MaintenanceActivityTypeName": "MaintenanceActivityTypeName 4",
+		"__metadata": {
+			"uri": "I_MaintenanceActivityTypeText(Language='Language%204',MaintenanceActivityType='MaintenanceActivityType%204')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintenanceActivityTypeTextType"
+		}
+	},
+	{
+		"Language": "Language 5",
+		"MaintenanceActivityType": "MaintenanceActivityType 5",
+		"MaintenanceActivityTypeName": "MaintenanceActivityTypeName 5",
+		"__metadata": {
+			"uri": "I_MaintenanceActivityTypeText(Language='Language%205',MaintenanceActivityType='MaintenanceActivityType%205')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintenanceActivityTypeTextType"
+		}
+	},
+	{
+		"Language": "Language 6",
+		"MaintenanceActivityType": "MaintenanceActivityType 6",
+		"MaintenanceActivityTypeName": "MaintenanceActivityTypeName 6",
+		"__metadata": {
+			"uri": "I_MaintenanceActivityTypeText(Language='Language%206',MaintenanceActivityType='MaintenanceActivityType%206')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintenanceActivityTypeTextType"
+		}
+	},
+	{
+		"Language": "Language 7",
+		"MaintenanceActivityType": "MaintenanceActivityType 7",
+		"MaintenanceActivityTypeName": "MaintenanceActivityTypeName 7",
+		"__metadata": {
+			"uri": "I_MaintenanceActivityTypeText(Language='Language%207',MaintenanceActivityType='MaintenanceActivityType%207')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintenanceActivityTypeTextType"
+		}
+	},
+	{
+		"Language": "Language 8",
+		"MaintenanceActivityType": "MaintenanceActivityType 8",
+		"MaintenanceActivityTypeName": "MaintenanceActivityTypeName 8",
+		"__metadata": {
+			"uri": "I_MaintenanceActivityTypeText(Language='Language%208',MaintenanceActivityType='MaintenanceActivityType%208')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintenanceActivityTypeTextType"
+		}
+	},
+	{
+		"Language": "Language 9",
+		"MaintenanceActivityType": "MaintenanceActivityType 9",
+		"MaintenanceActivityTypeName": "MaintenanceActivityTypeName 9",
+		"__metadata": {
+			"uri": "I_MaintenanceActivityTypeText(Language='Language%209',MaintenanceActivityType='MaintenanceActivityType%209')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintenanceActivityTypeTextType"
+		}
+	},
+	{
+		"Language": "Language 10",
+		"MaintenanceActivityType": "MaintenanceActivityType 10",
+		"MaintenanceActivityTypeName": "MaintenanceActivityTypeName 10",
+		"__metadata": {
+			"uri": "I_MaintenanceActivityTypeText(Language='Language%2010',MaintenanceActivityType='MaintenanceActivityType%2010')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintenanceActivityTypeTextType"
+		}
+	}
+]

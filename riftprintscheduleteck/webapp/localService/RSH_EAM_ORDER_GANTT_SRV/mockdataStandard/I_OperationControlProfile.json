@@ -1,0 +1,212 @@
+[
+	{
+		"OperationControlProfile": "OperationControlProfile 1",
+		"OperationControlProfile_Text": "OperationControlProfile_Text 1",
+		"OperationExternalProcessing": "OperationExternalProcessing 1",
+		"OperationIsProcessedExternally": false,
+		"OperationIsProcessedInternally": false,
+		"OperationIsMilestone": false,
+		"ConfirmationIsRequired": true,
+		"ConfirmationIsNotPossible": true,
+		"OperationIsScheduled": false,
+		"OperationIsPrinted": true,
+		"OperationIsIncludedInCosting": true,
+		"OperationIsReworkOperation": true,
+		"GRIsPostedAutomatically": true,
+		"CapacityRequirementsAreDtmnd": false,
+		"InspCharacteristicIsRequired": false,
+		"__metadata": {
+			"uri": "I_OperationControlProfile('OperationControlProfile%201')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_OperationControlProfileType"
+		}
+	},
+	{
+		"OperationControlProfile": "OperationControlProfile 2",
+		"OperationControlProfile_Text": "OperationControlProfile_Text 2",
+		"OperationExternalProcessing": "OperationExternalProcessing 2",
+		"OperationIsProcessedExternally": true,
+		"OperationIsProcessedInternally": true,
+		"OperationIsMilestone": false,
+		"ConfirmationIsRequired": true,
+		"ConfirmationIsNotPossible": false,
+		"OperationIsScheduled": true,
+		"OperationIsPrinted": true,
+		"OperationIsIncludedInCosting": true,
+		"OperationIsReworkOperation": false,
+		"GRIsPostedAutomatically": false,
+		"CapacityRequirementsAreDtmnd": false,
+		"InspCharacteristicIsRequired": false,
+		"__metadata": {
+			"uri": "I_OperationControlProfile('OperationControlProfile%202')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_OperationControlProfileType"
+		}
+	},
+	{
+		"OperationControlProfile": "OperationControlProfile 3",
+		"OperationControlProfile_Text": "OperationControlProfile_Text 3",
+		"OperationExternalProcessing": "OperationExternalProcessing 3",
+		"OperationIsProcessedExternally": false,
+		"OperationIsProcessedInternally": false,
+		"OperationIsMilestone": false,
+		"ConfirmationIsRequired": false,
+		"ConfirmationIsNotPossible": false,
+		"OperationIsScheduled": false,
+		"OperationIsPrinted": false,
+		"OperationIsIncludedInCosting": true,
+		"OperationIsReworkOperation": false,
+		"GRIsPostedAutomatically": true,
+		"CapacityRequirementsAreDtmnd": true,
+		"InspCharacteristicIsRequired": false,
+		"__metadata": {
+			"uri": "I_OperationControlProfile('OperationControlProfile%203')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_OperationControlProfileType"
+		}
+	},
+	{
+		"OperationControlProfile": "OperationControlProfile 4",
+		"OperationControlProfile_Text": "OperationControlProfile_Text 4",
+		"OperationExternalProcessing": "OperationExternalProcessing 4",
+		"OperationIsProcessedExternally": false,
+		"OperationIsProcessedInternally": true,
+		"OperationIsMilestone": true,
+		"ConfirmationIsRequired": true,
+		"ConfirmationIsNotPossible": false,
+		"OperationIsScheduled": false,
+		"OperationIsPrinted": false,
+		"OperationIsIncludedInCosting": false,
+		"OperationIsReworkOperation": false,
+		"GRIsPostedAutomatically": true,
+		"CapacityRequirementsAreDtmnd": false,
+		"InspCharacteristicIsRequired": false,
+		"__metadata": {
+			"uri": "I_OperationControlProfile('OperationControlProfile%204')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_OperationControlProfileType"
+		}
+	},
+	{
+		"OperationControlProfile": "OperationControlProfile 5",
+		"OperationControlProfile_Text": "OperationControlProfile_Text 5",
+		"OperationExternalProcessing": "OperationExternalProcessing 5",
+		"OperationIsProcessedExternally": true,
+		"OperationIsProcessedInternally": true,
+		"OperationIsMilestone": true,
+		"ConfirmationIsRequired": false,
+		"ConfirmationIsNotPossible": true,
+		"OperationIsScheduled": false,
+		"OperationIsPrinted": false,
+		"OperationIsIncludedInCosting": false,
+		"OperationIsReworkOperation": false,
+		"GRIsPostedAutomatically": false,
+		"CapacityRequirementsAreDtmnd": true,
+		"InspCharacteristicIsRequired": true,
+		"__metadata": {
+			"uri": "I_OperationControlProfile('OperationControlProfile%205')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_OperationControlProfileType"
+		}
+	},
+	{
+		"OperationControlProfile": "OperationControlProfile 6",
+		"OperationControlProfile_Text": "OperationControlProfile_Text 6",
+		"OperationExternalProcessing": "OperationExternalProcessing 6",
+		"OperationIsProcessedExternally": true,
+		"OperationIsProcessedInternally": false,
+		"OperationIsMilestone": true,
+		"ConfirmationIsRequired": true,
+		"ConfirmationIsNotPossible": false,
+		"OperationIsScheduled": true,
+		"OperationIsPrinted": false,
+		"OperationIsIncludedInCosting": true,
+		"OperationIsReworkOperation": false,
+		"GRIsPostedAutomatically": false,
+		"CapacityRequirementsAreDtmnd": true,
+		"InspCharacteristicIsRequired": true,
+		"__metadata": {
+			"uri": "I_OperationControlProfile('OperationControlProfile%206')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_OperationControlProfileType"
+		}
+	},
+	{
+		"OperationControlProfile": "OperationControlProfile 7",
+		"OperationControlProfile_Text": "OperationControlProfile_Text 7",
+		"OperationExternalProcessing": "OperationExternalProcessing 7",
+		"OperationIsProcessedExternally": false,
+		"OperationIsProcessedInternally": false,
+		"OperationIsMilestone": true,
+		"ConfirmationIsRequired": false,
+		"ConfirmationIsNotPossible": false,
+		"OperationIsScheduled": false,
+		"OperationIsPrinted": false,
+		"OperationIsIncludedInCosting": true,
+		"OperationIsReworkOperation": false,
+		"GRIsPostedAutomatically": false,
+		"CapacityRequirementsAreDtmnd": false,
+		"InspCharacteristicIsRequired": false,
+		"__metadata": {
+			"uri": "I_OperationControlProfile('OperationControlProfile%207')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_OperationControlProfileType"
+		}
+	},
+	{
+		"OperationControlProfile": "OperationControlProfile 8",
+		"OperationControlProfile_Text": "OperationControlProfile_Text 8",
+		"OperationExternalProcessing": "OperationExternalProcessing 8",
+		"OperationIsProcessedExternally": false,
+		"OperationIsProcessedInternally": false,
+		"OperationIsMilestone": false,
+		"ConfirmationIsRequired": false,
+		"ConfirmationIsNotPossible": true,
+		"OperationIsScheduled": true,
+		"OperationIsPrinted": false,
+		"OperationIsIncludedInCosting": false,
+		"OperationIsReworkOperation": true,
+		"GRIsPostedAutomatically": false,
+		"CapacityRequirementsAreDtmnd": false,
+		"InspCharacteristicIsRequired": false,
+		"__metadata": {
+			"uri": "I_OperationControlProfile('OperationControlProfile%208')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_OperationControlProfileType"
+		}
+	},
+	{
+		"OperationControlProfile": "OperationControlProfile 9",
+		"OperationControlProfile_Text": "OperationControlProfile_Text 9",
+		"OperationExternalProcessing": "OperationExternalProcessing 9",
+		"OperationIsProcessedExternally": true,
+		"OperationIsProcessedInternally": true,
+		"OperationIsMilestone": true,
+		"ConfirmationIsRequired": true,
+		"ConfirmationIsNotPossible": false,
+		"OperationIsScheduled": true,
+		"OperationIsPrinted": true,
+		"OperationIsIncludedInCosting": false,
+		"OperationIsReworkOperation": true,
+		"GRIsPostedAutomatically": false,
+		"CapacityRequirementsAreDtmnd": false,
+		"InspCharacteristicIsRequired": true,
+		"__metadata": {
+			"uri": "I_OperationControlProfile('OperationControlProfile%209')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_OperationControlProfileType"
+		}
+	},
+	{
+		"OperationControlProfile": "OperationControlProfile 10",
+		"OperationControlProfile_Text": "OperationControlProfile_Text 10",
+		"OperationExternalProcessing": "OperationExternalProcessing 10",
+		"OperationIsProcessedExternally": true,
+		"OperationIsProcessedInternally": false,
+		"OperationIsMilestone": false,
+		"ConfirmationIsRequired": true,
+		"ConfirmationIsNotPossible": true,
+		"OperationIsScheduled": false,
+		"OperationIsPrinted": true,
+		"OperationIsIncludedInCosting": true,
+		"OperationIsReworkOperation": false,
+		"GRIsPostedAutomatically": false,
+		"CapacityRequirementsAreDtmnd": false,
+		"InspCharacteristicIsRequired": true,
+		"__metadata": {
+			"uri": "I_OperationControlProfile('OperationControlProfile%2010')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_OperationControlProfileType"
+		}
+	}
+]

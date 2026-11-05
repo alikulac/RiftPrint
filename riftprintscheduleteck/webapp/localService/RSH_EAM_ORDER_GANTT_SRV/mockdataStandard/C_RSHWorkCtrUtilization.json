@@ -1,0 +1,107 @@
+[
+	{
+		"__metadata": {
+			"id": "C_RSHWorkCtrUtilization(WorkCenterInternalID='10002332',WorkCenterTypeCode='A')",
+			"uri": "C_RSHWorkCtrUtilization(WorkCenterInternalID='10002332',WorkCenterTypeCode='A')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHWorkCtrUtilizationType"
+		},
+		"WorkCenterInternalID": "10002332",
+		"WorkCenterTypeCode": "A",
+		"WorkCenter": "RSH_ELEC",
+		"Plant": "0001",
+		"WorkCenterCategoryCode": "0001",
+		"WorkCenterText": "Electrical Work Center",
+		"StartDate": "/Date(253402214400000)/",
+		"EndDate": "/Date(253402214400000)/"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHWorkCtrUtilization(WorkCenterInternalID='10002333',WorkCenterTypeCode='A')",
+			"uri": "C_RSHWorkCtrUtilization(WorkCenterInternalID='10002333',WorkCenterTypeCode='A')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHWorkCtrUtilizationType"
+		},
+		"WorkCenterInternalID": "10002333",
+		"WorkCenterTypeCode": "A",
+		"WorkCenter": "RSH_MECH",
+		"Plant": "0001",
+		"WorkCenterCategoryCode": "0001",
+		"WorkCenterText": "Mechanical Work Center",
+		"StartDate": "/Date(253402214400000)/",
+		"EndDate": "/Date(253402214400000)/"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHWorkCtrUtilization(WorkCenterInternalID='10002333',WorkCenterTypeCode='A')",
+			"uri": "C_RSHWorkCtrUtilization(WorkCenterInternalID='10002333',WorkCenterTypeCode='A')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHWorkCtrUtilizationType"
+		},
+		"WorkCenterInternalID": "10002334",
+		"WorkCenterTypeCode": "A",
+		"WorkCenter": "RSH_MECH",
+		"Plant": "0002",
+		"WorkCenterCategoryCode": "0001",
+		"WorkCenterText": "Mechanical Work Center",
+		"StartDate": "/Date(253402214400000)/",
+		"EndDate": "/Date(253402214400000)/"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHWorkCtrUtilization(WorkCenterInternalID='10003541',WorkCenterTypeCode='A')",
+			"uri": "C_RSHWorkCtrUtilization(WorkCenterInternalID='10003541',WorkCenterTypeCode='A')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHWorkCtrUtilizationType"
+		},
+		"WorkCenterInternalID": "10003541",
+		"WorkCenterTypeCode": "A",
+		"WorkCenter": "SWP_WC01",
+		"Plant": "0001",
+		"WorkCenterCategoryCode": "0001",
+		"WorkCenterText": "8:00:00 17:00:00",
+		"StartDate": "/Date(253402214400000)/",
+		"EndDate": "/Date(253402214400000)/"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHWorkCtrUtilization(WorkCenterInternalID='10003543',WorkCenterTypeCode='A')",
+			"uri": "C_RSHWorkCtrUtilization(WorkCenterInternalID='10003543',WorkCenterTypeCode='A')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHWorkCtrUtilizationType"
+		},
+		"WorkCenterInternalID": "10003543",
+		"WorkCenterTypeCode": "A",
+		"WorkCenter": "SWP_WC02",
+		"Plant": "0001",
+		"WorkCenterCategoryCode": "0001",
+		"WorkCenterText": "test",
+		"StartDate": "/Date(253402214400000)/",
+		"EndDate": "/Date(253402214400000)/"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHWorkCtrUtilization(WorkCenterInternalID='10003606',WorkCenterTypeCode='A')",
+			"uri": "C_RSHWorkCtrUtilization(WorkCenterInternalID='10003606',WorkCenterTypeCode='A')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHWorkCtrUtilizationType"
+		},
+		"WorkCenterInternalID": "10003606",
+		"WorkCenterTypeCode": "A",
+		"WorkCenter": "SWP_WC03",
+		"Plant": "0001",
+		"WorkCenterCategoryCode": "0001",
+		"WorkCenterText": "test",
+		"StartDate": "/Date(253402214400000)/",
+		"EndDate": "/Date(253402214400000)/"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHWorkCtrUtilization(WorkCenterInternalID='10005047',WorkCenterTypeCode='A')",
+			"uri": "C_RSHWorkCtrUtilization(WorkCenterInternalID='10005047',WorkCenterTypeCode='A')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHWorkCtrUtilizationType"
+		},
+		"WorkCenterInternalID": "10005047",
+		"WorkCenterTypeCode": "A",
+		"WorkCenter": "SWP_WC04",
+		"Plant": "0001",
+		"WorkCenterCategoryCode": "0001",
+		"WorkCenterText": "Work center for scheduling test",
+		"StartDate": "/Date(253402214400000)/",
+		"EndDate": "/Date(253402214400000)/"
+	}
+]

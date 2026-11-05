@@ -1,0 +1,19 @@
+<!--
+
+    Copyright (C) 2009-2025 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+<core:FragmentDefinition id="idFragOpContextMenu" xmlns="sap.m" xmlns:core="sap.ui.core">
+	<ActionSheet id="idOpActionSheet" placement="PreferredBottomOrFlip">
+		<Button id="idSetPlannedStartAction" text="{i18nLib>SetPlannedStart}" type="Transparent" press="onSetPlannedStart"/>
+		<Button id="idButtonChangeAction" text="{i18n>ChangeOperationButtonText}" press="onChangeOperationsButton" type="Transparent"/>
+		<Button id="idButtonDispatchAction" text="{i18n>DispatchButtonText}" press="onDispatchButton" type="Transparent"/>
+		<Button id="idButtonCancDispatchAction" text="{i18n>CancelDispatchButtonText}" press="onCancDispatchButton" type="Transparent"/>
+		<Button id="idButtonRemoveConstraintsAction" text="{i18n>RemoveConstraintsButtonText}" press="onRemoveConstraintsButton"
+			type="Transparent"/>
+		<Button id="idButtonAssignPersonResponsibleAction" text="{i18n>AssignPersonResponsibleButtonText}" type="Transparent" press="onAssignPersonResponsibleButton"/>
+		<Button id="idButtonUnassignPersonResponsibleAction" text="{i18n>UnassignPersonResponsibleButtonText}" type="Transparent" press="onUnassignPersonResponsibleButton"/>
+		<Button id="idButtonAssignAction" text="{i18n>AssignPeopleButtonText}" type="Transparent" press="onAssignButton"/>
+		<Button id="idButtonUnassignAction" text="{i18n>UnassignPeopleButtonText}" type="Transparent" press="onUnassignButton"/>
+	</ActionSheet>
+</core:FragmentDefinition>

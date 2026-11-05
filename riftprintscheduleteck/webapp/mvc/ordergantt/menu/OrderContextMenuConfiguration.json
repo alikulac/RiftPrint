@@ -1,0 +1,9 @@
+{
+	"Expand": true,
+	"Collapse": true,
+	"SetPlannedStart": true,
+	"TriggerScheduling": true,
+	"OpenOrder": true,
+	"UnAssignEvent": true,
+	"AssignEvent": true
+}

@@ -1,0 +1,112 @@
+[
+    {
+        "__metadata": {
+            "uri": "C_RSHTechnicalObject(TechnicalObject='PK01-A02',TechObjIsEquipOrFuncnlLoc='EAMS_FL')",
+            "type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHTechnicalObjectType"
+        },
+        "MaintObjectInternalID": "IF00000000000000007707",
+        "MaintObjectLocAcctAssgmtNmbr": "000000002268",
+        "SortField": "",
+        "SuperiorObjIsEquipOrFuncnlLoc": "EAMS_FL",
+        "SuperiorTechnicalObject": "REFX",
+        "SuperiorTechnicalObjectLabel": "REFX",
+        "SuperiorTechnicalObjectName": "Refinery Berlin",
+        "TechObjIsEquipOrFuncnlLoc": "EAMS_FL",
+        "TechnicalObject": "PK01-A02",
+        "TechnicalObjectCategory": "M",
+        "TechnicalObjectCategoryDesc": "Technical system - standard",
+        "TechnicalObjectDescription": "PK Asset Structure: PK01-A02",
+        "TechnicalObjectHasLongText": false,
+        "TechnicalObjectLabel": "PK01-A02",
+        "TechnicalObjectType": "2000",
+        "TechnicalObjectTypeDesc": "EquipType 2000"
+    },
+    {
+        "__metadata": {
+            "uri": "C_RSHTechnicalObject(TechnicalObject='CK-EQUI-01-1',TechObjIsEquipOrFuncnlLoc='EAMS_EQUI')",
+            "type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHTechnicalObjectType"
+        },
+        "TechnicalObject": "CK-EQUI-01-1",
+        "TechObjIsEquipOrFuncnlLoc": "EAMS_EQUI",
+        "TechnicalObjectLabel": "CK-EQUI-01-1",
+        "TechnicalObjectCategory": "M",
+        "TechnicalObjectCategoryDesc": "Machines",
+        "TechnicalObjectType": "1000",
+        "TechnicalObjectTypeDesc": "EquipType 1000",
+        "MaintObjectInternalID": "IECK-EQUI-01-1",
+        "TechnicalObjectDescription": "Equipment 01-1",
+        "TechnicalObjectHasLongText": true,
+        "SuperiorTechnicalObject": "",
+        "SuperiorTechnicalObjectLabel": "",
+        "SuperiorTechnicalObjectName": "",
+        "SuperiorObjIsEquipOrFuncnlLoc": "",
+        "MaintObjectLocAcctAssgmtNmbr": "000000002269",
+        "SortField": ""
+    },
+    {
+        "__metadata": {
+            "uri": "C_RSHTechnicalObject(TechnicalObject='CK-EQUI-01-1',TechObjIsEquipOrFuncnlLoc='EAMS_EQUI')",
+            "type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHTechnicalObjectType"
+        },
+        "TechnicalObject": "CK-EQUI-01-1",
+        "TechObjIsEquipOrFuncnlLoc": "EAMS_EQUI",
+        "TechnicalObjectLabel": "CK-EQUI-01-1",
+        "TechnicalObjectCategory": "M",
+        "TechnicalObjectCategoryDesc": "Machines",
+        "TechnicalObjectType": "1000",
+        "TechnicalObjectTypeDesc": "EquipType 1000",
+        "MaintObjectInternalID": "IECK-EQUI-01-1",
+        "TechnicalObjectDescription": "Equipment 01-1",
+        "TechnicalObjectHasLongText": true,
+        "SuperiorTechnicalObject": "",
+        "SuperiorTechnicalObjectLabel": "",
+        "SuperiorTechnicalObjectName": "",
+        "SuperiorObjIsEquipOrFuncnlLoc": "",
+        "MaintObjectLocAcctAssgmtNmbr": "000000002269",
+        "SortField": ""
+    },
+    {
+        "__metadata": {
+            "uri": "C_RSHTechnicalObject(TechnicalObject='PAS',TechObjIsEquipOrFuncnlLoc='EAMS_FL')",
+            "type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHTechnicalObjectType"
+        },
+        "TechnicalObject": "PAS",
+        "TechObjIsEquipOrFuncnlLoc": "EAMS_FL",
+        "TechnicalObjectLabel": "PAS",
+        "TechnicalObjectCategory": "M",
+        "TechnicalObjectCategoryDesc": "Technical system - standard",
+        "TechnicalObjectType": "7000",
+        "TechnicalObjectTypeDesc": "Plant Air System",
+        "MaintObjectInternalID": "IFPAS",
+        "TechnicalObjectDescription": "Filter Building (Checklist Inspection)",
+        "TechnicalObjectHasLongText": false,
+        "SuperiorTechnicalObject": "PAS",
+        "SuperiorTechnicalObjectLabel": "JM",
+        "SuperiorTechnicalObjectName": "Maintenance Plant 0001",
+        "SuperiorObjIsEquipOrFuncnlLoc": "EAMS_FL",
+        "MaintObjectLocAcctAssgmtNmbr": "000000011207",
+        "SortField": ""
+    },
+    {
+        "__metadata": {
+            "uri": "C_RSHTechnicalObject(TechnicalObject='SER-EQIP-147-01',TechObjIsEquipOrFuncnlLoc='EAMS_EQUI')",
+            "type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHTechnicalObjectType"
+        },
+        "TechnicalObject": "SER-EQIP-147-01",
+        "TechObjIsEquipOrFuncnlLoc": "EAMS_EQUI",
+        "TechnicalObjectLabel": "SER-EQIP-147-01",
+        "TechnicalObjectCategory": "M",
+        "TechnicalObjectCategoryDesc": "Machines",
+        "TechnicalObjectType": "",
+        "TechnicalObjectTypeDesc": "",
+        "MaintObjectInternalID": "IESER-EQIP-147-01",
+        "TechnicalObjectDescription": "Test Equipment for funl hierarchy",
+        "TechnicalObjectHasLongText": false,
+        "SuperiorTechnicalObject": "REFX-ARO",
+        "SuperiorTechnicalObjectLabel": "REFX-ARO",
+        "SuperiorTechnicalObjectName": "Aromizer",
+        "SuperiorObjIsEquipOrFuncnlLoc": "EAMS_FL",
+        "MaintObjectLocAcctAssgmtNmbr": "000000006871",
+        "SortField": "19839873"
+    }
+]

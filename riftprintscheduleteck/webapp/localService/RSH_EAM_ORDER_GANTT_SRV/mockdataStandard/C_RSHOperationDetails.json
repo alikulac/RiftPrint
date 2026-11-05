@@ -1,0 +1,202 @@
+[
+	{
+		"MaintenanceOrder": "MaintenanceOrder 1",
+		"MaintenanceOrderOperation": "MaintenanceOrderOperation 1",
+		"MaintenanceOrderSubOperation": "MaintenanceOrderSubOperation 1",
+		"MaintOrderRoutingNumber": "MaintOrderRoutingNumber 1",
+		"MaintOrderOperationCounter": "MaintOrderOperationCounter 1",
+		"MaintOrderOperationLongText": "MaintOrderOperationLongText 1",
+		"OrderType": "OrderType 1",
+		"Plant": "Plant 1",
+		"OperationHasLongText": "OperationHasLongText 1",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 1",
+		"AuthorizationGroup": "AuthorizationGroup 1",
+		"MaintenancePlant": "MaintenancePlant 1",
+		"ControllingArea": "ControllingArea 1",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 1",
+		"__metadata": {
+			"uri": "C_RSHOperationDetails(MaintenanceOrder='MaintenanceOrder%201',MaintenanceOrderOperation='MaintenanceOrderOperation%201',MaintenanceOrderSubOperation='MaintenanceOrderSubOperation%201')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationDetailsType"
+		}
+	},
+	{
+		"MaintenanceOrder": "MaintenanceOrder 2",
+		"MaintenanceOrderOperation": "MaintenanceOrderOperation 2",
+		"MaintenanceOrderSubOperation": "MaintenanceOrderSubOperation 2",
+		"MaintOrderRoutingNumber": "MaintOrderRoutingNumber 2",
+		"MaintOrderOperationCounter": "MaintOrderOperationCounter 2",
+		"MaintOrderOperationLongText": "MaintOrderOperationLongText 2",
+		"OrderType": "OrderType 2",
+		"Plant": "Plant 2",
+		"OperationHasLongText": "OperationHasLongText 2",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 2",
+		"AuthorizationGroup": "AuthorizationGroup 2",
+		"MaintenancePlant": "MaintenancePlant 2",
+		"ControllingArea": "ControllingArea 2",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 2",
+		"__metadata": {
+			"uri": "C_RSHOperationDetails(MaintenanceOrder='MaintenanceOrder%202',MaintenanceOrderOperation='MaintenanceOrderOperation%202',MaintenanceOrderSubOperation='MaintenanceOrderSubOperation%202')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationDetailsType"
+		}
+	},
+	{
+		"MaintenanceOrder": "MaintenanceOrder 3",
+		"MaintenanceOrderOperation": "MaintenanceOrderOperation 3",
+		"MaintenanceOrderSubOperation": "MaintenanceOrderSubOperation 3",
+		"MaintOrderRoutingNumber": "MaintOrderRoutingNumber 3",
+		"MaintOrderOperationCounter": "MaintOrderOperationCounter 3",
+		"MaintOrderOperationLongText": "MaintOrderOperationLongText 3",
+		"OrderType": "OrderType 3",
+		"Plant": "Plant 3",
+		"OperationHasLongText": "OperationHasLongText 3",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 3",
+		"AuthorizationGroup": "AuthorizationGroup 3",
+		"MaintenancePlant": "MaintenancePlant 3",
+		"ControllingArea": "ControllingArea 3",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 3",
+		"__metadata": {
+			"uri": "C_RSHOperationDetails(MaintenanceOrder='MaintenanceOrder%203',MaintenanceOrderOperation='MaintenanceOrderOperation%203',MaintenanceOrderSubOperation='MaintenanceOrderSubOperation%203')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationDetailsType"
+		}
+	},
+	{
+		"MaintenanceOrder": "MaintenanceOrder 4",
+		"MaintenanceOrderOperation": "MaintenanceOrderOperation 4",
+		"MaintenanceOrderSubOperation": "MaintenanceOrderSubOperation 4",
+		"MaintOrderRoutingNumber": "MaintOrderRoutingNumber 4",
+		"MaintOrderOperationCounter": "MaintOrderOperationCounter 4",
+		"MaintOrderOperationLongText": "MaintOrderOperationLongText 4",
+		"OrderType": "OrderType 4",
+		"Plant": "Plant 4",
+		"OperationHasLongText": "OperationHasLongText 4",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 4",
+		"AuthorizationGroup": "AuthorizationGroup 4",
+		"MaintenancePlant": "MaintenancePlant 4",
+		"ControllingArea": "ControllingArea 4",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 4",
+		"__metadata": {
+			"uri": "C_RSHOperationDetails(MaintenanceOrder='MaintenanceOrder%204',MaintenanceOrderOperation='MaintenanceOrderOperation%204',MaintenanceOrderSubOperation='MaintenanceOrderSubOperation%204')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationDetailsType"
+		}
+	},
+	{
+		"MaintenanceOrder": "MaintenanceOrder 5",
+		"MaintenanceOrderOperation": "MaintenanceOrderOperation 5",
+		"MaintenanceOrderSubOperation": "MaintenanceOrderSubOperation 5",
+		"MaintOrderRoutingNumber": "MaintOrderRoutingNumber 5",
+		"MaintOrderOperationCounter": "MaintOrderOperationCounter 5",
+		"MaintOrderOperationLongText": "MaintOrderOperationLongText 5",
+		"OrderType": "OrderType 5",
+		"Plant": "Plant 5",
+		"OperationHasLongText": "OperationHasLongText 5",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 5",
+		"AuthorizationGroup": "AuthorizationGroup 5",
+		"MaintenancePlant": "MaintenancePlant 5",
+		"ControllingArea": "ControllingArea 5",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 5",
+		"__metadata": {
+			"uri": "C_RSHOperationDetails(MaintenanceOrder='MaintenanceOrder%205',MaintenanceOrderOperation='MaintenanceOrderOperation%205',MaintenanceOrderSubOperation='MaintenanceOrderSubOperation%205')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationDetailsType"
+		}
+	},
+	{
+		"MaintenanceOrder": "MaintenanceOrder 6",
+		"MaintenanceOrderOperation": "MaintenanceOrderOperation 6",
+		"MaintenanceOrderSubOperation": "MaintenanceOrderSubOperation 6",
+		"MaintOrderRoutingNumber": "MaintOrderRoutingNumber 6",
+		"MaintOrderOperationCounter": "MaintOrderOperationCounter 6",
+		"MaintOrderOperationLongText": "MaintOrderOperationLongText 6",
+		"OrderType": "OrderType 6",
+		"Plant": "Plant 6",
+		"OperationHasLongText": "OperationHasLongText 6",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 6",
+		"AuthorizationGroup": "AuthorizationGroup 6",
+		"MaintenancePlant": "MaintenancePlant 6",
+		"ControllingArea": "ControllingArea 6",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 6",
+		"__metadata": {
+			"uri": "C_RSHOperationDetails(MaintenanceOrder='MaintenanceOrder%206',MaintenanceOrderOperation='MaintenanceOrderOperation%206',MaintenanceOrderSubOperation='MaintenanceOrderSubOperation%206')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationDetailsType"
+		}
+	},
+	{
+		"MaintenanceOrder": "MaintenanceOrder 7",
+		"MaintenanceOrderOperation": "MaintenanceOrderOperation 7",
+		"MaintenanceOrderSubOperation": "MaintenanceOrderSubOperation 7",
+		"MaintOrderRoutingNumber": "MaintOrderRoutingNumber 7",
+		"MaintOrderOperationCounter": "MaintOrderOperationCounter 7",
+		"MaintOrderOperationLongText": "MaintOrderOperationLongText 7",
+		"OrderType": "OrderType 7",
+		"Plant": "Plant 7",
+		"OperationHasLongText": "OperationHasLongText 7",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 7",
+		"AuthorizationGroup": "AuthorizationGroup 7",
+		"MaintenancePlant": "MaintenancePlant 7",
+		"ControllingArea": "ControllingArea 7",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 7",
+		"__metadata": {
+			"uri": "C_RSHOperationDetails(MaintenanceOrder='MaintenanceOrder%207',MaintenanceOrderOperation='MaintenanceOrderOperation%207',MaintenanceOrderSubOperation='MaintenanceOrderSubOperation%207')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationDetailsType"
+		}
+	},
+	{
+		"MaintenanceOrder": "MaintenanceOrder 8",
+		"MaintenanceOrderOperation": "MaintenanceOrderOperation 8",
+		"MaintenanceOrderSubOperation": "MaintenanceOrderSubOperation 8",
+		"MaintOrderRoutingNumber": "MaintOrderRoutingNumber 8",
+		"MaintOrderOperationCounter": "MaintOrderOperationCounter 8",
+		"MaintOrderOperationLongText": "MaintOrderOperationLongText 8",
+		"OrderType": "OrderType 8",
+		"Plant": "Plant 8",
+		"OperationHasLongText": "OperationHasLongText 8",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 8",
+		"AuthorizationGroup": "AuthorizationGroup 8",
+		"MaintenancePlant": "MaintenancePlant 8",
+		"ControllingArea": "ControllingArea 8",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 8",
+		"__metadata": {
+			"uri": "C_RSHOperationDetails(MaintenanceOrder='MaintenanceOrder%208',MaintenanceOrderOperation='MaintenanceOrderOperation%208',MaintenanceOrderSubOperation='MaintenanceOrderSubOperation%208')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationDetailsType"
+		}
+	},
+	{
+		"MaintenanceOrder": "MaintenanceOrder 9",
+		"MaintenanceOrderOperation": "MaintenanceOrderOperation 9",
+		"MaintenanceOrderSubOperation": "MaintenanceOrderSubOperation 9",
+		"MaintOrderRoutingNumber": "MaintOrderRoutingNumber 9",
+		"MaintOrderOperationCounter": "MaintOrderOperationCounter 9",
+		"MaintOrderOperationLongText": "MaintOrderOperationLongText 9",
+		"OrderType": "OrderType 9",
+		"Plant": "Plant 9",
+		"OperationHasLongText": "OperationHasLongText 9",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 9",
+		"AuthorizationGroup": "AuthorizationGroup 9",
+		"MaintenancePlant": "MaintenancePlant 9",
+		"ControllingArea": "ControllingArea 9",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 9",
+		"__metadata": {
+			"uri": "C_RSHOperationDetails(MaintenanceOrder='MaintenanceOrder%209',MaintenanceOrderOperation='MaintenanceOrderOperation%209',MaintenanceOrderSubOperation='MaintenanceOrderSubOperation%209')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationDetailsType"
+		}
+	},
+	{
+		"MaintenanceOrder": "MaintenanceOrder 10",
+		"MaintenanceOrderOperation": "MaintenanceOrderOperation 10",
+		"MaintenanceOrderSubOperation": "MaintenanceOrderSubOperation 10",
+		"MaintOrderRoutingNumber": "MaintOrderRoutingNumber 10",
+		"MaintOrderOperationCounter": "MaintOrderOperationCounter 10",
+		"MaintOrderOperationLongText": "MaintOrderOperationLongText 10",
+		"OrderType": "OrderType 10",
+		"Plant": "Plant 10",
+		"OperationHasLongText": "OperationHasLongText 10",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 10",
+		"AuthorizationGroup": "AuthorizationGroup 10",
+		"MaintenancePlant": "MaintenancePlant 10",
+		"ControllingArea": "ControllingArea 10",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 10",
+		"__metadata": {
+			"uri": "C_RSHOperationDetails(MaintenanceOrder='MaintenanceOrder%2010',MaintenanceOrderOperation='MaintenanceOrderOperation%2010',MaintenanceOrderSubOperation='MaintenanceOrderSubOperation%2010')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationDetailsType"
+		}
+	}
+]

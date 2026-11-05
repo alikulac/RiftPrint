@@ -1,0 +1,92 @@
+[
+	{
+		"MaintPriority": "MaintPriority 1",
+		"MaintPriorityType": "MaintPriorityType 1",
+		"MaintPriorityDesc": "MaintPriorityDesc 1",
+		"__metadata": {
+			"uri": "C_RSHOrderPriorityVH(MaintPriority='MaintPriority%201',MaintPriorityType='MaintPriorityType%201')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderPriorityVHType"
+		}
+	},
+	{
+		"MaintPriority": "MaintPriority 2",
+		"MaintPriorityType": "MaintPriorityType 2",
+		"MaintPriorityDesc": "MaintPriorityDesc 2",
+		"__metadata": {
+			"uri": "C_RSHOrderPriorityVH(MaintPriority='MaintPriority%202',MaintPriorityType='MaintPriorityType%202')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderPriorityVHType"
+		}
+	},
+	{
+		"MaintPriority": "MaintPriority 3",
+		"MaintPriorityType": "MaintPriorityType 3",
+		"MaintPriorityDesc": "MaintPriorityDesc 3",
+		"__metadata": {
+			"uri": "C_RSHOrderPriorityVH(MaintPriority='MaintPriority%203',MaintPriorityType='MaintPriorityType%203')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderPriorityVHType"
+		}
+	},
+	{
+		"MaintPriority": "MaintPriority 4",
+		"MaintPriorityType": "MaintPriorityType 4",
+		"MaintPriorityDesc": "MaintPriorityDesc 4",
+		"__metadata": {
+			"uri": "C_RSHOrderPriorityVH(MaintPriority='MaintPriority%204',MaintPriorityType='MaintPriorityType%204')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderPriorityVHType"
+		}
+	},
+	{
+		"MaintPriority": "MaintPriority 5",
+		"MaintPriorityType": "MaintPriorityType 5",
+		"MaintPriorityDesc": "MaintPriorityDesc 5",
+		"__metadata": {
+			"uri": "C_RSHOrderPriorityVH(MaintPriority='MaintPriority%205',MaintPriorityType='MaintPriorityType%205')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderPriorityVHType"
+		}
+	},
+	{
+		"MaintPriority": "MaintPriority 6",
+		"MaintPriorityType": "MaintPriorityType 6",
+		"MaintPriorityDesc": "MaintPriorityDesc 6",
+		"__metadata": {
+			"uri": "C_RSHOrderPriorityVH(MaintPriority='MaintPriority%206',MaintPriorityType='MaintPriorityType%206')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderPriorityVHType"
+		}
+	},
+	{
+		"MaintPriority": "MaintPriority 7",
+		"MaintPriorityType": "MaintPriorityType 7",
+		"MaintPriorityDesc": "MaintPriorityDesc 7",
+		"__metadata": {
+			"uri": "C_RSHOrderPriorityVH(MaintPriority='MaintPriority%207',MaintPriorityType='MaintPriorityType%207')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderPriorityVHType"
+		}
+	},
+	{
+		"MaintPriority": "MaintPriority 8",
+		"MaintPriorityType": "MaintPriorityType 8",
+		"MaintPriorityDesc": "MaintPriorityDesc 8",
+		"__metadata": {
+			"uri": "C_RSHOrderPriorityVH(MaintPriority='MaintPriority%208',MaintPriorityType='MaintPriorityType%208')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderPriorityVHType"
+		}
+	},
+	{
+		"MaintPriority": "MaintPriority 9",
+		"MaintPriorityType": "MaintPriorityType 9",
+		"MaintPriorityDesc": "MaintPriorityDesc 9",
+		"__metadata": {
+			"uri": "C_RSHOrderPriorityVH(MaintPriority='MaintPriority%209',MaintPriorityType='MaintPriorityType%209')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderPriorityVHType"
+		}
+	},
+	{
+		"MaintPriority": "MaintPriority 10",
+		"MaintPriorityType": "MaintPriorityType 10",
+		"MaintPriorityDesc": "MaintPriorityDesc 10",
+		"__metadata": {
+			"uri": "C_RSHOrderPriorityVH(MaintPriority='MaintPriority%2010',MaintPriorityType='MaintPriorityType%2010')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderPriorityVHType"
+		}
+	}
+]

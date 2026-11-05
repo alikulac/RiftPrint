@@ -1,0 +1,182 @@
+[
+	{
+		"WorkCenterInternalID": "10000429",
+		"WorkCenterTypeCode": "A",
+		"WorkCenter": "RSH_CK01",
+		"Plant": "0001",
+		"WorkCenterCategoryCode": "003",
+		"WorkCenterResponsible": "001",
+		"WorkCenterText": "RSH Test CK01",
+		"CapacityInternalID": "11234567",
+		"TeamName": "Team Name 1",
+		"TeamDescription": "Team Description 1",
+		"RespyMgmtTeamID": "50098625",
+		"__metadata": {
+			"uri": "C_RSHWorkCenterVH(WorkCenterInternalID='10000429',WorkCenterTypeCode='A',WorkCenter='RSH_CK01')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHWorkCenterVHType",
+			"id": "C_RSHWorkCenterVH(WorkCenterInternalID='10000429',WorkCenterTypeCode='A',WorkCenter='RSH_CK01')"
+		}
+	},
+	{
+		"WorkCenterInternalID": "10000440",
+		"WorkCenterTypeCode": "A",
+		"WorkCenter": "RSH_CK02",
+		"Plant": "0001",
+		"WorkCenterCategoryCode": "003",
+		"WorkCenterResponsible": "001",
+		"WorkCenterText": "RSH Test CK02",
+		"CapacityInternalID": "21234567",
+		"TeamName": "Team Name 2",
+		"TeamDescription": "Team Description 2",
+		"RespyMgmtTeamID": "50098695",
+		"__metadata": {
+			"uri": "C_RSHWorkCenterVH(WorkCenterInternalID='10000440',WorkCenterTypeCode='A',WorkCenter='RSH_CK02')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHWorkCenterVHType",
+			"id": "C_RSHWorkCenterVH(WorkCenterInternalID='10000440',WorkCenterTypeCode='A',WorkCenter='RSH_CK02')"
+		}
+	},
+	{
+		"WorkCenterInternalID": "10005075",
+		"WorkCenterTypeCode": "A",
+		"WorkCenter": "RSH_CK03",
+		"Plant": "0001",
+		"WorkCenterCategoryCode": "003",
+		"WorkCenterResponsible": "001",
+		"WorkCenterText": "RSH Test CK03",
+		"CapacityInternalID": "31234567",
+		"TeamName": "Team Name 3",
+		"TeamDescription": "Team Description 3",
+		"RespyMgmtTeamID": "53398625",
+		"__metadata": {
+			"uri": "C_RSHWorkCenterVH(WorkCenterInternalID='10005075',WorkCenterTypeCode='A',WorkCenter='RSH_CK03')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHWorkCenterVHType",
+			"id": "C_RSHWorkCenterVH(WorkCenterInternalID='10005075',WorkCenterTypeCode='A',WorkCenter='RSH_CK03')"
+		}
+	},
+	{
+		"WorkCenterInternalID": "10000311",
+		"WorkCenterTypeCode": "A",
+		"WorkCenter": "RSH_WEST",
+		"Plant": "0001",
+		"WorkCenterCategoryCode": "003",
+		"WorkCenterResponsible": "001",
+		"WorkCenterText": "RSH Test WEST",
+		"CapacityInternalID": "41234567",
+		"TeamName": "Team Name 4",
+		"TeamDescription": "Team Description 4",
+		"RespyMgmtTeamID": "50099625",
+		"__metadata": {
+			"uri": "C_RSHWorkCenterVH(WorkCenterInternalID='10000311',WorkCenterTypeCode='A',WorkCenter='RSH_WEST')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHWorkCenterVHType",
+			"id": "C_RSHWorkCenterVH(WorkCenterInternalID='10000311',WorkCenterTypeCode='A',WorkCenter='RSH_WEST')"
+		}
+	},
+	{
+		"WorkCenterInternalID": "10000005",
+		"WorkCenterTypeCode": "A",
+		"WorkCenter": "RSH_001",
+		"Plant": "0001",
+		"WorkCenterCategoryCode": "003",
+		"WorkCenterResponsible": "001",
+		"WorkCenterText": "test daily schedule",
+		"CapacityInternalID": "51234567",
+		"TeamName": "Team Name 5",
+		"TeamDescription": "Team Description 5",
+		"RespyMgmtTeamID": "50099555",
+		"__metadata": {
+			"uri": "C_RSHWorkCenterVH(WorkCenterInternalID='10000005',WorkCenterTypeCode='A',WorkCenter='RSH_001')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHWorkCenterVHType",
+			"id": "C_RSHWorkCenterVH(WorkCenterInternalID='10000005',WorkCenterTypeCode='A',WorkCenter='RSH_001')"
+		}
+	},
+	{
+		"WorkCenterInternalID": "10000006",
+		"WorkCenterTypeCode": "A",
+		"WorkCenter": "RSH_002",
+		"Plant": "0001",
+		"WorkCenterCategoryCode": "003",
+		"WorkCenterResponsible": "001",
+		"WorkCenterText": "test schedule with empty operation field",
+		"CapacityInternalID": "61234567",
+		"TeamName": "Team Name 6",
+		"TeamDescription": "Team Description 6",
+		"RespyMgmtTeamID": "50099666",
+		"__metadata": {
+			"uri": "C_RSHWorkCenterVH(WorkCenterInternalID='10000006',WorkCenterTypeCode='A',WorkCenter='RSH_002')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHWorkCenterVHType",
+			"id": "C_RSHWorkCenterVH(WorkCenterInternalID='10000006',WorkCenterTypeCode='A',WorkCenter='RSH_002')"
+		}
+	},
+	{
+		"WorkCenterInternalID": "10000007",
+		"WorkCenterTypeCode": "A",
+		"WorkCenter": "RSH_003",
+		"Plant": "0001",
+		"WorkCenterCategoryCode": "003",
+		"WorkCenterResponsible": "001",
+		"WorkCenterText": "My work center",
+		"CapacityInternalID": "71234567",
+		"TeamName": "Team Name 7",
+		"TeamDescription": "Team Description 7",
+		"RespyMgmtTeamID": "50099777",
+		"__metadata": {
+			"uri": "C_RSHWorkCenterVH(WorkCenterInternalID='10000007',WorkCenterTypeCode='A', WorkCenter='RSH_003')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHWorkCenterVHType",
+			"id": "C_RSHWorkCenterVH(WorkCenterInternalID='10000007',WorkCenterTypeCode='A', WorkCenter='RSH_003')"
+		}
+	},
+	{
+		"WorkCenterInternalID": "10000008",
+		"WorkCenterTypeCode": "A",
+		"WorkCenter": "RSH_004",
+		"Plant": "0001",
+		"WorkCenterCategoryCode": "003",
+		"WorkCenterResponsible": "001",
+		"WorkCenterText": "Test Work Center",
+		"CapacityInternalID": "81234567",
+		"TeamName": "Team Name 8",
+		"TeamDescription": "Team Description 8",
+		"RespyMgmtTeamID": "50099888",
+		"__metadata": {
+			"uri": "C_RSHWorkCenterVH(WorkCenterInternalID='10000008',WorkCenterTypeCode='A',WorkCenter='RSH_004')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHWorkCenterVHType",
+			"id": "C_RSHWorkCenterVH(WorkCenterInternalID='10000008',WorkCenterTypeCode='A',WorkCenter='RSH_004')"
+		}
+	},
+	{
+		"WorkCenterInternalID": "10000009",
+		"WorkCenterTypeCode": "A",
+		"WorkCenter": "RSH_009",
+		"Plant": "0001",
+		"WorkCenterCategoryCode": "003",
+		"WorkCenterResponsible": "001",
+		"WorkCenterText": "Mech work center",
+		"CapacityInternalID": "91234567",
+		"TeamName": "Team Name 9",
+		"TeamDescription": "Team Description 9",
+		"RespyMgmtTeamID": "50099990",
+		"__metadata": {
+			"uri": "C_RSHWorkCenterVH(WorkCenterInternalID='10000009',WorkCenterTypeCode='A',WorkCenter='RSH_009')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHWorkCenterVHType",
+			"id": "C_RSHWorkCenterVH(WorkCenterInternalID='10000009',WorkCenterTypeCode='A',WorkCenter='RSH_009')"
+		}
+	},
+	{
+		"WorkCenterInternalID": "10000010",
+		"WorkCenterTypeCode": "A",
+		"WorkCenter": "RSH_010",
+		"Plant": "0001",
+		"WorkCenterCategoryCode": "003",
+		"WorkCenterResponsible": "001",
+		"WorkCenterText": "Elec work center",
+		"CapacityInternalID": "10123456",
+		"TeamName": "Team Name 10",
+		"TeamDescription": "Team Description 10",
+		"RespyMgmtTeamID": "50099610",
+		"__metadata": {
+			"uri": "C_RSHWorkCenterVH(WorkCenterInternalID='10000010',WorkCenterTypeCode='A',WorkCenter='RSH_010')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHWorkCenterVHType",
+			"id": "C_RSHWorkCenterVH(WorkCenterInternalID='10000010',WorkCenterTypeCode='A',WorkCenter='RSH_010')"
+		}
+	}
+]

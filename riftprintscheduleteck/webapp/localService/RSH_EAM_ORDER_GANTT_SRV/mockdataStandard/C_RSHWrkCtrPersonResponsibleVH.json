@@ -1,0 +1,173 @@
+[
+	{
+		"__metadata": {
+			"id": "C_RSHWrkCtrPersonResponsibleVH(OperationPersonResponsibleID='50110028',WorkCenter='',RespyMgmtFunction='')",
+			"uri": "C_RSHWrkCtrPersonResponsibleVH(OperationPersonResponsibleID='50110028',WorkCenter='',RespyMgmtFunction='')",
+			"type": "RSH_EAM_RES_ASSIGNMENT_SRV.C_RSHWrkCtrPersonResponsibleVHType"
+		},
+		"OperationPersonResponsibleID": "50110028",
+		"WorkCenter": "RSH_JS02",
+		"RespyMgmtFunction": "M_PAINT",
+		"WorkCenterInternalID": "10001963",
+		"Person": "160589",
+		"EmployeeImageURL": "",
+		"OperationPersonRespName": "Jincy Liz Joy",
+		"RespyMgmtFunctionDescription": "Helpers",
+		"ConcatenatedWorkCenterText": "RSH_JS02/1010",
+		"ConcatenatedRespyMgmtFuncTxt": "Helpers, Painters, Electricians",
+		"BusinessPartner": "",
+		"CnctntdWrkCtrPlantText": "1010"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHWrkCtrPersonResponsibleVH(OperationPersonResponsibleID='50110644',WorkCenter='',RespyMgmtFunction='')",
+			"uri": "C_RSHWrkCtrPersonResponsibleVH(OperationPersonResponsibleID='50110644',WorkCenter='',RespyMgmtFunction='')",
+			"type": "RSH_EAM_RES_ASSIGNMENT_SRV.C_RSHWrkCtrPersonResponsibleVHType"
+		},
+		"OperationPersonResponsibleID": "50110644",
+		"WorkCenter": "RSH_JS02",
+		"RespyMgmtFunction": "QUALITY",
+		"WorkCenterInternalID": "10001963",
+		"Person": "165507",
+		"EmployeeImageURL": "",
+		"OperationPersonRespName": "Ivan Borisov",
+		"RespyMgmtFunctionDescription": "Quality",
+		"ConcatenatedWorkCenterText": "RSH_JS02/1010",
+		"ConcatenatedRespyMgmtFuncTxt": "Quality, External",
+		"BusinessPartner": "",
+		"CnctntdWrkCtrPlantText": "1010"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHWrkCtrPersonResponsibleVH(OperationPersonResponsibleID='50110468',WorkCenter='',RespyMgmtFunction='')",
+			"uri": "C_RSHWrkCtrPersonResponsibleVH(OperationPersonResponsibleID='50110468',WorkCenter='',RespyMgmtFunction='')",
+			"type": "RSH_EAM_RES_ASSIGNMENT_SRV.C_RSHWrkCtrPersonResponsibleVHType"
+		},
+		"OperationPersonResponsibleID": "50110468",
+		"WorkCenter": "RSH_JS02",
+		"RespyMgmtFunction": "PRODUCN",
+		"WorkCenterInternalID": "10001963",
+		"Person": "164584",
+		"EmployeeImageURL": "",
+		"OperationPersonRespName": "TV Karthik",
+		"RespyMgmtFunctionDescription": "Production",
+		"ConcatenatedWorkCenterText": "RSH_JS02/1010",
+		"ConcatenatedRespyMgmtFuncTxt": "Production",
+		"BusinessPartner": "",
+		"CnctntdWrkCtrPlantText": "1010"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHWrkCtrPersonResponsibleVH(OperationPersonResponsibleID='50110029',WorkCenter='',RespyMgmtFunction='')",
+			"uri": "C_RSHWrkCtrPersonResponsibleVH(OperationPersonResponsibleID='50110029',WorkCenter='',RespyMgmtFunction='')",
+			"type": "RSH_EAM_RES_ASSIGNMENT_SRV.C_RSHWrkCtrPersonResponsibleVHType"
+		},
+		"OperationPersonResponsibleID": "50110029",
+		"WorkCenter": "RSH_JS02",
+		"RespyMgmtFunction": "MNAGMNT",
+		"WorkCenterInternalID": "10001963",
+		"Person": "160852",
+		"EmployeeImageURL": "",
+		"OperationPersonRespName": "Samatha Naru",
+		"RespyMgmtFunctionDescription": "Management",
+		"ConcatenatedWorkCenterText": "RSH_JS02/1010",
+		"ConcatenatedRespyMgmtFuncTxt": "Management",
+		"BusinessPartner": "",
+		"CnctntdWrkCtrPlantText": "1010"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHWrkCtrPersonResponsibleVH(OperationPersonResponsibleID='50110930',WorkCenter='ANAN_WRK',RespyMgmtFunction='M_PAINT')",
+			"uri": "C_RSHWrkCtrPersonResponsibleVH(OperationPersonResponsibleID='50110930',WorkCenter='ANAN_WRK',RespyMgmtFunction='M_PAINT')",
+			"type": "RSH_EAM_RES_ASSIGNMENT_SRV.C_RSHWrkCtrPersonResponsibleVHType"
+		},
+		"OperationPersonResponsibleID": "50110930",
+		"WorkCenter": "RSH_JS02",
+		"RespyMgmtFunction": "M_PAINT",
+		"WorkCenterInternalID": "10001963",
+		"Person": "166789",
+		"EmployeeImageURL": "",
+		"OperationPersonRespName": "Sujit Saha",
+		"RespyMgmtFunctionDescription": "Painters",
+		"ConcatenatedWorkCenterText": "RSH_JS02/1010",
+		"ConcatenatedRespyMgmtFuncTxt": "Painters, Helpers",
+		"BusinessPartner": "166789",
+		"CnctntdWrkCtrPlantText": "1010"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHWrkCtrPersonResponsibleVH(OperationPersonResponsibleID='50109983',WorkCenter='',RespyMgmtFunction='')",
+			"uri": "C_RSHWrkCtrPersonResponsibleVH(OperationPersonResponsibleID='50109983',WorkCenter='',RespyMgmtFunction='')",
+			"type": "RSH_EAM_RES_ASSIGNMENT_SRV.C_RSHWrkCtrPersonResponsibleVHType"
+		},
+		"OperationPersonResponsibleID": "50109983",
+		"WorkCenter": "RSH_JS02",
+		"RespyMgmtFunction": "SOURCE",
+		"WorkCenterInternalID": "10001963",
+		"Person": "13916",
+		"EmployeeImageURL": "",
+		"OperationPersonRespName": "Arvind Prakash Kumar",
+		"RespyMgmtFunctionDescription": "Sourcing",
+		"ConcatenatedWorkCenterText": "RSH_JS02/1010",
+		"ConcatenatedRespyMgmtFuncTxt": "Sourcing",
+		"BusinessPartner": "",
+		"CnctntdWrkCtrPlantText": "1010"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHWrkCtrPersonResponsibleVH(OperationPersonResponsibleID='50110400',WorkCenter='',RespyMgmtFunction='')",
+			"uri": "C_RSHWrkCtrPersonResponsibleVH(OperationPersonResponsibleID='50110400',WorkCenter='',RespyMgmtFunction='')",
+			"type": "RSH_EAM_RES_ASSIGNMENT_SRV.C_RSHWrkCtrPersonResponsibleVHType"
+		},
+		"OperationPersonResponsibleID": "50110400",
+		"WorkCenter": "RSH_JS02",
+		"RespyMgmtFunction": "ARCH",
+		"WorkCenterInternalID": "10001963",
+		"Person": "13016793",
+		"EmployeeImageURL": "",
+		"OperationPersonRespName": "Jyotsna Angeline S",
+		"RespyMgmtFunctionDescription": "Architect",
+		"ConcatenatedWorkCenterText": "RSH_JS02/1010",
+		"ConcatenatedRespyMgmtFuncTxt": "Architect",
+		"BusinessPartner": "",
+		"CnctntdWrkCtrPlantText": "1010"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHWrkCtrPersonResponsibleVH(OperationPersonResponsibleID='50092500',WorkCenter='',RespyMgmtFunction='')",
+			"uri": "C_RSHWrkCtrPersonResponsibleVH(OperationPersonResponsibleID='50092500',WorkCenter='',RespyMgmtFunction='')",
+			"type": "RSH_EAM_RES_ASSIGNMENT_SRV.C_RSHWrkCtrPersonResponsibleVHType"
+		},
+		"OperationPersonResponsibleID": "50092500",
+		"WorkCenter": "RSH_JS02",
+		"RespyMgmtFunction": "EXTERNAL",
+		"WorkCenterInternalID": "10001964",
+		"Person": "26393",
+		"EmployeeImageURL": "",
+		"OperationPersonRespName": "Krishna TestContingentWorker",
+		"RespyMgmtFunctionDescription": "External",
+		"ConcatenatedWorkCenterText": "RSH_JS02/1110",
+		"ConcatenatedRespyMgmtFuncTxt": "External",
+		"BusinessPartner": "",
+		"CnctntdWrkCtrPlantText": "1110"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHWrkCtrPersonResponsibleVH(OperationPersonResponsibleID='50092286',WorkCenter='',RespyMgmtFunction='')",
+			"uri": "C_RSHWrkCtrPersonResponsibleVH(OperationPersonResponsibleID='50092286',WorkCenter='',RespyMgmtFunction='')",
+			"type": "RSH_EAM_RES_ASSIGNMENT_SRV.C_RSHWrkCtrPersonResponsibleVHType"
+		},
+		"OperationPersonResponsibleID": "50092286",
+		"WorkCenter": "RSH_WC01",
+		"RespyMgmtFunction": "SOURCE",
+		"WorkCenterInternalID": "10001964",
+		"Person": "26225",
+		"EmployeeImageURL": "",
+		"OperationPersonRespName": "Leonie Voigt",
+		"RespyMgmtFunctionDescription": "Sourcing",
+		"ConcatenatedWorkCenterText": "RSH_WC01/1110",
+		"ConcatenatedRespyMgmtFuncTxt": "Sourcing, Painter",
+		"BusinessPartner": "",
+		"CnctntdWrkCtrPlantText": "1110"
+	}
+]

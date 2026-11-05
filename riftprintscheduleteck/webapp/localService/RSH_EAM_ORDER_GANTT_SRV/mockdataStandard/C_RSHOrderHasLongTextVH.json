@@ -1,0 +1,82 @@
+[
+	{
+		"OperationHasLongText": "OperationHasLongText 1",
+		"OperationHasLongTextDesc": "OperationHasLongTextDesc 1",
+		"__metadata": {
+			"uri": "C_RSHOrderHasLongTextVH('OperationHasLongText%201')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderHasLongTextVHType"
+		}
+	},
+	{
+		"OperationHasLongText": "OperationHasLongText 2",
+		"OperationHasLongTextDesc": "OperationHasLongTextDesc 2",
+		"__metadata": {
+			"uri": "C_RSHOrderHasLongTextVH('OperationHasLongText%202')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderHasLongTextVHType"
+		}
+	},
+	{
+		"OperationHasLongText": "OperationHasLongText 3",
+		"OperationHasLongTextDesc": "OperationHasLongTextDesc 3",
+		"__metadata": {
+			"uri": "C_RSHOrderHasLongTextVH('OperationHasLongText%203')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderHasLongTextVHType"
+		}
+	},
+	{
+		"OperationHasLongText": "OperationHasLongText 4",
+		"OperationHasLongTextDesc": "OperationHasLongTextDesc 4",
+		"__metadata": {
+			"uri": "C_RSHOrderHasLongTextVH('OperationHasLongText%204')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderHasLongTextVHType"
+		}
+	},
+	{
+		"OperationHasLongText": "OperationHasLongText 5",
+		"OperationHasLongTextDesc": "OperationHasLongTextDesc 5",
+		"__metadata": {
+			"uri": "C_RSHOrderHasLongTextVH('OperationHasLongText%205')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderHasLongTextVHType"
+		}
+	},
+	{
+		"OperationHasLongText": "OperationHasLongText 6",
+		"OperationHasLongTextDesc": "OperationHasLongTextDesc 6",
+		"__metadata": {
+			"uri": "C_RSHOrderHasLongTextVH('OperationHasLongText%206')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderHasLongTextVHType"
+		}
+	},
+	{
+		"OperationHasLongText": "OperationHasLongText 7",
+		"OperationHasLongTextDesc": "OperationHasLongTextDesc 7",
+		"__metadata": {
+			"uri": "C_RSHOrderHasLongTextVH('OperationHasLongText%207')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderHasLongTextVHType"
+		}
+	},
+	{
+		"OperationHasLongText": "OperationHasLongText 8",
+		"OperationHasLongTextDesc": "OperationHasLongTextDesc 8",
+		"__metadata": {
+			"uri": "C_RSHOrderHasLongTextVH('OperationHasLongText%208')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderHasLongTextVHType"
+		}
+	},
+	{
+		"OperationHasLongText": "OperationHasLongText 9",
+		"OperationHasLongTextDesc": "OperationHasLongTextDesc 9",
+		"__metadata": {
+			"uri": "C_RSHOrderHasLongTextVH('OperationHasLongText%209')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderHasLongTextVHType"
+		}
+	},
+	{
+		"OperationHasLongText": "OperationHasLongText 10",
+		"OperationHasLongTextDesc": "OperationHasLongTextDesc 10",
+		"__metadata": {
+			"uri": "C_RSHOrderHasLongTextVH('OperationHasLongText%2010')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderHasLongTextVHType"
+		}
+	}
+]

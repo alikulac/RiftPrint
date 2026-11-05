@@ -1,0 +1,34 @@
+/*
+ * Copyright (C) 2009-2025 SAP SE or an SAP affiliate company. All rights reserved.
+ */
+sap.ui.define(["sap/rsh/eam/lib/common/base/BaseViewChild.controller"], function (BaseViewChildController) {
+	"use strict";
+
+	return BaseViewChildController.extend("rsh.eam.ordergantts1.mvc.ordergantt.binding.RelationshipsBinding.controller", {
+		onInitMembers: function () {
+			this._oTable = this.byId("idOrderTreeTable");
+			this._oPreviousRelationshipBinding = undefined;
+		},
+
+		bind: function () {
+			var oRowSettings = this.byId("OrderGntRowStgID");
+			if (!this.oUIModel.getProperty("/showImpRel") && !this.oUIModel.getProperty("/showExpRel")) {
+				if (oRowSettings.getBindingInfo("relationships")) {
+					this._oPreviousRelationshipBinding = oRowSettings.getBindingInfo("relationships");
+					oRowSettings.unbindAggregation("relationships");
+					this._oTable.setRowSettingsTemplate(null);
+					this._oTable.setRowSettingsTemplate(oRowSettings);
+				}
+			} else {
+				if (!oRowSettings.getBindingInfo("relationships")) {
+					//Full refresh is required in scenarios when settings is switched on first time within the app
+					//in order to add association to the tree table rows and subsequent expand requests
+					this.controllers.ordergantt.binding.refreshBinding({ filtersChanged: false, force: false });
+					oRowSettings.bindAggregation("relationships", this._oPreviousRelationshipBinding);
+					this._oTable.setRowSettingsTemplate(null);
+					this._oTable.setRowSettingsTemplate(oRowSettings);
+				}
+			}
+		}
+	});
+});

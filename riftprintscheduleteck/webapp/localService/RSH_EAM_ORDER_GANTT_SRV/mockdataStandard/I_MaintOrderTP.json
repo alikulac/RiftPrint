@@ -1,0 +1,822 @@
+[
+	{
+		"Activation_ac": true,
+		"Cancelbusinesscomplete_ac": true,
+		"Canceltechnicalcomplete_ac": true,
+		"Completebusiness_ac": false,
+		"Completetechnical_ac": false,
+		"Donotexecute_ac": false,
+		"Edit_ac": false,
+		"Preparation_ac": true,
+		"Release_ac": true,
+		"Validation_ac": true,
+		"OrderHasLongText_fc": 6,
+		"MaintenanceOrder": "MaintenanceOrder 1",
+		"MaintenanceOrderForEdit": "MaintenanceOrderForEdit 1",
+		"TechnicalObject": "TechnicalObject 1",
+		"TechObjIsEquipOrFuncnlLoc": "TechObjIsEquipOrFuncnlLoc 1",
+		"MaintPriorityType": "MaintPriorityType 1",
+		"MaintPriority": "MaintPriority 1",
+		"MaintenanceProcessingPhase": "MaintenanceProcessingPhase 1",
+		"MaintObjectLocAcctAssgmtNmbr": "MaintObjectLocAcctAssgmtNmbr 1",
+		"MaintenanceNotification": "MaintenanceNotification 1",
+		"Equipment": "Equipment 1",
+		"MaintenancePlanItemIntID": "MaintenancePlanItemIntID 1",
+		"Assembly": "Assembly 1",
+		"SerialNumber": "SerialNumber 1",
+		"MaintenancePlanningPlant": "MaintenancePlanningPlant 1",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 1",
+		"MaintenanceRevision": "MaintenanceRevision 1",
+		"MaintenancePlan": "MaintenancePlan 1",
+		"MaintOrderRoutingNumber": "MaintOrderRoutingNumber 1",
+		"MaintenanceOrderType": "MaintenanceOrderType 1",
+		"MaintenanceOrderCategory": "MaintenanceOrderCategory 1",
+		"MaintenanceOrderDesc": "MaintenanceOrderDesc 1",
+		"MaintOrdBasicStartDate": "/Date(1005741847000)/",
+		"MaintOrdBasicEndDate": "/Date(1152877447000)/",
+		"MaintenanceOrderInternalID": "MaintenanceOrderInternalID 1",
+		"WorkCenterInternalID": "WorkCenterInternalID 1",
+		"WorkCenterTypeCode": "WorkCenterTypeCode 1",
+		"BusinessArea": "BusinessArea 1",
+		"MaintOrdMainWorkCenter": "MaintOrdMainWorkCenter 1",
+		"MaintOrdMainWorkCenterPlant": "MaintOrdMainWorkCenterPlant 1",
+		"MaintOrdPersonResponsible": "MaintOrdPersonResponsible 1",
+		"MaintOrderReferenceDate": "/Date(1195735447000)/",
+		"MaintenanceOrderPlanningCode": "MaintenanceOrderPlanningCode 1",
+		"OperationSystemCondition": "OperationSystemCondition 1",
+		"ReferenceElement": "ReferenceElement 1",
+		"MaintenanceActivityType": "MaintenanceActivityType 1",
+		"ControllingArea": "ControllingArea 1",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 1",
+		"AuthorizationGroup": "AuthorizationGroup 1",
+		"MaintenancePlant": "MaintenancePlant 1",
+		"CreatedByUser": "CreatedByUser 1",
+		"MaintOrderSourceApplication": "MaintOrderSourceApplication 1",
+		"LastChangeDateTime": "/Date(962797447000+0000)/",
+		"OrderHasLongText": false,
+		"MaintOrderIsFinallyConfirmed": true,
+		"DraftUUID": "b772d6ab-916d-49ea-bf81-8912a925571c",
+		"DraftEntityCreationDateTime": "/Date(1111581847000+0000)/",
+		"DraftEntityLastChangeDateTime": "/Date(1509281047000+0000)/",
+		"HasActiveEntity": false,
+		"HasDraftEntity": true,
+		"IsActiveEntity": true,
+		"__metadata": {
+			"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%201',DraftUUID=guid'b772d6ab-916d-49ea-bf81-8912a925571c',IsActiveEntity=true)",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType"
+		},
+		"DraftAdministrativeData": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%201',DraftUUID=guid'b772d6ab-916d-49ea-bf81-8912a925571c',IsActiveEntity=true)/DraftAdministrativeData"
+			}
+		},
+		"SiblingEntity": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%201',DraftUUID=guid'b772d6ab-916d-49ea-bf81-8912a925571c',IsActiveEntity=true)/SiblingEntity"
+			}
+		},
+		"to_MaintOrderOperationTP": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%201',DraftUUID=guid'b772d6ab-916d-49ea-bf81-8912a925571c',IsActiveEntity=true)/to_MaintOrderOperationTP"
+			}
+		}
+	},
+	{
+		"Activation_ac": false,
+		"Cancelbusinesscomplete_ac": false,
+		"Canceltechnicalcomplete_ac": true,
+		"Completebusiness_ac": true,
+		"Completetechnical_ac": true,
+		"Donotexecute_ac": false,
+		"Edit_ac": false,
+		"Preparation_ac": false,
+		"Release_ac": true,
+		"Validation_ac": true,
+		"OrderHasLongText_fc": 3,
+		"MaintenanceOrder": "MaintenanceOrder 2",
+		"MaintenanceOrderForEdit": "MaintenanceOrderForEdit 2",
+		"TechnicalObject": "TechnicalObject 2",
+		"TechObjIsEquipOrFuncnlLoc": "TechObjIsEquipOrFuncnlLoc 2",
+		"MaintPriorityType": "MaintPriorityType 2",
+		"MaintPriority": "MaintPriority 2",
+		"MaintenanceProcessingPhase": "MaintenanceProcessingPhase 2",
+		"MaintObjectLocAcctAssgmtNmbr": "MaintObjectLocAcctAssgmtNmbr 2",
+		"MaintenanceNotification": "MaintenanceNotification 2",
+		"Equipment": "Equipment 2",
+		"MaintenancePlanItemIntID": "MaintenancePlanItemIntID 2",
+		"Assembly": "Assembly 2",
+		"SerialNumber": "SerialNumber 2",
+		"MaintenancePlanningPlant": "MaintenancePlanningPlant 2",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 2",
+		"MaintenanceRevision": "MaintenanceRevision 2",
+		"MaintenancePlan": "MaintenancePlan 2",
+		"MaintOrderRoutingNumber": "MaintOrderRoutingNumber 2",
+		"MaintenanceOrderType": "MaintenanceOrderType 2",
+		"MaintenanceOrderCategory": "MaintenanceOrderCategory 2",
+		"MaintenanceOrderDesc": "MaintenanceOrderDesc 2",
+		"MaintOrdBasicStartDate": "/Date(1227530647000)/",
+		"MaintOrdBasicEndDate": "/Date(972823447000)/",
+		"MaintenanceOrderInternalID": "MaintenanceOrderInternalID 2",
+		"WorkCenterInternalID": "WorkCenterInternalID 2",
+		"WorkCenterTypeCode": "WorkCenterTypeCode 2",
+		"BusinessArea": "BusinessArea 2",
+		"MaintOrdMainWorkCenter": "MaintOrdMainWorkCenter 2",
+		"MaintOrdMainWorkCenterPlant": "MaintOrdMainWorkCenterPlant 2",
+		"MaintOrdPersonResponsible": "MaintOrdPersonResponsible 2",
+		"MaintOrderReferenceDate": "/Date(1565005447000)/",
+		"MaintenanceOrderPlanningCode": "MaintenanceOrderPlanningCode 2",
+		"OperationSystemCondition": "OperationSystemCondition 2",
+		"ReferenceElement": "ReferenceElement 2",
+		"MaintenanceActivityType": "MaintenanceActivityType 2",
+		"ControllingArea": "ControllingArea 2",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 2",
+		"AuthorizationGroup": "AuthorizationGroup 2",
+		"MaintenancePlant": "MaintenancePlant 2",
+		"CreatedByUser": "CreatedByUser 2",
+		"MaintOrderSourceApplication": "MaintOrderSourceApplication 2",
+		"LastChangeDateTime": "/Date(1134132247000+0000)/",
+		"OrderHasLongText": true,
+		"MaintOrderIsFinallyConfirmed": true,
+		"DraftUUID": "7bdc89a1-0774-4f23-bf09-204048b40ed7",
+		"DraftEntityCreationDateTime": "/Date(1225802647000+0000)/",
+		"DraftEntityLastChangeDateTime": "/Date(1570880647000+0000)/",
+		"HasActiveEntity": false,
+		"HasDraftEntity": true,
+		"IsActiveEntity": true,
+		"__metadata": {
+			"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%202',DraftUUID=guid'7bdc89a1-0774-4f23-bf09-204048b40ed7',IsActiveEntity=true)",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType"
+		},
+		"DraftAdministrativeData": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%202',DraftUUID=guid'7bdc89a1-0774-4f23-bf09-204048b40ed7',IsActiveEntity=true)/DraftAdministrativeData"
+			}
+		},
+		"SiblingEntity": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%202',DraftUUID=guid'7bdc89a1-0774-4f23-bf09-204048b40ed7',IsActiveEntity=true)/SiblingEntity"
+			}
+		},
+		"to_MaintOrderOperationTP": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%202',DraftUUID=guid'7bdc89a1-0774-4f23-bf09-204048b40ed7',IsActiveEntity=true)/to_MaintOrderOperationTP"
+			}
+		}
+	},
+	{
+		"Activation_ac": true,
+		"Cancelbusinesscomplete_ac": false,
+		"Canceltechnicalcomplete_ac": false,
+		"Completebusiness_ac": true,
+		"Completetechnical_ac": false,
+		"Donotexecute_ac": true,
+		"Edit_ac": false,
+		"Preparation_ac": false,
+		"Release_ac": true,
+		"Validation_ac": true,
+		"OrderHasLongText_fc": 2,
+		"MaintenanceOrder": "MaintenanceOrder 3",
+		"MaintenanceOrderForEdit": "MaintenanceOrderForEdit 3",
+		"TechnicalObject": "TechnicalObject 3",
+		"TechObjIsEquipOrFuncnlLoc": "TechObjIsEquipOrFuncnlLoc 3",
+		"MaintPriorityType": "MaintPriorityType 3",
+		"MaintPriority": "MaintPriority 3",
+		"MaintenanceProcessingPhase": "MaintenanceProcessingPhase 3",
+		"MaintObjectLocAcctAssgmtNmbr": "MaintObjectLocAcctAssgmtNmbr 3",
+		"MaintenanceNotification": "MaintenanceNotification 3",
+		"Equipment": "Equipment 3",
+		"MaintenancePlanItemIntID": "MaintenancePlanItemIntID 3",
+		"Assembly": "Assembly 3",
+		"SerialNumber": "SerialNumber 3",
+		"MaintenancePlanningPlant": "MaintenancePlanningPlant 3",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 3",
+		"MaintenanceRevision": "MaintenanceRevision 3",
+		"MaintenancePlan": "MaintenancePlan 3",
+		"MaintOrderRoutingNumber": "MaintOrderRoutingNumber 3",
+		"MaintenanceOrderType": "MaintenanceOrderType 3",
+		"MaintenanceOrderCategory": "MaintenanceOrderCategory 3",
+		"MaintenanceOrderDesc": "MaintenanceOrderDesc 3",
+		"MaintOrdBasicStartDate": "/Date(946730647000)/",
+		"MaintOrdBasicEndDate": "/Date(1423485847000)/",
+		"MaintenanceOrderInternalID": "MaintenanceOrderInternalID 3",
+		"WorkCenterInternalID": "WorkCenterInternalID 3",
+		"WorkCenterTypeCode": "WorkCenterTypeCode 3",
+		"BusinessArea": "BusinessArea 3",
+		"MaintOrdMainWorkCenter": "MaintOrdMainWorkCenter 3",
+		"MaintOrdMainWorkCenterPlant": "MaintOrdMainWorkCenterPlant 3",
+		"MaintOrdPersonResponsible": "MaintOrdPersonResponsible 3",
+		"MaintOrderReferenceDate": "/Date(1113911047000)/",
+		"MaintenanceOrderPlanningCode": "MaintenanceOrderPlanningCode 3",
+		"OperationSystemCondition": "OperationSystemCondition 3",
+		"ReferenceElement": "ReferenceElement 3",
+		"MaintenanceActivityType": "MaintenanceActivityType 3",
+		"ControllingArea": "ControllingArea 3",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 3",
+		"AuthorizationGroup": "AuthorizationGroup 3",
+		"MaintenancePlant": "MaintenancePlant 3",
+		"CreatedByUser": "CreatedByUser 3",
+		"MaintOrderSourceApplication": "MaintOrderSourceApplication 3",
+		"LastChangeDateTime": "/Date(1365335047000+0000)/",
+		"OrderHasLongText": true,
+		"MaintOrderIsFinallyConfirmed": false,
+		"DraftUUID": "09675bd4-5d44-45e6-bcb3-592e49f23112",
+		"DraftEntityCreationDateTime": "/Date(1341315847000+0000)/",
+		"DraftEntityLastChangeDateTime": "/Date(1012740247000+0000)/",
+		"HasActiveEntity": true,
+		"HasDraftEntity": true,
+		"IsActiveEntity": true,
+		"__metadata": {
+			"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%203',DraftUUID=guid'09675bd4-5d44-45e6-bcb3-592e49f23112',IsActiveEntity=true)",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType"
+		},
+		"DraftAdministrativeData": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%203',DraftUUID=guid'09675bd4-5d44-45e6-bcb3-592e49f23112',IsActiveEntity=true)/DraftAdministrativeData"
+			}
+		},
+		"SiblingEntity": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%203',DraftUUID=guid'09675bd4-5d44-45e6-bcb3-592e49f23112',IsActiveEntity=true)/SiblingEntity"
+			}
+		},
+		"to_MaintOrderOperationTP": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%203',DraftUUID=guid'09675bd4-5d44-45e6-bcb3-592e49f23112',IsActiveEntity=true)/to_MaintOrderOperationTP"
+			}
+		}
+	},
+	{
+		"Activation_ac": true,
+		"Cancelbusinesscomplete_ac": false,
+		"Canceltechnicalcomplete_ac": true,
+		"Completebusiness_ac": false,
+		"Completetechnical_ac": false,
+		"Donotexecute_ac": false,
+		"Edit_ac": false,
+		"Preparation_ac": false,
+		"Release_ac": false,
+		"Validation_ac": false,
+		"OrderHasLongText_fc": 6,
+		"MaintenanceOrder": "MaintenanceOrder 4",
+		"MaintenanceOrderForEdit": "MaintenanceOrderForEdit 4",
+		"TechnicalObject": "TechnicalObject 4",
+		"TechObjIsEquipOrFuncnlLoc": "TechObjIsEquipOrFuncnlLoc 4",
+		"MaintPriorityType": "MaintPriorityType 4",
+		"MaintPriority": "MaintPriority 4",
+		"MaintenanceProcessingPhase": "MaintenanceProcessingPhase 4",
+		"MaintObjectLocAcctAssgmtNmbr": "MaintObjectLocAcctAssgmtNmbr 4",
+		"MaintenanceNotification": "MaintenanceNotification 4",
+		"Equipment": "Equipment 4",
+		"MaintenancePlanItemIntID": "MaintenancePlanItemIntID 4",
+		"Assembly": "Assembly 4",
+		"SerialNumber": "SerialNumber 4",
+		"MaintenancePlanningPlant": "MaintenancePlanningPlant 4",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 4",
+		"MaintenanceRevision": "MaintenanceRevision 4",
+		"MaintenancePlan": "MaintenancePlan 4",
+		"MaintOrderRoutingNumber": "MaintOrderRoutingNumber 4",
+		"MaintenanceOrderType": "MaintenanceOrderType 4",
+		"MaintenanceOrderCategory": "MaintenanceOrderCategory 4",
+		"MaintenanceOrderDesc": "MaintenanceOrderDesc 4",
+		"MaintOrdBasicStartDate": "/Date(1522237447000)/",
+		"MaintOrdBasicEndDate": "/Date(1276688647000)/",
+		"MaintenanceOrderInternalID": "MaintenanceOrderInternalID 4",
+		"WorkCenterInternalID": "WorkCenterInternalID 4",
+		"WorkCenterTypeCode": "WorkCenterTypeCode 4",
+		"BusinessArea": "BusinessArea 4",
+		"MaintOrdMainWorkCenter": "MaintOrdMainWorkCenter 4",
+		"MaintOrdMainWorkCenterPlant": "MaintOrdMainWorkCenterPlant 4",
+		"MaintOrdPersonResponsible": "MaintOrdPersonResponsible 4",
+		"MaintOrderReferenceDate": "/Date(1271677447000)/",
+		"MaintenanceOrderPlanningCode": "MaintenanceOrderPlanningCode 4",
+		"OperationSystemCondition": "OperationSystemCondition 4",
+		"ReferenceElement": "ReferenceElement 4",
+		"MaintenanceActivityType": "MaintenanceActivityType 4",
+		"ControllingArea": "ControllingArea 4",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 4",
+		"AuthorizationGroup": "AuthorizationGroup 4",
+		"MaintenancePlant": "MaintenancePlant 4",
+		"CreatedByUser": "CreatedByUser 4",
+		"MaintOrderSourceApplication": "MaintOrderSourceApplication 4",
+		"LastChangeDateTime": "/Date(1116243847000+0000)/",
+		"OrderHasLongText": false,
+		"MaintOrderIsFinallyConfirmed": false,
+		"DraftUUID": "e65c2704-7ba4-461a-b1d2-8fc0c730faff",
+		"DraftEntityCreationDateTime": "/Date(1044708247000+0000)/",
+		"DraftEntityLastChangeDateTime": "/Date(1063453447000+0000)/",
+		"HasActiveEntity": true,
+		"HasDraftEntity": false,
+		"IsActiveEntity": false,
+		"__metadata": {
+			"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%204',DraftUUID=guid'e65c2704-7ba4-461a-b1d2-8fc0c730faff',IsActiveEntity=false)",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType"
+		},
+		"DraftAdministrativeData": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%204',DraftUUID=guid'e65c2704-7ba4-461a-b1d2-8fc0c730faff',IsActiveEntity=false)/DraftAdministrativeData"
+			}
+		},
+		"SiblingEntity": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%204',DraftUUID=guid'e65c2704-7ba4-461a-b1d2-8fc0c730faff',IsActiveEntity=false)/SiblingEntity"
+			}
+		},
+		"to_MaintOrderOperationTP": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%204',DraftUUID=guid'e65c2704-7ba4-461a-b1d2-8fc0c730faff',IsActiveEntity=false)/to_MaintOrderOperationTP"
+			}
+		}
+	},
+	{
+		"Activation_ac": true,
+		"Cancelbusinesscomplete_ac": false,
+		"Canceltechnicalcomplete_ac": true,
+		"Completebusiness_ac": true,
+		"Completetechnical_ac": true,
+		"Donotexecute_ac": true,
+		"Edit_ac": false,
+		"Preparation_ac": true,
+		"Release_ac": true,
+		"Validation_ac": false,
+		"OrderHasLongText_fc": 8,
+		"MaintenanceOrder": "MaintenanceOrder 5",
+		"MaintenanceOrderForEdit": "MaintenanceOrderForEdit 5",
+		"TechnicalObject": "TechnicalObject 5",
+		"TechObjIsEquipOrFuncnlLoc": "TechObjIsEquipOrFuncnlLoc 5",
+		"MaintPriorityType": "MaintPriorityType 5",
+		"MaintPriority": "MaintPriority 5",
+		"MaintenanceProcessingPhase": "MaintenanceProcessingPhase 5",
+		"MaintObjectLocAcctAssgmtNmbr": "MaintObjectLocAcctAssgmtNmbr 5",
+		"MaintenanceNotification": "MaintenanceNotification 5",
+		"Equipment": "Equipment 5",
+		"MaintenancePlanItemIntID": "MaintenancePlanItemIntID 5",
+		"Assembly": "Assembly 5",
+		"SerialNumber": "SerialNumber 5",
+		"MaintenancePlanningPlant": "MaintenancePlanningPlant 5",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 5",
+		"MaintenanceRevision": "MaintenanceRevision 5",
+		"MaintenancePlan": "MaintenancePlan 5",
+		"MaintOrderRoutingNumber": "MaintOrderRoutingNumber 5",
+		"MaintenanceOrderType": "MaintenanceOrderType 5",
+		"MaintenanceOrderCategory": "MaintenanceOrderCategory 5",
+		"MaintenanceOrderDesc": "MaintenanceOrderDesc 5",
+		"MaintOrdBasicStartDate": "/Date(1101905047000)/",
+		"MaintOrdBasicEndDate": "/Date(1307015047000)/",
+		"MaintenanceOrderInternalID": "MaintenanceOrderInternalID 5",
+		"WorkCenterInternalID": "WorkCenterInternalID 5",
+		"WorkCenterTypeCode": "WorkCenterTypeCode 5",
+		"BusinessArea": "BusinessArea 5",
+		"MaintOrdMainWorkCenter": "MaintOrdMainWorkCenter 5",
+		"MaintOrdMainWorkCenterPlant": "MaintOrdMainWorkCenterPlant 5",
+		"MaintOrdPersonResponsible": "MaintOrdPersonResponsible 5",
+		"MaintOrderReferenceDate": "/Date(1500032647000)/",
+		"MaintenanceOrderPlanningCode": "MaintenanceOrderPlanningCode 5",
+		"OperationSystemCondition": "OperationSystemCondition 5",
+		"ReferenceElement": "ReferenceElement 5",
+		"MaintenanceActivityType": "MaintenanceActivityType 5",
+		"ControllingArea": "ControllingArea 5",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 5",
+		"AuthorizationGroup": "AuthorizationGroup 5",
+		"MaintenancePlant": "MaintenancePlant 5",
+		"CreatedByUser": "CreatedByUser 5",
+		"MaintOrderSourceApplication": "MaintOrderSourceApplication 5",
+		"LastChangeDateTime": "/Date(1561808647000+0000)/",
+		"OrderHasLongText": true,
+		"MaintOrderIsFinallyConfirmed": true,
+		"DraftUUID": "746e774f-4413-42c2-bbda-69a855b304c0",
+		"DraftEntityCreationDateTime": "/Date(1065959047000+0000)/",
+		"DraftEntityLastChangeDateTime": "/Date(1310643847000+0000)/",
+		"HasActiveEntity": true,
+		"HasDraftEntity": false,
+		"IsActiveEntity": true,
+		"__metadata": {
+			"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%205',DraftUUID=guid'746e774f-4413-42c2-bbda-69a855b304c0',IsActiveEntity=true)",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType"
+		},
+		"DraftAdministrativeData": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%205',DraftUUID=guid'746e774f-4413-42c2-bbda-69a855b304c0',IsActiveEntity=true)/DraftAdministrativeData"
+			}
+		},
+		"SiblingEntity": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%205',DraftUUID=guid'746e774f-4413-42c2-bbda-69a855b304c0',IsActiveEntity=true)/SiblingEntity"
+			}
+		},
+		"to_MaintOrderOperationTP": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%205',DraftUUID=guid'746e774f-4413-42c2-bbda-69a855b304c0',IsActiveEntity=true)/to_MaintOrderOperationTP"
+			}
+		}
+	},
+	{
+		"Activation_ac": false,
+		"Cancelbusinesscomplete_ac": false,
+		"Canceltechnicalcomplete_ac": true,
+		"Completebusiness_ac": false,
+		"Completetechnical_ac": false,
+		"Donotexecute_ac": false,
+		"Edit_ac": true,
+		"Preparation_ac": true,
+		"Release_ac": false,
+		"Validation_ac": false,
+		"OrderHasLongText_fc": 8,
+		"MaintenanceOrder": "MaintenanceOrder 6",
+		"MaintenanceOrderForEdit": "MaintenanceOrderForEdit 6",
+		"TechnicalObject": "TechnicalObject 6",
+		"TechObjIsEquipOrFuncnlLoc": "TechObjIsEquipOrFuncnlLoc 6",
+		"MaintPriorityType": "MaintPriorityType 6",
+		"MaintPriority": "MaintPriority 6",
+		"MaintenanceProcessingPhase": "MaintenanceProcessingPhase 6",
+		"MaintObjectLocAcctAssgmtNmbr": "MaintObjectLocAcctAssgmtNmbr 6",
+		"MaintenanceNotification": "MaintenanceNotification 6",
+		"Equipment": "Equipment 6",
+		"MaintenancePlanItemIntID": "MaintenancePlanItemIntID 6",
+		"Assembly": "Assembly 6",
+		"SerialNumber": "SerialNumber 6",
+		"MaintenancePlanningPlant": "MaintenancePlanningPlant 6",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 6",
+		"MaintenanceRevision": "MaintenanceRevision 6",
+		"MaintenancePlan": "MaintenancePlan 6",
+		"MaintOrderRoutingNumber": "MaintOrderRoutingNumber 6",
+		"MaintenanceOrderType": "MaintenanceOrderType 6",
+		"MaintenanceOrderCategory": "MaintenanceOrderCategory 6",
+		"MaintenanceOrderDesc": "MaintenanceOrderDesc 6",
+		"MaintOrdBasicStartDate": "/Date(1018784647000)/",
+		"MaintOrdBasicEndDate": "/Date(1192189447000)/",
+		"MaintenanceOrderInternalID": "MaintenanceOrderInternalID 6",
+		"WorkCenterInternalID": "WorkCenterInternalID 6",
+		"WorkCenterTypeCode": "WorkCenterTypeCode 6",
+		"BusinessArea": "BusinessArea 6",
+		"MaintOrdMainWorkCenter": "MaintOrdMainWorkCenter 6",
+		"MaintOrdMainWorkCenterPlant": "MaintOrdMainWorkCenterPlant 6",
+		"MaintOrdPersonResponsible": "MaintOrdPersonResponsible 6",
+		"MaintOrderReferenceDate": "/Date(1428925447000)/",
+		"MaintenanceOrderPlanningCode": "MaintenanceOrderPlanningCode 6",
+		"OperationSystemCondition": "OperationSystemCondition 6",
+		"ReferenceElement": "ReferenceElement 6",
+		"MaintenanceActivityType": "MaintenanceActivityType 6",
+		"ControllingArea": "ControllingArea 6",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 6",
+		"AuthorizationGroup": "AuthorizationGroup 6",
+		"MaintenancePlant": "MaintenancePlant 6",
+		"CreatedByUser": "CreatedByUser 6",
+		"MaintOrderSourceApplication": "MaintOrderSourceApplication 6",
+		"LastChangeDateTime": "/Date(1369482247000+0000)/",
+		"OrderHasLongText": true,
+		"MaintOrderIsFinallyConfirmed": true,
+		"DraftUUID": "5a10cea4-4081-474a-b97f-fa860fd0b0bf",
+		"DraftEntityCreationDateTime": "/Date(1043066647000+0000)/",
+		"DraftEntityLastChangeDateTime": "/Date(1323866647000+0000)/",
+		"HasActiveEntity": false,
+		"HasDraftEntity": false,
+		"IsActiveEntity": true,
+		"__metadata": {
+			"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%206',DraftUUID=guid'5a10cea4-4081-474a-b97f-fa860fd0b0bf',IsActiveEntity=true)",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType"
+		},
+		"DraftAdministrativeData": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%206',DraftUUID=guid'5a10cea4-4081-474a-b97f-fa860fd0b0bf',IsActiveEntity=true)/DraftAdministrativeData"
+			}
+		},
+		"SiblingEntity": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%206',DraftUUID=guid'5a10cea4-4081-474a-b97f-fa860fd0b0bf',IsActiveEntity=true)/SiblingEntity"
+			}
+		},
+		"to_MaintOrderOperationTP": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%206',DraftUUID=guid'5a10cea4-4081-474a-b97f-fa860fd0b0bf',IsActiveEntity=true)/to_MaintOrderOperationTP"
+			}
+		}
+	},
+	{
+		"Activation_ac": false,
+		"Cancelbusinesscomplete_ac": false,
+		"Canceltechnicalcomplete_ac": true,
+		"Completebusiness_ac": false,
+		"Completetechnical_ac": true,
+		"Donotexecute_ac": true,
+		"Edit_ac": true,
+		"Preparation_ac": false,
+		"Release_ac": true,
+		"Validation_ac": false,
+		"OrderHasLongText_fc": 5,
+		"MaintenanceOrder": "MaintenanceOrder 7",
+		"MaintenanceOrderForEdit": "MaintenanceOrderForEdit 7",
+		"TechnicalObject": "TechnicalObject 7",
+		"TechObjIsEquipOrFuncnlLoc": "TechObjIsEquipOrFuncnlLoc 7",
+		"MaintPriorityType": "MaintPriorityType 7",
+		"MaintPriority": "MaintPriority 7",
+		"MaintenanceProcessingPhase": "MaintenanceProcessingPhase 7",
+		"MaintObjectLocAcctAssgmtNmbr": "MaintObjectLocAcctAssgmtNmbr 7",
+		"MaintenanceNotification": "MaintenanceNotification 7",
+		"Equipment": "Equipment 7",
+		"MaintenancePlanItemIntID": "MaintenancePlanItemIntID 7",
+		"Assembly": "Assembly 7",
+		"SerialNumber": "SerialNumber 7",
+		"MaintenancePlanningPlant": "MaintenancePlanningPlant 7",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 7",
+		"MaintenanceRevision": "MaintenanceRevision 7",
+		"MaintenancePlan": "MaintenancePlan 7",
+		"MaintOrderRoutingNumber": "MaintOrderRoutingNumber 7",
+		"MaintenanceOrderType": "MaintenanceOrderType 7",
+		"MaintenanceOrderCategory": "MaintenanceOrderCategory 7",
+		"MaintenanceOrderDesc": "MaintenanceOrderDesc 7",
+		"MaintOrdBasicStartDate": "/Date(1536147847000)/",
+		"MaintOrdBasicEndDate": "/Date(1327322647000)/",
+		"MaintenanceOrderInternalID": "MaintenanceOrderInternalID 7",
+		"WorkCenterInternalID": "WorkCenterInternalID 7",
+		"WorkCenterTypeCode": "WorkCenterTypeCode 7",
+		"BusinessArea": "BusinessArea 7",
+		"MaintOrdMainWorkCenter": "MaintOrdMainWorkCenter 7",
+		"MaintOrdMainWorkCenterPlant": "MaintOrdMainWorkCenterPlant 7",
+		"MaintOrdPersonResponsible": "MaintOrdPersonResponsible 7",
+		"MaintOrderReferenceDate": "/Date(1527680647000)/",
+		"MaintenanceOrderPlanningCode": "MaintenanceOrderPlanningCode 7",
+		"OperationSystemCondition": "OperationSystemCondition 7",
+		"ReferenceElement": "ReferenceElement 7",
+		"MaintenanceActivityType": "MaintenanceActivityType 7",
+		"ControllingArea": "ControllingArea 7",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 7",
+		"AuthorizationGroup": "AuthorizationGroup 7",
+		"MaintenancePlant": "MaintenancePlant 7",
+		"CreatedByUser": "CreatedByUser 7",
+		"MaintOrderSourceApplication": "MaintOrderSourceApplication 7",
+		"LastChangeDateTime": "/Date(1495021447000+0000)/",
+		"OrderHasLongText": false,
+		"MaintOrderIsFinallyConfirmed": true,
+		"DraftUUID": "33ed3e4c-0bd2-40fb-a496-c2fd022e570e",
+		"DraftEntityCreationDateTime": "/Date(1495280647000+0000)/",
+		"DraftEntityLastChangeDateTime": "/Date(1206535447000+0000)/",
+		"HasActiveEntity": false,
+		"HasDraftEntity": false,
+		"IsActiveEntity": false,
+		"__metadata": {
+			"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%207',DraftUUID=guid'33ed3e4c-0bd2-40fb-a496-c2fd022e570e',IsActiveEntity=false)",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType"
+		},
+		"DraftAdministrativeData": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%207',DraftUUID=guid'33ed3e4c-0bd2-40fb-a496-c2fd022e570e',IsActiveEntity=false)/DraftAdministrativeData"
+			}
+		},
+		"SiblingEntity": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%207',DraftUUID=guid'33ed3e4c-0bd2-40fb-a496-c2fd022e570e',IsActiveEntity=false)/SiblingEntity"
+			}
+		},
+		"to_MaintOrderOperationTP": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%207',DraftUUID=guid'33ed3e4c-0bd2-40fb-a496-c2fd022e570e',IsActiveEntity=false)/to_MaintOrderOperationTP"
+			}
+		}
+	},
+	{
+		"Activation_ac": false,
+		"Cancelbusinesscomplete_ac": true,
+		"Canceltechnicalcomplete_ac": false,
+		"Completebusiness_ac": true,
+		"Completetechnical_ac": true,
+		"Donotexecute_ac": false,
+		"Edit_ac": false,
+		"Preparation_ac": true,
+		"Release_ac": true,
+		"Validation_ac": false,
+		"OrderHasLongText_fc": 7,
+		"MaintenanceOrder": "MaintenanceOrder 8",
+		"MaintenanceOrderForEdit": "MaintenanceOrderForEdit 8",
+		"TechnicalObject": "TechnicalObject 8",
+		"TechObjIsEquipOrFuncnlLoc": "TechObjIsEquipOrFuncnlLoc 8",
+		"MaintPriorityType": "MaintPriorityType 8",
+		"MaintPriority": "MaintPriority 8",
+		"MaintenanceProcessingPhase": "MaintenanceProcessingPhase 8",
+		"MaintObjectLocAcctAssgmtNmbr": "MaintObjectLocAcctAssgmtNmbr 8",
+		"MaintenanceNotification": "MaintenanceNotification 8",
+		"Equipment": "Equipment 8",
+		"MaintenancePlanItemIntID": "MaintenancePlanItemIntID 8",
+		"Assembly": "Assembly 8",
+		"SerialNumber": "SerialNumber 8",
+		"MaintenancePlanningPlant": "MaintenancePlanningPlant 8",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 8",
+		"MaintenanceRevision": "MaintenanceRevision 8",
+		"MaintenancePlan": "MaintenancePlan 8",
+		"MaintOrderRoutingNumber": "MaintOrderRoutingNumber 8",
+		"MaintenanceOrderType": "MaintenanceOrderType 8",
+		"MaintenanceOrderCategory": "MaintenanceOrderCategory 8",
+		"MaintenanceOrderDesc": "MaintenanceOrderDesc 8",
+		"MaintOrdBasicStartDate": "/Date(1480509847000)/",
+		"MaintOrdBasicEndDate": "/Date(1113824647000)/",
+		"MaintenanceOrderInternalID": "MaintenanceOrderInternalID 8",
+		"WorkCenterInternalID": "WorkCenterInternalID 8",
+		"WorkCenterTypeCode": "WorkCenterTypeCode 8",
+		"BusinessArea": "BusinessArea 8",
+		"MaintOrdMainWorkCenter": "MaintOrdMainWorkCenter 8",
+		"MaintOrdMainWorkCenterPlant": "MaintOrdMainWorkCenterPlant 8",
+		"MaintOrdPersonResponsible": "MaintOrdPersonResponsible 8",
+		"MaintOrderReferenceDate": "/Date(1535197447000)/",
+		"MaintenanceOrderPlanningCode": "MaintenanceOrderPlanningCode 8",
+		"OperationSystemCondition": "OperationSystemCondition 8",
+		"ReferenceElement": "ReferenceElement 8",
+		"MaintenanceActivityType": "MaintenanceActivityType 8",
+		"ControllingArea": "ControllingArea 8",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 8",
+		"AuthorizationGroup": "AuthorizationGroup 8",
+		"MaintenancePlant": "MaintenancePlant 8",
+		"CreatedByUser": "CreatedByUser 8",
+		"MaintOrderSourceApplication": "MaintOrderSourceApplication 8",
+		"LastChangeDateTime": "/Date(1141389847000+0000)/",
+		"OrderHasLongText": false,
+		"MaintOrderIsFinallyConfirmed": false,
+		"DraftUUID": "642a271f-1c16-4631-a19c-5729dff4ecb9",
+		"DraftEntityCreationDateTime": "/Date(1233060247000+0000)/",
+		"DraftEntityLastChangeDateTime": "/Date(1265719447000+0000)/",
+		"HasActiveEntity": true,
+		"HasDraftEntity": true,
+		"IsActiveEntity": true,
+		"__metadata": {
+			"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%208',DraftUUID=guid'642a271f-1c16-4631-a19c-5729dff4ecb9',IsActiveEntity=true)",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType"
+		},
+		"DraftAdministrativeData": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%208',DraftUUID=guid'642a271f-1c16-4631-a19c-5729dff4ecb9',IsActiveEntity=true)/DraftAdministrativeData"
+			}
+		},
+		"SiblingEntity": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%208',DraftUUID=guid'642a271f-1c16-4631-a19c-5729dff4ecb9',IsActiveEntity=true)/SiblingEntity"
+			}
+		},
+		"to_MaintOrderOperationTP": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%208',DraftUUID=guid'642a271f-1c16-4631-a19c-5729dff4ecb9',IsActiveEntity=true)/to_MaintOrderOperationTP"
+			}
+		}
+	},
+	{
+		"Activation_ac": false,
+		"Cancelbusinesscomplete_ac": true,
+		"Canceltechnicalcomplete_ac": true,
+		"Completebusiness_ac": false,
+		"Completetechnical_ac": false,
+		"Donotexecute_ac": true,
+		"Edit_ac": false,
+		"Preparation_ac": true,
+		"Release_ac": false,
+		"Validation_ac": false,
+		"OrderHasLongText_fc": 5,
+		"MaintenanceOrder": "MaintenanceOrder 9",
+		"MaintenanceOrderForEdit": "MaintenanceOrderForEdit 9",
+		"TechnicalObject": "TechnicalObject 9",
+		"TechObjIsEquipOrFuncnlLoc": "TechObjIsEquipOrFuncnlLoc 9",
+		"MaintPriorityType": "MaintPriorityType 9",
+		"MaintPriority": "MaintPriority 9",
+		"MaintenanceProcessingPhase": "MaintenanceProcessingPhase 9",
+		"MaintObjectLocAcctAssgmtNmbr": "MaintObjectLocAcctAssgmtNmbr 9",
+		"MaintenanceNotification": "MaintenanceNotification 9",
+		"Equipment": "Equipment 9",
+		"MaintenancePlanItemIntID": "MaintenancePlanItemIntID 9",
+		"Assembly": "Assembly 9",
+		"SerialNumber": "SerialNumber 9",
+		"MaintenancePlanningPlant": "MaintenancePlanningPlant 9",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 9",
+		"MaintenanceRevision": "MaintenanceRevision 9",
+		"MaintenancePlan": "MaintenancePlan 9",
+		"MaintOrderRoutingNumber": "MaintOrderRoutingNumber 9",
+		"MaintenanceOrderType": "MaintenanceOrderType 9",
+		"MaintenanceOrderCategory": "MaintenanceOrderCategory 9",
+		"MaintenanceOrderDesc": "MaintenanceOrderDesc 9",
+		"MaintOrdBasicStartDate": "/Date(1307187847000)/",
+		"MaintOrdBasicEndDate": "/Date(1448023447000)/",
+		"MaintenanceOrderInternalID": "MaintenanceOrderInternalID 9",
+		"WorkCenterInternalID": "WorkCenterInternalID 9",
+		"WorkCenterTypeCode": "WorkCenterTypeCode 9",
+		"BusinessArea": "BusinessArea 9",
+		"MaintOrdMainWorkCenter": "MaintOrdMainWorkCenter 9",
+		"MaintOrdMainWorkCenterPlant": "MaintOrdMainWorkCenterPlant 9",
+		"MaintOrdPersonResponsible": "MaintOrdPersonResponsible 9",
+		"MaintOrderReferenceDate": "/Date(1327063447000)/",
+		"MaintenanceOrderPlanningCode": "MaintenanceOrderPlanningCode 9",
+		"OperationSystemCondition": "OperationSystemCondition 9",
+		"ReferenceElement": "ReferenceElement 9",
+		"MaintenanceActivityType": "MaintenanceActivityType 9",
+		"ControllingArea": "ControllingArea 9",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 9",
+		"AuthorizationGroup": "AuthorizationGroup 9",
+		"MaintenancePlant": "MaintenancePlant 9",
+		"CreatedByUser": "CreatedByUser 9",
+		"MaintOrderSourceApplication": "MaintOrderSourceApplication 9",
+		"LastChangeDateTime": "/Date(999776647000+0000)/",
+		"OrderHasLongText": true,
+		"MaintOrderIsFinallyConfirmed": false,
+		"DraftUUID": "86977dc8-17e3-4433-b69e-0e8ca1ce3c2e",
+		"DraftEntityCreationDateTime": "/Date(1117194247000+0000)/",
+		"DraftEntityLastChangeDateTime": "/Date(1023623047000+0000)/",
+		"HasActiveEntity": true,
+		"HasDraftEntity": false,
+		"IsActiveEntity": true,
+		"__metadata": {
+			"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%209',DraftUUID=guid'86977dc8-17e3-4433-b69e-0e8ca1ce3c2e',IsActiveEntity=true)",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType"
+		},
+		"DraftAdministrativeData": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%209',DraftUUID=guid'86977dc8-17e3-4433-b69e-0e8ca1ce3c2e',IsActiveEntity=true)/DraftAdministrativeData"
+			}
+		},
+		"SiblingEntity": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%209',DraftUUID=guid'86977dc8-17e3-4433-b69e-0e8ca1ce3c2e',IsActiveEntity=true)/SiblingEntity"
+			}
+		},
+		"to_MaintOrderOperationTP": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%209',DraftUUID=guid'86977dc8-17e3-4433-b69e-0e8ca1ce3c2e',IsActiveEntity=true)/to_MaintOrderOperationTP"
+			}
+		}
+	},
+	{
+		"Activation_ac": false,
+		"Cancelbusinesscomplete_ac": true,
+		"Canceltechnicalcomplete_ac": false,
+		"Completebusiness_ac": false,
+		"Completetechnical_ac": true,
+		"Donotexecute_ac": true,
+		"Edit_ac": false,
+		"Preparation_ac": true,
+		"Release_ac": true,
+		"Validation_ac": true,
+		"OrderHasLongText_fc": 2,
+		"MaintenanceOrder": "MaintenanceOrder 10",
+		"MaintenanceOrderForEdit": "MaintenanceOrderForEdit 10",
+		"TechnicalObject": "TechnicalObject 10",
+		"TechObjIsEquipOrFuncnlLoc": "TechObjIsEquipOrFuncnlLoc 10",
+		"MaintPriorityType": "MaintPriorityType 10",
+		"MaintPriority": "MaintPriority 10",
+		"MaintenanceProcessingPhase": "MaintenanceProcessingPhase 10",
+		"MaintObjectLocAcctAssgmtNmbr": "MaintObjectLocAcctAssgmtNmbr 10",
+		"MaintenanceNotification": "MaintenanceNotification 10",
+		"Equipment": "Equipment 10",
+		"MaintenancePlanItemIntID": "MaintenancePlanItemIntID 10",
+		"Assembly": "Assembly 10",
+		"SerialNumber": "SerialNumber 10",
+		"MaintenancePlanningPlant": "MaintenancePlanningPlant 10",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 10",
+		"MaintenanceRevision": "MaintenanceRevision 10",
+		"MaintenancePlan": "MaintenancePlan 10",
+		"MaintOrderRoutingNumber": "MaintOrderRoutingNumber 10",
+		"MaintenanceOrderType": "MaintenanceOrderType 10",
+		"MaintenanceOrderCategory": "MaintenanceOrderCategory 10",
+		"MaintenanceOrderDesc": "MaintenanceOrderDesc 10",
+		"MaintOrdBasicStartDate": "/Date(1416487447000)/",
+		"MaintOrdBasicEndDate": "/Date(1450010647000)/",
+		"MaintenanceOrderInternalID": "MaintenanceOrderInternalID 10",
+		"WorkCenterInternalID": "WorkCenterInternalID 10",
+		"WorkCenterTypeCode": "WorkCenterTypeCode 10",
+		"BusinessArea": "BusinessArea 10",
+		"MaintOrdMainWorkCenter": "MaintOrdMainWorkCenter 10",
+		"MaintOrdMainWorkCenterPlant": "MaintOrdMainWorkCenterPlant 10",
+		"MaintOrdPersonResponsible": "MaintOrdPersonResponsible 10",
+		"MaintOrderReferenceDate": "/Date(1354884247000)/",
+		"MaintenanceOrderPlanningCode": "MaintenanceOrderPlanningCode 10",
+		"OperationSystemCondition": "OperationSystemCondition 10",
+		"ReferenceElement": "ReferenceElement 10",
+		"MaintenanceActivityType": "MaintenanceActivityType 10",
+		"ControllingArea": "ControllingArea 10",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 10",
+		"AuthorizationGroup": "AuthorizationGroup 10",
+		"MaintenancePlant": "MaintenancePlant 10",
+		"CreatedByUser": "CreatedByUser 10",
+		"MaintOrderSourceApplication": "MaintOrderSourceApplication 10",
+		"LastChangeDateTime": "/Date(971178247000+0000)/",
+		"OrderHasLongText": false,
+		"MaintOrderIsFinallyConfirmed": true,
+		"DraftUUID": "49a1bad7-64f0-45de-ba4a-cbcbb6888944",
+		"DraftEntityCreationDateTime": "/Date(962538247000+0000)/",
+		"DraftEntityLastChangeDateTime": "/Date(1536493447000+0000)/",
+		"HasActiveEntity": false,
+		"HasDraftEntity": false,
+		"IsActiveEntity": false,
+		"__metadata": {
+			"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%2010',DraftUUID=guid'49a1bad7-64f0-45de-ba4a-cbcbb6888944',IsActiveEntity=false)",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintOrderTPType"
+		},
+		"DraftAdministrativeData": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%2010',DraftUUID=guid'49a1bad7-64f0-45de-ba4a-cbcbb6888944',IsActiveEntity=false)/DraftAdministrativeData"
+			}
+		},
+		"SiblingEntity": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%2010',DraftUUID=guid'49a1bad7-64f0-45de-ba4a-cbcbb6888944',IsActiveEntity=false)/SiblingEntity"
+			}
+		},
+		"to_MaintOrderOperationTP": {
+			"__deferred": {
+				"uri": "I_MaintOrderTP(MaintenanceOrder='MaintenanceOrder%2010',DraftUUID=guid'49a1bad7-64f0-45de-ba4a-cbcbb6888944',IsActiveEntity=false)/to_MaintOrderOperationTP"
+			}
+		}
+	}
+]

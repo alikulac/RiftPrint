@@ -1,0 +1,152 @@
+[
+	{
+		"PredecessorOrder": "PredecessorOrder 1",
+		"PredecessorOrderOperation": "PredecessorOrderOperation 1",
+		"SuccessorOrder": "SuccessorOrder 1",
+		"SuccessorOrderOperation": "SuccessorOrderOperation 1",
+		"NetworkActivityRelationType": "FinishToStart",
+		"PredecessorOrderOperationRowID": "PredecessorOrderOperationRowID 1",
+		"SuccessorOrderOperationRowID": "SuccessorOrderOperationRowID 1",
+		"NetworkActivityIntmsnDuration": 9.85,
+		"NetworkActivityIntmsnDurnUnit": "NetworkActivityIntmsnDurnUnit 1",
+		"__metadata": {
+			"uri": "C_RSHOperationRelationships(PredecessorOrder='PredecessorOrder%201',PredecessorOrderOperation='PredecessorOrderOperation%201',SuccessorOrder='SuccessorOrder%201',SuccessorOrderOperation='SuccessorOrderOperation%201')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationRelationshipsType"
+		}
+	},
+	{
+		"PredecessorOrder": "PredecessorOrder 2",
+		"PredecessorOrderOperation": "PredecessorOrderOperation 2",
+		"SuccessorOrder": "SuccessorOrder 2",
+		"SuccessorOrderOperation": "SuccessorOrderOperation 2",
+		"NetworkActivityRelationType": "FinishToStart",
+		"PredecessorOrderOperationRowID": "PredecessorOrderOperationRowID 2",
+		"SuccessorOrderOperationRowID": "SuccessorOrderOperationRowID 2",
+		"NetworkActivityIntmsnDuration": 416.31,
+		"NetworkActivityIntmsnDurnUnit": "NetworkActivityIntmsnDurnUnit 2",
+		"__metadata": {
+			"uri": "C_RSHOperationRelationships(PredecessorOrder='PredecessorOrder%202',PredecessorOrderOperation='PredecessorOrderOperation%202',SuccessorOrder='SuccessorOrder%202',SuccessorOrderOperation='SuccessorOrderOperation%202')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationRelationshipsType"
+		}
+	},
+	{
+		"PredecessorOrder": "PredecessorOrder 3",
+		"PredecessorOrderOperation": "PredecessorOrderOperation 3",
+		"SuccessorOrder": "SuccessorOrder 3",
+		"SuccessorOrderOperation": "SuccessorOrderOperation 3",
+		"NetworkActivityRelationType": "FinishToStart",
+		"PredecessorOrderOperationRowID": "PredecessorOrderOperationRowID 3",
+		"SuccessorOrderOperationRowID": "SuccessorOrderOperationRowID 3",
+		"NetworkActivityIntmsnDuration": 6671.92,
+		"NetworkActivityIntmsnDurnUnit": "NetworkActivityIntmsnDurnUnit 3",
+		"__metadata": {
+			"uri": "C_RSHOperationRelationships(PredecessorOrder='PredecessorOrder%203',PredecessorOrderOperation='PredecessorOrderOperation%203',SuccessorOrder='SuccessorOrder%203',SuccessorOrderOperation='SuccessorOrderOperation%203')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationRelationshipsType"
+		}
+	},
+	{
+		"PredecessorOrder": "PredecessorOrder 4",
+		"PredecessorOrderOperation": "PredecessorOrderOperation 4",
+		"SuccessorOrder": "SuccessorOrder 4",
+		"SuccessorOrderOperation": "SuccessorOrderOperation 4",
+		"NetworkActivityRelationType": "FinishToStart",
+		"PredecessorOrderOperationRowID": "PredecessorOrderOperationRowID 4",
+		"SuccessorOrderOperationRowID": "SuccessorOrderOperationRowID 4",
+		"NetworkActivityIntmsnDuration": 2613.6,
+		"NetworkActivityIntmsnDurnUnit": "NetworkActivityIntmsnDurnUnit 4",
+		"__metadata": {
+			"uri": "C_RSHOperationRelationships(PredecessorOrder='PredecessorOrder%204',PredecessorOrderOperation='PredecessorOrderOperation%204',SuccessorOrder='SuccessorOrder%204',SuccessorOrderOperation='SuccessorOrderOperation%204')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationRelationshipsType"
+		}
+	},
+	{
+		"PredecessorOrder": "PredecessorOrder 5",
+		"PredecessorOrderOperation": "PredecessorOrderOperation 5",
+		"SuccessorOrder": "SuccessorOrder 5",
+		"SuccessorOrderOperation": "SuccessorOrderOperation 5",
+		"NetworkActivityRelationType": "FinishToStart",
+		"PredecessorOrderOperationRowID": "PredecessorOrderOperationRowID 5",
+		"SuccessorOrderOperationRowID": "SuccessorOrderOperationRowID 5",
+		"NetworkActivityIntmsnDuration": 7960.43,
+		"NetworkActivityIntmsnDurnUnit": "NetworkActivityIntmsnDurnUnit 5",
+		"__metadata": {
+			"uri": "C_RSHOperationRelationships(PredecessorOrder='PredecessorOrder%205',PredecessorOrderOperation='PredecessorOrderOperation%205',SuccessorOrder='SuccessorOrder%205',SuccessorOrderOperation='SuccessorOrderOperation%205')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationRelationshipsType"
+		}
+	},
+	{
+		"PredecessorOrder": "PredecessorOrder 6",
+		"PredecessorOrderOperation": "PredecessorOrderOperation 6",
+		"SuccessorOrder": "SuccessorOrder 6",
+		"SuccessorOrderOperation": "SuccessorOrderOperation 6",
+		"NetworkActivityRelationType": "FinishToStart",
+		"PredecessorOrderOperationRowID": "PredecessorOrderOperationRowID 6",
+		"SuccessorOrderOperationRowID": "SuccessorOrderOperationRowID 6",
+		"NetworkActivityIntmsnDuration": 2584.86,
+		"NetworkActivityIntmsnDurnUnit": "NetworkActivityIntmsnDurnUnit 6",
+		"__metadata": {
+			"uri": "C_RSHOperationRelationships(PredecessorOrder='PredecessorOrder%206',PredecessorOrderOperation='PredecessorOrderOperation%206',SuccessorOrder='SuccessorOrder%206',SuccessorOrderOperation='SuccessorOrderOperation%206')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationRelationshipsType"
+		}
+	},
+	{
+		"PredecessorOrder": "PredecessorOrder 7",
+		"PredecessorOrderOperation": "PredecessorOrderOperation 7",
+		"SuccessorOrder": "SuccessorOrder 7",
+		"SuccessorOrderOperation": "SuccessorOrderOperation 7",
+		"NetworkActivityRelationType": "FinishToStart",
+		"PredecessorOrderOperationRowID": "PredecessorOrderOperationRowID 7",
+		"SuccessorOrderOperationRowID": "SuccessorOrderOperationRowID 7",
+		"NetworkActivityIntmsnDuration": 5101.49,
+		"NetworkActivityIntmsnDurnUnit": "NetworkActivityIntmsnDurnUnit 7",
+		"__metadata": {
+			"uri": "C_RSHOperationRelationships(PredecessorOrder='PredecessorOrder%207',PredecessorOrderOperation='PredecessorOrderOperation%207',SuccessorOrder='SuccessorOrder%207',SuccessorOrderOperation='SuccessorOrderOperation%207')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationRelationshipsType"
+		}
+	},
+	{
+		"PredecessorOrder": "PredecessorOrder 8",
+		"PredecessorOrderOperation": "PredecessorOrderOperation 8",
+		"SuccessorOrder": "SuccessorOrder 8",
+		"SuccessorOrderOperation": "SuccessorOrderOperation 8",
+		"NetworkActivityRelationType": "FinishToStart",
+		"PredecessorOrderOperationRowID": "PredecessorOrderOperationRowID 8",
+		"SuccessorOrderOperationRowID": "SuccessorOrderOperationRowID 8",
+		"NetworkActivityIntmsnDuration": 7638.68,
+		"NetworkActivityIntmsnDurnUnit": "NetworkActivityIntmsnDurnUnit 8",
+		"__metadata": {
+			"uri": "C_RSHOperationRelationships(PredecessorOrder='PredecessorOrder%208',PredecessorOrderOperation='PredecessorOrderOperation%208',SuccessorOrder='SuccessorOrder%208',SuccessorOrderOperation='SuccessorOrderOperation%208')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationRelationshipsType"
+		}
+	},
+	{
+		"PredecessorOrder": "PredecessorOrder 9",
+		"PredecessorOrderOperation": "PredecessorOrderOperation 9",
+		"SuccessorOrder": "SuccessorOrder 9",
+		"SuccessorOrderOperation": "SuccessorOrderOperation 9",
+		"NetworkActivityRelationType": "FinishToStart",
+		"PredecessorOrderOperationRowID": "PredecessorOrderOperationRowID 9",
+		"SuccessorOrderOperationRowID": "SuccessorOrderOperationRowID 9",
+		"NetworkActivityIntmsnDuration": 100.85,
+		"NetworkActivityIntmsnDurnUnit": "NetworkActivityIntmsnDurnUnit 9",
+		"__metadata": {
+			"uri": "C_RSHOperationRelationships(PredecessorOrder='PredecessorOrder%209',PredecessorOrderOperation='PredecessorOrderOperation%209',SuccessorOrder='SuccessorOrder%209',SuccessorOrderOperation='SuccessorOrderOperation%209')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationRelationshipsType"
+		}
+	},
+	{
+		"PredecessorOrder": "PredecessorOrder 10",
+		"PredecessorOrderOperation": "PredecessorOrderOperation 10",
+		"SuccessorOrder": "SuccessorOrder 10",
+		"SuccessorOrderOperation": "SuccessorOrderOperation 10",
+		"NetworkActivityRelationType": "FinishToStart",
+		"PredecessorOrderOperationRowID": "PredecessorOrderOperationRowID 10",
+		"SuccessorOrderOperationRowID": "SuccessorOrderOperationRowID 10",
+		"NetworkActivityIntmsnDuration": 8688.55,
+		"NetworkActivityIntmsnDurnUnit": "NetworkActivityIntmsnDurnUnit 10",
+		"__metadata": {
+			"uri": "C_RSHOperationRelationships(PredecessorOrder='PredecessorOrder%2010',PredecessorOrderOperation='PredecessorOrderOperation%2010',SuccessorOrder='SuccessorOrder%2010',SuccessorOrderOperation='SuccessorOrderOperation%2010')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationRelationshipsType"
+		}
+	}
+]

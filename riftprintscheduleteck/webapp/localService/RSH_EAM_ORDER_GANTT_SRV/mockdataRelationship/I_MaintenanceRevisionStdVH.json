@@ -1,0 +1,87 @@
+[
+	{
+		"__metadata": {
+			"id": "I_MaintenanceRevisionStdVH(MaintenancePlanningPlant='0001',MaintenanceRevision='00000006')",
+			"uri": "I_MaintenanceRevisionStdVH(MaintenancePlanningPlant='0001',MaintenanceRevision='00000006')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintenanceRevisionStdVHType"
+		},
+		"MaintenancePlanningPlant": "0001",
+		"MaintenanceRevision": "00000006",
+		"MaintenanceEventType": "BI",
+		"MaintenanceRevisionDesc": "Copy Dates from Maintenance Event",
+		"RevisionStartDate": "/Date(1642982400000)/",
+		"RevisionEndDate": "/Date(1643587200000)/",
+		"MaintRevisionStartDateTime": "/Date(1643018400000+0000)/",
+		"MaintRevisionEndDateTime": "/Date(1643623200000+0000)/",
+		"MaintPlngBucketLabel": "TESTCASE_COPY_DATES",
+		"MaintPlanningBucketDescription": "Copy Dates from Maintenance Event"
+	},
+	{
+		"__metadata": {
+			"id": "I_MaintenanceRevisionStdVH(MaintenancePlanningPlant='0001',MaintenanceRevision='TESTCS')",
+			"uri": "I_MaintenanceRevisionStdVH(MaintenancePlanningPlant='0001',MaintenanceRevision='TESTCS')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintenanceRevisionStdVHType"
+		},
+		"MaintenancePlanningPlant": "0001",
+		"MaintenanceRevision": "TESTCS",
+		"MaintenanceEventType": "BI",
+		"MaintenanceRevisionDesc": "TEST Change Scheduling BKT BG",
+		"RevisionStartDate": "/Date(1648080000000)/",
+		"RevisionEndDate": "/Date(1648425600000)/",
+		"MaintRevisionStartDateTime": "/Date(1648162800000+0000)/",
+		"MaintRevisionEndDateTime": "/Date(1648504800000+0000)/",
+		"MaintPlngBucketLabel": "TESTCS_BKT",
+		"MaintPlanningBucketDescription": "TEST Change Scheduling BKT BG"
+	},
+	{
+		"__metadata": {
+			"id": "I_MaintenanceRevisionStdVH(MaintenancePlanningPlant='0001',MaintenanceRevision='TESTEV2')",
+			"uri": "I_MaintenanceRevisionStdVH(MaintenancePlanningPlant='0001',MaintenanceRevision='TESTEV2')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintenanceRevisionStdVHType"
+		},
+		"MaintenancePlanningPlant": "0001",
+		"MaintenanceRevision": "TESTEV2",
+		"MaintenanceEventType": "BI",
+		"MaintenanceRevisionDesc": "",
+		"RevisionStartDate": "/Date(1646697600000)/",
+		"RevisionEndDate": "/Date(1647302400000)/",
+		"MaintRevisionStartDateTime": "/Date(1646748000000+0000)/",
+		"MaintRevisionEndDateTime": "/Date(1647352800000+0000)/",
+		"MaintPlngBucketLabel": "TEST EVT DISPLAY",
+		"MaintPlanningBucketDescription": ""
+	},
+	{
+		"__metadata": {
+			"id": "I_MaintenanceRevisionStdVH(MaintenancePlanningPlant='0001',MaintenanceRevision='TESTTEST')",
+			"uri": "I_MaintenanceRevisionStdVH(MaintenancePlanningPlant='0001',MaintenanceRevision='TESTTEST')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintenanceRevisionStdVHType"
+		},
+		"MaintenancePlanningPlant": "0001",
+		"MaintenanceRevision": "TESTTEST",
+		"MaintenanceEventType": "BI",
+		"MaintenanceRevisionDesc": "",
+		"RevisionStartDate": "/Date(1648684800000)/",
+		"RevisionEndDate": "/Date(1649289600000)/",
+		"MaintRevisionStartDateTime": "/Date(1648717200000+0000)/",
+		"MaintRevisionEndDateTime": "/Date(1649322000000+0000)/",
+		"MaintPlngBucketLabel": "TEST05",
+		"MaintPlanningBucketDescription": ""
+	},
+	{
+		"__metadata": {
+			"id": "I_MaintenanceRevisionStdVH(MaintenancePlanningPlant='0001',MaintenanceRevision='UNSCBG')",
+			"uri": "I_MaintenanceRevisionStdVH(MaintenancePlanningPlant='0001',MaintenanceRevision='UNSCBG')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_MaintenanceRevisionStdVHType"
+		},
+		"MaintenancePlanningPlant": "0001",
+		"MaintenanceRevision": "UNSCBG",
+		"MaintenanceEventType": "SH",
+		"MaintenanceRevisionDesc": "",
+		"RevisionStartDate": "/Date(1648771200000)/",
+		"RevisionEndDate": "/Date(1648771200000)/",
+		"MaintRevisionStartDateTime": "/Date(1648778400000+0000)/",
+		"MaintRevisionEndDateTime": "/Date(1648828800000+0000)/",
+		"MaintPlngBucketLabel": "TEST_EVT_BG_UNSCHEDULED",
+		"MaintPlanningBucketDescription": ""
+	}
+]

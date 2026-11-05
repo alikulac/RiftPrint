@@ -1,0 +1,354 @@
+[
+	{
+		"__metadata": {
+			"id": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-01T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-01-31T00%3A00%3A00Z')",
+			"uri": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-01T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-01-31T00%3A00%3A00Z')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttNonWrkgTmeIntvlType"
+		},
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"CapacityInternalID": "10000378",
+		"CalendarDate": "/Date(1612137600000)/",
+		"WorkCenterNonAvailStrtDteTme": "/Date(1612051200000+0000)/",
+		"WorkCenterNonAvailEndDteTme": "/Date(1612159200000+0000)/",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterCategoryCode": "0003",
+		"Plant": "0001"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-02T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-01T22%3A00%3A00Z')",
+			"uri": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-02T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-01T22%3A00%3A00Z')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttNonWrkgTmeIntvlType"
+		},
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"CapacityInternalID": "10000378",
+		"CalendarDate": "/Date(1612224000000)/",
+		"WorkCenterNonAvailStrtDteTme": "/Date(1612216800000+0000)/",
+		"WorkCenterNonAvailEndDteTme": "/Date(1612245600000+0000)/",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterCategoryCode": "0003",
+		"Plant": "0001"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-03T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-02T22%3A00%3A00Z')",
+			"uri": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-03T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-02T22%3A00%3A00Z')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttNonWrkgTmeIntvlType"
+		},
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"CapacityInternalID": "10000378",
+		"CalendarDate": "/Date(1612310400000)/",
+		"WorkCenterNonAvailStrtDteTme": "/Date(1612303200000+0000)/",
+		"WorkCenterNonAvailEndDteTme": "/Date(1612332000000+0000)/",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterCategoryCode": "0003",
+		"Plant": "0001"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-04T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-03T22%3A00%3A00Z')",
+			"uri": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-04T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-03T22%3A00%3A00Z')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttNonWrkgTmeIntvlType"
+		},
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"CapacityInternalID": "10000378",
+		"CalendarDate": "/Date(1612396800000)/",
+		"WorkCenterNonAvailStrtDteTme": "/Date(1612389600000+0000)/",
+		"WorkCenterNonAvailEndDteTme": "/Date(1612418400000+0000)/",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterCategoryCode": "0003",
+		"Plant": "0001"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-05T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-04T22%3A00%3A00Z')",
+			"uri": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-05T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-04T22%3A00%3A00Z')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttNonWrkgTmeIntvlType"
+		},
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"CapacityInternalID": "10000378",
+		"CalendarDate": "/Date(1612483200000)/",
+		"WorkCenterNonAvailStrtDteTme": "/Date(1612476000000+0000)/",
+		"WorkCenterNonAvailEndDteTme": "/Date(1612504800000+0000)/",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterCategoryCode": "0003",
+		"Plant": "0001"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-08T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-05T22%3A00%3A00Z')",
+			"uri": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-08T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-05T22%3A00%3A00Z')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttNonWrkgTmeIntvlType"
+		},
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"CapacityInternalID": "10000378",
+		"CalendarDate": "/Date(1612742400000)/",
+		"WorkCenterNonAvailStrtDteTme": "/Date(1612562400000+0000)/",
+		"WorkCenterNonAvailEndDteTme": "/Date(1612764000000+0000)/",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterCategoryCode": "0003",
+		"Plant": "0001"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-09T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-08T22%3A00%3A00Z')",
+			"uri": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-09T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-08T22%3A00%3A00Z')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttNonWrkgTmeIntvlType"
+		},
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"CapacityInternalID": "10000378",
+		"CalendarDate": "/Date(1612828800000)/",
+		"WorkCenterNonAvailStrtDteTme": "/Date(1612821600000+0000)/",
+		"WorkCenterNonAvailEndDteTme": "/Date(1612850400000+0000)/",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterCategoryCode": "0003",
+		"Plant": "0001"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-10T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-09T22%3A00%3A00Z')",
+			"uri": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-10T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-09T22%3A00%3A00Z')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttNonWrkgTmeIntvlType"
+		},
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"CapacityInternalID": "10000378",
+		"CalendarDate": "/Date(1612915200000)/",
+		"WorkCenterNonAvailStrtDteTme": "/Date(1612908000000+0000)/",
+		"WorkCenterNonAvailEndDteTme": "/Date(1612936800000+0000)/",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterCategoryCode": "0003",
+		"Plant": "0001"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-11T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-10T22%3A00%3A00Z')",
+			"uri": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-11T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-10T22%3A00%3A00Z')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttNonWrkgTmeIntvlType"
+		},
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"CapacityInternalID": "10000378",
+		"CalendarDate": "/Date(1613001600000)/",
+		"WorkCenterNonAvailStrtDteTme": "/Date(1612994400000+0000)/",
+		"WorkCenterNonAvailEndDteTme": "/Date(1613023200000+0000)/",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterCategoryCode": "0003",
+		"Plant": "0001"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-12T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-11T22%3A00%3A00Z')",
+			"uri": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-12T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-11T22%3A00%3A00Z')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttNonWrkgTmeIntvlType"
+		},
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"CapacityInternalID": "10000378",
+		"CalendarDate": "/Date(1613088000000)/",
+		"WorkCenterNonAvailStrtDteTme": "/Date(1613080800000+0000)/",
+		"WorkCenterNonAvailEndDteTme": "/Date(1613109600000+0000)/",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterCategoryCode": "0003",
+		"Plant": "0001"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-15T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-12T22%3A00%3A00Z')",
+			"uri": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-15T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-12T22%3A00%3A00Z')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttNonWrkgTmeIntvlType"
+		},
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"CapacityInternalID": "10000378",
+		"CalendarDate": "/Date(1613347200000)/",
+		"WorkCenterNonAvailStrtDteTme": "/Date(1613167200000+0000)/",
+		"WorkCenterNonAvailEndDteTme": "/Date(1613368800000+0000)/",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterCategoryCode": "0003",
+		"Plant": "0001"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-16T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-15T22%3A00%3A00Z')",
+			"uri": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-16T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-15T22%3A00%3A00Z')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttNonWrkgTmeIntvlType"
+		},
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"CapacityInternalID": "10000378",
+		"CalendarDate": "/Date(1613433600000)/",
+		"WorkCenterNonAvailStrtDteTme": "/Date(1613426400000+0000)/",
+		"WorkCenterNonAvailEndDteTme": "/Date(1613455200000+0000)/",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterCategoryCode": "0003",
+		"Plant": "0001"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-17T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-16T22%3A00%3A00Z')",
+			"uri": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-17T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-16T22%3A00%3A00Z')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttNonWrkgTmeIntvlType"
+		},
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"CapacityInternalID": "10000378",
+		"CalendarDate": "/Date(1613520000000)/",
+		"WorkCenterNonAvailStrtDteTme": "/Date(1613512800000+0000)/",
+		"WorkCenterNonAvailEndDteTme": "/Date(1613541600000+0000)/",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterCategoryCode": "0003",
+		"Plant": "0001"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-18T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-17T22%3A00%3A00Z')",
+			"uri": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-18T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-17T22%3A00%3A00Z')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttNonWrkgTmeIntvlType"
+		},
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"CapacityInternalID": "10000378",
+		"CalendarDate": "/Date(1613606400000)/",
+		"WorkCenterNonAvailStrtDteTme": "/Date(1613599200000+0000)/",
+		"WorkCenterNonAvailEndDteTme": "/Date(1613628000000+0000)/",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterCategoryCode": "0003",
+		"Plant": "0001"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-19T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-18T22%3A00%3A00Z')",
+			"uri": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-19T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-18T22%3A00%3A00Z')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttNonWrkgTmeIntvlType"
+		},
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"CapacityInternalID": "10000378",
+		"CalendarDate": "/Date(1613692800000)/",
+		"WorkCenterNonAvailStrtDteTme": "/Date(1613685600000+0000)/",
+		"WorkCenterNonAvailEndDteTme": "/Date(1613714400000+0000)/",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterCategoryCode": "0003",
+		"Plant": "0001"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-22T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-19T22%3A00%3A00Z')",
+			"uri": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-22T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-19T22%3A00%3A00Z')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttNonWrkgTmeIntvlType"
+		},
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"CapacityInternalID": "10000378",
+		"CalendarDate": "/Date(1613952000000)/",
+		"WorkCenterNonAvailStrtDteTme": "/Date(1613772000000+0000)/",
+		"WorkCenterNonAvailEndDteTme": "/Date(1613973600000+0000)/",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterCategoryCode": "0003",
+		"Plant": "0001"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-23T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-22T22%3A00%3A00Z')",
+			"uri": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-23T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-22T22%3A00%3A00Z')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttNonWrkgTmeIntvlType"
+		},
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"CapacityInternalID": "10000378",
+		"CalendarDate": "/Date(1614038400000)/",
+		"WorkCenterNonAvailStrtDteTme": "/Date(1614031200000+0000)/",
+		"WorkCenterNonAvailEndDteTme": "/Date(1614060000000+0000)/",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterCategoryCode": "0003",
+		"Plant": "0001"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-24T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-23T22%3A00%3A00Z')",
+			"uri": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-24T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-23T22%3A00%3A00Z')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttNonWrkgTmeIntvlType"
+		},
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"CapacityInternalID": "10000378",
+		"CalendarDate": "/Date(1614124800000)/",
+		"WorkCenterNonAvailStrtDteTme": "/Date(1614117600000+0000)/",
+		"WorkCenterNonAvailEndDteTme": "/Date(1614146400000+0000)/",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterCategoryCode": "0003",
+		"Plant": "0001"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-25T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-24T22%3A00%3A00Z')",
+			"uri": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-25T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-24T22%3A00%3A00Z')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttNonWrkgTmeIntvlType"
+		},
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"CapacityInternalID": "10000378",
+		"CalendarDate": "/Date(1614211200000)/",
+		"WorkCenterNonAvailStrtDteTme": "/Date(1614204000000+0000)/",
+		"WorkCenterNonAvailEndDteTme": "/Date(1614232800000+0000)/",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterCategoryCode": "0003",
+		"Plant": "0001"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-26T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-25T22%3A00%3A00Z')",
+			"uri": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-02-26T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-25T22%3A00%3A00Z')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttNonWrkgTmeIntvlType"
+		},
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"CapacityInternalID": "10000378",
+		"CalendarDate": "/Date(1614297600000)/",
+		"WorkCenterNonAvailStrtDteTme": "/Date(1614290400000+0000)/",
+		"WorkCenterNonAvailEndDteTme": "/Date(1614319200000+0000)/",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterCategoryCode": "0003",
+		"Plant": "0001"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-03-01T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-26T22%3A00%3A00Z')",
+			"uri": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-03-01T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-02-26T22%3A00%3A00Z')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttNonWrkgTmeIntvlType"
+		},
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"CapacityInternalID": "10000378",
+		"CalendarDate": "/Date(1614556800000)/",
+		"WorkCenterNonAvailStrtDteTme": "/Date(1614376800000+0000)/",
+		"WorkCenterNonAvailEndDteTme": "/Date(1614585600000+0000)/",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterCategoryCode": "0003",
+		"Plant": "0001"
+	},
+	{
+		"__metadata": {
+			"id": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-03-01T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-03-01T17%3A00%3A00Z')",
+			"uri": "C_RSHOrderGanttNonWrkgTmeIntvl(WorkCenterInternalID='10001963',WorkCenterTypeCode='A',CapacityInternalID='10000378',CalendarDate=datetime'2021-03-01T00%3A00%3A00',WorkCenterNonAvailStrtDteTme=datetimeoffset'2021-03-01T17%3A00%3A00Z')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOrderGanttNonWrkgTmeIntvlType"
+		},
+		"WorkCenterInternalID": "10001963",
+		"WorkCenterTypeCode": "A",
+		"CapacityInternalID": "10000378",
+		"CalendarDate": "/Date(1614556800000)/",
+		"WorkCenterNonAvailStrtDteTme": "/Date(1614618000000+0000)/",
+		"WorkCenterNonAvailEndDteTme": "/Date(1614643199000+0000)/",
+		"WorkCenter": "RSH_JS02",
+		"WorkCenterCategoryCode": "0003",
+		"Plant": "0001"
+	}
+]

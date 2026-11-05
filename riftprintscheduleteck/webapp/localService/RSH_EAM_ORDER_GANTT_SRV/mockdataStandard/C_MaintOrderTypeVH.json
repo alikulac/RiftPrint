@@ -1,0 +1,74 @@
+[
+	{
+		"MaintenanceOrderType": "YA01",
+		"MaintenanceOrderTypeName": "Reactive Maintenance",
+		"__metadata": {
+			"id": "RSH_EAM_ORDER_GANTT_SRV/C_MaintOrderTypeVH('YA01')",
+			"uri": "RSH_EAM_ORDER_GANTT_SRV/C_MaintOrderTypeVH('YA01')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_MaintOrderTypeVHType"
+		}
+	},
+	{
+		"MaintenanceOrderType": "YA02",
+		"MaintenanceOrderTypeName": "Proactive Maintenance",
+		"__metadata": {
+			"id": "RSH_EAM_ORDER_GANTT_SRV/C_MaintOrderTypeVH('YA02')",
+			"uri": "RSH_EAM_ORDER_GANTT_SRV/C_MaintOrderTypeVH('YA02')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_MaintOrderTypeVHType"
+		}
+	},
+	{
+		"MaintenanceOrderType": "YA03",
+		"MaintenanceOrderTypeName": "Improvement Maintenance",
+		"__metadata": {
+			"id": "RSH_EAM_ORDER_GANTT_SRV/C_MaintOrderTypeVH('YA03')",
+			"uri": "RSH_EAM_ORDER_GANTT_SRV/C_MaintOrderTypeVH('YA03')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_MaintOrderTypeVHType"
+		}
+	},
+	{
+		"MaintenanceOrderType": "YA04",
+		"MaintenanceOrderTypeName": "Operational Maintenance",
+		"__metadata": {
+			"id": "RSH_EAM_ORDER_GANTT_SRV/C_MaintOrderTypeVH('YA04')",
+			"uri": "RSH_EAM_ORDER_GANTT_SRV/C_MaintOrderTypeVH('YA04')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_MaintOrderTypeVHType"
+		}
+	},
+	{
+		"MaintenanceOrderType": "YA05",
+		"MaintenanceOrderTypeName": "Overhead Maintenance",
+		"__metadata": {
+			"id": "RSH_EAM_ORDER_GANTT_SRV/C_MaintOrderTypeVH('YA05')",
+			"uri": "RSH_EAM_ORDER_GANTT_SRV/C_MaintOrderTypeVH('YA05')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_MaintOrderTypeVHType"
+		}
+	},
+	{
+		"MaintenanceOrderType": "YBA1",
+		"MaintenanceOrderTypeName": "Corrective Maintenance",
+		"__metadata": {
+			"id": "RSH_EAM_ORDER_GANTT_SRV/C_MaintOrderTypeVH('YBA1')",
+			"uri": "RSH_EAM_ORDER_GANTT_SRV/C_MaintOrderTypeVH('YBA1')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_MaintOrderTypeVHType"
+		}
+	},
+	{
+		"MaintenanceOrderType": "YBA2",
+		"MaintenanceOrderTypeName": "Preventive Maintenance",
+		"__metadata": {
+			"id": "RSH_EAM_ORDER_GANTT_SRV/C_MaintOrderTypeVH('YBA2')",
+			"uri": "RSH_EAM_ORDER_GANTT_SRV/C_MaintOrderTypeVH('YBA2')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_MaintOrderTypeVHType"
+		}
+	},
+	{
+		"MaintenanceOrderType": "PM02",
+		"MaintenanceOrderTypeName": "Unplanned Maintenance",
+		"__metadata": {
+			"id": "RSH_EAM_ORDER_GANTT_SRV/C_MaintOrderTypeVH('YBA3')",
+			"uri": "RSH_EAM_ORDER_GANTT_SRV/C_MaintOrderTypeVH('YBA3')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_MaintOrderTypeVHType"
+		}
+	}
+]

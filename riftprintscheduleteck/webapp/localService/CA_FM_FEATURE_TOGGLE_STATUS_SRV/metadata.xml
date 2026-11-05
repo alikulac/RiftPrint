@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+<!--
+
+    Copyright (C) 2009-2025 SAP SE or an SAP affiliate company. All rights reserved.
+
+-->
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema Namespace="CA_FM_FEATURE_TOGGLE_STATUS_SRV" sap:schema-version="1" xml:lang="en">
+			<EntityType Name="ToggleStatus" sap:content-version="1">
+				<Key><PropertyRef Name="Featureid"/></Key><Property MaxLength="40" Name="Featureid" Nullable="false" Type="Edm.String" sap:creatable="false" sap:filterable="false" sap:label="Feature Toggle ID" sap:metadatacache="true" sap:sortable="false" sap:unicode="false" sap:updatable="false"/></EntityType>
+			<EntityContainer Name="CA_FM_FEATURE_TOGGLE_STATUS_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet EntityType="CA_FM_FEATURE_TOGGLE_STATUS_SRV.ToggleStatus" Name="ToggleStatusSet" sap:content-version="1" sap:creatable="false" sap:deletable="false" sap:pageable="false" sap:updatable="false"/></EntityContainer><atom:link href="./sap/CA_FM_FEATURE_TOGGLE_STATUS_SRV/$metadata" rel="self" xmlns:atom="http://www.w3.org/2005/Atom"/><atom:link href="./sap/CA_FM_FEATURE_TOGGLE_STATUS_SRV/$metadata" rel="latest-version" xmlns:atom="http://www.w3.org/2005/Atom"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

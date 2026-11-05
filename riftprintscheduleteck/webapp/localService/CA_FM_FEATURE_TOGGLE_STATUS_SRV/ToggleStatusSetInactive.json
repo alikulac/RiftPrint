@@ -1,0 +1,13 @@
+{
+	"d": {
+		"results": [
+			{
+				"__metadata": {
+					"id": "ToggleStatusSet('SOME_OTHER_TOGGLE_BUT_NO_RSH')",
+					"uri": "CA_FM_FEATURE_TOGGLE_STATUS_SRV.ToggleStatus"
+				},
+				"Featureid": "SOME_OTHER_TOGGLE_BUT_NO_RSH"
+			}
+		]
+	}
+}

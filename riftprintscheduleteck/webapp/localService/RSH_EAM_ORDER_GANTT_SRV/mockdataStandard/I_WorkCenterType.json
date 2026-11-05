@@ -1,0 +1,82 @@
+[
+	{
+		"WorkCenterTypeCode": "WorkCenterTypeCode 1",
+		"WorkCenterTypeCode_Text": "WorkCenterTypeCode_Text 1",
+		"__metadata": {
+			"uri": "I_WorkCenterType('WorkCenterTypeCode%201')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_WorkCenterTypeType"
+		}
+	},
+	{
+		"WorkCenterTypeCode": "WorkCenterTypeCode 2",
+		"WorkCenterTypeCode_Text": "WorkCenterTypeCode_Text 2",
+		"__metadata": {
+			"uri": "I_WorkCenterType('WorkCenterTypeCode%202')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_WorkCenterTypeType"
+		}
+	},
+	{
+		"WorkCenterTypeCode": "WorkCenterTypeCode 3",
+		"WorkCenterTypeCode_Text": "WorkCenterTypeCode_Text 3",
+		"__metadata": {
+			"uri": "I_WorkCenterType('WorkCenterTypeCode%203')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_WorkCenterTypeType"
+		}
+	},
+	{
+		"WorkCenterTypeCode": "WorkCenterTypeCode 4",
+		"WorkCenterTypeCode_Text": "WorkCenterTypeCode_Text 4",
+		"__metadata": {
+			"uri": "I_WorkCenterType('WorkCenterTypeCode%204')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_WorkCenterTypeType"
+		}
+	},
+	{
+		"WorkCenterTypeCode": "WorkCenterTypeCode 5",
+		"WorkCenterTypeCode_Text": "WorkCenterTypeCode_Text 5",
+		"__metadata": {
+			"uri": "I_WorkCenterType('WorkCenterTypeCode%205')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_WorkCenterTypeType"
+		}
+	},
+	{
+		"WorkCenterTypeCode": "WorkCenterTypeCode 6",
+		"WorkCenterTypeCode_Text": "WorkCenterTypeCode_Text 6",
+		"__metadata": {
+			"uri": "I_WorkCenterType('WorkCenterTypeCode%206')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_WorkCenterTypeType"
+		}
+	},
+	{
+		"WorkCenterTypeCode": "WorkCenterTypeCode 7",
+		"WorkCenterTypeCode_Text": "WorkCenterTypeCode_Text 7",
+		"__metadata": {
+			"uri": "I_WorkCenterType('WorkCenterTypeCode%207')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_WorkCenterTypeType"
+		}
+	},
+	{
+		"WorkCenterTypeCode": "WorkCenterTypeCode 8",
+		"WorkCenterTypeCode_Text": "WorkCenterTypeCode_Text 8",
+		"__metadata": {
+			"uri": "I_WorkCenterType('WorkCenterTypeCode%208')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_WorkCenterTypeType"
+		}
+	},
+	{
+		"WorkCenterTypeCode": "WorkCenterTypeCode 9",
+		"WorkCenterTypeCode_Text": "WorkCenterTypeCode_Text 9",
+		"__metadata": {
+			"uri": "I_WorkCenterType('WorkCenterTypeCode%209')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_WorkCenterTypeType"
+		}
+	},
+	{
+		"WorkCenterTypeCode": "WorkCenterTypeCode 10",
+		"WorkCenterTypeCode_Text": "WorkCenterTypeCode_Text 10",
+		"__metadata": {
+			"uri": "I_WorkCenterType('WorkCenterTypeCode%2010')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.I_WorkCenterTypeType"
+		}
+	}
+]

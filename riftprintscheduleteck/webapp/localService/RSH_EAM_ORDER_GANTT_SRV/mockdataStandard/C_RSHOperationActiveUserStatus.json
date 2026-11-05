@@ -1,0 +1,192 @@
+[
+	{
+		"StatusObject": "StatusObject 1",
+		"StatusCode": "StatusCode 1",
+		"StatusProfile": "StatusProfile 1",
+		"Language": "Language 1",
+		"StatusShortName": "StatusShortName 1",
+		"StatusName": "StatusName 1",
+		"Plant": "Plant 1",
+		"OrderType": "OrderType 1",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 1",
+		"AuthorizationGroup": "AuthorizationGroup 1",
+		"MaintenancePlant": "MaintenancePlant 1",
+		"ControllingArea": "ControllingArea 1",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 1",
+		"__metadata": {
+			"uri": "C_RSHOperationActiveUserStatus(StatusObject='StatusObject%201',StatusCode='StatusCode%201')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationActiveUserStatusType"
+		}
+	},
+	{
+		"StatusObject": "StatusObject 2",
+		"StatusCode": "StatusCode 2",
+		"StatusProfile": "StatusProfile 2",
+		"Language": "Language 2",
+		"StatusShortName": "StatusShortName 2",
+		"StatusName": "StatusName 2",
+		"Plant": "Plant 2",
+		"OrderType": "OrderType 2",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 2",
+		"AuthorizationGroup": "AuthorizationGroup 2",
+		"MaintenancePlant": "MaintenancePlant 2",
+		"ControllingArea": "ControllingArea 2",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 2",
+		"__metadata": {
+			"uri": "C_RSHOperationActiveUserStatus(StatusObject='StatusObject%202',StatusCode='StatusCode%202')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationActiveUserStatusType"
+		}
+	},
+	{
+		"StatusObject": "StatusObject 3",
+		"StatusCode": "StatusCode 3",
+		"StatusProfile": "StatusProfile 3",
+		"Language": "Language 3",
+		"StatusShortName": "StatusShortName 3",
+		"StatusName": "StatusName 3",
+		"Plant": "Plant 3",
+		"OrderType": "OrderType 3",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 3",
+		"AuthorizationGroup": "AuthorizationGroup 3",
+		"MaintenancePlant": "MaintenancePlant 3",
+		"ControllingArea": "ControllingArea 3",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 3",
+		"__metadata": {
+			"uri": "C_RSHOperationActiveUserStatus(StatusObject='StatusObject%203',StatusCode='StatusCode%203')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationActiveUserStatusType"
+		}
+	},
+	{
+		"StatusObject": "StatusObject 4",
+		"StatusCode": "StatusCode 4",
+		"StatusProfile": "StatusProfile 4",
+		"Language": "Language 4",
+		"StatusShortName": "StatusShortName 4",
+		"StatusName": "StatusName 4",
+		"Plant": "Plant 4",
+		"OrderType": "OrderType 4",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 4",
+		"AuthorizationGroup": "AuthorizationGroup 4",
+		"MaintenancePlant": "MaintenancePlant 4",
+		"ControllingArea": "ControllingArea 4",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 4",
+		"__metadata": {
+			"uri": "C_RSHOperationActiveUserStatus(StatusObject='StatusObject%204',StatusCode='StatusCode%204')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationActiveUserStatusType"
+		}
+	},
+	{
+		"StatusObject": "StatusObject 5",
+		"StatusCode": "StatusCode 5",
+		"StatusProfile": "StatusProfile 5",
+		"Language": "Language 5",
+		"StatusShortName": "StatusShortName 5",
+		"StatusName": "StatusName 5",
+		"Plant": "Plant 5",
+		"OrderType": "OrderType 5",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 5",
+		"AuthorizationGroup": "AuthorizationGroup 5",
+		"MaintenancePlant": "MaintenancePlant 5",
+		"ControllingArea": "ControllingArea 5",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 5",
+		"__metadata": {
+			"uri": "C_RSHOperationActiveUserStatus(StatusObject='StatusObject%205',StatusCode='StatusCode%205')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationActiveUserStatusType"
+		}
+	},
+	{
+		"StatusObject": "StatusObject 6",
+		"StatusCode": "StatusCode 6",
+		"StatusProfile": "StatusProfile 6",
+		"Language": "Language 6",
+		"StatusShortName": "StatusShortName 6",
+		"StatusName": "StatusName 6",
+		"Plant": "Plant 6",
+		"OrderType": "OrderType 6",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 6",
+		"AuthorizationGroup": "AuthorizationGroup 6",
+		"MaintenancePlant": "MaintenancePlant 6",
+		"ControllingArea": "ControllingArea 6",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 6",
+		"__metadata": {
+			"uri": "C_RSHOperationActiveUserStatus(StatusObject='StatusObject%206',StatusCode='StatusCode%206')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationActiveUserStatusType"
+		}
+	},
+	{
+		"StatusObject": "StatusObject 7",
+		"StatusCode": "StatusCode 7",
+		"StatusProfile": "StatusProfile 7",
+		"Language": "Language 7",
+		"StatusShortName": "StatusShortName 7",
+		"StatusName": "StatusName 7",
+		"Plant": "Plant 7",
+		"OrderType": "OrderType 7",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 7",
+		"AuthorizationGroup": "AuthorizationGroup 7",
+		"MaintenancePlant": "MaintenancePlant 7",
+		"ControllingArea": "ControllingArea 7",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 7",
+		"__metadata": {
+			"uri": "C_RSHOperationActiveUserStatus(StatusObject='StatusObject%207',StatusCode='StatusCode%207')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationActiveUserStatusType"
+		}
+	},
+	{
+		"StatusObject": "StatusObject 8",
+		"StatusCode": "StatusCode 8",
+		"StatusProfile": "StatusProfile 8",
+		"Language": "Language 8",
+		"StatusShortName": "StatusShortName 8",
+		"StatusName": "StatusName 8",
+		"Plant": "Plant 8",
+		"OrderType": "OrderType 8",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 8",
+		"AuthorizationGroup": "AuthorizationGroup 8",
+		"MaintenancePlant": "MaintenancePlant 8",
+		"ControllingArea": "ControllingArea 8",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 8",
+		"__metadata": {
+			"uri": "C_RSHOperationActiveUserStatus(StatusObject='StatusObject%208',StatusCode='StatusCode%208')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationActiveUserStatusType"
+		}
+	},
+	{
+		"StatusObject": "StatusObject 9",
+		"StatusCode": "StatusCode 9",
+		"StatusProfile": "StatusProfile 9",
+		"Language": "Language 9",
+		"StatusShortName": "StatusShortName 9",
+		"StatusName": "StatusName 9",
+		"Plant": "Plant 9",
+		"OrderType": "OrderType 9",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 9",
+		"AuthorizationGroup": "AuthorizationGroup 9",
+		"MaintenancePlant": "MaintenancePlant 9",
+		"ControllingArea": "ControllingArea 9",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 9",
+		"__metadata": {
+			"uri": "C_RSHOperationActiveUserStatus(StatusObject='StatusObject%209',StatusCode='StatusCode%209')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationActiveUserStatusType"
+		}
+	},
+	{
+		"StatusObject": "StatusObject 10",
+		"StatusCode": "StatusCode 10",
+		"StatusProfile": "StatusProfile 10",
+		"Language": "Language 10",
+		"StatusShortName": "StatusShortName 10",
+		"StatusName": "StatusName 10",
+		"Plant": "Plant 10",
+		"OrderType": "OrderType 10",
+		"MaintenancePlannerGroup": "MaintenancePlannerGroup 10",
+		"AuthorizationGroup": "AuthorizationGroup 10",
+		"MaintenancePlant": "MaintenancePlant 10",
+		"ControllingArea": "ControllingArea 10",
+		"ResponsibleCostCenter": "ResponsibleCostCenter 10",
+		"__metadata": {
+			"uri": "C_RSHOperationActiveUserStatus(StatusObject='StatusObject%2010',StatusCode='StatusCode%2010')",
+			"type": "RSH_EAM_ORDER_GANTT_SRV.C_RSHOperationActiveUserStatusType"
+		}
+	}
+]
