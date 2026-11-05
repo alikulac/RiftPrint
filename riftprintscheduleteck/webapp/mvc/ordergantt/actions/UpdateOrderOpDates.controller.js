@@ -14,7 +14,7 @@ sap.ui.define(
 	function (BaseViewChildController, Constants, Utils, DateUtils, GanttUtility, DateFormat, UI5Date) {
 		"use strict";
 
-		return BaseViewChildController.extend("rsh.eam.ordergantts1.mvc.ordergantt.actions.UpdateOrderOpDates.controller", {
+		return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.actions.UpdateOrderOpDates.controller", {
 			onInitMembers: function () {
 				this.oGanttChartContainer = this.byId("idOrderGanttContainer");
 				this.oGanttChartWithTable = this.byId("idOrderGanttChartWithTable");

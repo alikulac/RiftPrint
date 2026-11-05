@@ -4,7 +4,7 @@
 sap.ui.define(["sap/ui/model/json/JSONModel"], function (JSONModel) {
 	"use strict";
 
-	return JSONModel.extend("rsh.eam.ordergantts1.mvc.FeatureToggleModel", {
+	return JSONModel.extend("zrsh.eam.ordergantts1.mvc.FeatureToggleModel", {
 		_oLoaded: undefined,
 
 		constructor: function () {

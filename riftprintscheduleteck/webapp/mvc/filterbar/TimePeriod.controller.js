@@ -12,7 +12,7 @@ sap.ui.define(
 	function (TimePeriodController, Utils, DateUtils, UI5Date, SmartFilterBarUtils) {
 		"use strict";
 
-		return TimePeriodController.extend("rsh.eam.ordergantts1.mvc.filterbar.TimePeriod.controller", {
+		return TimePeriodController.extend("zrsh.eam.ordergantts1.mvc.filterbar.TimePeriod.controller", {
 			// before cleanup: SchedulingBoard.getPeriodTypeData
 			getPeriodType: function (oStartupParams) {
 				var sPeriodType = oStartupParams.PeriodType && oStartupParams.PeriodType[0];

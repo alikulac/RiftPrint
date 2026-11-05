@@ -12,7 +12,7 @@ sap.ui.define(
 	function (BaseViewChildController, ChangeOperationsDialogController, Constants, GanttUtility, Utils) {
 		"use strict";
 
-		return BaseViewChildController.extend("rsh.eam.ordergantts1.mvc.ordergantt.actions.ChangeOperations.controller", {
+		return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.actions.ChangeOperations.controller", {
 			onInitMembers: function () {
 				this.controllers.changeOperationsDialog = new ChangeOperationsDialogController({
 					component: this.oComponent,

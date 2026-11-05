@@ -6,7 +6,7 @@ sap.ui.define(
 	function (BaseViewChildController, Utils) {
 		"use strict";
 
-		return BaseViewChildController.extend("rsh.eam.ordergantts1.mvc.filterbar.FilterBarSearch.controller", {
+		return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.filterbar.FilterBarSearch.controller", {
 			onInit: function () {
 				BaseViewChildController.prototype.onInit.apply(this, arguments);
 				this._setModelGroups();

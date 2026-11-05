@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Start rsh.eam.ordergantts1",
+      "name": "Start zrsh.eam.ordergantts1",
       "type": "node",
       "request": "launch",
       "cwd": "${workspaceFolder}",
@@ -24,11 +24,11 @@
       "env": {
         "DEBUG": "--inspect",
         "FIORI_TOOLS_URL_PARAMS": "100&sap-ui-xx-viewCache=false",
-        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/rshschedule/rsh.eam.ordergantts1\"}"
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/rshschedule/zrsh.eam.ordergantts1\"}"
       }
     },
     {
-      "name": "Start rsh.eam.ordergantts1 Mock",
+      "name": "Start zrsh.eam.ordergantts1 Mock",
       "type": "node",
       "request": "launch",
       "cwd": "${workspaceFolder}",
@@ -51,11 +51,11 @@
       "outputCapture": "std",
       "env": {
         "FIORI_TOOLS_URL_PARAMS": "100&sap-ui-xx-viewCache=false",
-        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/rshschedule/rsh.eam.ordergantts1\"}"
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/rshschedule/zrsh.eam.ordergantts1\"}"
       }
     },
     {
-      "name": "Start rsh.eam.ordergantts1 Local",
+      "name": "Start zrsh.eam.ordergantts1 Local",
       "type": "node",
       "request": "launch",
       "cwd": "${workspaceFolder}",
@@ -78,7 +78,7 @@
       "outputCapture": "std",
       "env": {
         "FIORI_TOOLS_URL_PARAMS": "100&sap-ui-xx-viewCache=false",
-        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/rshschedule/rsh.eam.ordergantts1\"}"
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/rshschedule/zrsh.eam.ordergantts1\"}"
       }
     }
   ]

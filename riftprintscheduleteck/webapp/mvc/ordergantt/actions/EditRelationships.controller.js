@@ -6,7 +6,7 @@ sap.ui.define(
 	function (BaseViewChildController, Utils, GanttUtility, Messaging) {
 		"use strict";
 
-		return BaseViewChildController.extend("rsh.eam.ordergantts1.mvc.ordergantt.actions.EditRelationships.controller", {
+		return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.actions.EditRelationships.controller", {
 			onInitMembers: function () {
 				this.oGanttChartWithTable = this.byId("idOrderGanttChartWithTable");
 				this.oGanttChartContainer = this.byId("idOrderGanttContainer");

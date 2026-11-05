@@ -6,7 +6,7 @@ sap.ui.define(
 	function (BaseViewChildController, Utils, Constants) {
 		"use strict";
 
-		return BaseViewChildController.extend("rsh.eam.ordergantts1.mvc.ordergantt.toolbar.EnableToolbarButtons.controller", {
+		return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.toolbar.EnableToolbarButtons.controller", {
 			onInitMembers: function () {
 				this.oTreeTable = this.byId("idOrderTreeTable");
 				this.oDispatchButton = this.byId("idButtonDispatch");

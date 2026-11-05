@@ -13,7 +13,7 @@ sap.ui.define(
 	function (BaseViewChildController, BusyDialog, GanttUtility, NavigationListItem, NavigationList, commonFormatter) {
 		"use strict";
 
-		return BaseViewChildController.extend("rsh.eam.ordergantts1.mvc.gantt.GanttSearch.controller", {
+		return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.gantt.GanttSearch.controller", {
 			commonFormatters: commonFormatter,
 
 			onInitMembers: function () {

@@ -10,7 +10,7 @@ sap.ui.define(
 		 * Uses OData metadata to decide for an extended field if it is on order or operation level.
 		 * This mechanism is not applicable to standards fields.
 		 */
-		return BaseViewChildController.extend("rsh.eam.ordergantts1.mvc.ordergantt.binding.Metadata.controller", {
+		return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.binding.Metadata.controller", {
 			onInitMembers: function () {
 				this._oMetadataAnalyzer = new MetadataAnalyzer(this.oComponent);
 				this._aOrderExtensionFields = undefined; // before cleanup: aOrderLvlPropFrmMetadata

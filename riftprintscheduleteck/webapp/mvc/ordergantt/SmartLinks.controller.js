@@ -20,7 +20,7 @@ sap.ui.define(
 	) {
 		"use strict";
 
-		return BaseViewChildController.extend("rsh.eam.ordergantts1.mvc.ordergantt.SmartLinks.controller", {
+		return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.SmartLinks.controller", {
 			onInitMembers: function () {
 				var oReadModel = this.oComponent.getModel("readModel");
 				this._sOrderAdditionalFields =

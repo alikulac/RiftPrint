@@ -3,14 +3,14 @@
 	"resources": [
 		{
 			"name": "Component-dbg.js",
-			"module": "rsh/eam/ordergantts1/Component.js",
+			"module": "zrsh/eam/ordergantts1/Component.js",
 			"size": 761,
 			"isDebug": true,
 			"required": [
-				"rsh/eam/ordergantts1/mvc/App.view.xml",
-				"rsh/eam/ordergantts1/mvc/FeatureToggleModel.js",
-				"rsh/eam/ordergantts1/mvc/SchedulingBoard.view.xml",
-				"rsh/eam/ordergantts1/mvc/UIModel.js",
+				"zrsh/eam/ordergantts1/mvc/App.view.xml",
+				"zrsh/eam/ordergantts1/mvc/FeatureToggleModel.js",
+				"zrsh/eam/ordergantts1/mvc/SchedulingBoard.view.xml",
+				"zrsh/eam/ordergantts1/mvc/UIModel.js",
 				"sap/collaboration/library.js",
 				"sap/f/library.js",
 				"sap/fe/navigation/library.js",
@@ -35,7 +35,7 @@
 		},
 		{
 			"name": "Component-preload.js",
-			"module": "rsh/eam/ordergantts1/Component-preload.js",
+			"module": "zrsh/eam/ordergantts1/Component-preload.js",
 			"size": 278405,
 			"merged": true,
 			"required": [
@@ -134,71 +134,71 @@
 				"sap/ushell/library.js"
 			],
 			"included": [
-				"rsh/eam/ordergantts1/Component.js",
-				"rsh/eam/ordergantts1/localService/MockServerExt.js",
-				"rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/customMockRequests.js",
-				"rsh/eam/ordergantts1/localService/RSH_SB_MAINTENANCE_ORDER/customMockRequests.js",
-				"rsh/eam/ordergantts1/localService/RequestTracker.js",
-				"rsh/eam/ordergantts1/localService/UI_RSHPERSON/customMockRequests.js",
-				"rsh/eam/ordergantts1/localService/mockserver.js",
-				"rsh/eam/ordergantts1/mvc/App.controller.js",
-				"rsh/eam/ordergantts1/mvc/DeltaRefresh.controller.js",
-				"rsh/eam/ordergantts1/mvc/FeatureToggleModel.js",
-				"rsh/eam/ordergantts1/mvc/InboundNavigation.controller.js",
-				"rsh/eam/ordergantts1/mvc/PersAppState.controller.js",
-				"rsh/eam/ordergantts1/mvc/SchedulingBoard.controller.js",
-				"rsh/eam/ordergantts1/mvc/UIModel.js",
-				"rsh/eam/ordergantts1/mvc/WorkCenter.controller.js",
-				"rsh/eam/ordergantts1/mvc/filterbar/DateRangeType.js",
-				"rsh/eam/ordergantts1/mvc/filterbar/FilterBar.controller.js",
-				"rsh/eam/ordergantts1/mvc/filterbar/FilterBarSearch.controller.js",
-				"rsh/eam/ordergantts1/mvc/filterbar/TimePeriod.controller.js",
-				"rsh/eam/ordergantts1/mvc/gantt/GanttContainer.controller.js",
-				"rsh/eam/ordergantts1/mvc/gantt/GanttSearch.controller.js",
-				"rsh/eam/ordergantts1/mvc/gantt/GanttSettings.controller.js",
-				"rsh/eam/ordergantts1/mvc/gantt/GanttSettingsDialogConfiguration.js",
-				"rsh/eam/ordergantts1/mvc/gantt/GanttVariant.controller.js",
-				"rsh/eam/ordergantts1/mvc/gantt/PersGanttSettings.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/ColumnSettings.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/CustomRowSettings.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/OrderGantt.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/QuickViews.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/ReadinessStatus.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/SmartLinks.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/AssignEvent.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/AssignPeople.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/AssignPersonResponsible.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/ChangeOperations.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/DispatchOperations.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/EditRelationships.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/ExpandOrders.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/OpenOrders.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/ScheduleOrders.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/UpdateOrderOpDates.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/Binding.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/CalendarBinding.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/ColumnFields.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/DeltaRefresh.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/Fields.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/Filters.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/LabelFields.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/Metadata.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/RelationshipsBinding.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/Sort.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/UtilizationBinding.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/formatters.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/menu/ContextMenus.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/menu/OperationActionSheet.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/toolbar/EnableToolbarButtons.controller.js",
-				"rsh/eam/ordergantts1/mvc/utilgantt/UtilizationGantt.controller.js",
-				"rsh/eam/ordergantts1/i18n/i18n.properties",
-				"rsh/eam/ordergantts1/manifest.json",
-				"rsh/eam/ordergantts1/mvc/App.view.xml",
-				"rsh/eam/ordergantts1/mvc/SchedulingBoard.view.xml",
-				"rsh/eam/ordergantts1/mvc/gantt/GanttLegend.fragment.xml",
-				"rsh/eam/ordergantts1/mvc/ordergantt/OrderGantt.fragment.xml",
-				"rsh/eam/ordergantts1/mvc/ordergantt/menu/OperationActionSheet.fragment.xml",
-				"rsh/eam/ordergantts1/mvc/ordergantt/toolbar/ToolbarButtons.fragment.xml"
+				"zrsh/eam/ordergantts1/Component.js",
+				"zrsh/eam/ordergantts1/localService/MockServerExt.js",
+				"zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/customMockRequests.js",
+				"zrsh/eam/ordergantts1/localService/RSH_SB_MAINTENANCE_ORDER/customMockRequests.js",
+				"zrsh/eam/ordergantts1/localService/RequestTracker.js",
+				"zrsh/eam/ordergantts1/localService/UI_RSHPERSON/customMockRequests.js",
+				"zrsh/eam/ordergantts1/localService/mockserver.js",
+				"zrsh/eam/ordergantts1/mvc/App.controller.js",
+				"zrsh/eam/ordergantts1/mvc/DeltaRefresh.controller.js",
+				"zrsh/eam/ordergantts1/mvc/FeatureToggleModel.js",
+				"zrsh/eam/ordergantts1/mvc/InboundNavigation.controller.js",
+				"zrsh/eam/ordergantts1/mvc/PersAppState.controller.js",
+				"zrsh/eam/ordergantts1/mvc/SchedulingBoard.controller.js",
+				"zrsh/eam/ordergantts1/mvc/UIModel.js",
+				"zrsh/eam/ordergantts1/mvc/WorkCenter.controller.js",
+				"zrsh/eam/ordergantts1/mvc/filterbar/DateRangeType.js",
+				"zrsh/eam/ordergantts1/mvc/filterbar/FilterBar.controller.js",
+				"zrsh/eam/ordergantts1/mvc/filterbar/FilterBarSearch.controller.js",
+				"zrsh/eam/ordergantts1/mvc/filterbar/TimePeriod.controller.js",
+				"zrsh/eam/ordergantts1/mvc/gantt/GanttContainer.controller.js",
+				"zrsh/eam/ordergantts1/mvc/gantt/GanttSearch.controller.js",
+				"zrsh/eam/ordergantts1/mvc/gantt/GanttSettings.controller.js",
+				"zrsh/eam/ordergantts1/mvc/gantt/GanttSettingsDialogConfiguration.js",
+				"zrsh/eam/ordergantts1/mvc/gantt/GanttVariant.controller.js",
+				"zrsh/eam/ordergantts1/mvc/gantt/PersGanttSettings.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/ColumnSettings.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/CustomRowSettings.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/OrderGantt.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/QuickViews.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/ReadinessStatus.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/SmartLinks.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/AssignEvent.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/AssignPeople.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/AssignPersonResponsible.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/ChangeOperations.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/DispatchOperations.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/EditRelationships.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/ExpandOrders.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/OpenOrders.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/ScheduleOrders.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/UpdateOrderOpDates.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/Binding.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/CalendarBinding.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/ColumnFields.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/DeltaRefresh.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/Fields.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/Filters.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/LabelFields.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/Metadata.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/RelationshipsBinding.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/Sort.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/UtilizationBinding.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/formatters.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/menu/ContextMenus.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/menu/OperationActionSheet.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/toolbar/EnableToolbarButtons.controller.js",
+				"zrsh/eam/ordergantts1/mvc/utilgantt/UtilizationGantt.controller.js",
+				"zrsh/eam/ordergantts1/i18n/i18n.properties",
+				"zrsh/eam/ordergantts1/manifest.json",
+				"zrsh/eam/ordergantts1/mvc/App.view.xml",
+				"zrsh/eam/ordergantts1/mvc/SchedulingBoard.view.xml",
+				"zrsh/eam/ordergantts1/mvc/gantt/GanttLegend.fragment.xml",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/OrderGantt.fragment.xml",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/menu/OperationActionSheet.fragment.xml",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/toolbar/ToolbarButtons.fragment.xml"
 			]
 		},
 		{
@@ -208,13 +208,13 @@
 		},
 		{
 			"name": "Component.js",
-			"module": "rsh/eam/ordergantts1/Component.js",
+			"module": "zrsh/eam/ordergantts1/Component.js",
 			"size": 573,
 			"required": [
-				"rsh/eam/ordergantts1/mvc/App.view.xml",
-				"rsh/eam/ordergantts1/mvc/FeatureToggleModel.js",
-				"rsh/eam/ordergantts1/mvc/SchedulingBoard.view.xml",
-				"rsh/eam/ordergantts1/mvc/UIModel.js",
+				"zrsh/eam/ordergantts1/mvc/App.view.xml",
+				"zrsh/eam/ordergantts1/mvc/FeatureToggleModel.js",
+				"zrsh/eam/ordergantts1/mvc/SchedulingBoard.view.xml",
+				"zrsh/eam/ordergantts1/mvc/UIModel.js",
 				"sap/collaboration/library.js",
 				"sap/f/library.js",
 				"sap/fe/navigation/library.js",
@@ -244,7 +244,7 @@
 		},
 		{
 			"name": "i18n/i18n.properties",
-			"module": "rsh/eam/ordergantts1/i18n/i18n.properties",
+			"module": "zrsh/eam/ordergantts1/i18n/i18n.properties",
 			"size": 16105
 		},
 		{
@@ -253,12 +253,12 @@
 		},
 		{
 			"name": "localService/CA_FM_FEATURE_TOGGLE_STATUS_SRV/ToggleStatusSet.json",
-			"module": "rsh/eam/ordergantts1/localService/CA_FM_FEATURE_TOGGLE_STATUS_SRV/ToggleStatusSet.json",
+			"module": "zrsh/eam/ordergantts1/localService/CA_FM_FEATURE_TOGGLE_STATUS_SRV/ToggleStatusSet.json",
 			"size": 31
 		},
 		{
 			"name": "localService/CA_FM_FEATURE_TOGGLE_STATUS_SRV/ToggleStatusSetInactive.json",
-			"module": "rsh/eam/ordergantts1/localService/CA_FM_FEATURE_TOGGLE_STATUS_SRV/ToggleStatusSetInactive.json",
+			"module": "zrsh/eam/ordergantts1/localService/CA_FM_FEATURE_TOGGLE_STATUS_SRV/ToggleStatusSetInactive.json",
 			"size": 240
 		},
 		{
@@ -267,7 +267,7 @@
 		},
 		{
 			"name": "localService/MockServerExt-dbg.js",
-			"module": "rsh/eam/ordergantts1/localService/MockServerExt.js",
+			"module": "zrsh/eam/ordergantts1/localService/MockServerExt.js",
 			"size": 1337,
 			"isDebug": true,
 			"required": [
@@ -276,7 +276,7 @@
 		},
 		{
 			"name": "localService/MockServerExt.js",
-			"module": "rsh/eam/ordergantts1/localService/MockServerExt.js",
+			"module": "zrsh/eam/ordergantts1/localService/MockServerExt.js",
 			"size": 864,
 			"required": [
 				"sap/ui/core/util/MockServer.js"
@@ -289,12 +289,12 @@
 		},
 		{
 			"name": "localService/PERS/PersonalizationChanges.json",
-			"module": "rsh/eam/ordergantts1/localService/PERS/PersonalizationChanges.json",
+			"module": "zrsh/eam/ordergantts1/localService/PERS/PersonalizationChanges.json",
 			"size": 665
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/customMockRequests-dbg.js",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/customMockRequests.js",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/customMockRequests.js",
 			"size": 37566,
 			"isDebug": true,
 			"required": [
@@ -304,7 +304,7 @@
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/customMockRequests.js",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/customMockRequests.js",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/customMockRequests.js",
 			"size": 19078,
 			"required": [
 				"sap/base/util/deepClone.js",
@@ -322,268 +322,268 @@
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataNoWorkCenter/C_RSHEAMUserVariant.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataNoWorkCenter/C_RSHEAMUserVariant.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataNoWorkCenter/C_RSHEAMUserVariant.json",
 			"size": 2
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataNoWorkCenter/C_RSHUserVariantWithTeam.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataNoWorkCenter/C_RSHUserVariantWithTeam.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataNoWorkCenter/C_RSHUserVariantWithTeam.json",
 			"size": 2
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataRelationship/C_RSHEAMUserVariant.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataRelationship/C_RSHEAMUserVariant.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataRelationship/C_RSHEAMUserVariant.json",
 			"size": 1900
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataRelationship/C_RSHOperationRelationships.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataRelationship/C_RSHOperationRelationships.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataRelationship/C_RSHOperationRelationships.json",
 			"size": 2460
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataRelationship/C_RSHOrdersAndOperations.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataRelationship/C_RSHOrdersAndOperations.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataRelationship/C_RSHOrdersAndOperations.json",
 			"size": 90001
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataRelationship/C_RSHUnitOfMeasureTimeVH.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataRelationship/C_RSHUnitOfMeasureTimeVH.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataRelationship/C_RSHUnitOfMeasureTimeVH.json",
 			"size": 668
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataRelationship/C_RSHUserVariantWithTeam.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataRelationship/C_RSHUserVariantWithTeam.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataRelationship/C_RSHUserVariantWithTeam.json",
 			"size": 2359
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataRelationship/I_MaintenanceRevisionStdVH.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataRelationship/I_MaintenanceRevisionStdVH.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataRelationship/I_MaintenanceRevisionStdVH.json",
 			"size": 3836
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_MaintOrdProcessingContextVH.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_MaintOrdProcessingContextVH.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_MaintOrdProcessingContextVH.json",
 			"size": 1493
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_MaintOrderTypeVH.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_MaintOrderTypeVH.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_MaintOrderTypeVH.json",
 			"size": 2446
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHEAMUserVariant.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHEAMUserVariant.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHEAMUserVariant.json",
 			"size": 2373
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHEditDispatchOptionVH.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHEditDispatchOptionVH.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHEditDispatchOptionVH.json",
 			"size": 603
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHEditWorkCenterVH.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHEditWorkCenterVH.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHEditWorkCenterVH.json",
 			"size": 3749
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOpInMaintSchedSimulation.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOpInMaintSchedSimulation.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOpInMaintSchedSimulation.json",
 			"size": 1892
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOperationActiveUserStatus.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOperationActiveUserStatus.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOperationActiveUserStatus.json",
 			"size": 7138
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOperationActivityTypeVH.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOperationActivityTypeVH.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOperationActivityTypeVH.json",
 			"size": 4237
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOperationDetails.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOperationDetails.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOperationDetails.json",
 			"size": 10040
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOperationHasErrorVH.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOperationHasErrorVH.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOperationHasErrorVH.json",
 			"size": 2276
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOperationProcessStatusVH.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOperationProcessStatusVH.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOperationProcessStatusVH.json",
 			"size": 2234
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOperationRelationships.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOperationRelationships.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOperationRelationships.json",
 			"size": 8368
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOperationValidation.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOperationValidation.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOperationValidation.json",
 			"size": 10802
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOperations.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOperations.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOperations.json",
 			"size": 42216
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrderActiveUserStatus.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrderActiveUserStatus.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrderActiveUserStatus.json",
 			"size": 7058
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrderDetails.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrderDetails.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrderDetails.json",
 			"size": 6164
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrderGanttCalendar.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrderGanttCalendar.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrderGanttCalendar.json",
 			"size": 485
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrderGanttCalendarSet.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrderGanttCalendarSet.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrderGanttCalendarSet.json",
 			"size": 1242
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrderGanttNonWrkgTmeIntvl.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrderGanttNonWrkgTmeIntvl.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrderGanttNonWrkgTmeIntvl.json",
 			"size": 20903
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrderHasLongTextVH.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrderHasLongTextVH.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrderHasLongTextVH.json",
 			"size": 2716
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrderMaterialStatusVH.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrderMaterialStatusVH.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrderMaterialStatusVH.json",
 			"size": 2114
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrderPriorityVH.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrderPriorityVH.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrderPriorityVH.json",
 			"size": 3328
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrders.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrders.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrders.json",
 			"size": 33904
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrdersAndOperations.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrdersAndOperations.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHOrdersAndOperations.json",
 			"size": 141442
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHPlngBucketAndEventDetails.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHPlngBucketAndEventDetails.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHPlngBucketAndEventDetails.json",
 			"size": 5401
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHTechnicalObject.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHTechnicalObject.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHTechnicalObject.json",
 			"size": 4941
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHUserVariantWithTeam.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHUserVariantWithTeam.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHUserVariantWithTeam.json",
 			"size": 2949
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHWorkCenterVH.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHWorkCenterVH.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHWorkCenterVH.json",
 			"size": 6692
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHWorkCtrUtilization.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHWorkCtrUtilization.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHWorkCtrUtilization.json",
 			"size": 3869
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHWorkCtrUtilznIndicator.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHWorkCtrUtilznIndicator.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHWorkCtrUtilznIndicator.json",
 			"size": 27726
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHWrkCtrPersonResponsibleVH.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHWrkCtrPersonResponsibleVH.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/C_RSHWrkCtrPersonResponsibleVH.json",
 			"size": 7175
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_DraftAdministrativeData.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_DraftAdministrativeData.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_DraftAdministrativeData.json",
 			"size": 9848
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_Equipment.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_Equipment.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_Equipment.json",
 			"size": 18298
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_FunctionalLocation.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_FunctionalLocation.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_FunctionalLocation.json",
 			"size": 18978
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_MaintOrderOperationTP.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_MaintOrderOperationTP.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_MaintOrderOperationTP.json",
 			"size": 45658
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_MaintOrderSubOperationTP.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_MaintOrderSubOperationTP.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_MaintOrderSubOperationTP.json",
 			"size": 43201
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_MaintOrderTP.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_MaintOrderTP.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_MaintOrderTP.json",
 			"size": 37236
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_MaintenanceActivityTypeText.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_MaintenanceActivityTypeText.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_MaintenanceActivityTypeText.json",
 			"size": 3748
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_MaintenanceOrder.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_MaintenanceOrder.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_MaintenanceOrder.json",
 			"size": 19507
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_MaintenanceOrderOperation.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_MaintenanceOrderOperation.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_MaintenanceOrderOperation.json",
 			"size": 24584
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_OperationControlProfile.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_OperationControlProfile.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_OperationControlProfile.json",
 			"size": 8076
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_WorkCenter.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_WorkCenter.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_WorkCenter.json",
 			"size": 27348
 		},
 		{
 			"name": "localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_WorkCenterType.json",
-			"module": "rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_WorkCenterType.json",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/mockdataStandard/I_WorkCenterType.json",
 			"size": 2496
 		},
 		{
 			"name": "localService/RSH_SB_MAINTENANCE_ORDER/customMockRequests-dbg.js",
-			"module": "rsh/eam/ordergantts1/localService/RSH_SB_MAINTENANCE_ORDER/customMockRequests.js",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_SB_MAINTENANCE_ORDER/customMockRequests.js",
 			"size": 5514,
 			"isDebug": true
 		},
 		{
 			"name": "localService/RSH_SB_MAINTENANCE_ORDER/customMockRequests.js",
-			"module": "rsh/eam/ordergantts1/localService/RSH_SB_MAINTENANCE_ORDER/customMockRequests.js",
+			"module": "zrsh/eam/ordergantts1/localService/RSH_SB_MAINTENANCE_ORDER/customMockRequests.js",
 			"size": 2671
 		},
 		{
@@ -597,7 +597,7 @@
 		},
 		{
 			"name": "localService/RequestTracker-dbg.js",
-			"module": "rsh/eam/ordergantts1/localService/RequestTracker.js",
+			"module": "zrsh/eam/ordergantts1/localService/RequestTracker.js",
 			"size": 2303,
 			"isDebug": true,
 			"required": [
@@ -606,7 +606,7 @@
 		},
 		{
 			"name": "localService/RequestTracker.js",
-			"module": "rsh/eam/ordergantts1/localService/RequestTracker.js",
+			"module": "zrsh/eam/ordergantts1/localService/RequestTracker.js",
 			"size": 1463,
 			"required": [
 				"sap/ui/base/Object.js"
@@ -619,13 +619,13 @@
 		},
 		{
 			"name": "localService/UI_RSHPERSON/customMockRequests-dbg.js",
-			"module": "rsh/eam/ordergantts1/localService/UI_RSHPERSON/customMockRequests.js",
+			"module": "zrsh/eam/ordergantts1/localService/UI_RSHPERSON/customMockRequests.js",
 			"size": 2204,
 			"isDebug": true
 		},
 		{
 			"name": "localService/UI_RSHPERSON/customMockRequests.js",
-			"module": "rsh/eam/ordergantts1/localService/UI_RSHPERSON/customMockRequests.js",
+			"module": "zrsh/eam/ordergantts1/localService/UI_RSHPERSON/customMockRequests.js",
 			"size": 1252
 		},
 		{
@@ -639,30 +639,30 @@
 		},
 		{
 			"name": "localService/UI_RSHPERSON/mockdata/C_RSHPersonCalendar.json",
-			"module": "rsh/eam/ordergantts1/localService/UI_RSHPERSON/mockdata/C_RSHPersonCalendar.json",
+			"module": "zrsh/eam/ordergantts1/localService/UI_RSHPERSON/mockdata/C_RSHPersonCalendar.json",
 			"size": 3281
 		},
 		{
 			"name": "localService/UI_RSHPERSON/mockdata/C_RSHPersonDetail.json",
-			"module": "rsh/eam/ordergantts1/localService/UI_RSHPERSON/mockdata/C_RSHPersonDetail.json",
+			"module": "zrsh/eam/ordergantts1/localService/UI_RSHPERSON/mockdata/C_RSHPersonDetail.json",
 			"size": 5359
 		},
 		{
 			"name": "localService/UI_RSHPERSON/mockdata/C_RSHPersonTP.json",
-			"module": "rsh/eam/ordergantts1/localService/UI_RSHPERSON/mockdata/C_RSHPersonTP.json",
+			"module": "zrsh/eam/ordergantts1/localService/UI_RSHPERSON/mockdata/C_RSHPersonTP.json",
 			"size": 10493
 		},
 		{
 			"name": "localService/mockserver-dbg.js",
-			"module": "rsh/eam/ordergantts1/localService/mockserver.js",
+			"module": "zrsh/eam/ordergantts1/localService/mockserver.js",
 			"size": 9971,
 			"isDebug": true,
 			"required": [
-				"rsh/eam/ordergantts1/localService/MockServerExt.js",
-				"rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/customMockRequests.js",
-				"rsh/eam/ordergantts1/localService/RSH_SB_MAINTENANCE_ORDER/customMockRequests.js",
-				"rsh/eam/ordergantts1/localService/RequestTracker.js",
-				"rsh/eam/ordergantts1/localService/UI_RSHPERSON/customMockRequests.js",
+				"zrsh/eam/ordergantts1/localService/MockServerExt.js",
+				"zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/customMockRequests.js",
+				"zrsh/eam/ordergantts1/localService/RSH_SB_MAINTENANCE_ORDER/customMockRequests.js",
+				"zrsh/eam/ordergantts1/localService/RequestTracker.js",
+				"zrsh/eam/ordergantts1/localService/UI_RSHPERSON/customMockRequests.js",
 				"sap/rsh/eam/lib/common/utils/URLParams.js",
 				"sap/ui/core/util/MockServer.js",
 				"sap/ui/model/json/JSONModel.js"
@@ -670,14 +670,14 @@
 		},
 		{
 			"name": "localService/mockserver.js",
-			"module": "rsh/eam/ordergantts1/localService/mockserver.js",
+			"module": "zrsh/eam/ordergantts1/localService/mockserver.js",
 			"size": 5685,
 			"required": [
-				"rsh/eam/ordergantts1/localService/MockServerExt.js",
-				"rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/customMockRequests.js",
-				"rsh/eam/ordergantts1/localService/RSH_SB_MAINTENANCE_ORDER/customMockRequests.js",
-				"rsh/eam/ordergantts1/localService/RequestTracker.js",
-				"rsh/eam/ordergantts1/localService/UI_RSHPERSON/customMockRequests.js",
+				"zrsh/eam/ordergantts1/localService/MockServerExt.js",
+				"zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/customMockRequests.js",
+				"zrsh/eam/ordergantts1/localService/RSH_SB_MAINTENANCE_ORDER/customMockRequests.js",
+				"zrsh/eam/ordergantts1/localService/RequestTracker.js",
+				"zrsh/eam/ordergantts1/localService/UI_RSHPERSON/customMockRequests.js",
 				"sap/rsh/eam/lib/common/utils/URLParams.js",
 				"sap/ui/core/util/MockServer.js",
 				"sap/ui/model/json/JSONModel.js"
@@ -690,12 +690,12 @@
 		},
 		{
 			"name": "manifest.json",
-			"module": "rsh/eam/ordergantts1/manifest.json",
+			"module": "zrsh/eam/ordergantts1/manifest.json",
 			"size": 5371
 		},
 		{
 			"name": "mvc/App-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/App.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/App.controller.js",
 			"size": 784,
 			"isDebug": true,
 			"required": [
@@ -705,7 +705,7 @@
 		},
 		{
 			"name": "mvc/App.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/App.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/App.controller.js",
 			"size": 563,
 			"required": [
 				"sap/rsh/eam/lib/common/base/BaseView.controller.js",
@@ -719,15 +719,15 @@
 		},
 		{
 			"name": "mvc/App.view.xml",
-			"module": "rsh/eam/ordergantts1/mvc/App.view.xml",
+			"module": "zrsh/eam/ordergantts1/mvc/App.view.xml",
 			"size": 341,
 			"required": [
-				"rsh/eam/ordergantts1/mvc/App.controller.js"
+				"zrsh/eam/ordergantts1/mvc/App.controller.js"
 			]
 		},
 		{
 			"name": "mvc/DeltaRefresh-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/DeltaRefresh.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/DeltaRefresh.controller.js",
 			"size": 3253,
 			"isDebug": true,
 			"required": [
@@ -736,7 +736,7 @@
 		},
 		{
 			"name": "mvc/DeltaRefresh.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/DeltaRefresh.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/DeltaRefresh.controller.js",
 			"size": 1940,
 			"required": [
 				"sap/rsh/eam/lib/common/base/BaseViewChild.controller.js"
@@ -749,7 +749,7 @@
 		},
 		{
 			"name": "mvc/FeatureToggleModel-dbg.js",
-			"module": "rsh/eam/ordergantts1/mvc/FeatureToggleModel.js",
+			"module": "zrsh/eam/ordergantts1/mvc/FeatureToggleModel.js",
 			"size": 841,
 			"isDebug": true,
 			"required": [
@@ -758,7 +758,7 @@
 		},
 		{
 			"name": "mvc/FeatureToggleModel.js",
-			"module": "rsh/eam/ordergantts1/mvc/FeatureToggleModel.js",
+			"module": "zrsh/eam/ordergantts1/mvc/FeatureToggleModel.js",
 			"size": 661,
 			"required": [
 				"sap/ui/model/json/JSONModel.js"
@@ -771,7 +771,7 @@
 		},
 		{
 			"name": "mvc/InboundNavigation-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/InboundNavigation.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/InboundNavigation.controller.js",
 			"size": 5634,
 			"isDebug": true,
 			"required": [
@@ -785,7 +785,7 @@
 		},
 		{
 			"name": "mvc/InboundNavigation.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/InboundNavigation.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/InboundNavigation.controller.js",
 			"size": 3094,
 			"required": [
 				"sap/fe/navigation/NavigationHandler.js",
@@ -803,7 +803,7 @@
 		},
 		{
 			"name": "mvc/PersAppState-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/PersAppState.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/PersAppState.controller.js",
 			"size": 8418,
 			"isDebug": true,
 			"required": [
@@ -815,7 +815,7 @@
 		},
 		{
 			"name": "mvc/PersAppState.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/PersAppState.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/PersAppState.controller.js",
 			"size": 5430,
 			"required": [
 				"sap/rsh/eam/lib/common/pers/PersAppState.controller.js",
@@ -831,54 +831,54 @@
 		},
 		{
 			"name": "mvc/SchedulingBoard-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/SchedulingBoard.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/SchedulingBoard.controller.js",
 			"size": 18429,
 			"isDebug": true,
 			"required": [
-				"rsh/eam/ordergantts1/mvc/DeltaRefresh.controller.js",
-				"rsh/eam/ordergantts1/mvc/InboundNavigation.controller.js",
-				"rsh/eam/ordergantts1/mvc/PersAppState.controller.js",
-				"rsh/eam/ordergantts1/mvc/WorkCenter.controller.js",
-				"rsh/eam/ordergantts1/mvc/filterbar/FilterBar.controller.js",
-				"rsh/eam/ordergantts1/mvc/filterbar/FilterBarSearch.controller.js",
-				"rsh/eam/ordergantts1/mvc/filterbar/TimePeriod.controller.js",
-				"rsh/eam/ordergantts1/mvc/gantt/GanttContainer.controller.js",
-				"rsh/eam/ordergantts1/mvc/gantt/GanttSearch.controller.js",
-				"rsh/eam/ordergantts1/mvc/gantt/GanttSettings.controller.js",
-				"rsh/eam/ordergantts1/mvc/gantt/GanttSettingsDialogConfiguration.js",
-				"rsh/eam/ordergantts1/mvc/gantt/GanttVariant.controller.js",
-				"rsh/eam/ordergantts1/mvc/gantt/PersGanttSettings.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/ColumnSettings.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/OrderGantt.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/QuickViews.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/ReadinessStatus.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/SmartLinks.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/AssignEvent.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/AssignPeople.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/AssignPersonResponsible.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/ChangeOperations.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/DispatchOperations.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/EditRelationships.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/ExpandOrders.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/OpenOrders.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/ScheduleOrders.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/UpdateOrderOpDates.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/Binding.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/CalendarBinding.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/ColumnFields.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/DeltaRefresh.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/Fields.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/Filters.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/LabelFields.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/Metadata.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/RelationshipsBinding.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/Sort.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/UtilizationBinding.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/formatters.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/menu/ContextMenus.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/menu/OperationActionSheet.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/toolbar/EnableToolbarButtons.controller.js",
-				"rsh/eam/ordergantts1/mvc/utilgantt/UtilizationGantt.controller.js",
+				"zrsh/eam/ordergantts1/mvc/DeltaRefresh.controller.js",
+				"zrsh/eam/ordergantts1/mvc/InboundNavigation.controller.js",
+				"zrsh/eam/ordergantts1/mvc/PersAppState.controller.js",
+				"zrsh/eam/ordergantts1/mvc/WorkCenter.controller.js",
+				"zrsh/eam/ordergantts1/mvc/filterbar/FilterBar.controller.js",
+				"zrsh/eam/ordergantts1/mvc/filterbar/FilterBarSearch.controller.js",
+				"zrsh/eam/ordergantts1/mvc/filterbar/TimePeriod.controller.js",
+				"zrsh/eam/ordergantts1/mvc/gantt/GanttContainer.controller.js",
+				"zrsh/eam/ordergantts1/mvc/gantt/GanttSearch.controller.js",
+				"zrsh/eam/ordergantts1/mvc/gantt/GanttSettings.controller.js",
+				"zrsh/eam/ordergantts1/mvc/gantt/GanttSettingsDialogConfiguration.js",
+				"zrsh/eam/ordergantts1/mvc/gantt/GanttVariant.controller.js",
+				"zrsh/eam/ordergantts1/mvc/gantt/PersGanttSettings.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/ColumnSettings.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/OrderGantt.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/QuickViews.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/ReadinessStatus.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/SmartLinks.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/AssignEvent.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/AssignPeople.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/AssignPersonResponsible.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/ChangeOperations.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/DispatchOperations.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/EditRelationships.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/ExpandOrders.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/OpenOrders.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/ScheduleOrders.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/UpdateOrderOpDates.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/Binding.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/CalendarBinding.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/ColumnFields.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/DeltaRefresh.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/Fields.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/Filters.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/LabelFields.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/Metadata.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/RelationshipsBinding.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/Sort.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/UtilizationBinding.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/formatters.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/menu/ContextMenus.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/menu/OperationActionSheet.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/toolbar/EnableToolbarButtons.controller.js",
+				"zrsh/eam/ordergantts1/mvc/utilgantt/UtilizationGantt.controller.js",
 				"sap/rsh/eam/lib/common/base/BaseView.controller.js",
 				"sap/rsh/eam/lib/common/filter/SystemTimeZone.controller.js",
 				"sap/rsh/eam/lib/common/gantt/GanttSettingsDialog.controller.js",
@@ -901,53 +901,53 @@
 		},
 		{
 			"name": "mvc/SchedulingBoard.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/SchedulingBoard.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/SchedulingBoard.controller.js",
 			"size": 12875,
 			"required": [
-				"rsh/eam/ordergantts1/mvc/DeltaRefresh.controller.js",
-				"rsh/eam/ordergantts1/mvc/InboundNavigation.controller.js",
-				"rsh/eam/ordergantts1/mvc/PersAppState.controller.js",
-				"rsh/eam/ordergantts1/mvc/WorkCenter.controller.js",
-				"rsh/eam/ordergantts1/mvc/filterbar/FilterBar.controller.js",
-				"rsh/eam/ordergantts1/mvc/filterbar/FilterBarSearch.controller.js",
-				"rsh/eam/ordergantts1/mvc/filterbar/TimePeriod.controller.js",
-				"rsh/eam/ordergantts1/mvc/gantt/GanttContainer.controller.js",
-				"rsh/eam/ordergantts1/mvc/gantt/GanttSearch.controller.js",
-				"rsh/eam/ordergantts1/mvc/gantt/GanttSettings.controller.js",
-				"rsh/eam/ordergantts1/mvc/gantt/GanttSettingsDialogConfiguration.js",
-				"rsh/eam/ordergantts1/mvc/gantt/GanttVariant.controller.js",
-				"rsh/eam/ordergantts1/mvc/gantt/PersGanttSettings.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/ColumnSettings.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/OrderGantt.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/QuickViews.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/ReadinessStatus.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/SmartLinks.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/AssignEvent.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/AssignPeople.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/AssignPersonResponsible.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/ChangeOperations.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/DispatchOperations.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/EditRelationships.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/ExpandOrders.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/OpenOrders.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/ScheduleOrders.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/actions/UpdateOrderOpDates.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/Binding.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/CalendarBinding.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/ColumnFields.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/DeltaRefresh.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/Fields.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/Filters.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/LabelFields.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/Metadata.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/RelationshipsBinding.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/Sort.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/binding/UtilizationBinding.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/formatters.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/menu/ContextMenus.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/menu/OperationActionSheet.controller.js",
-				"rsh/eam/ordergantts1/mvc/ordergantt/toolbar/EnableToolbarButtons.controller.js",
-				"rsh/eam/ordergantts1/mvc/utilgantt/UtilizationGantt.controller.js",
+				"zrsh/eam/ordergantts1/mvc/DeltaRefresh.controller.js",
+				"zrsh/eam/ordergantts1/mvc/InboundNavigation.controller.js",
+				"zrsh/eam/ordergantts1/mvc/PersAppState.controller.js",
+				"zrsh/eam/ordergantts1/mvc/WorkCenter.controller.js",
+				"zrsh/eam/ordergantts1/mvc/filterbar/FilterBar.controller.js",
+				"zrsh/eam/ordergantts1/mvc/filterbar/FilterBarSearch.controller.js",
+				"zrsh/eam/ordergantts1/mvc/filterbar/TimePeriod.controller.js",
+				"zrsh/eam/ordergantts1/mvc/gantt/GanttContainer.controller.js",
+				"zrsh/eam/ordergantts1/mvc/gantt/GanttSearch.controller.js",
+				"zrsh/eam/ordergantts1/mvc/gantt/GanttSettings.controller.js",
+				"zrsh/eam/ordergantts1/mvc/gantt/GanttSettingsDialogConfiguration.js",
+				"zrsh/eam/ordergantts1/mvc/gantt/GanttVariant.controller.js",
+				"zrsh/eam/ordergantts1/mvc/gantt/PersGanttSettings.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/ColumnSettings.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/OrderGantt.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/QuickViews.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/ReadinessStatus.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/SmartLinks.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/AssignEvent.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/AssignPeople.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/AssignPersonResponsible.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/ChangeOperations.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/DispatchOperations.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/EditRelationships.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/ExpandOrders.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/OpenOrders.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/ScheduleOrders.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/actions/UpdateOrderOpDates.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/Binding.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/CalendarBinding.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/ColumnFields.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/DeltaRefresh.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/Fields.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/Filters.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/LabelFields.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/Metadata.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/RelationshipsBinding.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/Sort.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/binding/UtilizationBinding.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/formatters.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/menu/ContextMenus.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/menu/OperationActionSheet.controller.js",
+				"zrsh/eam/ordergantts1/mvc/ordergantt/toolbar/EnableToolbarButtons.controller.js",
+				"zrsh/eam/ordergantts1/mvc/utilgantt/UtilizationGantt.controller.js",
 				"sap/rsh/eam/lib/common/base/BaseView.controller.js",
 				"sap/rsh/eam/lib/common/filter/SystemTimeZone.controller.js",
 				"sap/rsh/eam/lib/common/gantt/GanttSettingsDialog.controller.js",
@@ -975,15 +975,15 @@
 		},
 		{
 			"name": "mvc/SchedulingBoard.view.xml",
-			"module": "rsh/eam/ordergantts1/mvc/SchedulingBoard.view.xml",
+			"module": "zrsh/eam/ordergantts1/mvc/SchedulingBoard.view.xml",
 			"size": 5665,
 			"required": [
-				"rsh/eam/ordergantts1/mvc/SchedulingBoard.controller.js"
+				"zrsh/eam/ordergantts1/mvc/SchedulingBoard.controller.js"
 			]
 		},
 		{
 			"name": "mvc/UIModel-dbg.js",
-			"module": "rsh/eam/ordergantts1/mvc/UIModel.js",
+			"module": "zrsh/eam/ordergantts1/mvc/UIModel.js",
 			"size": 11148,
 			"isDebug": true,
 			"required": [
@@ -992,7 +992,7 @@
 		},
 		{
 			"name": "mvc/UIModel.js",
-			"module": "rsh/eam/ordergantts1/mvc/UIModel.js",
+			"module": "zrsh/eam/ordergantts1/mvc/UIModel.js",
 			"size": 8060,
 			"required": [
 				"sap/ui/model/json/JSONModel.js"
@@ -1005,7 +1005,7 @@
 		},
 		{
 			"name": "mvc/WorkCenter-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/WorkCenter.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/WorkCenter.controller.js",
 			"size": 1315,
 			"isDebug": true,
 			"required": [
@@ -1014,7 +1014,7 @@
 		},
 		{
 			"name": "mvc/WorkCenter.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/WorkCenter.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/WorkCenter.controller.js",
 			"size": 964,
 			"required": [
 				"sap/rsh/eam/lib/common/workcenter/WorkCenter.controller.js"
@@ -1027,7 +1027,7 @@
 		},
 		{
 			"name": "mvc/filterbar/DateRangeType-dbg.js",
-			"module": "rsh/eam/ordergantts1/mvc/filterbar/DateRangeType.js",
+			"module": "zrsh/eam/ordergantts1/mvc/filterbar/DateRangeType.js",
 			"size": 3161,
 			"isDebug": true,
 			"required": [
@@ -1037,7 +1037,7 @@
 		},
 		{
 			"name": "mvc/filterbar/DateRangeType.js",
-			"module": "rsh/eam/ordergantts1/mvc/filterbar/DateRangeType.js",
+			"module": "zrsh/eam/ordergantts1/mvc/filterbar/DateRangeType.js",
 			"size": 1714,
 			"required": [
 				"sap/ui/comp/config/condition/DateRangeType.js",
@@ -1051,7 +1051,7 @@
 		},
 		{
 			"name": "mvc/filterbar/FilterBar-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/filterbar/FilterBar.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/filterbar/FilterBar.controller.js",
 			"size": 1212,
 			"isDebug": true,
 			"required": [
@@ -1062,7 +1062,7 @@
 		},
 		{
 			"name": "mvc/filterbar/FilterBar.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/filterbar/FilterBar.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/filterbar/FilterBar.controller.js",
 			"size": 953,
 			"required": [
 				"sap/rsh/eam/lib/common/filter/FilterBar.controller.js",
@@ -1077,7 +1077,7 @@
 		},
 		{
 			"name": "mvc/filterbar/FilterBarSearch-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/filterbar/FilterBarSearch.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/filterbar/FilterBarSearch.controller.js",
 			"size": 6591,
 			"isDebug": true,
 			"required": [
@@ -1087,7 +1087,7 @@
 		},
 		{
 			"name": "mvc/filterbar/FilterBarSearch.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/filterbar/FilterBarSearch.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/filterbar/FilterBarSearch.controller.js",
 			"size": 3784,
 			"required": [
 				"sap/rsh/eam/lib/common/base/BaseViewChild.controller.js",
@@ -1101,7 +1101,7 @@
 		},
 		{
 			"name": "mvc/filterbar/TimePeriod-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/filterbar/TimePeriod.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/filterbar/TimePeriod.controller.js",
 			"size": 8387,
 			"isDebug": true,
 			"required": [
@@ -1114,7 +1114,7 @@
 		},
 		{
 			"name": "mvc/filterbar/TimePeriod.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/filterbar/TimePeriod.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/filterbar/TimePeriod.controller.js",
 			"size": 4377,
 			"required": [
 				"sap/rsh/eam/lib/common/filter/TimePeriod.controller.js",
@@ -1131,7 +1131,7 @@
 		},
 		{
 			"name": "mvc/gantt/GanttContainer-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/gantt/GanttContainer.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/gantt/GanttContainer.controller.js",
 			"size": 5390,
 			"isDebug": true,
 			"required": [
@@ -1140,7 +1140,7 @@
 		},
 		{
 			"name": "mvc/gantt/GanttContainer.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/gantt/GanttContainer.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/gantt/GanttContainer.controller.js",
 			"size": 3457,
 			"required": [
 				"sap/rsh/eam/lib/common/gantt/GanttContainer.controller.js"
@@ -1153,12 +1153,12 @@
 		},
 		{
 			"name": "mvc/gantt/GanttLegend.fragment.xml",
-			"module": "rsh/eam/ordergantts1/mvc/gantt/GanttLegend.fragment.xml",
+			"module": "zrsh/eam/ordergantts1/mvc/gantt/GanttLegend.fragment.xml",
 			"size": 2453
 		},
 		{
 			"name": "mvc/gantt/GanttSearch-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/gantt/GanttSearch.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/gantt/GanttSearch.controller.js",
 			"size": 5783,
 			"isDebug": true,
 			"required": [
@@ -1172,7 +1172,7 @@
 		},
 		{
 			"name": "mvc/gantt/GanttSearch.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/gantt/GanttSearch.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/gantt/GanttSearch.controller.js",
 			"size": 3355,
 			"required": [
 				"sap/gantt/misc/Utility.js",
@@ -1190,7 +1190,7 @@
 		},
 		{
 			"name": "mvc/gantt/GanttSettings-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/gantt/GanttSettings.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/gantt/GanttSettings.controller.js",
 			"size": 5701,
 			"isDebug": true,
 			"required": [
@@ -1199,7 +1199,7 @@
 		},
 		{
 			"name": "mvc/gantt/GanttSettings.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/gantt/GanttSettings.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/gantt/GanttSettings.controller.js",
 			"size": 3243,
 			"required": [
 				"sap/rsh/eam/lib/common/base/BaseViewChild.controller.js"
@@ -1212,13 +1212,13 @@
 		},
 		{
 			"name": "mvc/gantt/GanttSettingsDialogConfiguration-dbg.js",
-			"module": "rsh/eam/ordergantts1/mvc/gantt/GanttSettingsDialogConfiguration.js",
+			"module": "zrsh/eam/ordergantts1/mvc/gantt/GanttSettingsDialogConfiguration.js",
 			"size": 4548,
 			"isDebug": true
 		},
 		{
 			"name": "mvc/gantt/GanttSettingsDialogConfiguration.js",
-			"module": "rsh/eam/ordergantts1/mvc/gantt/GanttSettingsDialogConfiguration.js",
+			"module": "zrsh/eam/ordergantts1/mvc/gantt/GanttSettingsDialogConfiguration.js",
 			"size": 3261
 		},
 		{
@@ -1228,7 +1228,7 @@
 		},
 		{
 			"name": "mvc/gantt/GanttVariant-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/gantt/GanttVariant.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/gantt/GanttVariant.controller.js",
 			"size": 5098,
 			"isDebug": true,
 			"required": [
@@ -1237,7 +1237,7 @@
 		},
 		{
 			"name": "mvc/gantt/GanttVariant.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/gantt/GanttVariant.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/gantt/GanttVariant.controller.js",
 			"size": 2788,
 			"required": [
 				"sap/rsh/eam/lib/common/base/BaseViewChild.controller.js"
@@ -1250,7 +1250,7 @@
 		},
 		{
 			"name": "mvc/gantt/PersGanttSettings-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/gantt/PersGanttSettings.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/gantt/PersGanttSettings.controller.js",
 			"size": 1770,
 			"isDebug": true,
 			"required": [
@@ -1261,7 +1261,7 @@
 		},
 		{
 			"name": "mvc/gantt/PersGanttSettings.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/gantt/PersGanttSettings.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/gantt/PersGanttSettings.controller.js",
 			"size": 1237,
 			"required": [
 				"sap/rsh/eam/lib/common/base/BaseViewChild.controller.js",
@@ -1276,7 +1276,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/ColumnSettings-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/ColumnSettings.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/ColumnSettings.controller.js",
 			"size": 1865,
 			"isDebug": true,
 			"required": [
@@ -1287,7 +1287,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/ColumnSettings.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/ColumnSettings.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/ColumnSettings.controller.js",
 			"size": 1403,
 			"required": [
 				"sap/rsh/eam/lib/common/table/ColumnSettings.controller.js",
@@ -1302,7 +1302,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/CustomRowSettings-dbg.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/CustomRowSettings.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/CustomRowSettings.js",
 			"size": 1071,
 			"isDebug": true,
 			"required": [
@@ -1311,7 +1311,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/CustomRowSettings.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/CustomRowSettings.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/CustomRowSettings.js",
 			"size": 527,
 			"required": [
 				"sap/gantt/simple/GanttRowSettings.js"
@@ -1324,7 +1324,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/OrderGantt-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/OrderGantt.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/OrderGantt.controller.js",
 			"size": 10113,
 			"isDebug": true,
 			"required": [
@@ -1336,7 +1336,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/OrderGantt.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/OrderGantt.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/OrderGantt.controller.js",
 			"size": 5261,
 			"required": [
 				"sap/gantt/misc/Utility.js",
@@ -1352,15 +1352,15 @@
 		},
 		{
 			"name": "mvc/ordergantt/OrderGantt.fragment.xml",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/OrderGantt.fragment.xml",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/OrderGantt.fragment.xml",
 			"size": 49315,
 			"required": [
-				"rsh/eam/ordergantts1/mvc/ordergantt/CustomRowSettings.js"
+				"zrsh/eam/ordergantts1/mvc/ordergantt/CustomRowSettings.js"
 			]
 		},
 		{
 			"name": "mvc/ordergantt/QuickViews-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/QuickViews.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/QuickViews.controller.js",
 			"size": 1733,
 			"isDebug": true,
 			"required": [
@@ -1371,7 +1371,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/QuickViews.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/QuickViews.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/QuickViews.controller.js",
 			"size": 1222,
 			"required": [
 				"sap/rsh/eam/lib/common/base/BaseViewChild.controller.js",
@@ -1386,7 +1386,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/ReadinessStatus-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/ReadinessStatus.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/ReadinessStatus.controller.js",
 			"size": 770,
 			"isDebug": true,
 			"required": [
@@ -1395,7 +1395,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/ReadinessStatus.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/ReadinessStatus.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/ReadinessStatus.controller.js",
 			"size": 701,
 			"required": [
 				"sap/rsh/eam/lib/common/order/status/OrderReadinessStatus.controller.js"
@@ -1408,7 +1408,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/SmartLinks-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/SmartLinks.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/SmartLinks.controller.js",
 			"size": 4882,
 			"isDebug": true,
 			"required": [
@@ -1422,7 +1422,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/SmartLinks.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/SmartLinks.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/SmartLinks.controller.js",
 			"size": 3329,
 			"required": [
 				"sap/rsh/eam/lib/common/base/BaseViewChild.controller.js",
@@ -1440,7 +1440,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/actions/AssignEvent-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/actions/AssignEvent.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/actions/AssignEvent.controller.js",
 			"size": 4235,
 			"isDebug": true,
 			"required": [
@@ -1453,7 +1453,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/actions/AssignEvent.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/actions/AssignEvent.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/actions/AssignEvent.controller.js",
 			"size": 2574,
 			"required": [
 				"sap/gantt/misc/Utility.js",
@@ -1470,7 +1470,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/actions/AssignPeople-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/actions/AssignPeople.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/actions/AssignPeople.controller.js",
 			"size": 1299,
 			"isDebug": true,
 			"required": [
@@ -1479,7 +1479,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/actions/AssignPeople.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/actions/AssignPeople.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/actions/AssignPeople.controller.js",
 			"size": 920,
 			"required": [
 				"sap/rsh/eam/lib/common/base/BaseViewChild.controller.js"
@@ -1492,7 +1492,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/actions/AssignPersonResponsible-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/actions/AssignPersonResponsible.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/actions/AssignPersonResponsible.controller.js",
 			"size": 4398,
 			"isDebug": true,
 			"required": [
@@ -1502,7 +1502,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/actions/AssignPersonResponsible.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/actions/AssignPersonResponsible.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/actions/AssignPersonResponsible.controller.js",
 			"size": 2607,
 			"required": [
 				"sap/rsh/eam/lib/common/base/BaseViewChild.controller.js",
@@ -1516,7 +1516,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/actions/ChangeOperations-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/actions/ChangeOperations.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/actions/ChangeOperations.controller.js",
 			"size": 3231,
 			"isDebug": true,
 			"required": [
@@ -1529,7 +1529,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/actions/ChangeOperations.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/actions/ChangeOperations.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/actions/ChangeOperations.controller.js",
 			"size": 1839,
 			"required": [
 				"sap/gantt/misc/Utility.js",
@@ -1546,7 +1546,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/actions/DispatchOperations-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/actions/DispatchOperations.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/actions/DispatchOperations.controller.js",
 			"size": 8204,
 			"isDebug": true,
 			"required": [
@@ -1558,7 +1558,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/actions/DispatchOperations.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/actions/DispatchOperations.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/actions/DispatchOperations.controller.js",
 			"size": 4377,
 			"required": [
 				"sap/gantt/misc/Utility.js",
@@ -1574,7 +1574,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/actions/EditRelationships-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/actions/EditRelationships.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/actions/EditRelationships.controller.js",
 			"size": 12724,
 			"isDebug": true,
 			"required": [
@@ -1586,7 +1586,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/actions/EditRelationships.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/actions/EditRelationships.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/actions/EditRelationships.controller.js",
 			"size": 7315,
 			"required": [
 				"sap/gantt/misc/Utility.js",
@@ -1602,7 +1602,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/actions/ExpandOrders-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/actions/ExpandOrders.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/actions/ExpandOrders.controller.js",
 			"size": 5923,
 			"isDebug": true,
 			"required": [
@@ -1612,7 +1612,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/actions/ExpandOrders.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/actions/ExpandOrders.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/actions/ExpandOrders.controller.js",
 			"size": 3044,
 			"required": [
 				"sap/gantt/misc/Utility.js",
@@ -1626,7 +1626,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/actions/OpenOrders-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/actions/OpenOrders.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/actions/OpenOrders.controller.js",
 			"size": 1689,
 			"isDebug": true,
 			"required": [
@@ -1638,7 +1638,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/actions/OpenOrders.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/actions/OpenOrders.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/actions/OpenOrders.controller.js",
 			"size": 1062,
 			"required": [
 				"sap/gantt/misc/Utility.js",
@@ -1654,7 +1654,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/actions/ScheduleOrders-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/actions/ScheduleOrders.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/actions/ScheduleOrders.controller.js",
 			"size": 2859,
 			"isDebug": true,
 			"required": [
@@ -1663,7 +1663,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/actions/ScheduleOrders.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/actions/ScheduleOrders.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/actions/ScheduleOrders.controller.js",
 			"size": 1894,
 			"required": [
 				"sap/rsh/eam/lib/common/base/BaseViewChild.controller.js"
@@ -1676,7 +1676,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/actions/UpdateOrderOpDates-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/actions/UpdateOrderOpDates.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/actions/UpdateOrderOpDates.controller.js",
 			"size": 9853,
 			"isDebug": true,
 			"required": [
@@ -1691,7 +1691,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/actions/UpdateOrderOpDates.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/actions/UpdateOrderOpDates.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/actions/UpdateOrderOpDates.controller.js",
 			"size": 4962,
 			"required": [
 				"sap/gantt/misc/Utility.js",
@@ -1710,7 +1710,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/binding/Binding-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/binding/Binding.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/binding/Binding.controller.js",
 			"size": 10102,
 			"isDebug": true,
 			"required": [
@@ -1723,7 +1723,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/binding/Binding.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/binding/Binding.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/binding/Binding.controller.js",
 			"size": 5020,
 			"required": [
 				"sap/rsh/eam/lib/common/base/BaseViewChild.controller.js",
@@ -1740,7 +1740,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/binding/CalendarBinding-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/binding/CalendarBinding.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/binding/CalendarBinding.controller.js",
 			"size": 2700,
 			"isDebug": true,
 			"required": [
@@ -1753,7 +1753,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/binding/CalendarBinding.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/binding/CalendarBinding.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/binding/CalendarBinding.controller.js",
 			"size": 1757,
 			"required": [
 				"sap/gantt/def/cal/Calendar.js",
@@ -1770,7 +1770,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/binding/ColumnFields-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/binding/ColumnFields.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/binding/ColumnFields.controller.js",
 			"size": 10435,
 			"isDebug": true,
 			"required": [
@@ -1779,7 +1779,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/binding/ColumnFields.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/binding/ColumnFields.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/binding/ColumnFields.controller.js",
 			"size": 7548,
 			"required": [
 				"sap/rsh/eam/lib/common/base/BaseViewChild.controller.js"
@@ -1792,7 +1792,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/binding/DeltaRefresh-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/binding/DeltaRefresh.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/binding/DeltaRefresh.controller.js",
 			"size": 22107,
 			"isDebug": true,
 			"required": [
@@ -1805,7 +1805,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/binding/DeltaRefresh.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/binding/DeltaRefresh.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/binding/DeltaRefresh.controller.js",
 			"size": 6314,
 			"required": [
 				"sap/rsh/eam/lib/common/base/BaseViewChild.controller.js",
@@ -1822,7 +1822,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/binding/Fields-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/binding/Fields.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/binding/Fields.controller.js",
 			"size": 6450,
 			"isDebug": true,
 			"required": [
@@ -1831,7 +1831,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/binding/Fields.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/binding/Fields.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/binding/Fields.controller.js",
 			"size": 4723,
 			"required": [
 				"sap/rsh/eam/lib/common/base/BaseViewChild.controller.js"
@@ -1844,7 +1844,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/binding/Filters-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/binding/Filters.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/binding/Filters.controller.js",
 			"size": 3258,
 			"isDebug": true,
 			"required": [
@@ -1856,7 +1856,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/binding/Filters.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/binding/Filters.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/binding/Filters.controller.js",
 			"size": 1705,
 			"required": [
 				"sap/rsh/eam/lib/common/base/BaseViewChild.controller.js",
@@ -1872,7 +1872,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/binding/LabelFields-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/binding/LabelFields.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/binding/LabelFields.controller.js",
 			"size": 2208,
 			"isDebug": true,
 			"required": [
@@ -1881,7 +1881,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/binding/LabelFields.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/binding/LabelFields.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/binding/LabelFields.controller.js",
 			"size": 1275,
 			"required": [
 				"sap/rsh/eam/lib/common/base/BaseViewChild.controller.js"
@@ -1894,7 +1894,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/binding/Metadata-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/binding/Metadata.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/binding/Metadata.controller.js",
 			"size": 1932,
 			"isDebug": true,
 			"required": [
@@ -1904,7 +1904,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/binding/Metadata.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/binding/Metadata.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/binding/Metadata.controller.js",
 			"size": 1189,
 			"required": [
 				"sap/rsh/eam/lib/common/base/BaseViewChild.controller.js",
@@ -1918,7 +1918,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/binding/RelationshipsBinding-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/binding/RelationshipsBinding.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/binding/RelationshipsBinding.controller.js",
 			"size": 1525,
 			"isDebug": true,
 			"required": [
@@ -1927,7 +1927,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/binding/RelationshipsBinding.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/binding/RelationshipsBinding.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/binding/RelationshipsBinding.controller.js",
 			"size": 1112,
 			"required": [
 				"sap/rsh/eam/lib/common/base/BaseViewChild.controller.js"
@@ -1940,7 +1940,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/binding/Sort-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/binding/Sort.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/binding/Sort.controller.js",
 			"size": 5835,
 			"isDebug": true,
 			"required": [
@@ -1950,7 +1950,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/binding/Sort.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/binding/Sort.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/binding/Sort.controller.js",
 			"size": 3257,
 			"required": [
 				"sap/rsh/eam/lib/common/base/BaseViewChild.controller.js",
@@ -1964,7 +1964,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/binding/UtilizationBinding-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/binding/UtilizationBinding.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/binding/UtilizationBinding.controller.js",
 			"size": 1459,
 			"isDebug": true,
 			"required": [
@@ -1973,7 +1973,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/binding/UtilizationBinding.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/binding/UtilizationBinding.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/binding/UtilizationBinding.controller.js",
 			"size": 1046,
 			"required": [
 				"sap/rsh/eam/lib/common/base/BaseViewChild.controller.js"
@@ -1986,7 +1986,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/formatters-dbg.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/formatters.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/formatters.js",
 			"size": 17918,
 			"isDebug": true,
 			"required": [
@@ -2000,7 +2000,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/formatters.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/formatters.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/formatters.js",
 			"size": 6739,
 			"required": [
 				"sap/base/strings/formatMessage.js",
@@ -2018,7 +2018,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/menu/ContextMenus-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/menu/ContextMenus.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/menu/ContextMenus.controller.js",
 			"size": 9612,
 			"isDebug": true,
 			"required": [
@@ -2033,7 +2033,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/menu/ContextMenus.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/menu/ContextMenus.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/menu/ContextMenus.controller.js",
 			"size": 5945,
 			"required": [
 				"sap/gantt/misc/Utility.js",
@@ -2052,7 +2052,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/menu/OperationActionSheet-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/menu/OperationActionSheet.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/menu/OperationActionSheet.controller.js",
 			"size": 8308,
 			"isDebug": true,
 			"required": [
@@ -2068,7 +2068,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/menu/OperationActionSheet.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/menu/OperationActionSheet.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/menu/OperationActionSheet.controller.js",
 			"size": 5204,
 			"required": [
 				"sap/gantt/misc/Utility.js",
@@ -2088,17 +2088,17 @@
 		},
 		{
 			"name": "mvc/ordergantt/menu/OperationActionSheet.fragment.xml",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/menu/OperationActionSheet.fragment.xml",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/menu/OperationActionSheet.fragment.xml",
 			"size": 1512
 		},
 		{
 			"name": "mvc/ordergantt/menu/OrderContextMenuConfiguration.json",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/menu/OrderContextMenuConfiguration.json",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/menu/OrderContextMenuConfiguration.json",
 			"size": 159
 		},
 		{
 			"name": "mvc/ordergantt/toolbar/EnableToolbarButtons-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/toolbar/EnableToolbarButtons.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/toolbar/EnableToolbarButtons.controller.js",
 			"size": 4914,
 			"isDebug": true,
 			"required": [
@@ -2109,7 +2109,7 @@
 		},
 		{
 			"name": "mvc/ordergantt/toolbar/EnableToolbarButtons.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/toolbar/EnableToolbarButtons.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/toolbar/EnableToolbarButtons.controller.js",
 			"size": 2870,
 			"required": [
 				"sap/rsh/eam/lib/common/base/BaseViewChild.controller.js",
@@ -2124,12 +2124,12 @@
 		},
 		{
 			"name": "mvc/ordergantt/toolbar/ToolbarButtons.fragment.xml",
-			"module": "rsh/eam/ordergantts1/mvc/ordergantt/toolbar/ToolbarButtons.fragment.xml",
+			"module": "zrsh/eam/ordergantts1/mvc/ordergantt/toolbar/ToolbarButtons.fragment.xml",
 			"size": 3011
 		},
 		{
 			"name": "mvc/utilgantt/UtilizationGantt-dbg.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/utilgantt/UtilizationGantt.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/utilgantt/UtilizationGantt.controller.js",
 			"size": 5250,
 			"isDebug": true,
 			"required": [
@@ -2141,7 +2141,7 @@
 		},
 		{
 			"name": "mvc/utilgantt/UtilizationGantt.controller.js",
-			"module": "rsh/eam/ordergantts1/mvc/utilgantt/UtilizationGantt.controller.js",
+			"module": "zrsh/eam/ordergantts1/mvc/utilgantt/UtilizationGantt.controller.js",
 			"size": 3129,
 			"required": [
 				"sap/rsh/eam/lib/common/utilization/UtilizationGantt.controller.js",
@@ -2161,7 +2161,7 @@
 		},
 		{
 			"name": "version.json",
-			"module": "rsh/eam/ordergantts1/version.json",
+			"module": "zrsh/eam/ordergantts1/version.json",
 			"size": 287
 		}
 	]

@@ -11,7 +11,7 @@ sap.ui.define(
 	function (PersAppStateController, Utils, Constants, URLParams) {
 		"use strict";
 
-		return PersAppStateController.extend("rsh.eam.ordergantts1.mvc.PersAppState.controller", {
+		return PersAppStateController.extend("zrsh.eam.ordergantts1.mvc.PersAppState.controller", {
 			onInit: function () {
 				PersAppStateController.prototype.onInit.apply(this, arguments);
 				this._pInitialized = this.controllers.pers.initialized().then(this._init.bind(this));

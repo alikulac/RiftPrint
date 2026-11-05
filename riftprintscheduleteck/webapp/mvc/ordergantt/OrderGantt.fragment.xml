@@ -11,7 +11,7 @@
 	xmlns:core="sap.ui.core"
 	xmlns:navpopover="sap.ui.comp.navpopover"
 	xmlns:gnt-cal="sap.gantt.def.cal"
-	xmlns:ordergantt="rsh.eam.ordergantts1.mvc.ordergantt"
+	xmlns:ordergantt="zrsh.eam.ordergantts1.mvc.ordergantt"
 	xmlns:plugins="sap.ui.table.plugins">
 	<GanttChartWithTable id="idOrderGanttChartWithTable" ghostAlignment="Start" adhocLineLayer="Bottom" enableAdhocLine="false"
 						 nowLineInUTC="false" shapeOverRelationship="false" dragOrientation="Horizontal" enableSelectAndDrag="false"
@@ -22,14 +22,14 @@
 						 shapeHighlightSettings="{color:'black', strokeWidth:1, strokeDasharray:'5,1', fillOpacity: 0.3, shapeColor:'blue'}" findByOperator="OR"
 						 findBy="MaintenanceOrder,MaintenanceOrderDesc,FunctionalLocation,FunctionalLocationName,Equipment,EquipmentName,MainWorkCenter,OperationDescription,OperationPersonRespName,WorkCenter">
 		<overflowToolbarItems>
-			<core:Fragment fragmentName="rsh.eam.ordergantts1.mvc.ordergantt.toolbar.ToolbarButtons" type="XML"/>
+			<core:Fragment fragmentName="zrsh.eam.ordergantts1.mvc.ordergantt.toolbar.ToolbarButtons" type="XML"/>
 		</overflowToolbarItems>
 		<table>
 			<table:TreeTable id="idOrderTreeTable" visibleRowCountMode="Auto" minAutoRowCount="1" rowActionCount="1" enableColumnReordering="false"
 							 rowSelectionChange="onOrderTableSelectRows" columnVisibility=".onColumnVisibilityChanged" columnResize=".onColumnResize"
 							 firstVisibleRowChanged="onOrderTableFirstVisibleRowChanged" sort="onOrderTableSort" toggleOpenState="onToggleOpenState" >
 				<table:plugins>
-					<plugins:MultiSelectionPlugin id="idMultiSelectionPlugin" enableNotification="true" showHeaderSelector="true"
+					<plugins:MultiSelectionPlugin id="idMultiSelectionPlugin" limit="0" enableNotification="true" showHeaderSelector="true"
 												  selectionChange="onOrderTableSelectRows"/>
 				</table:plugins>
 				<table:extension>

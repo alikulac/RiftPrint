@@ -4,7 +4,7 @@
 sap.ui.define(["sap/rsh/eam/lib/common/gantt/GanttContainer.controller"], function (GanttContainerController) {
 	"use strict";
 
-	return GanttContainerController.extend("rsh.eam.ordergantts1.mvc.gantt.GanttContainer.controller", {
+	return GanttContainerController.extend("zrsh.eam.ordergantts1.mvc.gantt.GanttContainer.controller", {
 		onInit: function () {
 			GanttContainerController.prototype.onInit.apply(this, arguments);
 			this.controllers.customVariant.attachInitChanges(this.onInitCustomVariantChanges, this);

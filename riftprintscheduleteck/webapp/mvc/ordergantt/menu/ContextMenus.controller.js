@@ -14,7 +14,7 @@ sap.ui.define(
 	function (BaseViewChildController, Constants, Utils, Relationship, RelationshipActionSheet, OrderContextMenu, GanttUtility) {
 		"use strict";
 
-		return BaseViewChildController.extend("rsh.eam.ordergantts1.mvc.ordergantt.menu.ContextMenus.controller", {
+		return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.menu.ContextMenus.controller", {
 			onInit: function () {
 				BaseViewChildController.prototype.onInit.apply(this, arguments);
 				this.controllers.navigation.isNavigationSupported("MaintenanceOrder", "change").then(

@@ -16,54 +16,56 @@ sap.ui.define(
 		"sap/rsh/eam/lib/common/people/PeopleGanttDialog.controller",
 		"sap/rsh/eam/lib/common/people/UnassignPeople.controller",
 		"sap/rsh/eam/lib/common/people/AssignPersonByTeamDialog.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/actions/AssignPersonResponsible.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/actions/AssignPersonResponsible.controller",
 		"sap/rsh/eam/lib/common/variant/CustomVariant.controller",
 		"sap/rsh/eam/lib/common/message/NotAgainMessage.controller",
-		"rsh/eam/ordergantts1/mvc/filterbar/FilterBar.controller",
-		"rsh/eam/ordergantts1/mvc/filterbar/FilterBarSearch.controller",
-		"rsh/eam/ordergantts1/mvc/filterbar/TimePeriod.controller",
-		"rsh/eam/ordergantts1/mvc/gantt/GanttContainer.controller",
-		"rsh/eam/ordergantts1/mvc/gantt/GanttSearch.controller",
-		"rsh/eam/ordergantts1/mvc/gantt/GanttSettings.controller",
-		"rsh/eam/ordergantts1/mvc/gantt/GanttSettingsDialogConfiguration",
-		"rsh/eam/ordergantts1/mvc/gantt/GanttVariant.controller",
-		"rsh/eam/ordergantts1/mvc/gantt/PersGanttSettings.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/binding/Fields.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/formatters",
-		"rsh/eam/ordergantts1/mvc/ordergantt/binding/Metadata.controller",
-		"rsh/eam/ordergantts1/mvc/utilgantt/UtilizationGantt.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/binding/DeltaRefresh.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/menu/OperationActionSheet.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/menu/ContextMenus.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/binding/ColumnFields.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/actions/DispatchOperations.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/actions/EditRelationships.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/ColumnSettings.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/toolbar/EnableToolbarButtons.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/actions/OpenOrders.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/OrderGantt.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/actions/ExpandOrders.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/binding/Filters.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/QuickViews.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/SmartLinks.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/actions/ScheduleOrders.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/actions/AssignEvent.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/actions/AssignPeople.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/actions/UpdateOrderOpDates.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/actions/ChangeOperations.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/binding/Sort.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/binding/CalendarBinding.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/binding/Binding.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/binding/RelationshipsBinding.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/binding/UtilizationBinding.controller",
-		"rsh/eam/ordergantts1/mvc/ordergantt/binding/LabelFields.controller",
-		"rsh/eam/ordergantts1/mvc/DeltaRefresh.controller",
-		"rsh/eam/ordergantts1/mvc/InboundNavigation.controller",
+		"zrsh/eam/ordergantts1/mvc/filterbar/FilterBar.controller",
+		"zrsh/eam/ordergantts1/mvc/filterbar/FilterBarSearch.controller",
+		"zrsh/eam/ordergantts1/mvc/filterbar/TimePeriod.controller",
+		"zrsh/eam/ordergantts1/mvc/gantt/GanttContainer.controller",
+		"zrsh/eam/ordergantts1/mvc/gantt/GanttSearch.controller",
+		"zrsh/eam/ordergantts1/mvc/gantt/GanttSettings.controller",
+		"zrsh/eam/ordergantts1/mvc/gantt/GanttSettingsDialogConfiguration",
+		"zrsh/eam/ordergantts1/mvc/gantt/GanttVariant.controller",
+		"zrsh/eam/ordergantts1/mvc/gantt/PersGanttSettings.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/binding/Fields.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/formatters",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/binding/Metadata.controller",
+		"zrsh/eam/ordergantts1/mvc/utilgantt/UtilizationGantt.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/binding/DeltaRefresh.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/menu/OperationActionSheet.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/menu/ContextMenus.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/binding/ColumnFields.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/actions/DispatchOperations.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/actions/EditRelationships.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/ColumnSettings.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/toolbar/EnableToolbarButtons.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/actions/OpenOrders.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/OrderGantt.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/actions/ExpandOrders.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/binding/Filters.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/QuickViews.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/SmartLinks.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/actions/ScheduleOrders.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/actions/RiftPrint.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/actions/SelectRows.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/actions/AssignEvent.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/actions/AssignPeople.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/actions/UpdateOrderOpDates.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/actions/ChangeOperations.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/binding/Sort.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/binding/CalendarBinding.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/binding/Binding.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/binding/RelationshipsBinding.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/binding/UtilizationBinding.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/binding/LabelFields.controller",
+		"zrsh/eam/ordergantts1/mvc/DeltaRefresh.controller",
+		"zrsh/eam/ordergantts1/mvc/InboundNavigation.controller",
 		"sap/rsh/eam/lib/common/nav/Navigation.controller",
-		"rsh/eam/ordergantts1/mvc/PersAppState.controller",
-		"rsh/eam/ordergantts1/mvc/WorkCenter.controller",
+		"zrsh/eam/ordergantts1/mvc/PersAppState.controller",
+		"zrsh/eam/ordergantts1/mvc/WorkCenter.controller",
 		"sap/rsh/eam/lib/common/utils/DateUtils",
-		"rsh/eam/ordergantts1/mvc/ordergantt/ReadinessStatus.controller",
+		"zrsh/eam/ordergantts1/mvc/ordergantt/ReadinessStatus.controller",
 		"sap/rsh/eam/lib/common/order/status/formatter"
 	],
 	function (
@@ -111,6 +113,8 @@ sap.ui.define(
 		QuickViewsController,
 		SmartLinksController,
 		ScheduleOrdersController,
+		RiftPrintController,
+		SelectRowsController,
 		AssignEventController,
 		AssignPeopleController,
 		UpdateOrderOpDatesController,
@@ -132,7 +136,7 @@ sap.ui.define(
 	) {
 		"use strict";
 
-		return BaseController.extend("rsh.eam.ordergantts1.mvc.SchedulingBoard", {
+		return BaseController.extend("zrsh.eam.ordergantts1.mvc.SchedulingBoard", {
 			formatters: formatters,
 			commonFormatters: commonFormatter,
 			ganttFormatters: GanttFormatters,
@@ -141,6 +145,7 @@ sap.ui.define(
 
 			onInit: function () {
 				BaseController.prototype.onInit.apply(this, arguments);
+				this.byId("idRiftPrintLogo").setSrc(sap.ui.require.toUrl("zrsh/eam/ordergantts1/images/riftprint.png"));
 				this._createControllers();
 			},
 
@@ -205,6 +210,8 @@ sap.ui.define(
 				this.controllers.ordergantt.quickViews = new QuickViewsController(this);
 				this.controllers.ordergantt.smartLinks = new SmartLinksController(this);
 				this.controllers.ordergantt.scheduleOrders = new ScheduleOrdersController(this);
+				this.controllers.ordergantt.riftPrint = new RiftPrintController(this);
+				this.controllers.ordergantt.selectRows = new SelectRowsController(this);
 				this.controllers.ordergantt.editRelationships = new EditRelationshipsController(this);
 				this.controllers.ordergantt.columnSettings = new ColumnSettingsController(this);
 				this.controllers.ordergantt.fields = new FieldsController(this);
@@ -327,6 +334,18 @@ sap.ui.define(
 
 			onPressScheduleOrderButton: function () {
 				this.controllers.ordergantt.scheduleOrders.schedule(null);
+			},
+
+			onPressRiftPrintButton: function () {
+				this.controllers.ordergantt.riftPrint.print();
+			},
+
+			onPressSelectAllButton: function () {
+				this.controllers.ordergantt.selectRows.selectAll();
+			},
+
+			onPressDeselectAllButton: function () {
+				this.controllers.ordergantt.selectRows.deselectAll();
 			},
 
 			onColumnSettingsPress: function (oEvent) {

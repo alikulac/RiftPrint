@@ -12,7 +12,7 @@ sap.ui.define(
 	function (BaseViewChildController, Constants, HashChanger, Utils, FilterType) {
 		"use strict";
 
-		return BaseViewChildController.extend("rsh.eam.ordergantts1.mvc.ordergantt.binding.Binding.controller", {
+		return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.binding.Binding.controller", {
 			onInit: function () {
 				BaseViewChildController.prototype.onInit.apply(this, arguments);
 				this._bindFirstTime();

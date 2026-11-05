@@ -4,7 +4,7 @@
 sap.ui.define(["sap/ui/comp/config/condition/DateRangeType","sap/ui/core/date/UI5Date"], function (DateRangeType, UI5Date) {
 	"use strict";
 
-	var oDateRange = DateRangeType.extend("rsh.eam.ordergantts1.mvc.filterbar.DateRangeType", {
+	var oDateRange = DateRangeType.extend("zrsh.eam.ordergantts1.mvc.filterbar.DateRangeType", {
 		constructor: function (sFieldName, oFilterProvider, oFieldViewMetadata) {
 			DateRangeType.apply(this, [sFieldName, oFilterProvider, oFieldViewMetadata]);
 			this.setAsync(false);

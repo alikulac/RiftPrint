@@ -11,7 +11,7 @@ sap.ui.define(
 	function (DispatchOperationsController, Constants, Utils, GanttUtility) {
 		"use strict";
 
-		return DispatchOperationsController.extend("rsh.eam.ordergantts1.mvc.ordergantt.actions.DispatchOperations.controller", {
+		return DispatchOperationsController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.actions.DispatchOperations.controller", {
 			onInitMembers: function () {
 				DispatchOperationsController.prototype.onInitMembers.apply(this, arguments);
 				this.oGanttChartContainer = this.byId("idOrderGanttContainer");

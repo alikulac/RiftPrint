@@ -33,7 +33,7 @@ sap.ui.define(
 		 *
 		 * Note:If the utilization indicator setting is on, "Work center change action" needs special handling (findOperationsForUtilizationUpdate)
 		 */
-		return BaseViewChildController.extend("rsh.eam.ordergantts1.mvc.ordergantt.binding.DeltaRefresh", {
+		return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.binding.DeltaRefresh", {
 			/**
 			 * Executes the refresh
 			 * @param {Object} oParams
