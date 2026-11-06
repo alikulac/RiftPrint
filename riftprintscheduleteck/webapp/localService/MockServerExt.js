@@ -4,7 +4,7 @@
 sap.ui.define(["sap/ui/core/util/MockServer"], function (MockServer) {
 	"use strict";
 
-	return MockServer.extend("zrsh.eam.ordergantts1.localService.MockServerExt", {
+	return MockServer.extend("zrift.rsh.eam.ordergantts1.localService.MockServerExt", {
 		rshRespond: function (oResponse, oParams) {
 			if (this._rshFail) {
 				oResponse.respondJSON(this._rshFailStatusCode, {}, this._rshFailResponse);

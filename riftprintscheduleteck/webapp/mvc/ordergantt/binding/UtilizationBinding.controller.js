@@ -4,7 +4,7 @@
 sap.ui.define(["sap/rsh/eam/lib/common/base/BaseViewChild.controller"], function (BaseViewChildController) {
 	"use strict";
 
-	return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.binding.UtilizationBinding.controller", {
+	return BaseViewChildController.extend("zrift.rsh.eam.ordergantts1.mvc.ordergantt.binding.UtilizationBinding.controller", {
 		onInitMembers: function () {
 			this._oTable = this.byId("idOrderTreeTable");
 			this._oPreviousUtilizationBinding = undefined;

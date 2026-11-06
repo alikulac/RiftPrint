@@ -6,7 +6,7 @@ sap.ui.define(
 	function (FilterBarController, CoreLib, SmartFilterBarUtils) {
 		"use strict";
 
-		return FilterBarController.extend("zrsh.eam.ordergantts1.mvc.filterbar.FilterBar.controller", {
+		return FilterBarController.extend("zrift.rsh.eam.ordergantts1.mvc.filterbar.FilterBar.controller", {
 			_getFilterBar: function () {
 				return this.byId("idOrderGanttSmartFilterBar");
 			},

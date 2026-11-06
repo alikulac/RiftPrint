@@ -6,7 +6,7 @@ sap.ui.define(
 	function (BaseViewChildController, MessageToast) {
 		"use strict";
 
-		return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.actions.SelectRows.controller", {
+		return BaseViewChildController.extend("zrift.rsh.eam.ordergantts1.mvc.ordergantt.actions.SelectRows.controller", {
 			onInitMembers: function () {
 				this._oSelectionPlugin = this.byId("idMultiSelectionPlugin");
 			},

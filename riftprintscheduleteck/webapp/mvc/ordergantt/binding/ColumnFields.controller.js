@@ -8,7 +8,7 @@ sap.ui.define(["sap/rsh/eam/lib/common/base/BaseViewChild.controller"], function
 	 * Some columns require multiple fields e.g. duration and duration unit.
 	 * This controllers compiles the list of all fields required for the currently visible columns.
 	 */
-	return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.binding.ColumnFields.controller", {
+	return BaseViewChildController.extend("zrift.rsh.eam.ordergantts1.mvc.ordergantt.binding.ColumnFields.controller", {
 		onInitMembers: function () {
 			this._sOrderFields = undefined; // before cleanup: _sOrderAppStateFields
 			this._sOperationFields = undefined; // before cleanup: _sOperationAppStateFields

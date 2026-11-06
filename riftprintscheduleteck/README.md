@@ -8,7 +8,7 @@
 |**Template Used**<br>unknown|
 |**Service Type**<br>|
 |**Service URL**<br>http://oneteckds4.sap.teck.com:44300|
-|**Module Name**<br>zrsh.eam.ordergantts1|
+|**Module Name**<br>zrift.rsh.eam.ordergantts1|
 |**Application Title**<br>{{appTitle}}|
 |**Namespace**<br>rsh.eam|
 |**UI5 Theme**<br>sap_fiori_3|
@@ -16,7 +16,7 @@
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|
 
-## zrsh.eam.ordergantts1
+## zrift.rsh.eam.ordergantts1
 
 This application was downloaded from an SAP ABAP repository.
 

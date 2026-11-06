@@ -12,7 +12,7 @@ sap.ui.define(
 	function (BaseViewChildController, Calendar, TimeInterval, GanttFormatters, UI5Date) {
 		"use strict";
 
-		return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.binding.CalendarBinding.controller", {
+		return BaseViewChildController.extend("zrift.rsh.eam.ordergantts1.mvc.ordergantt.binding.CalendarBinding.controller", {
 
 			onInitMembers: function () {
 				this._oCalendarDef = this.byId("idCalDef");

@@ -5,12 +5,12 @@
  * This is an extension to Standard Row Settings.
  * Standard shapes available are shapes1, shapes2.....shapes5, this will help to create new custom shapes in addition to existing shapes
  * We can influence the positioning of the shapes in case of overlap, using sapGanttOrder in combination with the order these aggregations are defined in XML
- * @name zrsh.eam.ordergantts1.customControl.CustomRowSettings
+ * @name zrift.rsh.eam.ordergantts1.customControl.CustomRowSettings
  */
 sap.ui.define(["sap/gantt/simple/GanttRowSettings"], function (GanttRowSettings) {
 	"use strict";
 
-	var CustomRowSettings = GanttRowSettings.extend("zrsh.eam.ordergantts1.customControl.CustomRowSettings", {
+	var CustomRowSettings = GanttRowSettings.extend("zrift.rsh.eam.ordergantts1.customControl.CustomRowSettings", {
 		metadata: {
 			aggregations: {
 				customShapes6: {

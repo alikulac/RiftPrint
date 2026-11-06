@@ -11,7 +11,7 @@ sap.ui.define(
 	function (UtilizationGanttController, Filter, FilterOperator, Utils) {
 		"use strict";
 
-		return UtilizationGanttController.extend("zrsh.eam.ordergantts1.mvc.utilgantt.UtilizationChart.controller", {
+		return UtilizationGanttController.extend("zrift.rsh.eam.ordergantts1.mvc.utilgantt.UtilizationChart.controller", {
 			constructor: function () {
 				UtilizationGanttController.apply(this, arguments);
 				this.controllers.customVariant.attachInitChanges(this.onInitCustomVariantChanges, this);

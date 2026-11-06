@@ -4,7 +4,7 @@
 sap.ui.define(["sap/rsh/eam/lib/common/base/BaseViewChild.controller"], function (BaseViewChildController) {
 	"use strict";
 
-	return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.binding.Fields.controller", {
+	return BaseViewChildController.extend("zrift.rsh.eam.ordergantts1.mvc.ordergantt.binding.Fields.controller", {
 		getOrderSelectFields: function () {
 			var aSelectFields = [];
 			var sColumnFields = this.controllers.ordergantt.columnFields.getOrderFields();

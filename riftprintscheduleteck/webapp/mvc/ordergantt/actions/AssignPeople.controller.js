@@ -4,7 +4,7 @@
 sap.ui.define(["sap/rsh/eam/lib/common/base/BaseViewChild.controller"], function (BaseViewChildController) {
 	"use strict";
 
-	return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.actions.AssignPeople.controller", {
+	return BaseViewChildController.extend("zrift.rsh.eam.ordergantts1.mvc.ordergantt.actions.AssignPeople.controller", {
 		onInitMembers: function () {
 			this.oGanttChartContainer = this.byId("idOrderGanttContainer");
 		},

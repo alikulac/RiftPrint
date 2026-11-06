@@ -3,7 +3,7 @@
  */
 sap.ui.define(["sap/rsh/eam/lib/common/order/status/OrderReadinessStatus.controller"], function (OrderReadinessStatus) {
 	"use strict";
-	return OrderReadinessStatus.extend("zrsh.eam.ordergantts1.mvc.ordergantt.OrderReadinessStatus.controller", {
+	return OrderReadinessStatus.extend("zrift.rsh.eam.ordergantts1.mvc.ordergantt.OrderReadinessStatus.controller", {
 		displayInfoDialog: function () {
 			this.controllers.message
 				.showConfirmationDialog({ titleKey: "InfoIcon", msgKey: "ReadinessStatusCannotBeDisplayedInCondensed", actionKey: "Confirm" })

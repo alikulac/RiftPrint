@@ -4,7 +4,7 @@
 sap.ui.define(["sap/rsh/eam/lib/common/workcenter/WorkCenter.controller"], function (WorkCenterController) {
 	"use strict";
 
-	return WorkCenterController.extend("zrsh.eam.ordergantts1.mvc.WorkCenter.controller", {
+	return WorkCenterController.extend("zrift.rsh.eam.ordergantts1.mvc.WorkCenter.controller", {
 		openAssignDialog: function () {
 			this.controllers.systemTimeZone.loaded().then(
 				function () {

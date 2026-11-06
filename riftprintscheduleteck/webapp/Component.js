@@ -5,13 +5,13 @@ sap.ui.define(
 	[
 		"sap/rsh/eam/lib/common/base/BaseComponent",
 		"sap/rsh/eam/lib/common/utils/utils",
-		"zrsh/eam/ordergantts1/mvc/UIModel",
-		"zrsh/eam/ordergantts1/mvc/FeatureToggleModel"
+		"zrift/rsh/eam/ordergantts1/mvc/UIModel",
+		"zrift/rsh/eam/ordergantts1/mvc/FeatureToggleModel"
 	],
 	function (BaseComponent, Utils, UIModel, FeatureToggleModel) {
 		"use strict";
 
-		return BaseComponent.extend("zrsh.eam.ordergantts1.Component", {
+		return BaseComponent.extend("zrift.rsh.eam.ordergantts1.Component", {
 			metadata: {
 				manifest: "json"
 			},

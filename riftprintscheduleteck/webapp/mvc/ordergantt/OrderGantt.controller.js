@@ -11,7 +11,7 @@ sap.ui.define(
 	function (GanttChartAdapterController, ColumnUtils, GanttUtility, Constants) {
 		"use strict";
 
-		return GanttChartAdapterController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.OrderGantt.controller", {
+		return GanttChartAdapterController.extend("zrift.rsh.eam.ordergantts1.mvc.ordergantt.OrderGantt.controller", {
 			onInit: function () {
 				GanttChartAdapterController.prototype.onInit.apply(this, arguments);
 

@@ -10,7 +10,7 @@ sap.ui.define(
 	function (BaseViewChildController, ScheduleQuickViewController, MaintenanceEventQuickViewController) {
 		"use strict";
 
-		return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.QuickViews.controller", {
+		return BaseViewChildController.extend("zrift.rsh.eam.ordergantts1.mvc.ordergantt.QuickViews.controller", {
 			onInitMembers: function () {
 				var oReadModel = this.oComponent.getModel("readModel");
 				this.controllers.scheduleQuickView = new ScheduleQuickViewController({

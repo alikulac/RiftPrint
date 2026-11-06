@@ -4,7 +4,7 @@
 sap.ui.define(["sap/rsh/eam/lib/common/base/BaseViewChild.controller"], function (BaseViewChildController) {
 	"use strict";
 
-	return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.binding.LabelFields.controller", {
+	return BaseViewChildController.extend("zrift.rsh.eam.ordergantts1.mvc.ordergantt.binding.LabelFields.controller", {
 		// before cleanup: SchedulingBoard.handleHiddenOrderColSelectionAsLabel
 		getSelectedNonMandatoryOrderFields: function () {
 			var oOptionalFieldsSelection = {

@@ -4,13 +4,13 @@
 sap.ui.define(
 	[
 		"sap/ui/core/util/MockServer",
-		"zrsh/eam/ordergantts1/localService/MockServerExt",
+		"zrift/rsh/eam/ordergantts1/localService/MockServerExt",
 		"sap/ui/model/json/JSONModel",
 		"sap/rsh/eam/lib/common/utils/URLParams",
-		"zrsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/customMockRequests",
-		"zrsh/eam/ordergantts1/localService/RSH_SB_MAINTENANCE_ORDER/customMockRequests",
-		"zrsh/eam/ordergantts1/localService/UI_RSHPERSON/customMockRequests",
-		"zrsh/eam/ordergantts1/localService/RequestTracker"
+		"zrift/rsh/eam/ordergantts1/localService/RSH_EAM_ORDER_GANTT_SRV/customMockRequests",
+		"zrift/rsh/eam/ordergantts1/localService/RSH_SB_MAINTENANCE_ORDER/customMockRequests",
+		"zrift/rsh/eam/ordergantts1/localService/UI_RSHPERSON/customMockRequests",
+		"zrift/rsh/eam/ordergantts1/localService/RequestTracker"
 	],
 	function (
 		MockServer,
@@ -24,7 +24,7 @@ sap.ui.define(
 	) {
 		"use strict";
 
-		var _sAppModulePath = "zrsh/eam/ordergantts1/";
+		var _sAppModulePath = "zrift/rsh/eam/ordergantts1/";
 		var oMockServerOrderGantt;
 
 		var oMockServer = {

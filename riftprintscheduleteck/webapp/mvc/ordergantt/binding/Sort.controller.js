@@ -4,7 +4,7 @@
 sap.ui.define(["sap/rsh/eam/lib/common/base/BaseViewChild.controller", "sap/ui/model/Sorter"], function (BaseViewChildController, Sorter) {
 	"use strict";
 
-	return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.binding.Sort.controller", {
+	return BaseViewChildController.extend("zrift.rsh.eam.ordergantts1.mvc.ordergantt.binding.Sort.controller", {
 		onInitMembers: function () {
 			this.oTreeTable = this.byId("idOrderTreeTable");
 			this.sOrderField = undefined; // before cleanup: sSortOrderField

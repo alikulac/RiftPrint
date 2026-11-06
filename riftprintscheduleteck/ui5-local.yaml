@@ -1,6 +1,6 @@
 specVersion: "4.0"
 metadata:
-  name: zrsh.eam.ordergantts1
+  name: zrift.rsh.eam.ordergantts1
 type: application
 framework:
   name: SAPUI5
@@ -42,5 +42,5 @@ server:
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
-        component: zrsh.eam.ordergantts1
+        component: zrift.rsh.eam.ordergantts1
         ui5Theme: sap_fiori_3

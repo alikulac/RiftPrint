@@ -11,7 +11,7 @@ sap.ui.define(
 	function (BaseViewChildController, Constants, GanttUtility, Utils) {
 		"use strict";
 
-		return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.actions.OpenOrders.controller", {
+		return BaseViewChildController.extend("zrift.rsh.eam.ordergantts1.mvc.ordergantt.actions.OpenOrders.controller", {
 			onInitMembers: function () {
 				this.oOrderGantt = this.byId("idOrderGanttChartWithTable");
 			},

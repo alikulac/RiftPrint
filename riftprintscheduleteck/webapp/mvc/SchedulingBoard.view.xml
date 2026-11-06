@@ -5,7 +5,7 @@
 -->
 <mvc:View
 	id="idOrderGanttView"
-	controllerName="zrsh.eam.ordergantts1.mvc.SchedulingBoard"
+	controllerName="zrift.rsh.eam.ordergantts1.mvc.SchedulingBoard"
 	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
 	xmlns="sap.gantt.simple"
 	xmlns:m="sap.m"
@@ -14,13 +14,13 @@
 	xmlns:core="sap.ui.core"
 	xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
 	xmlns:smartVariantManagement="sap.ui.comp.smartvariants"
-	xmlns:customControl="zrsh.eam.ordergantts1.customControl"
+	xmlns:customControl="zrift.rsh.eam.ordergantts1.customControl"
 	xmlns:commonVariant="sap.rsh.eam.lib.common.variant" >
 	<f:DynamicPage id="GanttPageId" showFooter="true" fitContent="true">
 		<f:title>
 			<f:DynamicPageTitle id="idOrdGanttDynPgTitle">
 				<f:heading>
-					<smartVariantManagement:SmartVariantManagement id="idGanttPgVarMgmt" persistencyKey="zrsh.eam.ordergantts1.svmpkey"
+					<smartVariantManagement:SmartVariantManagement id="idGanttPgVarMgmt" persistencyKey="zrift.rsh.eam.ordergantts1.svmpkey"
 																   showExecuteOnSelection="true"/>
 				</f:heading>
 				<f:snappedContent>
@@ -39,14 +39,14 @@
 				<f:content>
 					<smartFilterBar:SmartFilterBar id="idOrderGanttSmartFilterBar" entitySet="C_RSHOrdersAndOperations"
 												   search="onFilterBarSearch" assignedFiltersChanged="onAssignedFiltersChanged" showRestoreOnFB="false" useToolbar="false"
-												   afterVariantLoad="onAfterVariantLoad" initialized="onSmartFilterInitialized" persistencyKey="zrsh.eam.ordergantts1.filterpkey"
+												   afterVariantLoad="onAfterVariantLoad" initialized="onSmartFilterInitialized" persistencyKey="zrift.rsh.eam.ordergantts1.filterpkey"
 												   smartVariant="idGanttPgVarMgmt" useDateRangeType="true">
 						<smartFilterBar:customData>
 							<core:CustomData key="calendarWeekSettings" value="ISO_8601"/>
 						</smartFilterBar:customData>
 						<smartFilterBar:controlConfiguration id="_sMartFilterConfig">
 							<smartFilterBar:ControlConfiguration index="0" key="PeriodType" id="idPeriodTypeCC" visibleInAdvancedArea="true"
-																 conditionType="{module: 'zrsh.eam.ordergantts1.mvc.filterbar.DateRangeType', ignoreTime: true, operations: { filter: {path: 'category', contains: ['MONTH','WEEK','YEAR','TO','TODAY','DAYS','QUARTER'], exclude:true}}}"
+																 conditionType="{module: 'zrift.rsh.eam.ordergantts1.mvc.filterbar.DateRangeType', ignoreTime: true, operations: { filter: {path: 'category', contains: ['MONTH','WEEK','YEAR','TO','TODAY','DAYS','QUARTER'], exclude:true}}}"
 																 mandatory="mandatory"></smartFilterBar:ControlConfiguration>
 							<smartFilterBar:ControlConfiguration id="idWorkCenterCC" index="1" key="WorkCenter" visibleInAdvancedArea="true"/>
 							<smartFilterBar:ControlConfiguration id="idMaintPrioCC" index="2" key="MaintPriority" visibleInAdvancedArea="true"/>
@@ -95,7 +95,7 @@
 						</m:Button>
 						<ContainerToolbarPlaceholder id="idLegendPlaceholderCT" type="LegendButton"/>
 						<legendContainer>
-							<core:Fragment fragmentName="zrsh.eam.ordergantts1.mvc.gantt.GanttLegend" type="XML"/>
+							<core:Fragment fragmentName="zrift.rsh.eam.ordergantts1.mvc.gantt.GanttLegend" type="XML"/>
 						</legendContainer>
 						<m:Button id="idCustomGanttSettingBtn" icon="sap-icon://customize" press="onCustomGanttSettingPress" type="Transparent"
 								  tooltip="{i18n>settings}"/>
@@ -104,7 +104,7 @@
 				<variantHandler>
 					<commonVariant:CustomVariantHandler id="variantHandler" applyChange="onCustomVariantApplyChange" revertChange="onCustomVariantRevertChange" />
 				</variantHandler>
-				<core:Fragment fragmentName="zrsh.eam.ordergantts1.mvc.ordergantt.OrderGantt" type="XML"/>
+				<core:Fragment fragmentName="zrift.rsh.eam.ordergantts1.mvc.ordergantt.OrderGantt" type="XML"/>
 			</GanttChartContainer>
 		</f:content>
 		<f:footer id="GanttFooter">

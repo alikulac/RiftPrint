@@ -6,7 +6,7 @@ sap.ui.define(
 	function (BaseViewChildController, MessageToast) {
 		"use strict";
 
-		return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.actions.RiftPrint.controller", {
+		return BaseViewChildController.extend("zrift.rsh.eam.ordergantts1.mvc.ordergantt.actions.RiftPrint.controller", {
 			onInitMembers: function () {
 				this._oCrossAppNav = sap.ushell && sap.ushell.Container && sap.ushell.Container.getService("CrossApplicationNavigation");
 			},

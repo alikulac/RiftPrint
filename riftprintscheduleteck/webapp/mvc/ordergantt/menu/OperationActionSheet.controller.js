@@ -15,12 +15,12 @@ sap.ui.define(
 	function (BaseFragmentController, Constants, Utils, DateTimePopup, Utility, UI5Date, Label, Popup) {
 		"use strict";
 
-		return BaseFragmentController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.menu.OperationActionSheet.controller", {
+		return BaseFragmentController.extend("zrift.rsh.eam.ordergantts1.mvc.ordergantt.menu.OperationActionSheet.controller", {
 			constructor: function (oComponent, oView, oGanttChart) {
 				BaseFragmentController.call(this, {
 					component: oComponent,
 					dependent: oView,
-					fragmentName: "zrsh.eam.ordergantts1.mvc.ordergantt.menu.OperationActionSheet",
+					fragmentName: "zrift.rsh.eam.ordergantts1.mvc.ordergantt.menu.OperationActionSheet",
 					fragmentId: oView.getId(),
 					ganttChart: oGanttChart
 				});

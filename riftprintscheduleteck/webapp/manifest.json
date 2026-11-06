@@ -1,7 +1,7 @@
 {
 	"_version": "1.12.0",
 	"sap.app": {
-		"id": "zrsh.eam.ordergantts1",
+		"id": "zrift.rsh.eam.ordergantts1",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
@@ -88,7 +88,7 @@
 	"sap.ui5": {
 		"flexEnabled": false,
 		"rootView": {
-			"viewName": "zrsh.eam.ordergantts1.mvc.App",
+			"viewName": "zrift.rsh.eam.ordergantts1.mvc.App",
 			"type": "XML",
 			"id": "app",
 			"async": true
@@ -150,7 +150,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "zrsh.eam.ordergantts1.i18n.i18n"
+					"bundleName": "zrift.rsh.eam.ordergantts1.i18n.i18n"
 				}
 			},
 			"": {
@@ -209,7 +209,7 @@
 		},
 		"routing": {
 			"config": {
-				"viewPath": "zrsh.eam.ordergantts1.mvc",
+				"viewPath": "zrift.rsh.eam.ordergantts1.mvc",
 				"controlId": "app",
 				"viewType": "XML",
 				"controlAggregation": "pages",

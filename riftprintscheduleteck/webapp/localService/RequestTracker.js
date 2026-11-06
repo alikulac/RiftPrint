@@ -4,7 +4,7 @@
 sap.ui.define(["sap/ui/base/Object"], function (UI5Object) {
 	"use strict";
 
-	return UI5Object.extend("zrsh.eam.ordergantts1.localService.RequestTracker", {
+	return UI5Object.extend("zrift.rsh.eam.ordergantts1.localService.RequestTracker", {
 		_aRequests: undefined,
 
 		constructor: function () {

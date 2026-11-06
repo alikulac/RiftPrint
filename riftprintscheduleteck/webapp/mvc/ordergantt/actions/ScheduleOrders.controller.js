@@ -4,7 +4,7 @@
 sap.ui.define(["sap/rsh/eam/lib/common/base/BaseViewChild.controller"], function (BaseViewChildController) {
 	"use strict";
 
-	return BaseViewChildController.extend("zrsh.eam.ordergantts1.mvc.ordergantt.actions.ScheduleOrders.controller", {
+	return BaseViewChildController.extend("zrift.rsh.eam.ordergantts1.mvc.ordergantt.actions.ScheduleOrders.controller", {
 		schedule: function (oShape) {
 			if (oShape) {
 				this._scheduleShapeOrder(oShape);
