@@ -1,7 +1,7 @@
 {
   "generationParameters": {
     "appName": "zrsh.eam.ordergantts1",
-    "appTitle": "{{appTitle}}",
+    "appTitle": "Rift Print - Scheduling Board",
     "appNamespace": "rsh.eam",
     "appDescription": "This application was downloaded from an SAP ABAP repository.",
     "ui5Theme": "sap_fiori_3",
@@ -9,7 +9,7 @@
     "generatorVersion": "1.34.0",
     "ui5Version": "1.30.0",
     "template": "unknown",
-    "serviceUrl": "http://oneteckds4.sap.teck.com:44300",
+    "serviceUrl": "http://vhegpde5ci.sap.eldoradogold.com:8000",
     "launchText": "To launch the generated application, run the following command from the generated app root folder:\n\n```\n    npm start\n```"
   }
 }

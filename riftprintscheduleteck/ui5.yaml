@@ -7,7 +7,12 @@ server:
     - name: fiori-tools-proxy
       afterMiddleware: compression
       configuration:
-        ignoreCertErrors: false
+        ignoreCertErrors: true
+        backend:
+          - path: /sap
+            url: http://vhegpde5ci.sap.eldoradogold.com:8000
+            client: '010'
+            destination: DE5_RISE_BAS        
         ui5:
           path:
             - /resources
@@ -25,3 +30,8 @@ server:
       configuration:
         component: zrsh.eam.ordergantts1
         ui5Theme: sap_fiori_3
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**

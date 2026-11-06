@@ -28,6 +28,11 @@ server:
       afterMiddleware: compression
       configuration:
         ignoreCertErrors: false
+        backend:
+          - path: /sap
+            url: http://vhegpde5ci.sap.eldoradogold.com:8000
+            client: '010'
+            destination: DE5_RISE_BAS
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:
